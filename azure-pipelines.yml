@@ -39,4 +39,4 @@ steps:
         git add --all
         git commit -m "$env:COMMITMESSAGE"
         echo push code to new repo 
-        git config --global http.extraheader "AUTHORIZATION: bearer $(System.AccessToken)" push origin development
+        git  -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" push origin development
