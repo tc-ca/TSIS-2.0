@@ -33,11 +33,11 @@ steps:
     targetType: 'inline'
     script: |
       # echo commit all changes
-              git remote add origin https://github.com/tc-ca/TSIS-2.0
-              git config user.email "xiaoweiguang@gmail.com"
-              git config user.name "tc-buildbot"
-              git checkout development
-              git add --all
-              git commit -m "$env:COMMITMESSAGE"        
-              echo push code to new repo 
-              git push origin development
+      git config user.email "nepasrepondre-noreply@tc.gc.ca"
+      git config user.name "tc-buildbot"
+      git checkout master
+      git add --all
+      git commit -m "$env:COMMITMESSAGE"
+      echo push code to new repo
+      git  -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" push origin master
+
