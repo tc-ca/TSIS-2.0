@@ -28,16 +28,16 @@ steps:
     SolutionInputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName).zip'
     SolutionTargetFolder: '$(Build.SourcesDirectory)\$(SolutionName)'
 
-- task: PowerShell@2
+- task: CmdLine@2
   inputs:
-    targetType: 'inline'
     script: |
       echo commit all changes
-      git config user.email "nepasrepondre-noreply@tc.gc.ca"
-      git config user.name "tc-buildbot"
-      git checkout development
-      git add --all
-      git commit -m "solution init"
-      echo push code to new repo
-      git -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" push origin development
+          git config user.email "nepasrepondre-noreply@tc.gc.ca"
+          git config user.name "Automatic Build"
+          git checkout development
+          git add --all
+          git commit -m "solution init"
+          echo push code to new repo
+          git  -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" push origin development
+        displayName: 'Command Line Script'
 
