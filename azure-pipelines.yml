@@ -30,13 +30,11 @@ steps:
 
 
 - powershell: |  
-   echo "Committing all CDS solution changes"
-   git config user.email "nepasrepondre-noreply@tc.gc.ca"
-   git config user.name "tc-buildbot"
-   git checkout development
-   git add --all
-   git commit -m "Update Solution - $(SolutionName): $env:COMMITMESSAGE"
-   
-   echo "Push solution changes to the remote repository"
-   git -c http.extraheader="AUTHORIZATION: basic $(System.AccessToken)" push --force origin development
-  displayName: 'Commit Unpacked Solution to the Repository'
+  echo commit all changes
+  git config user.email "nepasrepondre-noreply@tc.gc.ca"
+  git config user.name "tc-buildbot"
+  git checkout development
+  git add --all
+  git commit -m "$env:COMMITMESSAGE"
+  echo push code to new repo
+  git  -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" push origin development
