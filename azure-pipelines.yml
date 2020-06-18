@@ -17,7 +17,7 @@ steps:
 - task: PowerAppsExportSolution@0
   inputs:
     authenticationType: 'PowerAppsEnvironment'
-    PowerAppsEnvironment: 'TSIS 2.0 Dev'
+    PowerAppsEnvironment: 'TSIS2-dev-tcd365'
     SolutionName: '$(SolutionName)'
     SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName).zip'
 
