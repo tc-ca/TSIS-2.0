@@ -39,5 +39,5 @@ steps:
           git commit -m "solution init"
           echo push code to new repo
           git  -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" push origin development
-        displayName: 'Command Line Script'
+      
 
