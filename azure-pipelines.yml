@@ -10,6 +10,9 @@ pool:
   vmImage: 'vs2017-win2016'
 
 steps:
+- checkout: self
+  persistCredentials: true
+  clean: false
 
 - task: PowerPlatformToolInstaller@0
   inputs:
