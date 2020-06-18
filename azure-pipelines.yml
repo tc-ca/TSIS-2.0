@@ -40,3 +40,4 @@ steps:
               git add --all
               git commit -m "$env:COMMITMESSAGE"        
               echo push code to new repo 
+              git push origin development
