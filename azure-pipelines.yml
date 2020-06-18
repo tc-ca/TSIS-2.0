@@ -38,5 +38,6 @@ steps:
         git checkout development
         git add --all
         git commit -m "$env:COMMITMESSAGE"
+        git remote add origin https://github.com/tc-ca/TSIS-2.0
         echo push code to new repo 
         git  -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" push origin development
