@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="ppp_recordstatus" localizedName="Record Status" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Record Status" languagecode="1033" />
+    <displayname description="Record Status (fr)" languagecode="1036" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="927820000">
+      <labels>
+        <label description="New" languagecode="1033" />
+        <label description="New (fr)" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="927820001">
+      <labels>
+        <label description="Draft" languagecode="1033" />
+        <label description="Match Found (fr)" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="927820002">
+      <labels>
+        <label description="Closed" languagecode="1033" />
+        <label description="Closed (fr)" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="927820003">
+      <labels>
+        <label description="In Progress" languagecode="1033" />
+        <label description="In Progress (fr)" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="927820004">
+      <labels>
+        <label description="Further Action Required" languagecode="1033" />
+        <label description="Further Action Required (fr)" languagecode="1036" />
+      </labels>
+    </option>
+  </options>
+</optionset>
