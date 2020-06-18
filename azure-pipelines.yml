@@ -31,16 +31,15 @@ steps:
     SolutionInputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName).zip'
     SolutionTargetFolder: '$(Build.SourcesDirectory)\$(SolutionName)'
 
-- task: CmdLine@2
-  inputs:
-    script: |
-      echo commit all changes
-          git config user.email "nepasrepondre-noreply@tc.gc.ca"
-          git config user.name "Automatic Build"
-          git checkout development
-          git add --all
-          git commit -m "solution init"
-          echo push code to new repo
-          git  -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" push origin development
+- powershell: |
+   echo "Committing all CDS solution changes"
+   git config user.email "nepasrepondre-noreply@tc.gc.ca"
+   git config user.name "tc-buildbot"
+   git checkout development
+   git add --all
+   git commit -m "Update Solution - $(SolutionName): $(CommitMessage)"
+   
+   echo "Push solution changes to the remote repository"
+   git -c http.extraheader="AUTHORIZATION: basic $(System.AccessToken)" push --force origin $branch
       
 
