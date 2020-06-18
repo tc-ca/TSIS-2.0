@@ -40,6 +40,6 @@ steps:
    git commit -m "Update Solution - $(SolutionName): $(CommitMessage)"
    
    echo "Push solution changes to the remote repository"
-   git -c http.extraheader="AUTHORIZATION: basic $(System.AccessToken)" push --force origin $branch
+   git -c http.extraheader="AUTHORIZATION: basic $(System.AccessToken)" push --force origin development
       
 
