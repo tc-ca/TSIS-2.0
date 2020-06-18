@@ -4,10 +4,10 @@
 # https://aka.ms/yaml
 
 trigger:
-- master
+- none
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'vs2017-win2016'
 
 steps:
 - task: PowerAppsToolInstaller@0
@@ -26,14 +26,20 @@ steps:
     SolutionInputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName).zip'
     SolutionTargetFolder: '$(Build.SourcesDirectory)\$(SolutionName)'
 
-- task: CmdLine@2
-  inputs:
-    script: |
-      echo commit all changes
-      git config user.email "stephen.mouland@tc.gc.ca"
-      git config user.name "Automatic Build"
-      git checkout master
-      git add --all
-      git commit -m "solution init"
-      echo push code to new repo
-      git  -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" push origin master
+
+
+- powershell: |
+   $branch = "$(Build.SourceBranch)"
+   $branch = $branch.Replace("refs/heads/", "")
+   
+   echo "Committing all CDS solution changes"
+   git config user.email "nepasrepondre-noreply@tc.gc.ca"
+   git config user.name "tc-buildbot"
+   git checkout $branch
+   git add --all
+   git commit -m "Update Solution - $(SolutionName): $(CommitMessage)"
+   
+   echo "Push solution changes to the remote repository"
+   git -c http.extraheader="AUTHORIZATION: basic $(System.AccessToken)" push --force origin $branch
+  displayName: 'Commit Unpacked Solution to the Repository'
+
