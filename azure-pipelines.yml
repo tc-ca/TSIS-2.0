@@ -32,12 +32,12 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      # echo commit all changes
+      echo commit all changes
       git config user.email "nepasrepondre-noreply@tc.gc.ca"
       git config user.name "tc-buildbot"
-      git checkout master
+      git checkout development
       git add --all
-      git commit -m "$env:COMMITMESSAGE"
+      git commit -m "solution init"
       echo push code to new repo
-      git  -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" push origin master
+      git -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" push origin development
 
