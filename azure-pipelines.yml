@@ -38,7 +38,7 @@ steps:
    git config user.name "tc-buildbot"
    git checkout $branch
    git add --all
-   git commit -m "Update Solution - $(SolutionName): $(CommitMessage)"
+   git commit -m "Update Solution - $(SolutionName): $env:COMMITMESSAGE"
    
    echo "Push solution changes to the remote repository"
    git -c http.extraheader="AUTHORIZATION: basic $(System.AccessToken)" push --force origin $branch
