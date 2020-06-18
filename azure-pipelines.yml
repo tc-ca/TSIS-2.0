@@ -29,17 +29,15 @@ steps:
 
 
 - powershell: |
-   $branch = "$(Build.SourceBranch)"
-   $branch = $branch.Replace("refs/heads/", "")
-   
    echo "Committing all CDS solution changes"
    git config user.email "nepasrepondre-noreply@tc.gc.ca"
    git config user.name "tc-buildbot"
-   git checkout $branch
+   git checkout development
    git add --all
    git commit -m "Update Solution - $(SolutionName): $(CommitMessage)"
    
    echo "Push solution changes to the remote repository"
    git -c http.extraheader="AUTHORIZATION: basic $(System.AccessToken)" push --force origin $branch
   displayName: 'Commit Unpacked Solution to the Repository'
+
 
