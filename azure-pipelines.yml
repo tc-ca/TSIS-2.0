@@ -32,6 +32,8 @@ steps:
 - powershell: |
    $branch = "$(Build.SourceBranch)"
    $branch = $branch.Replace("refs/heads/", "")
+   $branch = $branch.Replace("'", "")
+   $branch = $branch.Replace(":", "")
    
    echo "Committing all CDS solution changes"
    git config user.email "nepasrepondre-noreply@tc.gc.ca"
