@@ -40,4 +40,3 @@ steps:
               git add --all
               git commit -m "$env:COMMITMESSAGE"        
               echo push code to new repo 
-              git  -c http.extraheader="AUTHORIZATION: bearer $env:GITHUBTOKEN" push origin development
