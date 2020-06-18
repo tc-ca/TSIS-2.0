@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="ppp_idsused" localizedName="Identification Type" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Identification Type" languagecode="1033" />
+    <displayname description="Identification Type (fr)" languagecode="1036" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="927820000">
+      <labels>
+        <label description="Passport" languagecode="1033" />
+        <label description="Passport (fr)" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="927820001">
+      <labels>
+        <label description="Drivers Licence" languagecode="1033" />
+        <label description="Drivers Licence (fr)" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="927820004">
+      <labels>
+        <label description="Government Issued ID (Provide Details)" languagecode="1033" />
+        <label description="Government Issued ID (Provide Details) (fr)" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="927820002">
+      <labels>
+        <label description="Student ID" languagecode="1033" />
+        <label description="Student ID (fr)" languagecode="1036" />
+      </labels>
+    </option>
+    <option value="927820003">
+      <labels>
+        <label description="Other (Provide Details)" languagecode="1033" />
+        <label description="Other (Provide Details) (fr)" languagecode="1036" />
+      </labels>
+    </option>
+  </options>
+</optionset>
