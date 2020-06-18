@@ -28,16 +28,16 @@ steps:
     SolutionInputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName).zip'
     SolutionTargetFolder: '$(Build.SourcesDirectory)\$(SolutionName)'
 
-
-- task: CmdLine@2
+- task: PowerShell@2
   inputs:
-      script: |
-        echo commit all changes
-        git remote add origin https://github.com/tc-ca/TSIS-2.0
-        git config user.email "nepasrepondre-noreply@tc.gc.ca"
-        git config user.name "tc-buildbot"
-        git checkout development
-        git add --all
-        git commit -m "$env:COMMITMESSAGE"        
-        echo push code to new repo 
-        git  -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" push origin development
+    targetType: 'inline'
+    script: |
+      # echo commit all changes
+              git remote add origin https://github.com/tc-ca/TSIS-2.0
+              git config user.email "nepasrepondre-noreply@tc.gc.ca"
+              git config user.name "tc-buildbot"
+              git checkout development
+              git add --all
+              git commit -m "$env:COMMITMESSAGE"        
+              echo push code to new repo 
+              git  -c http.extraheader="AUTHORIZATION: bearer $env:SYSTEM_ACCESSTOKEN" push origin development
