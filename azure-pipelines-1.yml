@@ -1,0 +1,49 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: PowerPlatformToolInstaller@0
+  inputs:
+    DefaultVersion: true
+
+- task: PowerPlatformPackSolution@0
+  inputs:
+    SolutionSourceFolder: '$(Build.SourcesDirectory)\$(SolutionName)'
+    SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName).zip'
+
+- task: PowerPlatformImportSolution@0
+  inputs:
+    authenticationType: 'PowerPlatformEnvironment'
+    PowerPlatformEnvironment: 'TSIS 2.0  QA'
+    SolutionInputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName).zip'
+    AsyncOperation: true
+    MaxAsyncWaitTime: '240'
+
+- task: PowerPlatformExportSolution@0
+  inputs:
+    authenticationType: 'PowerPlatformEnvironment'
+    PowerPlatformEnvironment: 'TSIS 2.0  QA'
+    SolutionName: '$(SolutionName)'
+    SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName)_managed.zip'
+    Managed: true
+
+- task: PowerPlatformUnpackSolution@0
+  inputs:
+    SolutionInputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName).zip'
+    SolutionTargetFolder: '$(Build.SourcesDirectory)\$(SolutionName)'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Build.ArtifactStagingDirectory)\$(SolutionName)_managed.zip'
+    artifact: 'drop'
+    publishLocation: 'pipeline'
+
+
