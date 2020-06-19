@@ -270,11 +270,11 @@
         <Dependent key="1" type="80" schemaName="ppp_PassengerProtectProgram" displayName="Passenger Protect Program" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="37" type="66" schemaName="MscrmControls.NumberInput.NumberInputControl" displayName="MscrmControls.NumberInput.NumberInputControl" solution="BaseCustomControlsCore (9.0.2006.1020)" />
+        <Required key="37" type="66" schemaName="MscrmControls.FlipSwitch.FlipSwitchControl" displayName="MscrmControls.FlipSwitch.FlipSwitchControl" solution="CustomControlsCore (9.1.0000.18935)" />
         <Dependent key="38" type="60" displayName="Information" parentDisplayName="Traveler" id="{2df0c2f0-69aa-4edb-be91-abfdc11a00bb}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="39" type="66" schemaName="MscrmControls.FlipSwitch.FlipSwitchControl" displayName="MscrmControls.FlipSwitch.FlipSwitchControl" solution="CustomControlsCore (9.1.0000.18935)" />
+        <Required key="39" type="66" schemaName="MscrmControls.NumberInput.NumberInputControl" displayName="MscrmControls.NumberInput.NumberInputControl" solution="BaseCustomControlsCore (9.0.2006.1020)" />
         <Dependent key="38" type="60" displayName="Information" parentDisplayName="Traveler" id="{2df0c2f0-69aa-4edb-be91-abfdc11a00bb}" />
       </MissingDependency>
     </MissingDependencies>
