@@ -10,23 +10,26 @@ pool:
   vmImage: 'vs2017-win2016'
 
 steps:
-- task: PowerAppsToolInstaller@0
+- checkout: self
+  persistCredentials: true
+  clean: false
+
+- task: PowerPlatformToolInstaller@0
   inputs:
     DefaultVersion: true
 
-- task: PowerAppsExportSolution@0
+- task: PowerPlatformExportSolution@0
   inputs:
-    authenticationType: 'PowerAppsEnvironment'
-    PowerAppsEnvironment: 'TSIS 2.0 Dev'
+    authenticationType: 'PowerPlatformEnvironment'
+    PowerPlatformEnvironment: 'TSIS 2.0 Dev'
     SolutionName: '$(SolutionName)'
     SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName).zip'
+    ExportRelationshipRoles: true
 
-- task: PowerAppsUnpackSolution@0
+- task: PowerPlatformUnpackSolution@0
   inputs:
     SolutionInputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName).zip'
     SolutionTargetFolder: '$(Build.SourcesDirectory)\$(SolutionName)'
-
-
 
 - powershell: |
    echo "Committing all CDS solution changes"
@@ -34,10 +37,9 @@ steps:
    git config user.name "tc-buildbot"
    git checkout development
    git add --all
-   git commit -m "Update Solution - $(SolutionName): $(CommitMessage)"
+   git commit -m "Update Solution - $env:SOLUTIONNAME: $env:COMMITMESSAGE"
    
    echo "Push solution changes to the remote repository"
-   git -c http.extraheader="AUTHORIZATION: basic $(System.AccessToken)" push --force origin $branch
-  
-
+   git -c http.extraheader="AUTHORIZATION: basic $(System.AccessToken)" push --force origin development
+     
 
