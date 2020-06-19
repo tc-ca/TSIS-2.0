@@ -41,5 +41,5 @@ steps:
    
    echo "Push solution changes to the remote repository"
    git -c http.extraheader="AUTHORIZATION: basic $(System.AccessToken)" push --force origin development
-      
+     
 
