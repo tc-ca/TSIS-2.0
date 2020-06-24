@@ -17,7 +17,6 @@
     <AppModuleComponent type="1" schemaName="ppp_traveler" />
     <AppModuleComponent type="1" schemaName="ppp_travelerbusinessflow" />
     <AppModuleComponent type="1" schemaName="systemuser" />
-    <AppModuleComponent type="161" id="{b3fd54cf-42ae-e911-a836-000d3a315bf6}" />
   </AppModuleComponents>
   <AppModuleRoleMaps>
     <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
