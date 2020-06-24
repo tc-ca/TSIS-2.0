@@ -10,51 +10,13 @@
   <AppModuleComponents>
     <AppModuleComponent type="62" schemaName="ppp_PassengerProtectProgram" />
     <AppModuleComponent type="29" id="{f54fe17c-8e7a-47a9-8ac5-d0c2a77eef59}" />
-    <AppModuleComponent type="1" schemaName="appointment" />
-    <AppModuleComponent type="1" schemaName="bookableresource" />
-    <AppModuleComponent type="1" schemaName="bookableresourcebooking" />
-    <AppModuleComponent type="1" schemaName="bookingstatus" />
-    <AppModuleComponent type="1" schemaName="msdyn_bookingtimestamp" />
-    <AppModuleComponent type="1" schemaName="contact" />
-    <AppModuleComponent type="1" schemaName="tc_country" />
-    <AppModuleComponent type="1" schemaName="transactioncurrency" />
-    <AppModuleComponent type="1" schemaName="msdyn_customerasset" />
-    <AppModuleComponent type="1" schemaName="msdyn_customerassetcategory" />
-    <AppModuleComponent type="1" schemaName="email" />
     <AppModuleComponent type="1" schemaName="ovs_facility" />
-    <AppModuleComponent type="1" schemaName="msdyn_fieldservicepricelistitem" />
-    <AppModuleComponent type="1" schemaName="msdyn_fieldservicesetting" />
-    <AppModuleComponent type="1" schemaName="msdyn_incidenttype" />
-    <AppModuleComponent type="1" schemaName="msdyn_incidenttypeproduct" />
-    <AppModuleComponent type="1" schemaName="msdyn_incidenttypeservice" />
-    <AppModuleComponent type="1" schemaName="msdyn_incidenttypeservicetask" />
-    <AppModuleComponent type="1" schemaName="annotation" />
     <AppModuleComponent type="1" schemaName="account" />
-    <AppModuleComponent type="1" schemaName="phonecall" />
-    <AppModuleComponent type="1" schemaName="pricelevel" />
-    <AppModuleComponent type="1" schemaName="productpricelevel" />
-    <AppModuleComponent type="1" schemaName="msdyn_priority" />
-    <AppModuleComponent type="1" schemaName="product" />
-    <AppModuleComponent type="1" schemaName="msdyn_productinventory" />
-    <AppModuleComponent type="1" schemaName="msdyn_schedulingparameter" />
-    <AppModuleComponent type="1" schemaName="msdyn_servicetasktype" />
-    <AppModuleComponent type="1" schemaName="task" />
-    <AppModuleComponent type="1" schemaName="msdyn_taxcode" />
-    <AppModuleComponent type="1" schemaName="territory" />
-    <AppModuleComponent type="1" schemaName="msdyn_timeoffrequest" />
+    <AppModuleComponent type="1" schemaName="ppp_repcallinfo" />
+    <AppModuleComponent type="60" id="{fed7d1dc-46b6-ea11-a812-000d3a0c8127}" />
     <AppModuleComponent type="1" schemaName="ppp_traveler" />
     <AppModuleComponent type="1" schemaName="ppp_travelerbusinessflow" />
-    <AppModuleComponent type="1" schemaName="uom" />
-    <AppModuleComponent type="1" schemaName="uomschedule" />
     <AppModuleComponent type="1" schemaName="systemuser" />
-    <AppModuleComponent type="1" schemaName="msdyn_warehouse" />
-    <AppModuleComponent type="1" schemaName="msdyn_workorder" />
-    <AppModuleComponent type="1" schemaName="msdyn_workorderincident" />
-    <AppModuleComponent type="1" schemaName="msdyn_workorderproduct" />
-    <AppModuleComponent type="1" schemaName="msdyn_workorderservice" />
-    <AppModuleComponent type="1" schemaName="msdyn_workorderservicetask" />
-    <AppModuleComponent type="1" schemaName="msdyn_workordersubstatus" />
-    <AppModuleComponent type="1" schemaName="msdyn_workordertype" />
     <AppModuleComponent type="161" id="{b3fd54cf-42ae-e911-a836-000d3a315bf6}" />
   </AppModuleComponents>
   <AppModuleRoleMaps>

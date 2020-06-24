@@ -42,5 +42,10 @@
         <label description="Further Action Required (fr)" languagecode="1036" />
       </labels>
     </option>
+    <option value="927820005">
+      <labels>
+        <label description="Unresolved" languagecode="1033" />
+      </labels>
+    </option>
   </options>
 </optionset>

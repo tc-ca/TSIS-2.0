@@ -29,7 +29,7 @@
                         </labels>
                         <control id="ppp_name" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="ppp_name" disabled="true" uniqueid="{a05443de-cbc9-d531-ea40-0dab598d000d}" />
                       </cell>
-                      <cell id="{e1eb6b02-8a52-b717-c802-c362335b276e}" showlabel="false">
+                      <cell showlabel="true" locklevel="0" id="{ee6f4a1b-d0a9-45f2-b147-94dbe2b15f14}">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -42,33 +42,24 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{095271c1-f5d8-48f8-b70d-2f202957d41e}" showlabel="true" locklevel="0">
+                      <cell id="{807e53d2-9873-c036-66ee-2849c06e3d69}" showlabel="true" locklevel="1">
                         <labels>
-                          <label description="Analyst Name" languagecode="1033" />
-                          <label description="Analyst Name (fr)" languagecode="1036" />
+                          <label description="Analyst" languagecode="1033" />
+                          <label description="Propriétaire" languagecode="1036" />
                         </labels>
-                        <control id="ppp_analyst" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ppp_analyst" disabled="false" uniqueid="{66509a22-64a7-026c-c434-deaec4d4b9ee}" />
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" uniqueid="{d27bd10e-d633-721a-ceed-651c6b6a573a}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
                       </cell>
-                      <cell id="{66db17e4-343c-1eba-7715-7e3a3c0d3bee}" showlabel="false">
+                      <cell showlabel="true" locklevel="0" id="{ce11647c-95f3-4328-873d-0e57f2610975}">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
-                      <cell id="{10a599a7-7d7c-0652-a88e-66baad0ccb65}" showlabel="false">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{777c4837-80b9-4c18-ad4d-f046beeecd4f}" showlabel="true" locklevel="0" colspan="2">
-                        <labels>
-                          <label description="Start time of Call (YYYY-MM-DD)" languagecode="1033" />
-                          <label description="Start time of Call (fr)" languagecode="1036" />
-                        </labels>
-                        <control id="ppp_calltime" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="ppp_calltime" disabled="true" uniqueid="{2388ed65-3c5d-d56d-8735-c62c893ca636}" />
-                      </cell>
-                      <cell id="{6b2cdcec-37e8-8eda-9682-93d929d12230}" showlabel="false">
+                      <cell id="{80e942ed-791a-ee73-e61c-b7ca8401225a}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -82,12 +73,12 @@
                         </labels>
                         <control id="ppp_ispresent" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="ppp_ispresent" disabled="false" uniqueid="{f9930df7-320e-4b35-bbd4-0eaed5d7a637}" />
                       </cell>
-                      <cell id="{5c62a4dd-548a-56a3-3461-658b40826c6c}" showlabel="false">
+                      <cell id="{6cb22563-1a91-9e0c-1d46-bb4a8215aaca}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
-                      <cell id="{215d4c64-ab16-527c-1111-a009c7a021d6}" showlabel="false">
+                      <cell id="{e6b133a6-e6c9-1525-be3b-525e3b9a12c9}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -101,12 +92,12 @@
                         </labels>
                         <control id="ppp_minuteswaiting" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="ppp_minuteswaiting" disabled="false" uniqueid="{3b8928fb-9102-425e-bff7-ec5971e478d2}" />
                       </cell>
-                      <cell id="{023e9528-1c4a-60a0-590d-c81ecce01c21}" showlabel="false">
+                      <cell id="{030a3280-dd18-bd66-3775-61a071d7c348}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
-                      <cell id="{80e942ed-791a-ee73-e61c-b7ca8401225a}" showlabel="false">
+                      <cell id="{0aa940ae-0e0b-6dec-56aa-231e528ad35b}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -128,12 +119,12 @@
                         </labels>
                         <control id="ppp_aircarrier" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ppp_aircarrier" disabled="false" />
                       </cell>
-                      <cell id="{a40d87d0-ddc8-9b82-c8b2-6c283edeac68}" showlabel="false">
+                      <cell id="{1a74d0a2-6e51-7a02-36b7-ba7b30a194c0}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
-                      <cell id="{33584598-8a8d-2711-0e65-cc0b5592b049}" showlabel="false">
+                      <cell id="{768fc44d-f5b8-4d65-9864-9708f4dca451}">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -147,36 +138,36 @@
                         </labels>
                         <control id="ppp_aircarrierrepresentative" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_aircarrierrepresentative" disabled="false" uniqueid="{7a909011-db57-b901-4153-aa04db360cea}" />
                       </cell>
-                      <cell id="{e0301463-4d7d-7288-5e62-8eb6cd5a5d4e}" showlabel="false">
+                      <cell id="{e64b0814-bb95-5b97-dc32-0352ca8235d9}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
-                      <cell id="{d523a042-b62e-1eb7-783e-5d74403d2054}" showlabel="false">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{a4067675-5577-0c2e-2022-52b7e9a135ce}" showlabel="false">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                      <cell id="{cba34408-1095-3261-d842-a78b5099408a}" showlabel="false">
+                      <cell id="{d5c2002d-c66b-8533-1c70-15b0a6dcaa07}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
                     </row>
                     <row>
-                      <cell id="{d4188838-2abb-1b9a-d8b7-e479362b8607}" showlabel="false">
+                      <cell id="{5a6d88ea-392b-8d01-3aa3-3d8e1dd85880}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
-                      <cell id="{39ab7ee4-b4ea-2533-3643-128e1e052a51}" showlabel="false">
+                      <cell id="{0b0581ae-e2a3-98bd-d141-64eb97dee59c}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9979da2b-0343-c8a5-83ba-deb31e747b26}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{ac423d9d-039c-40ba-d75b-886cc0806225}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -190,55 +181,109 @@
                         </labels>
                         <control id="ppp_representativephonenumber" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_representativephonenumber" disabled="false" uniqueid="{e0740a06-8ace-ec09-c956-ed69a3ce9861}" />
                       </cell>
-                      <cell id="{a3cb21b2-4685-7323-c9dc-848b6401358c}" showlabel="false">
+                      <cell id="{5eb2e12c-2981-e11a-dc44-a0b95732e549}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
-                      <cell id="{daae5643-de3a-ca14-cb41-be1766d17b95}" showlabel="false">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{6822c0b6-c80d-e482-e281-61a8a77eaa62}" showlabel="false">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                      <cell id="{1baeecdc-b356-1587-6155-64c6cdcac5d2}" showlabel="false">
+                      <cell id="{58568ed9-5a2c-e250-ca36-c01dad323507}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
                     </row>
                     <row>
-                      <cell id="{d474ad08-d971-6ad4-b08d-1d1a6c65c840}" showlabel="false">
+                      <cell id="{b706c67d-0172-4864-3007-45070c804b54}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
-                      <cell showlabel="true" locklevel="0" id="{060e4758-d899-4a96-98f4-1c02ce97e240}">
+                      <cell id="{52d76818-3153-9000-bcb5-6ee124b041b9}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
                     </row>
                     <row>
-                      <cell id="{e832b3db-a92e-4e53-ae7f-4a558b1bf92f}" showlabel="true" locklevel="0" visible="false">
-                        <labels>
-                          <label description="Closed Date" languagecode="1033" />
-                          <label description="Closed Date (fr)" languagecode="1036" />
-                        </labels>
-                        <control id="ppp_closeddate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="ppp_closeddate" disabled="false" uniqueid="{c37173eb-8ce9-7d2d-32d2-23a23bde7c6a}" />
-                      </cell>
-                      <cell showlabel="true" locklevel="0" id="{25e5ae2e-7f30-40e1-8788-2a7ee2a6dada}">
+                      <cell id="{380b0cab-2579-a8e9-a104-114491220dae}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
-                      <cell showlabel="true" locklevel="0" id="{3b4759a5-9a50-4f9b-bcb6-ad582fc0ef57}">
+                      <cell id="{28805aee-4288-badd-217d-0a20067ba73e}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell showlabel="true" locklevel="0" id="{f7129483-b88f-4ba9-b0d4-05f9e5cf9601}" rowspan="7" colspan="2" auto="false">
+                        <labels>
+                          <label description="Call History" languagecode="1033" />
+                        </labels>
+                        <control id="Subgrid_2" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{2d675ce2-ecc2-e9b6-b3e0-ad35cb9476cc}">
+                          <parameters>
+                            <TargetEntityType>ppp_repcallinfo</TargetEntityType>
+                            <ViewId>{7BEBDC02-1A50-46D9-9617-4976E349EF52}</ViewId>
+                            <ViewIds>{7BEBDC02-1A50-46D9-9617-4976E349EF52}</ViewIds>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <RelationshipName>ppp_RepCallInfo_Traveler</RelationshipName>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                            <IsUserView>false</IsUserView>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{c0d6b2cd-7d96-0ec9-4a07-17e8706bc930}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ca802c53-5637-e776-31a6-58997e4d0944}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b5947dc5-a356-106e-3b1e-eb5b96313d7c}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e38a1272-e706-5a31-1655-1342cc7e5d00}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3191b4a1-8291-4826-c339-3ac412d4d616}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{35d6dbe3-3543-d9d1-6436-b5a43c61c11b}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c56e7dc3-4d02-a223-9a50-264ced26e2e9}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -1765,12 +1810,17 @@
               </labels>
               <control id="header_ppp_recordstatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="ppp_recordstatus" disabled="false" />
             </cell>
-            <cell id="{062da681-febd-403a-9798-be85fe3e7f2a}">
+            <cell id="{062da681-febd-403a-9798-be85fe3e7f2a}" showlabel="true" locklevel="0">
               <labels>
-                <label description="Owner" languagecode="1033" />
+                <label description="Analyst" languagecode="1033" />
                 <label description="Propriétaire" languagecode="1036" />
               </labels>
-              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{588245a0-5475-3d79-23d2-3215690e70d5}" disabled="false">
+                <parameters>
+                  <AutoResolve>true</AutoResolve>
+                  <DisableMru>false</DisableMru>
+                </parameters>
+              </control>
             </cell>
           </row>
         </rows>
@@ -2132,8 +2182,7 @@
       <events>
         <event name="onload" application="false" active="false">
           <Handlers>
-            <Handler functionName="SetCallTime" libraryName="ppp_scripts/Traveler.js" handlerUniqueId="{dac835a6-7ed1-8720-a909-5e30cd0c17e5}" enabled="true" parameters="'ppp_calltime'" passExecutionContext="true" />
-            <Handler functionName="populateCurrentUser" libraryName="ppp_scripts/Traveler.js" handlerUniqueId="{185db91c-25d9-3046-e68c-a40ad8835339}" enabled="true" parameters="'ppp_analyst'" passExecutionContext="true" />
+            <Handler functionName="SetCallTime" libraryName="ppp_scripts/Traveler.js" handlerUniqueId="{dac835a6-7ed1-8720-a909-5e30cd0c17e5}" enabled="false" parameters="'ppp_calltime'" passExecutionContext="true" />
             <Handler functionName="ShowHideTabs" libraryName="ppp_scripts/Traveler.js" handlerUniqueId="{cd9d7555-5752-967d-958a-08d3e27ebe8d}" enabled="true" parameters="'ppp_matchfoundconfirmation', false, [ 'tab_FlightInformation', 'tab_TravelerInformation', 'tab_AnalystObservations']" passExecutionContext="true" />
             <Handler functionName="ShowHideTabs" libraryName="ppp_scripts/Traveler.js" handlerUniqueId="{2840c7cb-1d3d-9654-78a7-c06d6514a711}" enabled="true" parameters="'ppp_matchfoundconfirmation', true, ['tab_DetailedPassengerInformation', 'tab_TravelDetails', 'tab_RecommendedActionStatus', 'tab_NewInformation', 'tab_CaseBrief', 'tab_QuestionsForTransportCanada']" passExecutionContext="true" />
             <Handler functionName="ShowHideTextbox" libraryName="ppp_scripts/Traveler.js" handlerUniqueId="{54ed548b-e4ac-1e00-37b6-65ee1b79e298}" enabled="true" parameters="'ppp_idsused', 927820003 ,'ppp_idusedother'" passExecutionContext="true" />
