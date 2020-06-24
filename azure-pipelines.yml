@@ -20,8 +20,8 @@ steps:
 
 - task: PowerPlatformExportSolution@0
   inputs:
-    authenticationType: 'PowerPlatformEnvironment'
-    PowerPlatformEnvironment: 'TSIS 2.0 Dev'
+    authenticationType: 'PowerPlatformSPN'
+    PowerPlatformSPN: 'TSIS 2.0 Dev'
     SolutionName: '$(SolutionName)'
     SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName).zip'
     ExportRelationshipRoles: true
