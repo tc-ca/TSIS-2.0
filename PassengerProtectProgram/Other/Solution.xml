@@ -125,6 +125,7 @@
       <RootComponent type="60" id="{c1552e1a-930a-494a-a716-806f90794aef}" behavior="0" />
       <RootComponent type="60" id="{c92fabb0-78b5-45ae-84ed-87c9fe91a0f7}" behavior="0" />
       <RootComponent type="60" id="{fed7d1dc-46b6-ea11-a812-000d3a0c8127}" behavior="0" />
+      <RootComponent type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" behavior="0" />
       <RootComponent type="61" schemaName="ppp_scripts/Traveler.js" behavior="0" />
       <RootComponent type="61" schemaName="ppp_Traveler.html" behavior="0" />
       <RootComponent type="62" schemaName="ppp_PassengerProtectProgram" behavior="0" />
@@ -133,24 +134,12 @@
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
-        <Required key="0" type="20" displayName="Manager 1" solution="Active" id="{2037eb1d-4fab-ea11-a812-000d3a0c86a9}" />
-        <Dependent key="1" type="80" schemaName="ppp_PassengerProtectProgram" displayName="Passenger Protect Program" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="2" type="20" displayName="Analyst 2" solution="Active" id="{3967773c-4fab-ea11-a812-000d3a0c86a9}" />
-        <Dependent key="1" type="80" schemaName="ppp_PassengerProtectProgram" displayName="Passenger Protect Program" />
+        <Required key="3" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent key="4" type="80" schemaName="ppp_PassengerProtectProgram" displayName="Passenger Protect Program" />
       </MissingDependency>
       <MissingDependency>
         <Required key="3" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
-        <Dependent key="1" type="80" schemaName="ppp_PassengerProtectProgram" displayName="Passenger Protect Program" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="4" type="66" schemaName="MscrmControls.FlipSwitch.FlipSwitchControl" displayName="MscrmControls.FlipSwitch.FlipSwitchControl" solution="CustomControlsCore (9.1.0000.19227)" />
-        <Dependent key="5" type="60" displayName="Information" parentDisplayName="Traveler" id="{2df0c2f0-69aa-4edb-be91-abfdc11a00bb}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="6" type="66" schemaName="MscrmControls.NumberInput.NumberInputControl" displayName="MscrmControls.NumberInput.NumberInputControl" solution="BaseCustomControlsCore (9.0.2006.2014)" />
-        <Dependent key="5" type="60" displayName="Information" parentDisplayName="Traveler" id="{2df0c2f0-69aa-4edb-be91-abfdc11a00bb}" />
+        <Dependent key="3" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>

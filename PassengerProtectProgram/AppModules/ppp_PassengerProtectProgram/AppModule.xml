@@ -19,9 +19,9 @@
     <AppModuleComponent type="1" schemaName="systemuser" />
   </AppModuleComponents>
   <AppModuleRoleMaps>
+    <Role id="{ebcb2437-59b6-ea11-a812-000d3a0c8127}" />
     <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
-    <Role id="{3967773c-4fab-ea11-a812-000d3a0c86a9}" />
-    <Role id="{2037eb1d-4fab-ea11-a812-000d3a0c86a9}" />
+    <Role id="{70abdd18-59b6-ea11-a812-000d3a0c8127}" />
     <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
   </AppModuleRoleMaps>
   <LocalizedNames>
