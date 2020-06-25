@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{7bebdc02-1a50-46d9-9617-4976e349ef52}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="ppp_name" select="1" icon="1" preview="1">
+        <row name="result" id="ppp_repcallinfoid">
+          <cell name="ppp_name" width="100" />
+          <cell name="ppp_phonenumber" width="126" />
+          <cell name="ppp_calltime" width="162" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="ppp_repcallinfo">
+          <attribute name="ppp_repcallinfoid" />
+          <attribute name="ppp_phonenumber" />
+          <attribute name="ppp_calltime" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="ppp_calltime" descending="true" />
+          <attribute name="ppp_name" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.2</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Representative Caller Informations" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
