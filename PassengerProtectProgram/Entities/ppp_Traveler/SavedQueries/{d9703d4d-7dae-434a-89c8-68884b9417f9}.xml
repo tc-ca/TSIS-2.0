@@ -9,7 +9,7 @@
     <savedqueryid>{d9703d4d-7dae-434a-89c8-68884b9417f9}</savedqueryid>
     <layoutxml>
       <grid name="resultset" jump="ppp_name" select="1" icon="1" preview="1">
-        <row name="result" id="ppp_travellerid">
+        <row name="result" id="ppp_travelerid">
           <cell name="ppp_name" width="202" />
           <cell name="ppp_aircarrier" width="100" />
           <cell name="ppp_flightnumber" width="100" />
@@ -22,7 +22,7 @@
     <querytype>0</querytype>
     <fetchxml>
       <fetch version="1.0" mapping="logical">
-        <entity name="ppp_traveller">
+        <entity name="ppp_traveler">
           <attribute name="ppp_name" />
           <attribute name="createdon" />
           <order attribute="ppp_name" descending="false" />
@@ -31,7 +31,7 @@
           </filter>
           <attribute name="ppp_flightnumber" />
           <attribute name="ppp_recordstatus" />
-          <attribute name="ppp_travellerid" />
+          <attribute name="ppp_travelerid" />
           <attribute name="ppp_aircarrier" />
           <attribute name="ownerid" />
         </entity>

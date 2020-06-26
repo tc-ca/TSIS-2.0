@@ -124,7 +124,7 @@
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
-                      <cell id="{768fc44d-f5b8-4d65-9864-9708f4dca451}">
+                      <cell id="{768fc44d-f5b8-4d65-9864-9708f4dca451}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -646,7 +646,7 @@
                         <labels>
                           <label description="Match Found Confirmation" languagecode="1033" />
                         </labels>
-                        <control id="WebResource_traveller" classid="{9FDF5F91-88B1-47f4-AD53-C11EFC01A01D}">
+                        <control id="WebResource_traveler" classid="{9FDF5F91-88B1-47f4-AD53-C11EFC01A01D}">
                           <parameters>
                             <Url>ppp_Traveler.html</Url>
                             <PassParameters>false</PassParameters>
@@ -1700,25 +1700,6 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{25baa150-76f0-40a7-b430-4f664bb30364}" showlabel="true" locklevel="0">
-                        <labels>
-                          <label description="Time of Direction (YYYY-MM-DD)" languagecode="1033" />
-                          <label description="Time of Direction (fr)" languagecode="1036" />
-                        </labels>
-                        <control id="ppp_directiontime" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="ppp_directiontime" disabled="false" uniqueid="{c6ea4149-8432-e7ec-4371-39c3332b958b}" />
-                      </cell>
-                      <cell id="{367703d7-d04c-280a-24cc-272390aea89a}" showlabel="false">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                      <cell id="{ac0428d1-9c87-4dcc-3ee5-c722e82b9d1a}" showlabel="false">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                    </row>
-                    <row>
                       <cell id="{00a0a799-39de-e76d-da0b-713472d0041c}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Air Carrier Action" languagecode="1033" />
@@ -1737,11 +1718,11 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{91154e60-d94b-4c96-8e3e-c84ad0b06b33}" showlabel="true" locklevel="0">
+                      <cell id="{2d5450b0-853c-2a68-3eae-0661489360cd}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="Investigation Required" languagecode="1033" />
+                          <label description="Is an Investigation Required?" languagecode="1033" />
                         </labels>
-                        <control id="ppp_investigationrequired" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="ppp_investigationrequired" disabled="false" uniqueid="{18e1d905-9602-d2b6-903a-cc8ebb1403bb}" />
+                        <control id="ppp_investigationrequired" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ppp_investigationrequired" disabled="false" uniqueid="{010e61de-9762-9bd3-41bc-a05c869912b4}" />
                       </cell>
                       <cell id="{1c07e6ac-4b4b-a509-ddab-ebcdea746397}" showlabel="false">
                         <labels>
@@ -1755,12 +1736,12 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{42ee4ed2-51af-4612-9356-726bd7344532}" showlabel="true" locklevel="1" visible="false">
+                      <cell id="{25baa150-76f0-40a7-b430-4f664bb30364}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="Recourse Letter Received" languagecode="1033" />
-                          <label description="Recourse Letter Received (fr)" languagecode="1036" />
+                          <label description="Time of Direction (YYYY-MM-DD)" languagecode="1033" />
+                          <label description="Time of Direction (fr)" languagecode="1036" />
                         </labels>
-                        <control id="ppp_recourseletterreceived" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="ppp_recourseletterreceived" disabled="false" uniqueid="{07131e85-bd43-4560-9228-475a526d6dc1}" />
+                        <control id="ppp_directiontime" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="ppp_directiontime" disabled="false" uniqueid="{c6ea4149-8432-e7ec-4371-39c3332b958b}" />
                       </cell>
                       <cell id="{01c0ac02-7455-ca89-4bb6-49d7342c344c}" showlabel="false">
                         <labels>
@@ -1768,6 +1749,25 @@
                         </labels>
                       </cell>
                       <cell id="{2a170787-6eb4-ee6d-4e18-e6493ebdb642}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{42ee4ed2-51af-4612-9356-726bd7344532}" showlabel="true" locklevel="1" visible="false">
+                        <labels>
+                          <label description="Recourse Letter Received" languagecode="1033" />
+                          <label description="Recourse Letter Received (fr)" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_recourseletterreceived" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="ppp_recourseletterreceived" disabled="false" uniqueid="{07131e85-bd43-4560-9228-475a526d6dc1}" />
+                      </cell>
+                      <cell id="{375d7554-3d37-768e-54a1-768161ae380d}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{c609dc74-72ba-d79a-c0d7-49ca996762d5}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -2101,28 +2101,6 @@
             </parameters>
           </customControl>
         </controlDescription>
-        <controlDescription forControl="{18e1d905-9602-d2b6-903a-cc8ebb1403bb}">
-          <customControl id="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}">
-            <parameters>
-              <datafieldname>ppp_investigationrequired</datafieldname>
-            </parameters>
-          </customControl>
-          <customControl formFactor="0" name="MscrmControls.FlipSwitch.FlipSwitchControl">
-            <parameters>
-              <value>ppp_investigationrequired</value>
-            </parameters>
-          </customControl>
-          <customControl formFactor="1" name="MscrmControls.FlipSwitch.FlipSwitchControl">
-            <parameters>
-              <value>ppp_investigationrequired</value>
-            </parameters>
-          </customControl>
-          <customControl formFactor="2" name="MscrmControls.FlipSwitch.FlipSwitchControl">
-            <parameters>
-              <value>ppp_investigationrequired</value>
-            </parameters>
-          </customControl>
-        </controlDescription>
         <controlDescription forControl="{8340a030-e9dd-492e-3c54-82bd5acd95ab}">
           <customControl id="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}">
             <parameters>
@@ -2187,7 +2165,7 @@
             <Handler functionName="ShowHideTabs" libraryName="ppp_scripts/Traveler.js" handlerUniqueId="{2840c7cb-1d3d-9654-78a7-c06d6514a711}" enabled="true" parameters="'ppp_matchfoundconfirmation', true, ['tab_DetailedPassengerInformation', 'tab_TravelDetails', 'tab_RecommendedActionStatus', 'tab_NewInformation', 'tab_CaseBrief', 'tab_QuestionsForTransportCanada']" passExecutionContext="true" />
             <Handler functionName="ShowHideTextbox" libraryName="ppp_scripts/Traveler.js" handlerUniqueId="{54ed548b-e4ac-1e00-37b6-65ee1b79e298}" enabled="true" parameters="'ppp_idsused', 927820003 ,'ppp_idusedother'" passExecutionContext="true" />
             <Handler functionName="OnLoad" libraryName="ppp_scripts/Traveler.js" handlerUniqueId="{86d162ad-aa32-1d7c-b2cd-7ee64e4cbcaa}" enabled="true" parameters="" passExecutionContext="true" />
-            <Handler functionName="ShowHideWebResource" libraryName="ppp_scripts/Traveler.js" handlerUniqueId="{2d7a9218-2626-c51c-159d-c7345d228137}" enabled="true" parameters="'ppp_matchfound', true, 'WebResource_traveller'" passExecutionContext="true" />
+            <Handler functionName="ShowHideWebResource" libraryName="ppp_scripts/Traveler.js" handlerUniqueId="{2d7a9218-2626-c51c-159d-c7345d228137}" enabled="true" parameters="'ppp_matchfound', true, 'WebResource_traveler'" passExecutionContext="true" />
             <Handler functionName="showHideBusinessProcessFlow" libraryName="ppp_scripts/Traveler.js" handlerUniqueId="{e645764e-de74-8ead-6be1-19cb104a1dd1}" enabled="true" parameters="&quot;ppp_showbpf&quot;" passExecutionContext="true" />
           </Handlers>
         </event>
@@ -2203,12 +2181,17 @@
         </event>
         <event name="onchange" application="false" active="false" attribute="ppp_matchfound">
           <Handlers>
-            <Handler functionName="ShowHideWebResource" libraryName="ppp_scripts/Traveler.js" handlerUniqueId="{87b09787-0735-6c1a-2e6e-d2130a81a958}" enabled="true" parameters="'ppp_matchfound', true, 'WebResource_traveller'" passExecutionContext="true" />
+            <Handler functionName="ShowHideWebResource" libraryName="ppp_scripts/Traveler.js" handlerUniqueId="{87b09787-0735-6c1a-2e6e-d2130a81a958}" enabled="true" parameters="'ppp_matchfound', true, 'WebResource_traveler'" passExecutionContext="true" />
           </Handlers>
         </event>
         <event name="onchange" application="false" active="false" attribute="ppp_showbpf">
           <Handlers>
             <Handler functionName="showHideBusinessProcessFlow" libraryName="ppp_scripts/Traveler.js" handlerUniqueId="{47a50b97-d0b1-da17-b0dc-6a3651153e30}" enabled="true" parameters="&quot;ppp_showbpf&quot;" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="ppp_ispresent">
+          <Handlers>
+            <Handler functionName="statusChangeInProgress" libraryName="ppp_scripts/Traveler.js" handlerUniqueId="{edb9e321-4279-488a-b754-ae43e82289cb}" enabled="true" parameters="" passExecutionContext="true" />
           </Handlers>
         </event>
       </events>

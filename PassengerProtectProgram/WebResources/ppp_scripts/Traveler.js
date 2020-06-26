@@ -1,4 +1,5 @@
-﻿window.parentExecutionContext = null;
+﻿
+window.parentExecutionContext = null;
 window.parentFormContext = null;
 
 function InitializeButton(eContext) {
@@ -10,24 +11,13 @@ function InitializeButton(eContext) {
 function ToggleTabs() {
   var eContext = window.parentExecutionContext;
   var formContext = eContext.getFormContext();
-  var confirmation = formContext.getAttribute('ppp_matchfoundconfirmation');
+  var confirmation = formContext.getAttribute("ppp_matchfoundconfirmation")
   confirmation.setValue(true);
   formContext.data.save();
   //confirmation.setSubmitMode("Always");
 
-  ShowHideTabs(eContext, 'ppp_matchfound', false, [
-    'tab_FlightInformation',
-    'tab_TravelerInformation',
-    'tab_AnalystObservations',
-  ]);
-  ShowHideTabs(eContext, 'ppp_matchfound', true, [
-    'tab_DetailedPassengerInformation',
-    'tab_TravelDetails',
-    'tab_RecommendedActionStatus',
-    'tab_NewInformation',
-    'tab_CaseBrief',
-    'tab_QuestionsForTransportCanada',
-  ]);
+  ShowHideTabs(eContext, 'ppp_matchfound', false, ['tab_FlightInformation', 'tab_TravelerInformation', 'tab_AnalystObservations']);
+  ShowHideTabs(eContext, 'ppp_matchfound', true, ['tab_DetailedPassengerInformation', 'tab_TravelDetails', 'tab_RecommendedActionStatus', 'tab_NewInformation', 'tab_CaseBrief', 'tab_QuestionsForTransportCanada']);
 }
 
 function OnLoad(eContext) {
@@ -35,7 +25,7 @@ function OnLoad(eContext) {
   var formContext = eContext.getFormContext();
 
   // Get the web resource control on the form
-  var wrCtrl = formContext.getControl('WebResource_traveller');
+  var wrCtrl = formContext.getControl("WebResource_traveler");
   // Get the web resource inner content window
   if (wrCtrl !== null && wrCtrl !== undefined) {
     wrCtrl.getContentWindow().then(function (win) {
@@ -60,7 +50,8 @@ function populateCurrentUser(eContext, userFieldName) {
 
   var userField = formContext.getAttribute(userFieldName);
   userField.setValue(currentUser);
-  userField.setSubmitMode('always');
+  userField.setSubmitMode("always");
+
 }
 
 //function populateContactInfo(eContext, repFieldName, phoneFieldName) {
@@ -87,23 +78,24 @@ function populateCurrentUser(eContext, userFieldName) {
 
 //};
 
-// Prefill a Date Field with Todays Date
+// Prefill a Date Field with Todays Date  
 function SetCallTime(eContext, fieldName) {
-  var formContext = eContext.getFormContext();
+  var formContext = eContext.getFormContext();  
   var isCreateForm = formContext.ui.getFormType() == 1;
-  if (!isCreateForm) return;
+  if (!isCreateForm) return; 
   SetNow(eContext, fieldName);
 }
 
 function SetNow(eContext, fieldName) {
-  var formContext = eContext.getFormContext();
+  var formContext = eContext.getFormContext();  
   var field = formContext.getAttribute(fieldName);
   if (field == null || field == 'undefined') return;
   field.setValue(new Date()); // Set the Date field to Today
-  field.setSubmitMode('always'); // Save Disabled Fields
+  field.setSubmitMode("always"); // Save Disabled Fields
 }
 
 function ShowHideWebResource(eContext, fieldName, value, webResource) {
+
   var formContext = eContext.getFormContext();
 
   var field = formContext.getAttribute(fieldName);
@@ -113,7 +105,8 @@ function ShowHideWebResource(eContext, fieldName, value, webResource) {
 
   if (field.getValue() == null) {
     isVisible = false;
-  } else if (field.getValue() == value) {
+  }
+  else if (field.getValue() == value) {
     isVisible = true;
   }
 
@@ -127,9 +120,11 @@ function ShowHideWebResource(eContext, fieldName, value, webResource) {
   //    win.InitializeButton(eContext);
   //  });
   //}
-}
+
+};
 
 function ShowHideTabs(eContext, fieldName, value, tabs) {
+
   var formContext = eContext.getFormContext();
 
   var field = formContext.getAttribute(fieldName);
@@ -139,7 +134,8 @@ function ShowHideTabs(eContext, fieldName, value, tabs) {
 
   if (field.getValue() == null) {
     isVisible = false;
-  } else if (field.getValue() == value) {
+  }
+  else if (field.getValue()==value) {
     isVisible = true;
   }
 
@@ -148,7 +144,7 @@ function ShowHideTabs(eContext, fieldName, value, tabs) {
     if (tab == null || tab == 'undefined') return;
     tab.setVisible(isVisible);
   }
-}
+};
 //'avs_name',
 //  ['tab_FlightInformation', 'tab_PassengerInfo']
 
@@ -168,16 +164,18 @@ function ShowHideTextbox(eContext, optFieldName, value, txtFieldName) {
 
   if (optField.getValue() == null) {
     isVisible = false;
-  } else if (optField.getValue().includes(value)) {
+  }
+  else if (optField.getValue().includes(value)) {
     isVisible = true;
   }
 
   txtField.setVisible(isVisible);
 
   if (isVisible) {
-    targetField.setRequiredLevel('required');
-  } else {
-    targetField.setRequiredLevel('none');
+    targetField.setRequiredLevel("required");
+  }
+  else {
+    targetField.setRequiredLevel("none");
   }
 }
 
@@ -194,11 +192,26 @@ function DisableSubgrid(eContext, gridName) {
 
 //Toggles display of the BPF. Takes the formcontext and the the name of the twoOption field that was changed as a string.
 function showHideBusinessProcessFlow(eContext, twoOptionFieldName) {
-  var formContext = eContext.getFormContext();
-  var twoOptionFieldValue = formContext
-    .getAttribute(twoOptionFieldName)
-    .getValue();
+    var formContext = eContext.getFormContext(); 
+    var twoOptionFieldValue = formContext.getAttribute(twoOptionFieldName).getValue();
 
-  if (twoOptionFieldValue == null || twoOptionFieldValue == 'undefined') return;
-  formContext.ui.process.setVisible(twoOptionFieldValue); //Shows BPF if twoOptionFieldValue is true, hides if false
+    if (twoOptionFieldValue == null || twoOptionFieldValue == 'undefined') return;
+    formContext.ui.process.setVisible(twoOptionFieldValue); //Shows BPF if twoOptionFieldValue is true, hides if false
+}
+
+//Sets the record status to the given status value
+function setRecordStatus(eContext, statusValue) {
+    var formContext = eContext.getFormContext();
+    formContext.getAttribute('ppp_recordstatus').setValue(statusValue)
+}
+
+//Changes status to In-Progress only if passenger is present and current status is Draft
+function statusChangeInProgress(eContext) {
+    var formContext = eContext.getFormContext();
+    var isPresent = formContext.getAttribute('ppp_ispresent').getValue();
+    var isDraft = (formContext.getAttribute("ppp_recordstatus").getValue() == 927820001);
+    
+    if (isPresent && isDraft) {
+        setRecordStatus(eContext, 927820003)
+    }
 }

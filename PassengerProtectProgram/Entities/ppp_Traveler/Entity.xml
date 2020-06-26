@@ -787,7 +787,7 @@
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>0</AppDefaultValue>
-          <optionset Name="ppp_ppp_traveller_boardingpassdenied">
+          <optionset Name="ppp_ppp_traveler_boardingpassdenied">
             <OptionSetType>bit</OptionSetType>
             <IntroducedVersion>1.0.0.0</IntroducedVersion>
             <IsCustomizable>1</IsCustomizable>
@@ -1015,7 +1015,7 @@
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>0</AppDefaultValue>
-          <optionset Name="ppp_ppp_traveller_casebrieftoggle">
+          <optionset Name="ppp_ppp_traveler_casebrieftoggle">
             <OptionSetType>bit</OptionSetType>
             <IntroducedVersion>1.0.0.0</IntroducedVersion>
             <IsCustomizable>1</IsCustomizable>
@@ -1080,7 +1080,7 @@
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>0</AppDefaultValue>
-          <optionset Name="ppp_ppp_traveller_checkindelayed">
+          <optionset Name="ppp_ppp_traveler_checkindelayed">
             <OptionSetType>bit</OptionSetType>
             <IntroducedVersion>1.0.0.0</IntroducedVersion>
             <IsCustomizable>1</IsCustomizable>
@@ -1551,7 +1551,7 @@
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>0</AppDefaultValue>
-          <optionset Name="ppp_ppp_traveller_fromnominatingtoggle">
+          <optionset Name="ppp_ppp_traveler_fromnominatingtoggle">
             <OptionSetType>bit</OptionSetType>
             <IntroducedVersion>1.0.0.0</IntroducedVersion>
             <IsCustomizable>1</IsCustomizable>
@@ -1706,7 +1706,7 @@
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_InvestigationRequired">
-          <Type>bit</Type>
+          <Type>picklist</Type>
           <Name>ppp_investigationrequired</Name>
           <LogicalName>ppp_investigationrequired</LogicalName>
           <RequiredLevel>none</RequiredLevel>
@@ -1735,30 +1735,8 @@
           <IsFilterable>0</IsFilterable>
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
-          <AppDefaultValue>0</AppDefaultValue>
-          <optionset Name="ppp_ppp_traveller_investigationrequired">
-            <OptionSetType>bit</OptionSetType>
-            <IntroducedVersion>1.0.0.2</IntroducedVersion>
-            <IsCustomizable>1</IsCustomizable>
-            <displaynames>
-              <displayname description="Local Enumeration" languagecode="1033" />
-            </displaynames>
-            <Descriptions>
-              <Description description="" languagecode="1033" />
-            </Descriptions>
-            <options>
-              <option value="1">
-                <labels>
-                  <label description="Yes" languagecode="1033" />
-                </labels>
-              </option>
-              <option value="0">
-                <labels>
-                  <label description="No" languagecode="1033" />
-                </labels>
-              </option>
-            </options>
-          </optionset>
+          <AppDefaultValue>-1</AppDefaultValue>
+          <OptionSetName>ppp_investigationrequired</OptionSetName>
           <displaynames>
             <displayname description="Investigation Required" languagecode="1033" />
           </displaynames>
@@ -1797,7 +1775,7 @@
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>0</AppDefaultValue>
-          <optionset Name="ppp_ppp_traveller_ispresent">
+          <optionset Name="ppp_ppp_traveler_ispresent">
             <OptionSetType>bit</OptionSetType>
             <IntroducedVersion>1.0.0.0</IntroducedVersion>
             <IsCustomizable>1</IsCustomizable>
@@ -1944,7 +1922,7 @@
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>0</AppDefaultValue>
-          <optionset Name="ppp_ppp_traveller_matchfound">
+          <optionset Name="ppp_ppp_traveler_matchfound">
             <OptionSetType>bit</OptionSetType>
             <IntroducedVersion>1.0.0.0</IntroducedVersion>
             <IsCustomizable>1</IsCustomizable>
@@ -2009,7 +1987,7 @@
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>0</AppDefaultValue>
-          <optionset Name="ppp_ppp_traveller_matchfoundconfirmation">
+          <optionset Name="ppp_ppp_traveler_matchfoundconfirmation">
             <OptionSetType>bit</OptionSetType>
             <IntroducedVersion>1.0.0.2</IntroducedVersion>
             <IsCustomizable>1</IsCustomizable>
@@ -2438,7 +2416,7 @@
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>0</AppDefaultValue>
-          <optionset Name="ppp_ppp_traveller_opensourcetoggle">
+          <optionset Name="ppp_ppp_traveler_opensourcetoggle">
             <OptionSetType>bit</OptionSetType>
             <IntroducedVersion>1.0.0.0</IntroducedVersion>
             <IsCustomizable>1</IsCustomizable>
@@ -2544,7 +2522,7 @@
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>0</AppDefaultValue>
-          <optionset Name="ppp_ppp_traveller_otherconsiderationstoggle">
+          <optionset Name="ppp_ppp_traveler_otherconsiderationstoggle">
             <OptionSetType>bit</OptionSetType>
             <IntroducedVersion>1.0.0.0</IntroducedVersion>
             <IsCustomizable>1</IsCustomizable>
@@ -2650,7 +2628,7 @@
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>0</AppDefaultValue>
-          <optionset Name="ppp_ppp_traveller_questionsfortctoggle">
+          <optionset Name="ppp_ppp_traveler_questionsfortctoggle">
             <OptionSetType>bit</OptionSetType>
             <IntroducedVersion>1.0.0.0</IntroducedVersion>
             <IsCustomizable>1</IsCustomizable>
@@ -2755,7 +2733,7 @@
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>0</AppDefaultValue>
-          <optionset Name="ppp_ppp_traveller_recourseletterreceived">
+          <optionset Name="ppp_ppp_traveler_recourseletterreceived">
             <OptionSetType>bit</OptionSetType>
             <IntroducedVersion>1.0.0.0</IntroducedVersion>
             <IsCustomizable>1</IsCustomizable>
@@ -2902,7 +2880,7 @@
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>1</AppDefaultValue>
-          <optionset Name="ppp_ppp_traveller_showbpf">
+          <optionset Name="ppp_ppp_traveler_showbpf">
             <OptionSetType>bit</OptionSetType>
             <IntroducedVersion>1.0.0.2</IntroducedVersion>
             <IsCustomizable>1</IsCustomizable>
@@ -3057,8 +3035,8 @@
         </attribute>
         <attribute PhysicalName="ppp_TravelerAutoNumber">
           <Type>nvarchar</Type>
-          <Name>ppp_travellerautonumber</Name>
-          <LogicalName>ppp_travellerautonumber</LogicalName>
+          <Name>ppp_travelerautonumber</Name>
+          <LogicalName>ppp_travelerautonumber</LogicalName>
           <RequiredLevel>none</RequiredLevel>
           <DisplayMask>ReadOnlyInUI|ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
           <ImeMode>auto</ImeMode>
@@ -3098,8 +3076,8 @@
         </attribute>
         <attribute PhysicalName="ppp_TravelerDenied">
           <Type>bit</Type>
-          <Name>ppp_travellerdenied</Name>
-          <LogicalName>ppp_travellerdenied</LogicalName>
+          <Name>ppp_travelerdenied</Name>
+          <LogicalName>ppp_travelerdenied</LogicalName>
           <RequiredLevel>none</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
           <ImeMode>auto</ImeMode>
@@ -3127,7 +3105,7 @@
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
           <AppDefaultValue>0</AppDefaultValue>
-          <optionset Name="ppp_ppp_traveller_travellerdenied">
+          <optionset Name="ppp_ppp_traveler_travelerdenied">
             <OptionSetType>bit</OptionSetType>
             <IntroducedVersion>1.0.0.0</IntroducedVersion>
             <IsCustomizable>1</IsCustomizable>
@@ -3163,8 +3141,8 @@
         </attribute>
         <attribute PhysicalName="ppp_TravelerId">
           <Type>primarykey</Type>
-          <Name>ppp_travellerid</Name>
-          <LogicalName>ppp_travellerid</LogicalName>
+          <Name>ppp_travelerid</Name>
+          <LogicalName>ppp_travelerid</LogicalName>
           <RequiredLevel>systemrequired</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|RequiredForGrid</DisplayMask>
           <ImeMode>auto</ImeMode>
@@ -3349,7 +3327,7 @@
           <IsFilterable>1</IsFilterable>
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
-          <optionset Name="ppp_traveller_statecode">
+          <optionset Name="ppp_traveler_statecode">
             <OptionSetType>state</OptionSetType>
             <IntroducedVersion>1.0.0.0</IntroducedVersion>
             <IsCustomizable>1</IsCustomizable>
@@ -3415,7 +3393,7 @@
           <IsFilterable>0</IsFilterable>
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
-          <optionset Name="ppp_traveller_statuscode">
+          <optionset Name="ppp_traveler_statuscode">
             <OptionSetType>status</OptionSetType>
             <IntroducedVersion>1.0.0.0</IntroducedVersion>
             <IsCustomizable>1</IsCustomizable>
@@ -3576,7 +3554,7 @@
           </Descriptions>
         </attribute>
       </attributes>
-      <EntitySetName>ppp_travellers</EntitySetName>
+      <EntitySetName>ppp_travelers</EntitySetName>
       <IsDuplicateCheckSupported>1</IsDuplicateCheckSupported>
       <IsBusinessProcessEnabled>1</IsBusinessProcessEnabled>
       <IsRequiredOffline>0</IsRequiredOffline>

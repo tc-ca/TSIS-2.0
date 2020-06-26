@@ -8,8 +8,8 @@
     <isdefault>1</isdefault>
     <savedqueryid>{6fcd8ada-f9f1-4602-af22-db0178139987}</savedqueryid>
     <layoutxml>
-      <grid name="ppp_travellers" jump="ppp_name" select="1" icon="1" preview="0">
-        <row name="ppp_traveller" id="ppp_travellerid">
+      <grid name="ppp_travelers" jump="ppp_name" select="1" icon="1" preview="0">
+        <row name="ppp_traveler" id="ppp_travelerid">
           <cell name="ppp_name" width="300" />
           <cell name="createdon" width="125" />
         </row>
@@ -18,8 +18,8 @@
     <querytype>64</querytype>
     <fetchxml>
       <fetch version="1.0" mapping="logical">
-        <entity name="ppp_traveller">
-          <attribute name="ppp_travellerid" />
+        <entity name="ppp_traveler">
+          <attribute name="ppp_travelerid" />
           <attribute name="ppp_name" />
           <attribute name="createdon" />
           <filter type="and">

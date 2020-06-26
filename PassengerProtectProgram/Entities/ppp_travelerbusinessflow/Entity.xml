@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Entity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Name LocalizedName="Traveler Business Flow" OriginalName="Traveler Business Flow">ppp_travellerbusinessflow</Name>
+  <Name LocalizedName="Traveler Business Flow" OriginalName="Traveler Business Flow">ppp_travelerbusinessflow</Name>
   <EntityInfo>
-    <entity Name="ppp_travellerbusinessflow">
+    <entity Name="ppp_travelerbusinessflow">
       <LocalizedNames>
         <LocalizedName description="Traveler Business Flow" languagecode="1033" />
       </LocalizedNames>
@@ -135,7 +135,7 @@
           <Descriptions>
             <Description description="Duration of Business Process Flow" languagecode="1033" />
           </Descriptions>
-          <FormulaDefinitionFileName>/Formulas/ppp_travellerbusinessflow-bpf_duration.xaml</FormulaDefinitionFileName>
+          <FormulaDefinitionFileName>/Formulas/ppp_travelerbusinessflow-bpf_duration.xaml</FormulaDefinitionFileName>
         </attribute>
         <attribute PhysicalName="bpf_name">
           <Type>nvarchar</Type>
@@ -177,10 +177,10 @@
             <Description description="Description" languagecode="1033" />
           </Descriptions>
         </attribute>
-        <attribute PhysicalName="bpf_ppp_travellerid">
+        <attribute PhysicalName="bpf_ppp_travelerid">
           <Type>lookup</Type>
-          <Name>bpf_ppp_travellerid</Name>
-          <LogicalName>bpf_ppp_travellerid</LogicalName>
+          <Name>bpf_ppp_travelerid</Name>
+          <LogicalName>bpf_ppp_travelerid</LogicalName>
           <RequiredLevel>none</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
           <ImeMode>auto</ImeMode>
@@ -738,7 +738,7 @@
           <IsFilterable>1</IsFilterable>
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
-          <optionset Name="ppp_travellerbusinessflow_statecode">
+          <optionset Name="ppp_travelerbusinessflow_statecode">
             <OptionSetType>state</OptionSetType>
             <IntroducedVersion>1.0</IntroducedVersion>
             <IsCustomizable>1</IsCustomizable>
@@ -804,7 +804,7 @@
           <IsFilterable>0</IsFilterable>
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
-          <optionset Name="ppp_travellerbusinessflow_statuscode">
+          <optionset Name="ppp_travelerbusinessflow_statuscode">
             <OptionSetType>status</OptionSetType>
             <IntroducedVersion>1.0</IntroducedVersion>
             <IsCustomizable>1</IsCustomizable>
@@ -971,7 +971,7 @@
           </Descriptions>
         </attribute>
       </attributes>
-      <EntitySetName>ppp_travellerbusinessflows</EntitySetName>
+      <EntitySetName>ppp_travelerbusinessflows</EntitySetName>
       <IsDuplicateCheckSupported>0</IsDuplicateCheckSupported>
       <IsBusinessProcessEnabled>0</IsBusinessProcessEnabled>
       <IsRequiredOffline>0</IsRequiredOffline>

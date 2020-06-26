@@ -9,7 +9,7 @@
     <savedqueryid>{193b4749-d406-4824-b0d3-d782b9115b65}</savedqueryid>
     <layoutxml>
       <grid name="resultset" jump="ppp_name" select="1" icon="1" preview="1">
-        <row name="result" id="ppp_travellerid">
+        <row name="result" id="ppp_travelerid">
           <cell name="ppp_name" width="300" />
           <cell name="createdon" width="125" />
         </row>
@@ -18,8 +18,8 @@
     <querytype>0</querytype>
     <fetchxml>
       <fetch version="1.0" mapping="logical">
-        <entity name="ppp_traveller">
-          <attribute name="ppp_travellerid" />
+        <entity name="ppp_traveler">
+          <attribute name="ppp_travelerid" />
           <attribute name="ppp_name" />
           <attribute name="createdon" />
           <order attribute="ppp_name" descending="false" />

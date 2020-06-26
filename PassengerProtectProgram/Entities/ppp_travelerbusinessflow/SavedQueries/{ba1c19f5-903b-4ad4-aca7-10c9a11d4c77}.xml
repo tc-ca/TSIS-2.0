@@ -8,9 +8,9 @@
     <isdefault>1</isdefault>
     <savedqueryid>{ba1c19f5-903b-4ad4-aca7-10c9a11d4c77}</savedqueryid>
     <layoutxml>
-      <grid name="ppp_travellerbusinessflows" jump="bpf_name" select="1" icon="1" preview="0">
-        <row name="ppp_travellerbusinessflow" id="businessprocessflowinstanceid">
-          <cell name="bpf_ppp_travellerid" width="300" />
+      <grid name="ppp_travelerbusinessflows" jump="bpf_name" select="1" icon="1" preview="0">
+        <row name="ppp_travelerbusinessflow" id="businessprocessflowinstanceid">
+          <cell name="bpf_ppp_travelerid" width="300" />
           <cell name="activestageid" width="150" />
           <cell name="statuscode" width="150" />
           <cell name="createdon" width="150" />
@@ -21,11 +21,11 @@
     <querytype>64</querytype>
     <fetchxml>
       <fetch version="1.0" mapping="logical">
-        <entity name="ppp_travellerbusinessflow">
+        <entity name="ppp_travelerbusinessflow">
           <attribute name="businessprocessflowinstanceid" />
           <attribute name="bpf_name" />
           <attribute name="createdon" />
-          <attribute name="bpf_ppp_travellerid" />
+          <attribute name="bpf_ppp_travelerid" />
           <attribute name="activestageid" />
           <attribute name="statecode" />
           <attribute name="createdby" />
