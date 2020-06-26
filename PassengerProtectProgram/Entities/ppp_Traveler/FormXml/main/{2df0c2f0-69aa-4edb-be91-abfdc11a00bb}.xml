@@ -646,7 +646,7 @@
                         <labels>
                           <label description="Match Found Confirmation" languagecode="1033" />
                         </labels>
-                        <control id="WebResource_traveler" classid="{9FDF5F91-88B1-47f4-AD53-C11EFC01A01D}">
+                        <control id="WebResource_traveller" classid="{9FDF5F91-88B1-47f4-AD53-C11EFC01A01D}">
                           <parameters>
                             <Url>ppp_Traveler.html</Url>
                             <PassParameters>false</PassParameters>
@@ -2187,7 +2187,7 @@
             <Handler functionName="ShowHideTabs" libraryName="ppp_scripts/Traveler.js" handlerUniqueId="{2840c7cb-1d3d-9654-78a7-c06d6514a711}" enabled="true" parameters="'ppp_matchfoundconfirmation', true, ['tab_DetailedPassengerInformation', 'tab_TravelDetails', 'tab_RecommendedActionStatus', 'tab_NewInformation', 'tab_CaseBrief', 'tab_QuestionsForTransportCanada']" passExecutionContext="true" />
             <Handler functionName="ShowHideTextbox" libraryName="ppp_scripts/Traveler.js" handlerUniqueId="{54ed548b-e4ac-1e00-37b6-65ee1b79e298}" enabled="true" parameters="'ppp_idsused', 927820003 ,'ppp_idusedother'" passExecutionContext="true" />
             <Handler functionName="OnLoad" libraryName="ppp_scripts/Traveler.js" handlerUniqueId="{86d162ad-aa32-1d7c-b2cd-7ee64e4cbcaa}" enabled="true" parameters="" passExecutionContext="true" />
-            <Handler functionName="ShowHideWebResource" libraryName="ppp_scripts/Traveler.js" handlerUniqueId="{2d7a9218-2626-c51c-159d-c7345d228137}" enabled="true" parameters="'ppp_matchfound', true, 'WebResource_traveler'" passExecutionContext="true" />
+            <Handler functionName="ShowHideWebResource" libraryName="ppp_scripts/Traveler.js" handlerUniqueId="{2d7a9218-2626-c51c-159d-c7345d228137}" enabled="true" parameters="'ppp_matchfound', true, 'WebResource_traveller'" passExecutionContext="true" />
             <Handler functionName="showHideBusinessProcessFlow" libraryName="ppp_scripts/Traveler.js" handlerUniqueId="{e645764e-de74-8ead-6be1-19cb104a1dd1}" enabled="true" parameters="&quot;ppp_showbpf&quot;" passExecutionContext="true" />
           </Handlers>
         </event>
@@ -2203,7 +2203,7 @@
         </event>
         <event name="onchange" application="false" active="false" attribute="ppp_matchfound">
           <Handlers>
-            <Handler functionName="ShowHideWebResource" libraryName="ppp_scripts/Traveler.js" handlerUniqueId="{87b09787-0735-6c1a-2e6e-d2130a81a958}" enabled="true" parameters="'ppp_matchfound', true, 'WebResource_traveler'" passExecutionContext="true" />
+            <Handler functionName="ShowHideWebResource" libraryName="ppp_scripts/Traveler.js" handlerUniqueId="{87b09787-0735-6c1a-2e6e-d2130a81a958}" enabled="true" parameters="'ppp_matchfound', true, 'WebResource_traveller'" passExecutionContext="true" />
           </Handlers>
         </event>
         <event name="onchange" application="false" active="false" attribute="ppp_showbpf">

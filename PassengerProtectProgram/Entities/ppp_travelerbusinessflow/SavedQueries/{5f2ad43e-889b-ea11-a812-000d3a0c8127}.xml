@@ -10,7 +10,7 @@
     <querytype>8192</querytype>
     <fetchxml>
       <fetch version="1.0" mapping="logical" output-format="xml-platform">
-        <entity name="ppp_travelerbusinessflow">
+        <entity name="ppp_travellerbusinessflow">
           <attribute name="businessprocessflowinstanceid" />
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />

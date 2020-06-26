@@ -10,7 +10,7 @@
     <layoutxml>
       <grid name="resultset" jump="bpf_name" select="1" icon="1" preview="1">
         <row name="result" id="businessprocessflowinstanceid">
-          <cell name="bpf_ppp_travelerid" width="300" />
+          <cell name="bpf_ppp_travellerid" width="300" />
           <cell name="activestageid" width="150" />
           <cell name="statuscode" width="150" />
           <cell name="createdon" width="150" />
@@ -21,11 +21,11 @@
     <querytype>0</querytype>
     <fetchxml>
       <fetch version="1.0" mapping="logical">
-        <entity name="ppp_travelerbusinessflow">
+        <entity name="ppp_travellerbusinessflow">
           <attribute name="businessprocessflowinstanceid" />
           <attribute name="bpf_name" />
           <attribute name="createdon" />
-          <attribute name="bpf_ppp_travelerid" />
+          <attribute name="bpf_ppp_travellerid" />
           <attribute name="activestageid" />
           <attribute name="statecode" />
           <attribute name="createdby" />

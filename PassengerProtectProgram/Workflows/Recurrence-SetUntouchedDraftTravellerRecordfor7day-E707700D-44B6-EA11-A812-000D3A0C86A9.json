@@ -1,1 +1,96 @@
-{"properties":{"connectionReferences":{"shared_commondataservice":{"runtimeSource":"embedded","connection":{},"api":{"name":"shared_commondataservice"}}},"definition":{"$schema":"https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#","contentVersion":"1.0.0.0","parameters":{"$connections":{"defaultValue":{},"type":"Object"},"$authentication":{"defaultValue":{},"type":"SecureObject"}},"triggers":{"Recurrence_at_1am_everyday":{"recurrence":{"frequency":"Day","interval":1,"schedule":{"hours":["1"]}},"type":"Recurrence"}},"actions":{"List_Draft_Traveller_untouched_for_7_days":{"runAfter":{},"type":"OpenApiConnection","inputs":{"host":{"connectionName":"shared_commondataservice","operationId":"GetItems_V2","apiId":"/providers/Microsoft.PowerApps/apis/shared_commondataservice"},"parameters":{"dataset":"default.cds","table":"ppp_travelers","$filter":"ppp_recordstatus eq 927820001 and modifiedon lt @{addDays(utcNow(),-7)}"},"authentication":"@parameters('$authentication')"}},"Apply_to_each":{"foreach":"@outputs('List_Draft_Traveller_untouched_for_7_days')?['body/value']","actions":{"Set_Status_to_Unresolved_and_clear_Traveller_Info":{"runAfter":{},"type":"OpenApiConnection","inputs":{"host":{"connectionName":"shared_commondataservice","operationId":"PatchItem_V2","apiId":"/providers/Microsoft.PowerApps/apis/shared_commondataservice"},"parameters":{"dataset":"default.cds","table":"ppp_travelers","id":"@items('Apply_to_each')?['ppp_travelerid']","item/ppp_dateofbirth":"@null","item/ppp_firstname":"@null","item/ppp_gender":"@null","item/ppp_lastname":"@null","item/ppp_middlename":"@null","item/_ownerid_type":""},"authentication":"@parameters('$authentication')"}}},"runAfter":{"List_Draft_Traveller_untouched_for_7_days":["Succeeded"]},"type":"Foreach"}},"outputs":{}}},"schemaVersion":"1.0.0.0"}
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataservice": {
+        "runtimeSource": "embedded",
+        "connection": {},
+        "api": {
+          "name": "shared_commondataservice"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "Recurrence_at_1am_everyday": {
+          "recurrence": {
+            "frequency": "Day",
+            "interval": 1,
+            "schedule": {
+              "hours": [
+                "1"
+              ]
+            }
+          },
+          "type": "Recurrence"
+        }
+      },
+      "actions": {
+        "List_Draft_Traveller_untouched_for_7_days": {
+          "runAfter": {},
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataservice",
+              "operationId": "GetItems_V2",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataservice"
+            },
+            "parameters": {
+              "dataset": "default.cds",
+              "table": "ppp_travellers",
+              "$filter": "ppp_recordstatus eq 927820001 and modifiedon lt @{addDays(utcNow(),-7)}"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Apply_to_each": {
+          "foreach": "@outputs('List_Draft_Traveller_untouched_for_7_days')?['body/value']",
+          "actions": {
+            "Set_Status_to_Unresolved_and_clear_Traveller_Info": {
+              "runAfter": {},
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_commondataservice",
+                  "operationId": "PatchItem_V2",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataservice"
+                },
+                "parameters": {
+                  "dataset": "default.cds",
+                  "table": "ppp_travellers",
+                  "id": "@items('Apply_to_each')?['ppp_travellerid']",
+                  "item/ppp_dateofbirth": "@null",
+                  "item/ppp_firstname": "@null",
+                  "item/ppp_gender": "@null",
+                  "item/ppp_lastname": "@null",
+                  "item/ppp_middlename": "@null",
+                  "item/_ownerid_type": ""
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            }
+          },
+          "runAfter": {
+            "List_Draft_Traveller_untouched_for_7_days": [
+              "Succeeded"
+            ]
+          },
+          "type": "Foreach"
+        }
+      },
+      "outputs": {}
+    }
+  },
+  "schemaVersion": "1.0.0.0"
+}

@@ -10,8 +10,8 @@
     <querytype>8192</querytype>
     <fetchxml>
       <fetch version="1.0" mapping="logical" output-format="xml-platform">
-        <entity name="ppp_traveler">
-          <attribute name="ppp_travelerid" />
+        <entity name="ppp_traveller">
+          <attribute name="ppp_travellerid" />
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
             <condition attribute="ownerid" operator="eq-userid" />

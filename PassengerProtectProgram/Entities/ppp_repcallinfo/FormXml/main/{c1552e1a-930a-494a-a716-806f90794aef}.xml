@@ -59,7 +59,7 @@
                         <labels>
                           <label description="Traveller Record Number" languagecode="1033" />
                         </labels>
-                        <control id="ppp_traveler" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ppp_traveler" disabled="true" />
+                        <control id="ppp_traveller" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ppp_traveller" disabled="true" />
                       </cell>
                     </row>
                   </rows>

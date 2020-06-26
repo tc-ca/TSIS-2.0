@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.1.0.19227" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.1.0.19227" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>PassengerProtectProgram</UniqueName>
     <LocalizedNames>
@@ -85,8 +86,8 @@
     <RootComponents>
       <RootComponent type="1" schemaName="ovs_facility" behavior="0" />
       <RootComponent type="1" schemaName="ppp_repcallinfo" behavior="0" />
-      <RootComponent type="1" schemaName="ppp_traveler" behavior="0" />
-      <RootComponent type="1" schemaName="ppp_travelerbusinessflow" behavior="0" />
+      <RootComponent type="1" schemaName="ppp_traveller" behavior="0" />
+      <RootComponent type="1" schemaName="ppp_travellerbusinessflow" behavior="0" />
       <RootComponent type="1" schemaName="tc_country" behavior="0" />
       <RootComponent type="1" schemaName="tc_province" behavior="0" />
       <RootComponent type="9" schemaName="ovs_facilitytype" behavior="0" />

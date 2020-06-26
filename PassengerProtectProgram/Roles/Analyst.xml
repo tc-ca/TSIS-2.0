@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Role id="{70abdd18-59b6-ea11-a812-000d3a0c8127}" name="Analyst" isinherited="0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Role id="{70abdd18-59b6-ea11-a812-000d3a0c8127}" name="Analyst" isinherited="0" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <IsCustomizable>1</IsCustomizable>
   <RolePrivileges>
     <RolePrivilege name="prvAddressBook" level="Global" />
     <RolePrivilege name="prvAppendovs_Facility" level="Global" />
     <RolePrivilege name="prvAppendppp_Traveler" level="Global" />
-    <RolePrivilege name="prvAppendppp_travelerbusinessflow" level="Global" />
+    <RolePrivilege name="prvAppendppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvAppendresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvAppendToAccount" level="Global" />
     <RolePrivilege name="prvAppendToovs_Facility" level="Global" />
     <RolePrivilege name="prvAppendToppp_Traveler" level="Global" />
-    <RolePrivilege name="prvAppendToppp_travelerbusinessflow" level="Global" />
+    <RolePrivilege name="prvAppendToppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvAppendToresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvAppendTotc_Province" level="Global" />
     <RolePrivilege name="prvAppendToUser" level="Local" />
@@ -23,14 +24,14 @@
     <RolePrivilege name="prvCreateExchangeSyncIdMapping" level="Basic" />
     <RolePrivilege name="prvCreateOrgEmailTemplates" level="Global" />
     <RolePrivilege name="prvCreateppp_Traveler" level="Global" />
-    <RolePrivilege name="prvCreateppp_travelerbusinessflow" level="Global" />
+    <RolePrivilege name="prvCreateppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvCreateresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvCreateSharePointData" level="Global" />
     <RolePrivilege name="prvCreateUserSettings" level="Local" />
     <RolePrivilege name="prvCreateWorkflow" level="Local" />
     <RolePrivilege name="prvDeleteExchangeSyncIdMapping" level="Basic" />
     <RolePrivilege name="prvDeleteppp_Traveler" level="Global" />
-    <RolePrivilege name="prvDeleteppp_travelerbusinessflow" level="Global" />
+    <RolePrivilege name="prvDeleteppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvDeleteresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvDeleteUserSettings" level="Local" />
     <RolePrivilege name="prvDocumentGeneration" level="Global" />
@@ -50,7 +51,7 @@
     <RolePrivilege name="prvReadPluginAssembly" level="Global" />
     <RolePrivilege name="prvReadPluginType" level="Global" />
     <RolePrivilege name="prvReadppp_Traveler" level="Global" />
-    <RolePrivilege name="prvReadppp_travelerbusinessflow" level="Global" />
+    <RolePrivilege name="prvReadppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvReadQuery" level="Global" />
     <RolePrivilege name="prvReadRelationship" level="Global" />
     <RolePrivilege name="prvReadresco_UserSettings" level="Basic" />
@@ -76,7 +77,7 @@
     <RolePrivilege name="prvWriteAppModule" level="Global" />
     <RolePrivilege name="prvWriteExchangeSyncIdMapping" level="Basic" />
     <RolePrivilege name="prvWriteppp_Traveler" level="Global" />
-    <RolePrivilege name="prvWriteppp_travelerbusinessflow" level="Global" />
+    <RolePrivilege name="prvWriteppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvWriteresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvWriteSharePointData" level="Global" />
     <RolePrivilege name="prvWriteUserSettings" level="Local" />

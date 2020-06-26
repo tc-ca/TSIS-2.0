@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Workflow WorkflowId="{f54fe17c-8e7a-47a9-8ac5-d0c2a77eef59}" Name="Traveler Business Flow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Workflow WorkflowId="{f54fe17c-8e7a-47a9-8ac5-d0c2a77eef59}" Name="Traveler Business Flow" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <XamlFileName>/Workflows/TravelerBusinessFlow-F54FE17C-8E7A-47A9-8AC5-D0C2A77EEF59.xaml</XamlFileName>
   <Type>1</Type>
   <Subprocess>0</Subprocess>
@@ -15,7 +16,7 @@
   <StatusCode>2</StatusCode>
   <processorder>100</processorder>
   <RunAs>1</RunAs>
-  <UniqueName>ppp_travelerbusinessflow</UniqueName>
+  <UniqueName>ppp_travellerbusinessflow</UniqueName>
   <IsTransacted>1</IsTransacted>
   <IntroducedVersion>1.0.0.0</IntroducedVersion>
   <IsCustomizable>1</IsCustomizable>
