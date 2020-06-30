@@ -38,7 +38,7 @@
     </fetchxml>
     <IntroducedVersion>1.0.0.2</IntroducedVersion>
     <LocalizedNames>
-      <LocalizedName description="All Draft Traveler Records" languagecode="1033" />
+      <LocalizedName description="All Draft Traveller Validation Records" languagecode="1033" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>
