@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Workflow WorkflowId="{63786bac-0eb7-ea11-a812-000d3a0c8127}" Name="Toggle Air Carrier Action Visibility" Description="Click to add description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <XamlFileName>/Workflows/ToggleAirCarrierActionVisibility-63786BAC-0EB7-EA11-A812-000D3A0C8127.xaml</XamlFileName>
+<Workflow WorkflowId="{b6eb0904-16ba-ea11-a812-000d3a0c86a9}" Name="Flight Origin cannot match Flight Destination" Description="Click to add description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/FlightOrigincannotmatchFlightDestination-B6EB0904-16BA-EA11-A812-000D3A0C86A9.xaml</XamlFileName>
   <Type>1</Type>
   <Subprocess>0</Subprocess>
   <Category>2</Category>
@@ -22,9 +22,17 @@
   <ProcessTriggerScope>2</ProcessTriggerScope>
   <PrimaryEntity>ppp_Traveler</PrimaryEntity>
   <LocalizedNames>
-    <LocalizedName languagecode="1033" description="Toggle Air Carrier Action Visibility" />
+    <LocalizedName languagecode="1033" description="Flight Origin cannot match Flight Destination" />
   </LocalizedNames>
   <Descriptions>
     <Description languagecode="1033" description="Click to add description" />
   </Descriptions>
+  <labels>
+    <steplabels id="{5bc3416b-3819-474c-94f8-aad3fab5b2dc}">
+      <label languagecode="1033" description="Flight Destination cannot be equal to Flight Origin" />
+    </steplabels>
+    <steplabels id="{54705e9d-914f-4149-902c-266886e187e3}">
+      <label languagecode="1033" description="Flight Origin cannot be equal to Flight Destination" />
+    </steplabels>
+  </labels>
 </Workflow>

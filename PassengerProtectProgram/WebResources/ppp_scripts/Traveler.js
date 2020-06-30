@@ -215,3 +215,13 @@ function statusChangeInProgress(eContext) {
         setRecordStatus(eContext, 927820003)
     }
 }
+
+//Shows Passport Number if Passport was selected as an ID, hides if not
+function showHidePassportNumber(eContext) {
+    var formContext = eContext.getFormContext();
+    var idUsedArray = formContext.getAttribute('ppp_idsused').getValue();
+    var passportSelected = idUsedArray.includes(927820000);
+    formContext.getControl('ppp_passportnumber').setVisible(passportSelected);
+}
+
+

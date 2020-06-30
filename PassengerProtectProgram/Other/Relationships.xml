@@ -34,6 +34,7 @@
   <EntityRelationship Name="ppp_RepCallInfo_Traveler" />
   <EntityRelationship Name="ppp_Traveler_AirCarrier_Account" />
   <EntityRelationship Name="ppp_Traveler_Citizenship_tc_Country" />
+  <EntityRelationship Name="ppp_Traveler_Country" />
   <EntityRelationship Name="ppp_Traveler_FlightDestination_ovs_Facili" />
   <EntityRelationship Name="ppp_Traveler_FlightOrigin_ovs_Facility" />
   <EntityRelationship Name="tc_Province_Country" />
