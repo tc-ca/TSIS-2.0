@@ -24,7 +24,7 @@
           <Variable x:TypeArguments="x:Object" Name="ConditionBranchStep3_1" />
         </sco:Collection>
         <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
-          <mxswa:GetEntityProperty Attribute="ppp_nominatingagencyoptions" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="ppp_traveler" Value="[ConditionBranchStep2_1]">
+          <mxswa:GetEntityProperty Attribute="ppp_nominatingagencyoptions" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="ppp_traveller" Value="[ConditionBranchStep2_1]">
             <mxswa:GetEntityProperty.TargetType>
               <InArgument x:TypeArguments="s:Type">
                 <mxswa:ReferenceLiteral x:TypeArguments="s:Type">
@@ -61,12 +61,12 @@
                   <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
                   <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
                     <Sequence DisplayName="SetVisibilityStep3: New Action">
-                      <mcwc:SetVisibility ControlId="ppp_nominatingagencyoptionother" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="ppp_traveler" IsVisible="True" />
+                      <mcwc:SetVisibility ControlId="ppp_nominatingagencyoptionother" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="ppp_traveller" IsVisible="True" />
                     </Sequence>
                     <Sequence DisplayName="SetFieldRequiredLevelStep3: New Action">
-                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;ppp_traveler&quot;)]" />
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;ppp_traveller&quot;)]" />
                       <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
-                      <mcwc:SetFieldRequiredLevel ControlId="ppp_nominatingagencyoptionother" ControlType="standard" DisplayName="SetFieldRequiredLevelStep3" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="ppp_traveler" RequiredLevel="Required" />
+                      <mcwc:SetFieldRequiredLevel ControlId="ppp_nominatingagencyoptionother" ControlType="standard" DisplayName="SetFieldRequiredLevelStep3" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="ppp_traveller" RequiredLevel="Required" />
                     </Sequence>
                   </sco:Collection>
                 </mxswa:ActivityReference.Properties>
@@ -95,12 +95,12 @@
                   <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
                   <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
                     <Sequence DisplayName="SetVisibilityStep2: Not Visible">
-                      <mcwc:SetVisibility ControlId="ppp_nominatingagencyoptionother" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="ppp_traveler" IsVisible="False" />
+                      <mcwc:SetVisibility ControlId="ppp_nominatingagencyoptionother" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="ppp_traveller" IsVisible="False" />
                     </Sequence>
                     <Sequence DisplayName="SetFieldRequiredLevelStep4: New Action">
-                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;ppp_traveler&quot;)]" />
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;ppp_traveller&quot;)]" />
                       <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
-                      <mcwc:SetFieldRequiredLevel ControlId="ppp_nominatingagencyoptionother" ControlType="standard" DisplayName="SetFieldRequiredLevelStep4" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="ppp_traveler" RequiredLevel="None" />
+                      <mcwc:SetFieldRequiredLevel ControlId="ppp_nominatingagencyoptionother" ControlType="standard" DisplayName="SetFieldRequiredLevelStep4" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="ppp_traveller" RequiredLevel="None" />
                     </Sequence>
                   </sco:Collection>
                 </mxswa:ActivityReference.Properties>

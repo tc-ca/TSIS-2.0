@@ -59,7 +59,7 @@
                         <labels>
                           <label description="Traveller Record Number" languagecode="1033" />
                         </labels>
-                        <control id="ppp_traveler" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ppp_traveler" disabled="true" />
+                        <control id="ppp_traveller" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ppp_traveller" disabled="true" />
                       </cell>
                     </row>
                   </rows>
@@ -142,12 +142,12 @@
         </NavBarAreas>
       </Navigation>
       <formLibraries>
-        <Library name="ppp_scripts/Traveler.js" libraryUniqueId="{695dda9e-96a4-1c9e-02ba-3682d7a67949}" />
+        <Library name="ppp_scripts/Traveller.js" libraryUniqueId="{695dda9e-96a4-1c9e-02ba-3682d7a67949}" />
       </formLibraries>
       <events>
         <event name="onload" application="false" active="false">
           <Handlers>
-            <Handler functionName="SetCallTime" libraryName="ppp_scripts/Traveler.js" handlerUniqueId="{24257485-e231-2bed-8712-cc1e23ed8cbd}" enabled="true" parameters="'ppp_calltime'" passExecutionContext="true" />
+            <Handler functionName="SetCallTime" libraryName="ppp_scripts/Traveller.js" handlerUniqueId="{24257485-e231-2bed-8712-cc1e23ed8cbd}" enabled="true" parameters="'ppp_calltime'" passExecutionContext="true" />
           </Handlers>
         </event>
       </events>

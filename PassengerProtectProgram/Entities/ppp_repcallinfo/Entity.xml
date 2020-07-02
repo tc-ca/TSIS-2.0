@@ -669,12 +669,13 @@
             <Description description="Identificateur unique des instances d'entité" languagecode="1036" />
           </Descriptions>
         </attribute>
-        <attribute PhysicalName="ppp_Traveler">
+        <attribute PhysicalName="ppp_Traveller">
           <Type>lookup</Type>
-          <Name>ppp_traveler</Name>
-          <LogicalName>ppp_traveler</LogicalName>
+          <Name>ppp_traveller</Name>
+          <LogicalName>ppp_traveller</LogicalName>
           <RequiredLevel>none</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ImeMode>auto</ImeMode>
           <ValidForUpdateApi>1</ValidForUpdateApi>
           <ValidForReadApi>1</ValidForReadApi>
           <ValidForCreateApi>1</ValidForCreateApi>
