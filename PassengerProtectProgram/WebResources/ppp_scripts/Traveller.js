@@ -214,9 +214,6 @@ function statusChangeInProgress(eContext) {
     if (isPresent && isDraft) {
         setRecordStatus(eContext, 927820003)
     }
-    if (isPresent) {
-      formContext.getAttribute("ppp_ispresenttime").setValue(new Date());
-    }
 }
 
 //Shows Passport Number if Passport was selected as an ID, hides if not
@@ -227,31 +224,6 @@ function showHidePassportNumber(eContext) {
     formContext.getControl('ppp_passportnumber').setVisible(passportSelected);
 }
 
-function setFinalStatusTime(eContext) {
-    var formContext = eContext.getFormContext();
-    var recordStatus = formContext.getAttribute("ppp_recordstatus");
-    if (recordStatus == 927820002 || recordStatus == 927820005) { //If record status is closed or unresolved
-        formContext.getAttribute("ppp_finalstatustime").setValue(new Date());
-    }
-}
-
-function setNewRecordTime(eContext) {
-    var formContext = eContext.getFormContext();
-    var newRecordTime = formContext.getAttribute("ppp_newrecordtime").getValue();
-    console.log(newRecordTime);
-    if (!newRecordTime) {
-      formContext.getAttribute("ppp_newrecordtime").setValue(new Date());
-    }
-}
-
-function setMatchedFoundTime(eContext) {
-  var formContext = eContext.getFormContext();
-  var matchFound = formContext.getAttribute("ppp_matchfound").getValue();
-  if (matchFound == 927820000) {
-    formContext.getAttribute("ppp_matchfoundtime").setValue(new Date());
-  }
-}
-
 function setTimeFieldNow(eContext, valueFieldName, desiredValue, timeFieldName) {
   var formContext = eContext.getFormContext();
   var valueField = formContext.getAttribute(valueFieldName).getValue();
@@ -260,6 +232,18 @@ function setTimeFieldNow(eContext, valueFieldName, desiredValue, timeFieldName) 
   }
 }
 
+function setDateTime(eContext, dateFieldName, hourFieldName, minuteFieldName, dateTimeField) {
+  var formContext = eContext.getFormContext();
+  var date = formContext.getAttribute(dateFieldName).getValue();
+  var hour = formContext.getAttribute(hourFieldName).getValue();
+  var minute = formContext.getAttribute(minuteFieldName).getValue();
+  if (date && hour && minute) {
+    var dateTime = date;
+    dateTime.setHours(hour);
+    dateTime.setMinutes(minute);
+    formContext.getAttribute(dateTimeField).setValue(dateTime);
+  }
+}
 
 
 

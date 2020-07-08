@@ -7,7 +7,7 @@
       <LocalizedName description="Passenger Protect Program (fr)" languagecode="1036" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.3</Version>
+    <Version>1.0.0.6</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>passengerprotectprogrampublisher</UniqueName>
