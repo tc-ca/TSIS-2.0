@@ -366,12 +366,11 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{831c093c-db81-4339-a57a-11a2d532f2e7}" showlabel="true" locklevel="0">
+                      <cell id="{3bec92c1-5171-e70a-d26c-b80a36766488}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="Flight Destination" languagecode="1033" />
-                          <label description="Flight Destination (fr)" languagecode="1036" />
+                          <label description="Flight Origin Date" languagecode="1033" />
                         </labels>
-                        <control id="ppp_flightdestination" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ppp_flightdestination" disabled="false" uniqueid="{6953d251-63d1-92a7-32e9-6e08b35a7ca9}" />
+                        <control id="ppp_flightorigindate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="ppp_flightorigindate" disabled="false" />
                       </cell>
                       <cell id="{ab711ac0-e823-5469-4c8c-584864994036}" showlabel="false">
                         <labels>
@@ -379,6 +378,61 @@
                         </labels>
                       </cell>
                       <cell id="{8e6c3125-61a0-5075-9c3d-209a777a9d36}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ed52ee83-da46-e5b5-1dbd-ab8844d1e148}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Flight Origin Hour" languagecode="1033" />
+                        </labels>
+                        <control id="ppp_flightoriginhour" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="ppp_flightoriginhour" disabled="false" uniqueid="{3a0426e8-b418-4015-dbae-0d9c82d3d7ee}" />
+                      </cell>
+                      <cell id="{7be8690d-3971-9140-d01a-441ac40eb4b2}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{0b05d9be-e0e8-cde9-608d-a6925273e8cb}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ad397457-399e-05ab-624a-559b1847ecd1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Flight Origin Minute" languagecode="1033" />
+                        </labels>
+                        <control id="ppp_flightoriginminute" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="ppp_flightoriginminute" disabled="false" />
+                      </cell>
+                      <cell id="{a8c8b5d0-4145-6846-3915-64377c89006e}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{6941ecc8-b5e1-3929-5dd6-4c1a5c7265b6}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{831c093c-db81-4339-a57a-11a2d532f2e7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Flight Destination" languagecode="1033" />
+                          <label description="Flight Destination (fr)" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_flightdestination" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ppp_flightdestination" disabled="false" uniqueid="{6953d251-63d1-92a7-32e9-6e08b35a7ca9}" />
+                      </cell>
+                      <cell id="{80cc6bcd-73a7-c6aa-dcb3-68692a0343a0}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{a7552a95-ec3e-c708-d286-61016ac771ce}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -411,34 +465,6 @@
                           </parameters>
                         </control>
                       </cell>
-                      <cell id="{601565e4-ad9d-59b4-d707-82649ad8a877}" showlabel="false">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{0b05d9be-e0e8-cde9-608d-a6925273e8cb}" showlabel="false">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{6941ecc8-b5e1-3929-5dd6-4c1a5c7265b6}" showlabel="false">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{a7552a95-ec3e-c708-d286-61016ac771ce}" showlabel="false">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                    </row>
-                    <row>
                       <cell id="{2493ca6b-641e-c0a2-06c4-331b9655a68e}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -454,6 +480,34 @@
                     </row>
                     <row>
                       <cell id="{78820ab0-3328-d898-b953-dd539a35328e}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{366a30e3-d4ac-3988-6313-5421be563559}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{71b7eb4e-0194-252c-9b83-146b8b332a8e}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{49281853-5c92-70bc-a072-70ecb4ddbca6}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{818cc59b-8a8c-cd28-aa4b-41d73ca60b9e}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -2326,6 +2380,31 @@
           <customControl formFactor="2" name="MscrmControls.FlipSwitch.FlipSwitchControl">
             <parameters>
               <value>ppp_showbpf</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{3a0426e8-b418-4015-dbae-0d9c82d3d7ee}">
+          <customControl id="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}">
+            <parameters>
+              <datafieldname>ppp_flightoriginhour</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="driv_DR.TimePicker">
+            <parameters>
+              <hourvalue>ppp_flightoriginhour</hourvalue>
+              <minutevalue>ppp_flightoriginminute</minutevalue>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="driv_DR.TimePicker">
+            <parameters>
+              <hourvalue>ppp_flightoriginhour</hourvalue>
+              <minutevalue>ppp_flightoriginminute</minutevalue>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="driv_DR.TimePicker">
+            <parameters>
+              <hourvalue>ppp_flightoriginhour</hourvalue>
+              <minutevalue>ppp_flightoriginminute</minutevalue>
             </parameters>
           </customControl>
         </controlDescription>
