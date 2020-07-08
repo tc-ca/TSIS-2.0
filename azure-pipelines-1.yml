@@ -4,18 +4,19 @@
 # https://aka.ms/yaml
 
 trigger:
-- none
-
-pr:
   branches:
     include:
-    - development    
+    - development
+    exclude:
+    - releases/old*
+    - feature/*-working
   paths:
     include:
     - PassengerProtectProgram/*
     exclude:
     - Plugin/*
     - WebResources/*
+
 pool:
   vmImage:  'vs2017-win2016'
 
