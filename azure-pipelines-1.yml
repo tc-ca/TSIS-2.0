@@ -4,8 +4,18 @@
 # https://aka.ms/yaml
 
 trigger:
-- development
+- none
 
+pr:
+  branches:
+    include:
+    - development    
+  paths:
+    include:
+    - PassengerProtectProgram/*
+    exclude:
+    - Plugin/*
+    - WebResources/*
 pool:
   vmImage:  'vs2017-win2016'
 
@@ -14,6 +24,8 @@ steps:
 - task: PowerPlatformToolInstaller@0
   inputs:
     DefaultVersion: true
+
+
 
 - task: PowerPlatformExportSolution@0
   inputs:
