@@ -11,10 +11,6 @@ pool:
 
 steps:
 
-- checkout: self
-  persistCredentials: true
-  clean: false
-
 - task: PowerPlatformToolInstaller@0
   inputs:
     DefaultVersion: true
