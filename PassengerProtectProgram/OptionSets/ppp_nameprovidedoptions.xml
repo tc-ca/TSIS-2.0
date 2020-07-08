@@ -24,11 +24,5 @@
         <label description="Alias / Name Variant (fr)" languagecode="1036" />
       </labels>
     </option>
-    <option value="927820002">
-      <labels>
-        <label description="Family Name / Family Member" languagecode="1033" />
-        <label description="Family Name / Family Member (fr)" languagecode="1036" />
-      </labels>
-    </option>
   </options>
 </optionset>

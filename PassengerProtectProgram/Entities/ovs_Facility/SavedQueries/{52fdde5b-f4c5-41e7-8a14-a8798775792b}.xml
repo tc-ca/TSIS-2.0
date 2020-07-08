@@ -10,6 +10,7 @@
     <layoutxml>
       <grid name="ovs_facilities" jump="ovs_name" select="1" icon="1" preview="0">
         <row name="ovs_facility" id="ovs_facilityid">
+          <cell name="ovs_icaocode" width="100" />
           <cell name="ovs_name" width="300" />
           <cell name="createdon" width="125" />
         </row>
@@ -25,6 +26,7 @@
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
           </filter>
+          <attribute name="ovs_icaocode" />
         </entity>
       </fetch>
     </fetchxml>

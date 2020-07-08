@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Workflow WorkflowId="{2eb75ba1-1baf-ea11-a812-000d3a0c86a9}" Name="Confirmed PPP Match" Description="Click to add description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <XamlFileName>/Workflows/ConfirmedPPPMatch-2EB75BA1-1BAF-EA11-A812-000D3A0C86A9.xaml</XamlFileName>
+<Workflow WorkflowId="{38fd3e73-2baf-ea11-a812-000d3a0c8127}" Name="Set 'Is Present Time'" Description="Click to add description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/SetIsPresentTime-38FD3E73-2BAF-EA11-A812-000D3A0C8127.xaml</XamlFileName>
   <Type>1</Type>
   <Subprocess>0</Subprocess>
   <Category>2</Category>
@@ -11,8 +11,8 @@
   <TriggerOnDelete>0</TriggerOnDelete>
   <AsyncAutodelete>0</AsyncAutodelete>
   <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
-  <StateCode>1</StateCode>
-  <StatusCode>2</StatusCode>
+  <StateCode>0</StateCode>
+  <StatusCode>1</StatusCode>
   <RunAs>1</RunAs>
   <IsTransacted>1</IsTransacted>
   <IntroducedVersion>1.0.0.2</IntroducedVersion>
@@ -22,7 +22,7 @@
   <ProcessTriggerScope>2</ProcessTriggerScope>
   <PrimaryEntity>ppp_Traveller</PrimaryEntity>
   <LocalizedNames>
-    <LocalizedName languagecode="1033" description="Confirmed PPP Match" />
+    <LocalizedName languagecode="1033" description="Set 'Is Present Time'" />
   </LocalizedNames>
   <Descriptions>
     <Description languagecode="1033" description="Click to add description" />

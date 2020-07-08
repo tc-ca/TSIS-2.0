@@ -10,7 +10,11 @@
     <layoutxml>
       <grid name="resultset" jump="tc_name" select="1" icon="1" preview="1">
         <row name="result" id="tc_countryid">
-          <cell name="tc_name" width="300" />
+          <cell name="tc_name" width="183" />
+          <cell name="tc_countrynameenglish" width="100" />
+          <cell name="tc_countrynamefrench" width="100" />
+          <cell name="tc_countryisocodealpha2" width="100" />
+          <cell name="tc_countryisocodealpha3" width="100" />
           <cell name="createdon" width="125" />
         </row>
       </grid>
@@ -26,6 +30,10 @@
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
           </filter>
+          <attribute name="tc_countrynameenglish" />
+          <attribute name="tc_countrynamefrench" />
+          <attribute name="tc_countryisocodealpha2" />
+          <attribute name="tc_countryisocodealpha3" />
         </entity>
       </fetch>
     </fetchxml>

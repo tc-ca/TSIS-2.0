@@ -14,7 +14,7 @@
           <columns>
             <column width="100%">
               <sections>
-                <section showbar="false" columns="1" id="{117d1d79-f1c5-4e39-b4bc-5726c1cfc756}" name="StageStep3_section1" labelid="{fda2d5e1-bb70-4f90-b428-505f7118d0fc}">
+                <section showbar="false" columns="1" id="{b5eeb7e7-4ed3-19ee-c0f9-11686786179a}" name="StageStep3_section1" labelid="{fda2d5e1-bb70-4f90-b428-505f7118d0fc}">
                   <labels>
                     <label description="General" languagecode="1033" />
                   </labels>
@@ -56,7 +56,7 @@
           <columns>
             <column width="100%">
               <sections>
-                <section showbar="false" columns="1" id="{0de5fde6-c804-4374-9bf8-2b1d49192d0a}" name="StageStep11_section1" labelid="{1835ab5b-96c1-4bcd-934d-28cc51460f8e}">
+                <section showbar="false" columns="1" id="{c48b19e5-2615-99a7-aa88-e46e101269d5}" name="StageStep11_section1" labelid="{1835ab5b-96c1-4bcd-934d-28cc51460f8e}">
                   <labels>
                     <label description="Match Found?" languagecode="1033" />
                   </labels>
@@ -90,7 +90,7 @@
           <columns>
             <column width="100%">
               <sections>
-                <section showbar="false" columns="1" id="{5d8fb46b-3154-43b2-862e-b9b14a2ee920}" name="StageStep17_section1" labelid="{5e090393-7e59-45e9-88c1-2343b01dc484}">
+                <section showbar="false" columns="1" id="{dc810bb3-49dc-9a58-f69f-9512800ea73f}" name="StageStep17_section1" labelid="{5e090393-7e59-45e9-88c1-2343b01dc484}">
                   <labels>
                     <label description="Decision Brief" languagecode="1033" />
                   </labels>
@@ -116,7 +116,7 @@
           <columns>
             <column width="100%">
               <sections>
-                <section showbar="false" columns="1" id="{34bc35e3-9a48-4010-bb3b-c2391c9a7d0a}" name="StageStep21_section1" labelid="{35ffbb79-3d90-44d1-b71a-0e8f1fba6331}">
+                <section showbar="false" columns="1" id="{3430635a-3c43-384e-5a92-5e4b223817c0}" name="StageStep21_section1" labelid="{35ffbb79-3d90-44d1-b71a-0e8f1fba6331}">
                   <labels>
                     <label description="Further Action Required" languagecode="1033" />
                   </labels>
@@ -142,7 +142,7 @@
           <columns>
             <column width="100%">
               <sections>
-                <section showbar="false" columns="1" id="{f328c122-38a7-4d36-97a1-ab5aa3aa5dc8}" name="StageStep25_section1" labelid="{9b8245aa-ded5-4ea2-b432-82a46a480149}">
+                <section showbar="false" columns="1" id="{e887a999-d78c-a9f7-7cab-dd1c934b344f}" name="StageStep25_section1" labelid="{9b8245aa-ded5-4ea2-b432-82a46a480149}">
                   <labels>
                     <label description="Close Record" languagecode="1033" />
                   </labels>
@@ -168,7 +168,7 @@
           <columns>
             <column width="100%">
               <sections>
-                <section showbar="false" columns="1" id="{f7d57b29-fbfe-477f-be0d-5a368ae86e2e}" name="StageStep29_section1" labelid="{b609b519-2ff2-4c77-bcbb-e99463ffcc74}">
+                <section showbar="false" columns="1" id="{662de3d4-6636-8acc-6fca-531e6d0563c6}" name="StageStep29_section1" labelid="{b609b519-2ff2-4c77-bcbb-e99463ffcc74}">
                   <labels>
                     <label description="Close Record" languagecode="1033" />
                   </labels>

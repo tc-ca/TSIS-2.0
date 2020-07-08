@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Workflow WorkflowId="{38fd3e73-2baf-ea11-a812-000d3a0c8127}" Name="Set Direction Time" Description="Click to add description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <XamlFileName>/Workflows/SetDirectionTime-38FD3E73-2BAF-EA11-A812-000D3A0C8127.xaml</XamlFileName>
+<Workflow WorkflowId="{08429e33-6fbd-ea11-a812-000d3a0c86a9}" Name="Toggle Return Ticket Fields Visibility" Description="Click to add description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/ToggleReturnTicketFieldsVisibility-08429E33-6FBD-EA11-A812-000D3A0C86A9.xaml</XamlFileName>
   <Type>1</Type>
   <Subprocess>0</Subprocess>
   <Category>2</Category>
@@ -11,18 +11,18 @@
   <TriggerOnDelete>0</TriggerOnDelete>
   <AsyncAutodelete>0</AsyncAutodelete>
   <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
-  <StateCode>0</StateCode>
-  <StatusCode>1</StatusCode>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
   <RunAs>1</RunAs>
   <IsTransacted>1</IsTransacted>
-  <IntroducedVersion>1.0.0.2</IntroducedVersion>
+  <IntroducedVersion>1.0.0.3</IntroducedVersion>
   <IsCustomizable>1</IsCustomizable>
   <BusinessProcessType>0</BusinessProcessType>
   <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
   <ProcessTriggerScope>2</ProcessTriggerScope>
   <PrimaryEntity>ppp_Traveller</PrimaryEntity>
   <LocalizedNames>
-    <LocalizedName languagecode="1033" description="Set Direction Time" />
+    <LocalizedName languagecode="1033" description="Toggle Return Ticket Fields Visibility" />
   </LocalizedNames>
   <Descriptions>
     <Description languagecode="1033" description="Click to add description" />

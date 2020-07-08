@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Workflow WorkflowId="{3ecd0ce6-2aba-ea11-a812-000d3a0c8127}" Name="Toggle Visibility of Travel Purpose Details" Description="Click to add description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <XamlFileName>/Workflows/ToggleVisibilityofTravelPurposeDetails-3ECD0CE6-2ABA-EA11-A812-000D3A0C8127.xaml</XamlFileName>
+<Workflow WorkflowId="{825a7bd8-c2bf-ea11-a812-000d3a0c86a9}" Name="Set Final Status Time" Description="Click to add description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/SetFinalStatusTime-825A7BD8-C2BF-EA11-A812-000D3A0C86A9.xaml</XamlFileName>
   <Type>1</Type>
   <Subprocess>0</Subprocess>
   <Category>2</Category>
@@ -15,14 +15,14 @@
   <StatusCode>2</StatusCode>
   <RunAs>1</RunAs>
   <IsTransacted>1</IsTransacted>
-  <IntroducedVersion>1.0.0.2</IntroducedVersion>
+  <IntroducedVersion>1.0.0.3</IntroducedVersion>
   <IsCustomizable>1</IsCustomizable>
   <BusinessProcessType>0</BusinessProcessType>
   <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
   <ProcessTriggerScope>2</ProcessTriggerScope>
   <PrimaryEntity>ppp_Traveller</PrimaryEntity>
   <LocalizedNames>
-    <LocalizedName languagecode="1033" description="Toggle Visibility of Travel Purpose Details" />
+    <LocalizedName languagecode="1033" description="Set Final Status Time" />
   </LocalizedNames>
   <Descriptions>
     <Description languagecode="1033" description="Click to add description" />
