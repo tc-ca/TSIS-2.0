@@ -29,8 +29,8 @@ steps:
 
 - task: PowerPlatformImportSolution@0
   inputs:
-    authenticationType: 'PowerPlatformEnvironment'
-    PowerPlatformEnvironment: 'TSIS 2.0  QA'
+    authenticationType: 'PowerPlatformSPN'
+    PowerPlatformSPN: 'TSIS 2.0 QA'
     SolutionInputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName)_managed.zip'
     AsyncOperation: true
     MaxAsyncWaitTime: '240'
