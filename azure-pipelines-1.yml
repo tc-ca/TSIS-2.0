@@ -19,31 +19,21 @@ steps:
   inputs:
     DefaultVersion: true
 
-- task: PowerPlatformPackSolution@0
+- task: PowerPlatformExportSolution@0
   inputs:
-    SolutionSourceFolder: '$(Build.SourcesDirectory)\$(SolutionName)'
-    SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName).zip'
+    authenticationType: 'PowerPlatformSPN'
+    PowerPlatformSPN: 'TSIS 2.0 Dev'
+    SolutionName: '$(SolutionName)'
+    SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName)_managed.zip'
+    Managed: true
 
 - task: PowerPlatformImportSolution@0
   inputs:
     authenticationType: 'PowerPlatformEnvironment'
     PowerPlatformEnvironment: 'TSIS 2.0  QA'
-    SolutionInputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName).zip'
+    SolutionInputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName)_managed.zip'
     AsyncOperation: true
     MaxAsyncWaitTime: '240'
-
-- task: PowerPlatformExportSolution@0
-  inputs:
-    authenticationType: 'PowerPlatformEnvironment'
-    PowerPlatformEnvironment: 'TSIS 2.0  QA'
-    SolutionName: '$(SolutionName)'
-    SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName)_managed.zip'
-    Managed: true
-
-- task: PowerPlatformUnpackSolution@0
-  inputs:
-    SolutionInputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName).zip'
-    SolutionTargetFolder: '$(Build.SourcesDirectory)\$(SolutionName)'
 
 - task: PublishPipelineArtifact@1
   inputs:
