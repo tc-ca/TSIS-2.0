@@ -41,19 +41,4 @@ steps:
    
    echo "Push solution changes to the remote repository"
    git -c http.extraheader="AUTHORIZATION: basic $(System.AccessToken)" push --force origin development
-     
-- task: PowerPlatformExportSolution@0
-  inputs:
-    authenticationType: 'PowerPlatformSPN'
-    PowerPlatformSPN: 'TSIS 2.0 Dev'
-    SolutionName: '$(SolutionName)'
-    SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName)_managed.zip'
-    Managed: true
-    ExportRelationshipRoles: true
-
-- task: PublishPipelineArtifact@1
-  inputs:
-    targetPath: '$(Build.ArtifactStagingDirectory)\$(SolutionName)_managed.zip'
-    artifact: 'drop'
-    publishLocation: 'pipeline'
 
