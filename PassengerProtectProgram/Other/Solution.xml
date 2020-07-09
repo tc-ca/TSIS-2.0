@@ -99,7 +99,11 @@
       <RootComponent type="9" schemaName="ppp_matchfound" behavior="0" />
       <RootComponent type="9" schemaName="ppp_nameprovidedoptions" behavior="0" />
       <RootComponent type="9" schemaName="ppp_nominatingagencyoptions" behavior="0" />
+      <RootComponent type="9" schemaName="ppp_paymentmethod" behavior="0" />
       <RootComponent type="9" schemaName="ppp_recordstatus" behavior="0" />
+      <RootComponent type="9" schemaName="ppp_seatrequestmade" behavior="0" />
+      <RootComponent type="9" schemaName="ppp_ticketpurchasemethod" behavior="0" />
+      <RootComponent type="9" schemaName="ppp_ticketstored" behavior="0" />
       <RootComponent type="9" schemaName="ppp_tickettype" behavior="0" />
       <RootComponent type="9" schemaName="ppp_travelpurpose" behavior="0" />
       <RootComponent type="9" schemaName="tc_gender" behavior="0" />
@@ -124,7 +128,9 @@
       <RootComponent type="29" id="{9748e8e9-dfbf-ea11-a812-000d3a0c8127}" behavior="0" />
       <RootComponent type="29" id="{98abb11e-cf9b-ea11-a812-000d3a0c86a9}" behavior="0" />
       <RootComponent type="29" id="{9f383f38-d69b-ea11-a812-000d3a0c86a9}" behavior="0" />
+      <RootComponent type="29" id="{a420d350-f6c1-ea11-a812-000d3a0c8127}" behavior="0" />
       <RootComponent type="29" id="{af4965ce-32ab-ea11-a812-000d3a0c8127}" behavior="0" />
+      <RootComponent type="29" id="{b0f61224-f9c1-ea11-a812-000d3a0c8127}" behavior="0" />
       <RootComponent type="29" id="{b6eb0904-16ba-ea11-a812-000d3a0c86a9}" behavior="0" />
       <RootComponent type="29" id="{c3b8ac4a-e0bf-ea11-a812-000d3a0c8127}" behavior="0" />
       <RootComponent type="29" id="{e707700d-44b6-ea11-a812-000d3a0c86a9}" behavior="0" />

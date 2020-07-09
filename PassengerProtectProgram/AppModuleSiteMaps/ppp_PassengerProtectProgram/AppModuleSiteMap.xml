@@ -13,8 +13,8 @@
         </Titles>
         <SubArea Id="Area_Traveller" Icon="/_imgs/imagestrips/transparent_spacer.gif" IntroducedVersion="7.0.0.0" Entity="ppp_traveller" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
           <Titles>
-            <Title LCID="1033" Title="Traveller" />
             <Title LCID="1036" Title="Traveller (fr)" />
+            <Title LCID="1033" Title="Traveller Validation" />
           </Titles>
         </SubArea>
       </Group>
