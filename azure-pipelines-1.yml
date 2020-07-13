@@ -49,16 +49,6 @@ steps:
     SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName)_managed.zip'
     Managed: true
 
-- task: PowerPlatformImportSolution@0
-  inputs:
-    authenticationType: 'PowerPlatformSPN'
-    PowerPlatformSPN: 'TSIS 2.0 QA'
-    SolutionInputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName)_managed.zip'
-    AsyncOperation: true
-    MaxAsyncWaitTime: '240'
-    SkipProductUpdateDependencies: true
-    ConvertToManaged: true
-
 - task: PublishPipelineArtifact@1
   inputs:
     targetPath: '$(Build.ArtifactStagingDirectory)\$(SolutionName)_managed.zip'
