@@ -4,7 +4,18 @@
 # https://aka.ms/yaml
 
 trigger:
-- development
+  branches:
+    include:
+    - development
+    exclude:
+    - releases/old*
+    - feature/*-working
+  paths:
+    include:
+    - PassengerProtectProgram/*
+    exclude:
+    - Plugin/*
+    - WebResources/*
 
 pool:
   vmImage:  'vs2017-win2016'
@@ -14,6 +25,21 @@ steps:
 - task: PowerPlatformToolInstaller@0
   inputs:
     DefaultVersion: true
+
+- task: PowerPlatformPackSolution@0
+  inputs:
+    SolutionSourceFolder: '$(Build.SourcesDirectory)\$(SolutionName)'
+    SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName).zip'
+
+- task: PowerPlatformImportSolution@0
+  inputs:
+    authenticationType: 'PowerPlatformSPN'
+    PowerPlatformSPN: 'TSIS 2.0 QA'
+    SolutionInputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName).zip'
+    AsyncOperation: true
+    MaxAsyncWaitTime: '240'
+    OverwriteUnmanagedCustomizations: true
+    SkipProductUpdateDependencies: true
 
 - task: PowerPlatformExportSolution@0
   inputs:
