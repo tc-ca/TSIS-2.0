@@ -2305,7 +2305,7 @@
             <displayname description="Match Found Confirmation" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="This is a hidden field on the form, used to make sure the user clicks 'Proceed' button in the web resource." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_MatchFoundTime">
