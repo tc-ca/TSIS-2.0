@@ -20,13 +20,11 @@
   <EntityRelationship Name="lk_tc_country_modifiedby" />
   <EntityRelationship Name="lk_tc_province_createdby" />
   <EntityRelationship Name="lk_tc_province_modifiedby" />
-  <EntityRelationship Name="msdyn_account_account_BillingAccount" />
-  <EntityRelationship Name="msdyn_bookableresource_account_PreferredResource" />
-  <EntityRelationship Name="msdyn_msdyn_taxcode_account_SalesTaxCode" />
-  <EntityRelationship Name="msdyn_msdyn_workhourtemplate_account_workhourtemplate" />
-  <EntityRelationship Name="msdyn_territory_account_ServiceTerritory" />
+  <EntityRelationship Name="msdyn_account_product_DefaultVendor" />
+  <EntityRelationship Name="msdyn_account_quote_Account" />
+  <EntityRelationship Name="msdyn_account_quotedetail_ServiceAccount" />
+  <EntityRelationship Name="msdyn_account_salesorder_Account" />
   <EntityRelationship Name="organization_ppp_travellerbusinessflow" />
-  <EntityRelationship Name="ovs_Account_tc_Country" />
   <EntityRelationship Name="ovs_Facility_Account" />
   <EntityRelationship Name="ovs_Facility_ovs_Contactid_Contact" />
   <EntityRelationship Name="ovs_Facility_ovs_Countryid_tc_Country" />

@@ -1,15 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
     <isquickfindquery>0</isquickfindquery>
     <isprivate>0</isprivate>
     <isdefault>1</isdefault>
-    <savedqueryid>{00000000-0000-0000-00aa-000010001002}</savedqueryid>
-    <queryapi></queryapi>
+    <savedqueryid>{c4026824-4cc5-ea11-a812-000d3a0c8127}</savedqueryid>
     <layoutxml>
       <grid name="resultset" jump="name" select="1" icon="1" preview="1">
         <row name="result" id="accountid">
-          <cell name="name" width="300" />
+          <cell name="name" width="200" />
           <cell name="ovs_icaocode" width="100" />
           <cell name="ovs_tc_country" width="100" />
           <cell name="ovs_callsign" width="100" />
@@ -21,10 +22,6 @@
       <fetch version="1.0" output-format="xml-platform" mapping="logical">
         <entity name="account">
           <attribute name="name" />
-          <order attribute="name" descending="false" />
-          <filter type="and">
-            <condition attribute="statecode" operator="eq" value="0" />
-          </filter>
           <attribute name="accountid" />
           <attribute name="ovs_icaocode" />
           <attribute name="ovs_tc_country" />
@@ -32,10 +29,9 @@
         </entity>
       </fetch>
     </fetchxml>
-    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <IntroducedVersion>1.0.0.7</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="Active Airlines" languagecode="1033" />
-      <LocalizedName description="Comptes actifs" languagecode="1036" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>
