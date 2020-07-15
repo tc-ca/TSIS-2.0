@@ -41,6 +41,11 @@ steps:
     OverwriteUnmanagedCustomizations: true
     SkipProductUpdateDependencies: true
 
+- task: PowerPlatformPublishCustomizations@0
+  inputs:
+    authenticationType: 'PowerPlatformSPN'
+    PowerPlatformSPN: 'TSIS 2.0 QA'
+
 - task: PowerPlatformExportSolution@0
   inputs:
     authenticationType: 'PowerPlatformSPN'
