@@ -92,6 +92,7 @@
       <RootComponent type="1" schemaName="tc_province" behavior="0" />
       <RootComponent type="9" schemaName="ovs_facilitytype" behavior="0" />
       <RootComponent type="9" schemaName="ppp_aircarrieraction" behavior="0" />
+      <RootComponent type="9" schemaName="ppp_calltype" behavior="0" />
       <RootComponent type="9" schemaName="ppp_casebriefoptions" behavior="0" />
       <RootComponent type="9" schemaName="ppp_directionoptions" behavior="0" />
       <RootComponent type="9" schemaName="ppp_gender" behavior="0" />

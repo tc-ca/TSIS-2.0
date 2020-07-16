@@ -34,11 +34,11 @@
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
-                      <cell id="{766b4384-22d8-dded-b330-a1248d692ea6}" showlabel="true" locklevel="0">
+                      <cell id="{7a521562-2521-e949-063d-aa9818da75c3}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="Show BPF" languagecode="1033" />
+                          <label description="Call Type" languagecode="1033" />
                         </labels>
-                        <control id="ppp_showbpf" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="ppp_showbpf" disabled="false" uniqueid="{8340a030-e9dd-492e-3c54-82bd5acd95ab}" />
+                        <control id="ppp_calltype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ppp_calltype" disabled="false" />
                       </cell>
                     </row>
                     <row>
@@ -59,10 +59,11 @@
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
-                      <cell id="{80e942ed-791a-ee73-e61c-b7ca8401225a}" showlabel="false">
+                      <cell id="{766b4384-22d8-dded-b330-a1248d692ea6}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="" languagecode="1033" />
+                          <label description="Show BPF" languagecode="1033" />
                         </labels>
+                        <control id="ppp_showbpf" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="ppp_showbpf" disabled="false" uniqueid="{8340a030-e9dd-492e-3c54-82bd5acd95ab}" />
                       </cell>
                     </row>
                     <row>
@@ -78,7 +79,7 @@
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
-                      <cell id="{e6b133a6-e6c9-1525-be3b-525e3b9a12c9}" showlabel="false">
+                      <cell id="{d0ba9d3b-997c-99e6-656d-214617a06a00}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -97,7 +98,7 @@
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
-                      <cell id="{d0ba9d3b-997c-99e6-656d-214617a06a00}" showlabel="false">
+                      <cell id="{4cd9e791-0265-a957-9c8b-c1be940d4be5}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
