@@ -2246,7 +2246,7 @@
                           <label description="Time of Decision" languagecode="1033" />
                           <label description="Time of Direction (fr)" languagecode="1036" />
                         </labels>
-                        <control id="ppp_directiontime" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="ppp_directiontime" disabled="false" uniqueid="{c6ea4149-8432-e7ec-4371-39c3332b958b}" />
+                        <control id="ppp_directiontime" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="ppp_directiontime" disabled="true" uniqueid="{c6ea4149-8432-e7ec-4371-39c3332b958b}" />
                       </cell>
                       <cell id="{01c0ac02-7455-ca89-4bb6-49d7342c344c}" showlabel="false">
                         <labels>
@@ -2301,7 +2301,7 @@
                         <labels>
                           <label description="New Record Time" languagecode="1033" />
                         </labels>
-                        <control id="ppp_newrecordtime" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="ppp_newrecordtime" disabled="false" uniqueid="{8a184b63-8dc8-8054-9a28-5d95c418d5e0}" />
+                        <control id="ppp_newrecordtime" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="ppp_newrecordtime" disabled="true" uniqueid="{8a184b63-8dc8-8054-9a28-5d95c418d5e0}" />
                       </cell>
                     </row>
                     <row>
@@ -2309,7 +2309,7 @@
                         <labels>
                           <label description="Is Present Time" languagecode="1033" />
                         </labels>
-                        <control id="ppp_ispresenttime" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="ppp_ispresenttime" disabled="false" uniqueid="{908a0bc8-9a07-4ab5-b8c3-a763939a48b0}" />
+                        <control id="ppp_ispresenttime" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="ppp_ispresenttime" disabled="true" uniqueid="{908a0bc8-9a07-4ab5-b8c3-a763939a48b0}" />
                       </cell>
                     </row>
                     <row>
@@ -2317,7 +2317,7 @@
                         <labels>
                           <label description="Match Found Time" languagecode="1033" />
                         </labels>
-                        <control id="ppp_matchfoundtime" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="ppp_matchfoundtime" disabled="false" uniqueid="{eb4190d4-8b54-01a0-cb04-c69baea541c8}" />
+                        <control id="ppp_matchfoundtime" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="ppp_matchfoundtime" disabled="true" uniqueid="{eb4190d4-8b54-01a0-cb04-c69baea541c8}" />
                       </cell>
                     </row>
                     <row>
@@ -2326,7 +2326,7 @@
                           <label description="Direction Time" languagecode="1033" />
                           <label description="Direction Time (fr)" languagecode="1036" />
                         </labels>
-                        <control id="ppp_directiontime" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="ppp_directiontime" disabled="false" uniqueid="{6011d75a-ab9c-865c-20bc-09a4b8de4ca9}" />
+                        <control id="ppp_directiontime" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="ppp_directiontime" disabled="true" uniqueid="{6011d75a-ab9c-865c-20bc-09a4b8de4ca9}" />
                       </cell>
                     </row>
                     <row>
@@ -2334,7 +2334,7 @@
                         <labels>
                           <label description="Final Status Time" languagecode="1033" />
                         </labels>
-                        <control id="ppp_finalstatustime" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="ppp_finalstatustime" disabled="false" uniqueid="{08aab237-8677-b0a3-4d56-be8d5340919b}" />
+                        <control id="ppp_finalstatustime" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="ppp_finalstatustime" disabled="true" uniqueid="{08aab237-8677-b0a3-4d56-be8d5340919b}" />
                       </cell>
                     </row>
                   </rows>
