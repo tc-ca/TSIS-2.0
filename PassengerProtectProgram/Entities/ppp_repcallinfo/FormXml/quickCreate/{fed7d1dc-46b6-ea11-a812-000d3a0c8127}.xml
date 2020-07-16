@@ -81,7 +81,6 @@
       <DisplayConditions Order="0" FallbackForm="true">
         <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
         <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
-        <Role Id="{e452f6aa-01e4-41c3-a312-1a6bcf09e577}" />
       </DisplayConditions>
     </form>
     <IsCustomizable>1</IsCustomizable>

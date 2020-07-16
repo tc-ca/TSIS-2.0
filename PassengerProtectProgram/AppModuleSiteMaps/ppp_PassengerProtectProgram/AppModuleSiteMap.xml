@@ -11,10 +11,30 @@
           <Title LCID="1033" Title="Passenger Protect Program" />
           <Title LCID="1036" Title="Passenger Protect Program (fr)" />
         </Titles>
-        <SubArea Id="Area_Traveler" Icon="/_imgs/imagestrips/transparent_spacer.gif" IntroducedVersion="7.0.0.0" Entity="ppp_traveler" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+        <SubArea Id="Area_Traveller" Icon="/_imgs/imagestrips/transparent_spacer.gif" IntroducedVersion="7.0.0.0" Entity="ppp_traveller" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
           <Titles>
-            <Title LCID="1033" Title="Traveler" />
-            <Title LCID="1036" Title="Traveler (fr)" />
+            <Title LCID="1036" Title="Traveller (fr)" />
+            <Title LCID="1033" Title="Traveller Validation" />
+          </Titles>
+        </SubArea>
+      </Group>
+      <Group Id="NewGroup_d551241e" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Admin" />
+        </Titles>
+        <SubArea Id="NewSubArea_fc15368a" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="tc_country" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Country" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="NewSubArea_7a215a2b" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="ovs_facility" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Aerodromes" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="NewSubArea_fb9c287c" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="account" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Air Carriers" />
           </Titles>
         </SubArea>
       </Group>

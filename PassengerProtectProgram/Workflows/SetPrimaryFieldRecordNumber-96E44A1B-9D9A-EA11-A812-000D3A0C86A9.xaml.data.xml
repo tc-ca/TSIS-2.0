@@ -20,13 +20,11 @@
   <BusinessProcessType>0</BusinessProcessType>
   <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
   <ProcessTriggerScope>2</ProcessTriggerScope>
-  <PrimaryEntity>ppp_Traveler</PrimaryEntity>
+  <PrimaryEntity>ppp_Traveller</PrimaryEntity>
   <LocalizedNames>
     <LocalizedName languagecode="1033" description="Set Primary Field Record Number" />
-    <LocalizedName languagecode="1036" description="Set Primary Field Record Number (fr)" />
   </LocalizedNames>
   <Descriptions>
     <Description languagecode="1033" description="Click to add description" />
-    <Description languagecode="1036" description="Click to add description (fr)" />
   </Descriptions>
 </Workflow>

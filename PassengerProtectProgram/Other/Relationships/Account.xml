@@ -34,12 +34,12 @@
       </EntityRelationshipRole>
     </EntityRelationshipRoles>
   </EntityRelationship>
-  <EntityRelationship Name="ppp_Traveler_AirCarrier_Account">
+  <EntityRelationship Name="ppp_Traveller_AirCarrier_Account">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
     <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0.0.0</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
-    <ReferencingEntityName>ppp_Traveler</ReferencingEntityName>
+    <ReferencingEntityName>ppp_Traveller</ReferencingEntityName>
     <ReferencedEntityName>Account</ReferencedEntityName>
     <CascadeAssign>NoCascade</CascadeAssign>
     <CascadeDelete>RemoveLink</CascadeDelete>
@@ -63,7 +63,7 @@
         <RelationshipRoleType>1</RelationshipRoleType>
       </EntityRelationshipRole>
       <EntityRelationshipRole>
-        <NavigationPropertyName>ppp_Traveler_AirCarrier_Account</NavigationPropertyName>
+        <NavigationPropertyName>ppp_Traveller_AirCarrier_Account</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
     </EntityRelationshipRoles>

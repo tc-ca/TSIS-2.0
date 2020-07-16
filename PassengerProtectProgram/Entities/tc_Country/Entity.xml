@@ -675,7 +675,7 @@
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
           <Format>text</Format>
-          <MaxLength>100</MaxLength>
+          <MaxLength>2</MaxLength>
           <Length>200</Length>
           <displaynames>
             <displayname description="Country ISO Code Alpha 2" languagecode="1033" />
@@ -728,7 +728,7 @@
           <Type>nvarchar</Type>
           <Name>tc_countrynameenglish</Name>
           <LogicalName>tc_countrynameenglish</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
+          <RequiredLevel>required</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
           <ImeMode>auto</ImeMode>
           <ValidForUpdateApi>1</ValidForUpdateApi>
@@ -768,7 +768,7 @@
           <Type>nvarchar</Type>
           <Name>tc_countrynamefrench</Name>
           <LogicalName>tc_countrynamefrench</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
+          <RequiredLevel>required</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
           <ImeMode>auto</ImeMode>
           <ValidForUpdateApi>1</ValidForUpdateApi>
@@ -808,7 +808,7 @@
           <Type>nvarchar</Type>
           <Name>tc_name</Name>
           <LogicalName>tc_name</LogicalName>
-          <RequiredLevel>required</RequiredLevel>
+          <RequiredLevel>none</RequiredLevel>
           <DisplayMask>PrimaryName|ValidForAdvancedFind|ValidForForm|ValidForGrid|RequiredForForm</DisplayMask>
           <ImeMode>auto</ImeMode>
           <ValidForUpdateApi>1</ValidForUpdateApi>
@@ -838,7 +838,7 @@
           <MaxLength>100</MaxLength>
           <Length>200</Length>
           <displaynames>
-            <displayname description="Coumtry Name" languagecode="1033" />
+            <displayname description="Country Name" languagecode="1033" />
           </displaynames>
           <Descriptions>
             <Description description="Required name field" languagecode="1033" />
