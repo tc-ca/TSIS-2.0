@@ -59,7 +59,7 @@
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
-                      <cell id="{766b4384-22d8-dded-b330-a1248d692ea6}" showlabel="true" locklevel="0">
+                      <cell id="{766b4384-22d8-dded-b330-a1248d692ea6}" showlabel="true" locklevel="0" visible="false">
                         <labels>
                           <label description="Show BPF" languagecode="1033" />
                         </labels>
@@ -2715,7 +2715,7 @@
         </controlDescription>
       </controlDescriptions>
       <Navigation>
-        <NavBar></NavBar>
+        <NavBar />
         <NavBarAreas>
           <NavBarArea Id="Info">
             <Titles>
