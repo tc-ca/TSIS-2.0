@@ -1483,7 +1483,7 @@
           <Type>lookup</Type>
           <Name>ppp_flightdestination</Name>
           <LogicalName>ppp_flightdestination</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
+          <RequiredLevel>required</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
           <ImeMode>auto</ImeMode>
           <ValidForUpdateApi>1</ValidForUpdateApi>
@@ -1564,7 +1564,7 @@
           <Type>lookup</Type>
           <Name>ppp_flightorigin</Name>
           <LogicalName>ppp_flightorigin</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
+          <RequiredLevel>required</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
           <ImeMode>auto</ImeMode>
           <ValidForUpdateApi>1</ValidForUpdateApi>
@@ -1604,7 +1604,7 @@
           <Type>datetime</Type>
           <Name>ppp_flightorigindate</Name>
           <LogicalName>ppp_flightorigindate</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
+          <RequiredLevel>required</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
           <ImeMode>auto</ImeMode>
           <ValidForUpdateApi>1</ValidForUpdateApi>

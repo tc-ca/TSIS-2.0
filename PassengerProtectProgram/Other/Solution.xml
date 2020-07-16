@@ -153,16 +153,16 @@
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
-        <Required key="4" type="66" schemaName="driv_DR.TimePicker" displayName="driv_DR.TimePicker" solution="TimePickerPCF (1.0.0.7)" />
-        <Dependent key="3" type="60" displayName="Information" parentDisplayName="Traveller" id="{2df0c2f0-69aa-4edb-be91-abfdc11a00bb}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="5" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
-        <Dependent key="6" type="80" schemaName="ppp_PassengerProtectProgram" displayName="Passenger Protect Program" />
+        <Required key="3" type="66" schemaName="driv_DR.TimePicker" displayName="driv_DR.TimePicker" solution="TimePickerPCF (1.0.0.7)" />
+        <Dependent key="1" type="60" displayName="Information" parentDisplayName="Traveller" id="{2df0c2f0-69aa-4edb-be91-abfdc11a00bb}" />
       </MissingDependency>
       <MissingDependency>
         <Required key="5" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
         <Dependent key="5" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="5" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent key="6" type="80" schemaName="ppp_PassengerProtectProgram" displayName="Passenger Protect Program" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>
