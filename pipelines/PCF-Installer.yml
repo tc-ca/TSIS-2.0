@@ -33,3 +33,21 @@ steps:
     SolutionInputFile: '$(Build.SourcesDirectory)\PCFControls\$(PCFControlName).zip'
     AsyncOperation: true
     MaxAsyncWaitTime: '240'
+
+- task: PowerPlatformImportSolution@0
+  inputs:
+    authenticationType: 'PowerPlatformSPN'
+    PowerPlatformSPN: 'TSIS 2.0 Acc'
+    SolutionInputFile: '$(Build.SourcesDirectory)\PCFControls\$(PCFControlName).zip'
+    AsyncOperation: true
+    MaxAsyncWaitTime: '240'
+
+- task: PowerPlatformImportSolution@0
+  inputs:
+    authenticationType: 'PowerPlatformSPN'
+    PowerPlatformSPN: 'TSIS 2.0 Prod'
+    SolutionInputFile: '$(Build.SourcesDirectory)\PCFControls\$(PCFControlName).zip'
+    AsyncOperation: true
+    MaxAsyncWaitTime: '240'
+
+
