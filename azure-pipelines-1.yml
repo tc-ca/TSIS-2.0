@@ -7,6 +7,7 @@ trigger:
   branches:
     include:
     - development
+
     exclude:
     - releases/old*
     - feature/*-working
