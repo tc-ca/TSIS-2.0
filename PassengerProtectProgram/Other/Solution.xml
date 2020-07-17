@@ -7,7 +7,7 @@
       <LocalizedName description="Passenger Protect Program (fr)" languagecode="1036" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.7</Version>
+    <Version>1.0.0.8</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>passengerprotectprogrampublisher</UniqueName>
@@ -85,6 +85,7 @@
     <RootComponents>
       <RootComponent type="1" schemaName="account" behavior="2" />
       <RootComponent type="1" schemaName="ovs_facility" behavior="0" />
+      <RootComponent type="1" schemaName="ppp_aircarrier" behavior="0" />
       <RootComponent type="1" schemaName="ppp_repcallinfo" behavior="0" />
       <RootComponent type="1" schemaName="ppp_traveller" behavior="0" />
       <RootComponent type="1" schemaName="ppp_travellerbusinessflow" behavior="0" />

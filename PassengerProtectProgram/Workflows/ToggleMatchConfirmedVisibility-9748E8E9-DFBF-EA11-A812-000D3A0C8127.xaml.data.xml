@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Workflow WorkflowId="{9748e8e9-dfbf-ea11-a812-000d3a0c8127}" Name="Toggle Match Found Visibility" Description="Click to add description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <XamlFileName>/Workflows/ToggleMatchFoundVisibility-9748E8E9-DFBF-EA11-A812-000D3A0C8127.xaml</XamlFileName>
+<Workflow WorkflowId="{9748e8e9-dfbf-ea11-a812-000d3a0c8127}" Name="Toggle Match Confirmed Visibility" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/ToggleMatchConfirmedVisibility-9748E8E9-DFBF-EA11-A812-000D3A0C8127.xaml</XamlFileName>
   <Type>1</Type>
   <Subprocess>0</Subprocess>
   <Category>2</Category>
@@ -22,9 +22,6 @@
   <ProcessTriggerScope>2</ProcessTriggerScope>
   <PrimaryEntity>ppp_Traveller</PrimaryEntity>
   <LocalizedNames>
-    <LocalizedName languagecode="1033" description="Toggle Match Found Visibility" />
+    <LocalizedName languagecode="1033" description="Toggle Match Confirmed Visibility" />
   </LocalizedNames>
-  <Descriptions>
-    <Description languagecode="1033" description="Click to add description" />
-  </Descriptions>
 </Workflow>

@@ -34,11 +34,11 @@
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
-                      <cell id="{7a521562-2521-e949-063d-aa9818da75c3}" showlabel="true" locklevel="0">
+                      <cell id="{766b4384-22d8-dded-b330-a1248d692ea6}" showlabel="true" locklevel="0" visible="false">
                         <labels>
-                          <label description="Call Type" languagecode="1033" />
+                          <label description="Show BPF" languagecode="1033" />
                         </labels>
-                        <control id="ppp_calltype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ppp_calltype" disabled="false" />
+                        <control id="ppp_showbpf" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="ppp_showbpf" disabled="false" uniqueid="{8340a030-e9dd-492e-3c54-82bd5acd95ab}" />
                       </cell>
                     </row>
                     <row>
@@ -59,11 +59,10 @@
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
-                      <cell id="{766b4384-22d8-dded-b330-a1248d692ea6}" showlabel="true" locklevel="0" visible="false">
+                      <cell id="{d0ba9d3b-997c-99e6-656d-214617a06a00}" showlabel="false">
                         <labels>
-                          <label description="Show BPF" languagecode="1033" />
+                          <label description="" languagecode="1033" />
                         </labels>
-                        <control id="ppp_showbpf" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="ppp_showbpf" disabled="false" uniqueid="{8340a030-e9dd-492e-3c54-82bd5acd95ab}" />
                       </cell>
                     </row>
                     <row>
@@ -79,7 +78,7 @@
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
-                      <cell id="{d0ba9d3b-997c-99e6-656d-214617a06a00}" showlabel="false">
+                      <cell id="{4cd9e791-0265-a957-9c8b-c1be940d4be5}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -98,7 +97,25 @@
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
-                      <cell id="{4cd9e791-0265-a957-9c8b-c1be940d4be5}" showlabel="false">
+                      <cell id="{730d976e-0d94-5e0e-0070-d05b33bb6cc7}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7a521562-2521-e949-063d-aa9818da75c3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Record Type" languagecode="1033" />
+                        </labels>
+                        <control id="ppp_calltype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ppp_calltype" disabled="false" uniqueid="{184dba9d-94a7-cbcd-62b1-2897e23b67cd}" />
+                      </cell>
+                      <cell id="{aeac9349-c4d5-d7d1-6348-032004b2080b}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{6a368e03-b341-d904-323a-3429458eca87}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -108,7 +125,7 @@
                 </section>
                 <section name="tab_General_section_2" id="bcb5de3f-456c-460c-adef-b19499725468" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="111" labelwidth="115">
                   <labels>
-                    <label description="Caller Information" languagecode="1033" />
+                    <label description="Air Carrier Information" languagecode="1033" />
                     <label description="Air Carrier Information (fr)" languagecode="1036" />
                   </labels>
                   <rows>
@@ -119,25 +136,6 @@
                           <label description="Air Carrier (fr)" languagecode="1036" />
                         </labels>
                         <control id="ppp_aircarrier" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ppp_aircarrier" disabled="false" />
-                      </cell>
-                      <cell id="{1a74d0a2-6e51-7a02-36b7-ba7b30a194c0}" showlabel="false">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                      <cell id="{768fc44d-f5b8-4d65-9864-9708f4dca451}" showlabel="false">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{61337168-a326-d843-2269-19ba6a23994d}" showlabel="true" locklevel="0" rowspan="3">
-                        <labels>
-                          <label description="Air Carrier Representative" languagecode="1033" />
-                          <label description="Air Carrier Representative (fr)" languagecode="1036" />
-                        </labels>
-                        <control id="ppp_aircarrierrepresentative" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_aircarrierrepresentative" disabled="false" uniqueid="{7a909011-db57-b901-4153-aa04db360cea}" />
                       </cell>
                       <cell id="{e64b0814-bb95-5b97-dc32-0352ca8235d9}" showlabel="false">
                         <labels>
@@ -151,6 +149,13 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{61337168-a326-d843-2269-19ba6a23994d}" showlabel="true" locklevel="0" rowspan="3">
+                        <labels>
+                          <label description="Air Carrier Representative" languagecode="1033" />
+                          <label description="Air Carrier Representative (fr)" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_aircarrierrepresentative" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_aircarrierrepresentative" disabled="false" uniqueid="{7a909011-db57-b901-4153-aa04db360cea}" />
+                      </cell>
                       <cell id="{5a6d88ea-392b-8d01-3aa3-3d8e1dd85880}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -175,13 +180,6 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{6d555103-07b0-1619-27a8-7ee85157613a}" showlabel="true" locklevel="0" rowspan="3">
-                        <labels>
-                          <label description="Representative Phone Number" languagecode="1033" />
-                          <label description="Representative Phone Number (fr)" languagecode="1036" />
-                        </labels>
-                        <control id="ppp_representativephonenumber" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_representativephonenumber" disabled="false" uniqueid="{e0740a06-8ace-ec09-c956-ed69a3ce9861}" />
-                      </cell>
                       <cell id="{5eb2e12c-2981-e11a-dc44-a0b95732e549}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -194,6 +192,13 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{6d555103-07b0-1619-27a8-7ee85157613a}" showlabel="true" locklevel="0" rowspan="3">
+                        <labels>
+                          <label description="Representative Phone Number" languagecode="1033" />
+                          <label description="Representative Phone Number (fr)" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_representativephonenumber" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_representativephonenumber" disabled="false" uniqueid="{e0740a06-8ace-ec09-c956-ed69a3ce9861}" />
+                      </cell>
                       <cell id="{b706c67d-0172-4864-3007-45070c804b54}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -212,6 +217,18 @@
                         </labels>
                       </cell>
                       <cell id="{28805aee-4288-badd-217d-0a20067ba73e}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e49893aa-b825-348e-23c3-dbb20d7584bc}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{c0d6b2cd-7d96-0ec9-4a07-17e8706bc930}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -242,13 +259,6 @@
                           </parameters>
                         </control>
                       </cell>
-                      <cell id="{c0d6b2cd-7d96-0ec9-4a07-17e8706bc930}" showlabel="false">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                    </row>
-                    <row>
                       <cell id="{ca802c53-5637-e776-31a6-58997e4d0944}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -285,6 +295,13 @@
                     </row>
                     <row>
                       <cell id="{c56e7dc3-4d02-a223-9a50-264ced26e2e9}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0e9dc002-4b54-bc59-1e31-167b192e69e6}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -1768,43 +1785,6 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{2c4e231a-2a3a-d0a5-b3b4-01dc8126ec64}" showlabel="true" locklevel="0">
-                        <labels>
-                          <label description="Electronic ticket in reservation system?" languagecode="1033" />
-                        </labels>
-                        <control id="ppp_ticketstored" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ppp_ticketstored" disabled="false" uniqueid="{aa9a70d0-d4c0-47a6-2424-ccdb014c4a1b}" />
-                      </cell>
-                      <cell id="{31ce07ae-75a9-e3c2-8b60-ada515c5a51e}" showlabel="false">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                      <cell id="{0c206634-05d9-cb8c-d0a5-90d9b8060057}" showlabel="false">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{3d977e2d-5ba0-4ba4-92c4-ab9215d7aba2}" showlabel="true" locklevel="0">
-                        <labels>
-                          <label description="Additional Travel Information?" languagecode="1033" />
-                          <label description="Questions for Transport Canada (If applicable) (fr)" languagecode="1036" />
-                        </labels>
-                        <control id="ppp_questionsfortctoggle" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="ppp_questionsfortctoggle" disabled="false" uniqueid="{097d7f4e-c518-41e7-8bd3-ca8864904ad3}" />
-                      </cell>
-                      <cell id="{85cca1aa-8776-eec3-d026-ed01e757db02}" showlabel="false">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                      <cell id="{81b4b11d-4315-98d3-29a7-6b7917c26a6b}" showlabel="false">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                    </row>
-                    <row>
                       <cell id="{b6a6e53e-e894-3535-c59d-5cbc4ad73059}" showlabel="true" locklevel="0" rowspan="3" colspan="2">
                         <labels>
                           <label description="Additional Travel Information" languagecode="1033" />
@@ -2575,28 +2555,6 @@
             </parameters>
           </customControl>
         </controlDescription>
-        <controlDescription forControl="{097d7f4e-c518-41e7-8bd3-ca8864904ad3}">
-          <customControl id="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}">
-            <parameters>
-              <datafieldname>ppp_questionsfortctoggle</datafieldname>
-            </parameters>
-          </customControl>
-          <customControl formFactor="0" name="MscrmControls.FlipSwitch.FlipSwitchControl">
-            <parameters>
-              <value>ppp_questionsfortctoggle</value>
-            </parameters>
-          </customControl>
-          <customControl formFactor="1" name="MscrmControls.FlipSwitch.FlipSwitchControl">
-            <parameters>
-              <value>ppp_questionsfortctoggle</value>
-            </parameters>
-          </customControl>
-          <customControl formFactor="2" name="MscrmControls.FlipSwitch.FlipSwitchControl">
-            <parameters>
-              <value>ppp_questionsfortctoggle</value>
-            </parameters>
-          </customControl>
-        </controlDescription>
         <controlDescription forControl="{ccab6125-73da-4f3b-baeb-fa29797aeb24}">
           <customControl id="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}">
             <parameters>
@@ -2715,7 +2673,7 @@
         </controlDescription>
       </controlDescriptions>
       <Navigation>
-        <NavBar />
+        <NavBar></NavBar>
         <NavBarAreas>
           <NavBarArea Id="Info">
             <Titles>
