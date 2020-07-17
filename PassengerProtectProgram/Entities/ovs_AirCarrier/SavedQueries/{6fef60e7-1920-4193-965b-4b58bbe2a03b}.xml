@@ -6,11 +6,11 @@
     <isquickfindquery>0</isquickfindquery>
     <isprivate>0</isprivate>
     <isdefault>1</isdefault>
-    <savedqueryid>{82295ddf-4ed3-4d4a-b3ac-a36e99915c75}</savedqueryid>
+    <savedqueryid>{6fef60e7-1920-4193-965b-4b58bbe2a03b}</savedqueryid>
     <layoutxml>
-      <grid name="resultset" jump="ppp_name" select="1" icon="1" preview="1">
-        <row name="result" id="ppp_aircarrierid">
-          <cell name="ppp_name" width="300" />
+      <grid name="resultset" jump="ovs_aircarriername" select="1" icon="1" preview="1">
+        <row name="result" id="ovs_aircarrierid">
+          <cell name="ovs_aircarriername" width="300" />
           <cell name="createdon" width="125" />
         </row>
       </grid>
@@ -18,15 +18,15 @@
     <querytype>1</querytype>
     <fetchxml>
       <fetch version="1.0" mapping="logical">
-        <entity name="ppp_aircarrier">
-          <attribute name="ppp_aircarrierid" />
-          <attribute name="ppp_name" />
+        <entity name="ovs_aircarrier">
+          <attribute name="ovs_aircarrierid" />
+          <attribute name="ovs_aircarriername" />
           <attribute name="createdon" />
-          <order attribute="ppp_name" descending="false" />
+          <order attribute="ovs_aircarriername" descending="false" />
         </entity>
       </fetch>
     </fetchxml>
-    <IntroducedVersion>1.0.0.8</IntroducedVersion>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="Air Carrier Advanced Find View" languagecode="1033" />
     </LocalizedNames>

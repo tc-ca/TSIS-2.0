@@ -6,11 +6,14 @@
     <isquickfindquery>0</isquickfindquery>
     <isprivate>0</isprivate>
     <isdefault>0</isdefault>
-    <savedqueryid>{bec1f350-8bb5-4fff-bb94-93b6792004ce}</savedqueryid>
+    <savedqueryid>{e8a7bb9a-9f08-4d21-8916-29166ffc5e7b}</savedqueryid>
     <layoutxml>
-      <grid name="resultset" jump="ppp_name" select="1" icon="1" preview="1">
-        <row name="result" id="ppp_aircarrierid">
-          <cell name="ppp_name" width="300" />
+      <grid name="resultset" jump="ovs_aircarriername" select="1" icon="1" preview="1">
+        <row name="result" id="ovs_aircarrierid">
+          <cell name="ovs_aircarriername" width="300" />
+          <cell name="ovs_icaocode" width="100" />
+          <cell name="ovs_country" width="100" />
+          <cell name="ovs_callsign" width="100" />
           <cell name="createdon" width="125" />
         </row>
       </grid>
@@ -18,18 +21,21 @@
     <querytype>0</querytype>
     <fetchxml>
       <fetch version="1.0" mapping="logical">
-        <entity name="ppp_aircarrier">
-          <attribute name="ppp_aircarrierid" />
-          <attribute name="ppp_name" />
+        <entity name="ovs_aircarrier">
+          <attribute name="ovs_aircarriername" />
           <attribute name="createdon" />
-          <order attribute="ppp_name" descending="false" />
+          <order attribute="ovs_aircarriername" descending="false" />
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="1" />
           </filter>
+          <attribute name="ovs_icaocode" />
+          <attribute name="ovs_country" />
+          <attribute name="ovs_callsign" />
+          <attribute name="ovs_aircarrierid" />
         </entity>
       </fetch>
     </fetchxml>
-    <IntroducedVersion>1.0.0.8</IntroducedVersion>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="Inactive Air Carriers" languagecode="1033" />
     </LocalizedNames>

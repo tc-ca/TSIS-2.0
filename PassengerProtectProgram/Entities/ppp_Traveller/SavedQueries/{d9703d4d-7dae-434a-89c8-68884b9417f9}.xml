@@ -31,9 +31,9 @@
           </filter>
           <attribute name="ppp_flightnumber" />
           <attribute name="ppp_recordstatus" />
-          <attribute name="ppp_travellerid" />
-          <attribute name="ppp_aircarrier" />
           <attribute name="ownerid" />
+          <attribute name="ppp_aircarrier" />
+          <attribute name="ppp_travellerid" />
         </entity>
       </fetch>
     </fetchxml>

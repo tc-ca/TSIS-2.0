@@ -1,35 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <systemform>
-    <formid>{1a86f3f4-2546-4734-b6b0-49abbe4b10d1}</formid>
-    <IntroducedVersion>1.0.0.8</IntroducedVersion>
+    <formid>{186f3647-eb43-4ba2-a572-61e12e6816c0}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
     <form>
       <tabs>
-        <tab verticallayout="true" id="{ae70a3d7-ee28-4e43-9a5d-45a856d11500}" IsUserDefined="1">
+        <tab verticallayout="true" id="{b55780ed-643f-4651-b30a-9573f57555be}" IsUserDefined="1">
           <labels>
             <label description="" languagecode="1033" />
           </labels>
           <columns>
             <column width="100%">
               <sections>
-                <section showlabel="false" showbar="false" IsUserDefined="0" id="{9a45bcfc-b069-4abb-a834-f928151ff643}">
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{96b12dd5-d9fd-4f4b-a4b3-b1deda7842c4}">
                   <labels>
                     <label description="GENERAL" languagecode="1033" />
                     <label description="GÉNÉRAL" languagecode="1036" />
                   </labels>
                   <rows>
                     <row>
-                      <cell id="{b421400d-49c3-4290-ad1e-94fcf7913647}">
+                      <cell id="{6e40c7dc-cbb4-452d-bba9-05ff291e6292}">
                         <labels>
-                          <label description="Name" languagecode="1033" />
+                          <label description="Air Carrier Name" languagecode="1033" />
                         </labels>
-                        <control id="ppp_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="ppp_name" />
+                        <control id="ovs_aircarriername" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="ovs_aircarriername" />
                       </cell>
                     </row>
                     <row>
-                      <cell id="{829ea7ce-7eed-48ec-9d4b-ac9f524d8cee}">
+                      <cell id="{47d1525a-0b5c-484f-96db-74e7a8642869}">
                         <labels>
                           <label description="Owner" languagecode="1033" />
                           <label description="Propriétaire" languagecode="1036" />

@@ -6,34 +6,36 @@
     <isquickfindquery>0</isquickfindquery>
     <isprivate>0</isprivate>
     <isdefault>1</isdefault>
-    <savedqueryid>{6e31970e-bb3d-476c-82ef-0aee714d3975}</savedqueryid>
+    <savedqueryid>{913a1bff-74a6-4704-918a-8b5c200e404e}</savedqueryid>
     <layoutxml>
-      <grid name="resultset" jump="ppp_name" select="1" icon="1" preview="1">
-        <row name="result" id="ppp_aircarrierid">
-          <cell name="ppp_name" width="300" />
+      <grid name="resultset" jump="ovs_aircarriername" select="1" icon="1" preview="1">
+        <row name="result" id="ovs_aircarrierid">
+          <cell name="ovs_aircarriername" width="300" />
+          <cell name="ovs_icaocode" width="100" />
+          <cell name="ovs_country" width="100" />
+          <cell name="ovs_callsign" width="100" />
           <cell name="createdon" width="125" />
-          <cell name="ppp_icao" width="100" />
-          <cell name="ppp_organization" width="100" />
         </row>
       </grid>
     </layoutxml>
     <querytype>0</querytype>
     <fetchxml>
       <fetch version="1.0" mapping="logical">
-        <entity name="ppp_aircarrier">
-          <attribute name="ppp_aircarrierid" />
-          <attribute name="ppp_name" />
+        <entity name="ovs_aircarrier">
+          <attribute name="ovs_aircarriername" />
           <attribute name="createdon" />
-          <order attribute="ppp_name" descending="false" />
+          <order attribute="ovs_aircarriername" descending="false" />
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
           </filter>
-          <attribute name="ppp_icao" />
-          <attribute name="ppp_organization" />
+          <attribute name="ovs_icaocode" />
+          <attribute name="ovs_country" />
+          <attribute name="ovs_callsign" />
+          <attribute name="ovs_aircarrierid" />
         </entity>
       </fetch>
     </fetchxml>
-    <IntroducedVersion>1.0.0.8</IntroducedVersion>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="Active Air Carriers" languagecode="1033" />
     </LocalizedNames>

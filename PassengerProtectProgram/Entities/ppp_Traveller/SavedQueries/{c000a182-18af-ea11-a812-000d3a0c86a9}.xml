@@ -11,7 +11,7 @@
       <grid name="resultset" jump="ppp_name" select="1" icon="1" preview="1">
         <row name="result" id="ppp_travellerid">
           <cell name="ppp_name" width="100" />
-          <cell name="ppp_aircarrier" width="187" />
+          <cell name="ppp_aircarrier" width="100" />
           <cell name="ppp_flightnumber" width="100" />
           <cell name="ownerid" width="100" />
           <cell name="createdon" width="100" />
@@ -23,16 +23,16 @@
     <fetchxml>
       <fetch version="1.0" output-format="xml-platform" mapping="logical">
         <entity name="ppp_traveller">
-          <attribute name="ppp_travellerid" />
           <filter type="and">
             <condition attribute="ppp_recordstatus" operator="eq" value="927820001" />
           </filter>
-          <attribute name="ppp_aircarrier" />
           <attribute name="ppp_flightnumber" />
           <attribute name="ppp_recordstatus" />
           <attribute name="createdon" />
           <attribute name="ownerid" />
           <attribute name="ppp_name" />
+          <attribute name="ppp_aircarrier" />
+          <attribute name="ppp_travellerid" />
         </entity>
       </fetch>
     </fetchxml>

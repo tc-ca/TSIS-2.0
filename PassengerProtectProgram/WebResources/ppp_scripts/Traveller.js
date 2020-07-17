@@ -8,6 +8,13 @@ function InitializeButton(eContext) {
   window.parentFormContext = eContext.getFormContext();
 }
 
+function proceed() {
+  var eContext = window.parentExecutionContext;
+  var formContext = eContext.getFormContext();
+  formContext.getAttribute("ppp_matchfoundtime").setValue(new Date());
+  ToggleTabs();
+}
+
 function ToggleTabs() {
   var eContext = window.parentExecutionContext;
   var formContext = eContext.getFormContext();
@@ -19,6 +26,8 @@ function ToggleTabs() {
   ShowHideTabs(eContext, 'ppp_matchfound', 927820001, ['tab_TravelInformation', 'tab_TravellerInformation', 'tab_AnalystObservations']);
   ShowHideTabs(eContext, 'ppp_matchfound', 927820000, ['tab_DetailedTravellerInformation', 'tab_SupplementalTravellerInformation', 'tab_TravelDetails', 'tab_RecommendedAction', 'tab_NewInformation', 'tab_CaseBrief', 'tab_Decision']);
 }
+
+
 
 function OnLoad(eContext) {
   // Get formContext
@@ -224,6 +233,7 @@ function showHidePassportNumber(eContext) {
     formContext.getControl('ppp_passportnumber').setVisible(passportSelected);
 }
 
+//If the valueField matched the desiredValue, set the given timeField to Now
 function setTimeFieldNow(eContext, valueFieldName, desiredValue, timeFieldName) {
   var formContext = eContext.getFormContext();
   var valueField = formContext.getAttribute(valueFieldName).getValue();
@@ -242,6 +252,22 @@ function setDateTime(eContext, dateFieldName, hourFieldName, minuteFieldName, da
     dateTime.setHours(hour);
     dateTime.setMinutes(minute);
     formContext.getAttribute(dateTimeField).setValue(dateTime);
+  }
+}
+
+function showHideMatchConfirmed(eContext) {
+  var formContext = eContext.getFormContext();
+  var firstName = formContext.getAttribute("ppp_firstname").getValue();
+  var lastName = formContext.getAttribute("ppp_lastname").getValue();
+  var gender = formContext.getAttribute("ppp_gender").getValue();
+  var dateOfBirth = formContext.getAttribute("ppp_dateofbirth").getValue();
+  var isPresent = formContext.getAttribute("ppp_ispresent").getValue();
+
+  if (firstName && lastName && gender && dateOfBirth && isPresent) {
+    formContext.getControl("ppp_matchfound").setVisible(true);
+  } else {
+    formContext.getControl("ppp_matchfound").setVisible(false);
+    formContext.getAttribute("ppp_matchfound").setValue(null);
   }
 }
 

@@ -32,7 +32,7 @@
             <Title LCID="1033" Title="Aerodromes" />
           </Titles>
         </SubArea>
-        <SubArea Id="NewSubArea_fb9c287c" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="account" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+        <SubArea Id="NewSubArea_fb9c287c" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="ovs_aircarrier" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
           <Titles>
             <Title LCID="1033" Title="Air Carriers" />
           </Titles>

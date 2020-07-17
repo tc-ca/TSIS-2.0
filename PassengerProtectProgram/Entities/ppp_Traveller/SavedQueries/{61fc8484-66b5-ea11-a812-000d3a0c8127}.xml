@@ -27,13 +27,13 @@
           <attribute name="createdon" />
           <attribute name="ppp_flightnumber" />
           <attribute name="ppp_recordstatus" />
-          <attribute name="ppp_aircarrier" />
           <attribute name="ownerid" />
           <order attribute="ppp_name" descending="false" />
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
             <condition attribute="ownerid" operator="eq-userid" />
           </filter>
+          <attribute name="ppp_aircarrier" />
           <attribute name="ppp_travellerid" />
         </entity>
       </fetch>
