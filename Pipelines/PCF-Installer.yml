@@ -6,30 +6,12 @@
 trigger:
   branches:
     include:
-    - development
     exclude:
-    - releases/old*
-    - feature/*-working
   paths:
     include:
-    - PassengerProtectProgram/*
     exclude:
-    - Plugin/*
-    - WebResources/*
 
 pool:
-  vmImage:  'vs2017-win2016'
 
 steps:
 
-- task: PowerPlatformToolInstaller@0
-  inputs:
-    DefaultVersion: true
-
-- task: PowerPlatformImportSolution@0
-  inputs:
-    authenticationType: 'PowerPlatformSPN'
-    PowerPlatformSPN: 'TSIS 2.0 QA'
-    SolutionInputFile: '$(Build.SourcesDirectory)\PCFControls\$(PCFControlName).zip'
-    AsyncOperation: true
-    MaxAsyncWaitTime: '240'
