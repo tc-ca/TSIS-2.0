@@ -291,17 +291,40 @@ function showHideMatchConfirmed(eContext) {
   }
 }
 
-function ReadOnlyOnClosed(eContext) {
+function ReadOnlyOnClosed(eContext, keepLockedList, keepUnlockedList) {
   var formContext = eContext.getFormContext();
   var recordStatus = formContext.getAttribute('ppp_recordstatus').getValue();
   var recordClosed = recordStatus == 927820002 || recordStatus == 927820005;
+
+  //Toggle everything to match record closed status
   formContext.ui.controls.forEach(function (attribute) {
     var control = formContext.getControl(attribute.getName());
     if (control) {
       control.setDisabled(recordClosed);
     }
   });
-  formContext.getControl('header_ppp_recordstatus').setDisabled(false);
+
+  //A little inefficient but works. Will be changed soon.
+
+  //Lock everything in KeepLockedList
+  if (keepLockedList) {
+    keepLockedList.forEach(function (attributeName) {
+      var control = formContext.getControl(attributeName);
+      if (control) {
+        control.setDisabled(true);
+      }
+    });
+  }
+
+  //Unlock everything in KeepUnlockedList
+  if (keepUnlockedList) {
+    keepUnlockedList.forEach(function (attributeName) {
+      var control = formContext.getControl(attributeName);
+      if (control) {
+        control.setDisabled(false);
+      }
+    });
+  }
 
   //Disable the add existing buttons on all grids.
   RefreshGridRibbon(formContext, 'gridCallHistory');
