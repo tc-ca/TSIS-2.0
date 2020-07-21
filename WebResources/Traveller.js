@@ -275,17 +275,19 @@ function setDateTime(
 
 function showHideMatchConfirmed(eContext) {
   var formContext = eContext.getFormContext();
-  var firstName = formContext.getAttribute('ppp_firstname').getValue();
-  var lastName = formContext.getAttribute('ppp_lastname').getValue();
-  var gender = formContext.getAttribute('ppp_gender').getValue();
-  var dateOfBirth = formContext.getAttribute('ppp_dateofbirth').getValue();
-  var isPresent = formContext.getAttribute('ppp_ispresent').getValue();
+  var firstName = formContext.getAttribute("ppp_firstname").getValue();
+  var lastName = formContext.getAttribute("ppp_lastname").getValue();
+  var gender = formContext.getAttribute("ppp_gender").getValue();
+  var dateOfBirth = formContext.getAttribute("ppp_dateofbirth").getValue();
+  var isPresent = formContext.getAttribute("ppp_ispresent").getValue();
+  var haveProceeded = formContext.getAttribute("ppp_matchfoundconfirmation").getValue();
 
-  if (firstName && lastName && gender && dateOfBirth && isPresent) {
-    formContext.getControl('ppp_matchfound').setVisible(true);
+  if (firstName && lastName && gender && dateOfBirth && isPresent && !haveProceeded) {
+    formContext.getControl("ppp_matchfound").setVisible(true);
   } else {
-    formContext.getControl('ppp_matchfound').setVisible(false);
-    formContext.getAttribute('ppp_matchfound').setValue(null);
+    formContext.getControl("ppp_matchfound").setVisible(false);
+    formContext.getControl("WebResource_traveller").setVisible(false);
+    formContext.getAttribute("ppp_matchfound").setValue(null);
   }
 }
 
