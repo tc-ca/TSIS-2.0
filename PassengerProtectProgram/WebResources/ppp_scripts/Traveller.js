@@ -55,7 +55,7 @@ function populateCurrentUser(eContext, userFieldName) {
   currentUser[0] = new Object();
   currentUser[0].id = globalContext.userSettings.userId;
   currentUser[0].entityType = 'systemuser';
-  currentUser[0].name = Xrm.Page.context.getUserName();
+  globalContext.userSettings.userName;
 
   var userField = formContext.getAttribute(userFieldName);
   userField.setValue(currentUser);
@@ -199,6 +199,10 @@ function DisableSubgrid(eContext, gridName) {
   subGridCtrl.setDisabled(true);
 }
 
+function DisableGrid(){
+return false;
+}
+
 //Toggles display of the BPF. Takes the formcontext and the the name of the twoOption field that was changed as a string.
 function showHideBusinessProcessFlow(eContext, twoOptionFieldName) {
     var formContext = eContext.getFormContext(); 
@@ -271,5 +275,32 @@ function showHideMatchConfirmed(eContext) {
   }
 }
 
+function ReadOnlyOnClosed(eContext) {
+  var formContext = eContext.getFormContext();
+  var recordStatus = formContext.getAttribute("ppp_recordstatus").getValue();
+  var recordClosed = (recordStatus == 927820002 || recordStatus == 927820005);
+  formContext.ui.controls.forEach(function (attribute) {
+    var control = formContext.getControl(attribute.getName());
+    if (control) {
+      control.setDisabled(recordClosed)
+    }
+  });
+ var subgrid = formContext.getControl("Subgrid_1");
+subgrid.refresh();
+  formContext.getControl("header_ppp_recordstatus").setDisabled(false);
+
+}
+
+function recordIsNotClosed(primaryControl) {
+  var formContext = primaryControl;
+  var recordStatus = formContext.getAttribute("ppp_recordstatus").getValue();
+
+  return !(recordStatus == 927820002 || recordStatus == 927820005);
+}
+
+function refreshConnectionGrid(){
+refreshRibbon();
+formContext.ui.refreshRibbon();
+}
 
 

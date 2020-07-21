@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.1.0.20144" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.1.0.20441" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>PassengerProtectProgram</UniqueName>
     <LocalizedNames>
@@ -136,6 +136,7 @@
       <RootComponent type="29" id="{a420d350-f6c1-ea11-a812-000d3a0c8127}" behavior="0" />
       <RootComponent type="29" id="{af4965ce-32ab-ea11-a812-000d3a0c8127}" behavior="0" />
       <RootComponent type="29" id="{b0f61224-f9c1-ea11-a812-000d3a0c8127}" behavior="0" />
+      <RootComponent type="29" id="{b1916c3c-c9ca-ea11-a812-000d3a0c8127}" behavior="0" />
       <RootComponent type="29" id="{b6eb0904-16ba-ea11-a812-000d3a0c86a9}" behavior="0" />
       <RootComponent type="29" id="{c3b8ac4a-e0bf-ea11-a812-000d3a0c8127}" behavior="0" />
       <RootComponent type="29" id="{c474596e-7ac7-ea11-a812-000d3a0c8127}" behavior="0" />
