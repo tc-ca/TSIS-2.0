@@ -1,16 +1,21 @@
-﻿window.parentExecutionContext = null;
-window.parentFormContext = null;
+//window.parentExecutionContext = null;
+//window.parentFormContext = null;
 
 function InitializeButton(eContext) {
   // Assign executionContext and formContext to global variables within the web resource
-  window.parentExecutionContext = eContext;
-  window.parentFormContext = eContext.getFormContext();
+  //window.parentExecutionContext = eContext;
+  //window.parentFormContext = eContext.getFormContext();
 }
 
-function proceed() {
-  var eContext = window.parentExecutionContext;
-  var formContext = eContext.getFormContext();
+function proceed(formContext) {
+  //var eContext = window.parentExecutionContext;
+  //var formContext = eContext.getFormContext();
+  var confirmation = formContext.getAttribute('ppp_matchfoundconfirmation');
+  confirmation.setValue(true);
   formContext.getAttribute('ppp_matchfoundtime').setValue(new Date());
+
+  formContext.data.save();
+
   formContext.getControl('ppp_matchfound').setVisible(false);
   formContext.getControl('WebResource_traveller').setVisible(false);
   ToggleTabs();
@@ -19,10 +24,6 @@ function proceed() {
 
 function ToggleTabs() {
   var eContext = window.parentExecutionContext;
-  var formContext = eContext.getFormContext();
-  var confirmation = formContext.getAttribute('ppp_matchfoundconfirmation');
-  confirmation.setValue(true);
-  formContext.data.save();
   //confirmation.setSubmitMode("Always");
 
   ShowHideTabs(eContext, 'ppp_matchfound', 927820001, [
@@ -110,30 +111,48 @@ function SetNow(eContext, fieldName) {
   field.setSubmitMode('always'); // Save Disabled Fields
 }
 
-function ShowHideWebResource(eContext, fieldName, value, webResource) {
+function ShowHideWebResource(eContext, fieldName, confirmationFieldName, value, webResource) {
   var formContext = eContext.getFormContext();
-
+  debugger;
   var field = formContext.getAttribute(fieldName);
+  var confirmationField = formContext.getAttribute(confirmationFieldName);
   if (field == null || field == 'undefined') return;
+  if (confirmationField == null || confirmationField == 'undefined') return;
 
-  var isVisible = false;
-
-  if (field.getValue() == null) {
-    isVisible = false;
-  } else if (field.getValue() == value) {
-    isVisible = true;
+  if (field.getValue() != value) {
+    return;
   }
+  //Only show the confirmation when 'Match found' is 'Yes' and 'Match found confirmation' is 'No'
+  if (!(field.getValue() == value && confirmationField.getValue() != value)) {
+    return;
+  }
+    //var wrCtrl = formContext.getControl(webResource);
+    //if (wrCtrl == null || wrCtrl == 'undefined') return;
+    //wrCtrl.setVisible(isVisible);
+    
+    //formContext.ui.setFormNotification("By clicking the proceed button, you will be redirected to the next page and will NOT be able to modify the information on this page.", "WARNING", "AlertMatchFoundConfirmation");
+    var confirmStrings = { text: "By clicking the proceed button, you will be redirected to the next page and will NOT be able to modify the information on this page.", title: "Confirmation Match Found" };
+    var confirmOptions = { height: 200, width: 450 };
+    Xrm.Navigation.openConfirmDialog(confirmStrings, confirmOptions).then(
+      function (success) {
+        if (success.confirmed) {
+          console.log("Dialog closed using OK button.");
+          proceed(formContext);
+        }
+        else {
+          console.log("Dialog closed using Cancel button or X.");
+          //If user cancels, reset the value.
+          field.setValue(null);
+        }
+      });
 
-  var wrCtrl = formContext.getControl(webResource);
-  if (wrCtrl == null || wrCtrl == 'undefined') return;
-  wrCtrl.setVisible(isVisible);
-
-  //if (isVisible) {
-  //  console.log("set eContext");
-  //  wrCtrl.getContentWindow().then(function (win) {
-  //    win.InitializeButton(eContext);
-  //  });
-  //}
+    //if (isVisible) {
+    //  console.log("set eContext");
+    //  wrCtrl.getContentWindow().then(function (win) {
+    //    win.InitializeButton(eContext);
+    //  });
+    //}
+  
 }
 
 function ShowHideTabs(eContext, fieldName, value, tabs) {
@@ -298,14 +317,13 @@ function ReadOnlyOnClosed(eContext, keepLockedList, keepUnlockedList) {
 
   //Toggle everything to match record closed status
   formContext.ui.controls.forEach(function (attribute) {
+    console.log(attribute.getName());
     var control = formContext.getControl(attribute.getName());
     if (control) {
       control.setDisabled(recordClosed);
     }
   });
-
-  //A little inefficient but works. Will be changed soon.
-
+  debugger;
   //Lock everything in KeepLockedList
   if (keepLockedList) {
     keepLockedList.forEach(function (attributeName) {
