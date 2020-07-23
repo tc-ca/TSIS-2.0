@@ -1,4 +1,4 @@
-//window.parentExecutionContext = null;
+﻿//window.parentExecutionContext = null;
 //window.parentFormContext = null;
 
 function InitializeButton(eContext) {
@@ -7,9 +7,9 @@ function InitializeButton(eContext) {
   //window.parentFormContext = eContext.getFormContext();
 }
 
-function proceed(formContext) {
+function proceed(eContext) {
   //var eContext = window.parentExecutionContext;
-  //var formContext = eContext.getFormContext();
+  var formContext = eContext.getFormContext();
   var confirmation = formContext.getAttribute('ppp_matchfoundconfirmation');
   confirmation.setValue(true);
   formContext.getAttribute('ppp_matchfoundtime').setValue(new Date());
@@ -18,19 +18,19 @@ function proceed(formContext) {
 
   formContext.getControl('ppp_matchfound').setVisible(false);
   formContext.getControl('WebResource_traveller').setVisible(false);
-  ToggleTabs();
+  ToggleTabs(eContext);
   formContext.ui.tabs.get('tab_DetailedTravellerInformation').setFocus();
 }
 
-function ToggleTabs() {
-  var eContext = window.parentExecutionContext;
+function ToggleTabs(eContext) {
+  //var eContext = window.parentExecutionContext;
   //confirmation.setSubmitMode("Always");
 
-  ShowHideTabs(eContext, 'ppp_matchfound', 927820001, [
+  ShowHideTabs(eContext, 'ppp_matchfoundconfirmation', false, [
     'tab_TravelInformation',
     'tab_TravellerInformation',
   ]);
-  ShowHideTabs(eContext, 'ppp_matchfound', 927820000, [
+  ShowHideTabs(eContext, 'ppp_matchfoundconfirmation', true, [
     'tab_DetailedTravellerInformation',
     'tab_TravelDetails',
     'tab_RecommendedAction',
@@ -137,7 +137,7 @@ function ShowHideWebResource(eContext, fieldName, confirmationFieldName, value, 
       function (success) {
         if (success.confirmed) {
           console.log("Dialog closed using OK button.");
-          proceed(formContext);
+          proceed(eContext);
         }
         else {
           console.log("Dialog closed using Cancel button or X.");
@@ -208,7 +208,6 @@ function ShowHideTextbox(eContext, optFieldName, value, txtFieldName) {
 }
 
 function DisableSubgrid(eContext, gridName) {
-  debugger;
   var formContext = eContext.getFormContext();
   var subGridCtrl = formContext.getControl(gridName);
   if (subGridCtrl == null) {
@@ -306,7 +305,9 @@ function showHideMatchConfirmed(eContext) {
   } else {
     formContext.getControl("ppp_matchfound").setVisible(false);
     formContext.getControl("WebResource_traveller").setVisible(false);
-    formContext.getAttribute("ppp_matchfound").setValue(null);
+    if (!haveProceeded) {
+      formContext.getAttribute("ppp_matchfound").setValue(null);
+    }
   }
 }
 
@@ -314,16 +315,25 @@ function ReadOnlyOnClosed(eContext, keepLockedList, keepUnlockedList) {
   var formContext = eContext.getFormContext();
   var recordStatus = formContext.getAttribute('ppp_recordstatus').getValue();
   var recordClosed = recordStatus == 927820002 || recordStatus == 927820005;
+  toggleDisabledAllControls(eContext, recordClosed, keepLockedList, keepUnlockedList);
 
-  //Toggle everything to match record closed status
-  formContext.ui.controls.forEach(function (attribute) {
-    console.log(attribute.getName());
-    var control = formContext.getControl(attribute.getName());
-    if (control) {
-      control.setDisabled(recordClosed);
-    }
-  });
-  debugger;
+  //Disable the add existing buttons on all grids.
+  RefreshGridRibbon(formContext, 'gridCallHistory');
+  RefreshGridRibbon(formContext, 'gridFlightConnections');
+  RefreshGridRibbon(formContext, 'gridFlightConnections2');
+}
+
+function toggleDisabledAllControls(eContext, disable, keepLockedList, keepUnlockedList) {
+    var formContext = eContext.getFormContext();
+
+    //Toggle everything to match record closed status
+    formContext.ui.controls.forEach(function (attribute) {
+      console.log(attribute.getName());
+      var control = formContext.getControl(attribute.getName());
+      if (control) {
+        control.setDisabled(disable);
+      }
+    });
   //Lock everything in KeepLockedList
   if (keepLockedList) {
     keepLockedList.forEach(function (attributeName) {
@@ -343,11 +353,6 @@ function ReadOnlyOnClosed(eContext, keepLockedList, keepUnlockedList) {
       }
     });
   }
-
-  //Disable the add existing buttons on all grids.
-  RefreshGridRibbon(formContext, 'gridCallHistory');
-  RefreshGridRibbon(formContext, 'gridFlightConnections');
-  RefreshGridRibbon(formContext, 'gridFlightConnections2');
 }
 
 function RefreshGridRibbon(formContext, gridName) {
@@ -367,3 +372,22 @@ function refreshConnectionGrid() {
   //refreshRibbon();
   //formContext.ui.refreshRibbon();
 }
+
+function setAttributesRequirementLevel(eContext, attributes, requirementLevel) {
+  var formContext = eContext.getFormContext();
+  attributes.forEach(attributeName => {
+    formContext.getAttribute(attributeName).setRequiredLevel(requirementLevel);
+  });
+}
+
+function setStartingFormState(eContext, startingAttribute, requiredAttributes, keepLockedList, keepUnLockedList) {
+  var formContext = eContext.getFormContext();
+  if (formContext.getAttribute(startingAttribute).getValue() == null) {
+    setAttributesRequirementLevel(eContext, requiredAttributes, "none");
+    toggleDisabledAllControls(eContext, true, [], [])
+  } else {
+    setAttributesRequirementLevel(eContext, requiredAttributes, "required");
+    toggleDisabledAllControls(eContext, false, keepLockedList, keepUnLockedList)
+  }
+}
+
