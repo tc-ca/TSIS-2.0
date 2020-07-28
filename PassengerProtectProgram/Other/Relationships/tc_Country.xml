@@ -85,7 +85,7 @@
     <ReferencingAttributeName>ppp_Citizenship</ReferencingAttributeName>
     <RelationshipDescription>
       <Descriptions>
-        <Description description="" languagecode="1033" />
+        <Description description="The country identified by the traveller's passport." languagecode="1033" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>
@@ -119,7 +119,7 @@
     <ReferencingAttributeName>ppp_IDCountry</ReferencingAttributeName>
     <RelationshipDescription>
       <Descriptions>
-        <Description description="" languagecode="1033" />
+        <Description description="The country that issued the presented passport to the Traveller." languagecode="1033" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>

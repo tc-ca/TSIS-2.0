@@ -19,7 +19,7 @@
   <IsCustomizable>1</IsCustomizable>
   <BusinessProcessType>0</BusinessProcessType>
   <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
-  <ProcessTriggerScope>2</ProcessTriggerScope>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
   <PrimaryEntity>ppp_Traveller</PrimaryEntity>
   <LocalizedNames>
     <LocalizedName languagecode="1033" description="Toggle Display of Minutes Waiting" />

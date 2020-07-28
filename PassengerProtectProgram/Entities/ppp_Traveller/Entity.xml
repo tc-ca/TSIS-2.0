@@ -343,7 +343,7 @@
             <displayname description="Enregistrement créé le" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="Date and time that the record was migrated." languagecode="1033" />
+            <Description description="Date and time on which the record was created." languagecode="1033" />
             <Description description="Date et heure de migration de l'enregistrement." languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -517,7 +517,7 @@
           <Type>lookup</Type>
           <Name>ppp_aircarrier</Name>
           <LogicalName>ppp_aircarrier</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
+          <RequiredLevel>required</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
           <ImeMode>auto</ImeMode>
           <ValidForUpdateApi>1</ValidForUpdateApi>
@@ -549,7 +549,7 @@
             <displayname description="Air Carrier" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The ability to identify organization transporting passengers and cargo by aircraft" languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_AirCarrierAction">
@@ -595,7 +595,7 @@
           <Type>nvarchar</Type>
           <Name>ppp_aircarrierrepresentative</Name>
           <LogicalName>ppp_aircarrierrepresentative</LogicalName>
-          <RequiredLevel>required</RequiredLevel>
+          <RequiredLevel>none</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
           <ImeMode>auto</ImeMode>
           <ValidForUpdateApi>1</ValidForUpdateApi>
@@ -629,7 +629,7 @@
             <displayname description="Air Carrier Representative (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="An individual from the Air Carrier that represents the company," languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_Alias">
@@ -670,7 +670,7 @@
             <displayname description="Alias (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="An optional, alternative name that a traveller may provide" languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_BaggageCarryOn">
@@ -711,7 +711,7 @@
             <displayname description="Baggage Carry On (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The number of carry on baggage that the traveller may be travelling with." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_BaggageChecked">
@@ -752,7 +752,7 @@
             <displayname description="Baggage Checked (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The number of checked baggage that the traveller may be travelling with." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_BoardingPassDenied">
@@ -858,7 +858,7 @@
             <displayname description="Call Time (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The time at which the PPP Analyst receives a call about a potential PPP match." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_CallType">
@@ -897,7 +897,7 @@
             <displayname description="Call Type" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The type of call received by the PPP analyst" languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_CaseBriefNotes">
@@ -938,7 +938,7 @@
             <displayname description="Case Brief Notes (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="Additional notes created by the PPP analyst from the Case Brief." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_CaseBriefOptionOther">
@@ -979,7 +979,7 @@
             <displayname description="Case Brief Option Other (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="Documented details from the Case Brief." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_CaseBriefOptions">
@@ -1015,11 +1015,11 @@
           <AppDefaultValue>-1</AppDefaultValue>
           <OptionSetName>ppp_casebriefoptions</OptionSetName>
           <displaynames>
-            <displayname description="Case Brief Options" languagecode="1033" />
+            <displayname description="Case Brief Recommendation" languagecode="1033" />
             <displayname description="Case Brief Options (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The list of case brief recommendations that an analyst must select from." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_CaseBriefToggle">
@@ -1080,7 +1080,7 @@
             </options>
           </optionset>
           <displaynames>
-            <displayname description="Case Brief Toggle" languagecode="1033" />
+            <displayname description="Case Brief Toggle  (to be deleted)" languagecode="1033" />
             <displayname description="Case Brief Toggle (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
@@ -1124,7 +1124,7 @@
             <displayname description="Checked Baggage Tag Number" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The id/number of the traveller's checked baggage." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_CheckinDelayed">
@@ -1185,7 +1185,7 @@
             </options>
           </optionset>
           <displaynames>
-            <displayname description="Check-in Delayed" languagecode="1033" />
+            <displayname description="Check-in Delayed (to be deleted)" languagecode="1033" />
             <displayname description="Check-in Delayed (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
@@ -1229,7 +1229,7 @@
             <displayname description="Citizenship (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The country identified by the traveller's passport." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_ClosedDate">
@@ -1270,7 +1270,7 @@
             <displayname description="Closed Date (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The date on which the analyst closes the record." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_DateofBirth">
@@ -1311,7 +1311,7 @@
             <displayname description="Date of Birth (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The date of birth provided by the traveller." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_DirectionOptionOther">
@@ -1352,7 +1352,7 @@
             <displayname description="Direction Option Other (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="Details provided by the Analyst that identify Other Measured Response information." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_DirectionOptions">
@@ -1392,7 +1392,7 @@
             <displayname description="Direction Options (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The list of direction options associated with the traveller that the analyst must choose from, based on the evidence collected." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_DirectionTime">
@@ -1433,7 +1433,7 @@
             <displayname description="Direction Time (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The time at which the analyst renders their decision." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_FinalStatusTime">
@@ -1473,7 +1473,7 @@
             <displayname description="Final Status Time" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The time at which the record is closed" languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_FirstName">
@@ -1514,7 +1514,427 @@
             <displayname description="First Name (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The first name provided by the Traveller." languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="ppp_FlightConnection1">
+          <Type>lookup</Type>
+          <Name>ppp_flightconnection1</Name>
+          <LogicalName>ppp_flightconnection1</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>0</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.8</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
+          <LookupStyle>single</LookupStyle>
+          <LookupTypes />
+          <displaynames>
+            <displayname description="Flight Connection 1" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="The (optional) first connection of the traveller's  itinerary." languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="ppp_FlightConnection10">
+          <Type>lookup</Type>
+          <Name>ppp_flightconnection10</Name>
+          <LogicalName>ppp_flightconnection10</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>0</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.8</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
+          <LookupStyle>single</LookupStyle>
+          <LookupTypes />
+          <displaynames>
+            <displayname description="Flight Connection 10" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="The (optional) tenth connection of the traveller's itinerary." languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="ppp_FlightConnection2">
+          <Type>lookup</Type>
+          <Name>ppp_flightconnection2</Name>
+          <LogicalName>ppp_flightconnection2</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>0</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.8</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
+          <LookupStyle>single</LookupStyle>
+          <LookupTypes />
+          <displaynames>
+            <displayname description="Flight Connection 2" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="The (optional) second connection of the traveller's  itinerary." languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="ppp_FlightConnection3">
+          <Type>lookup</Type>
+          <Name>ppp_flightconnection3</Name>
+          <LogicalName>ppp_flightconnection3</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>0</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.8</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
+          <LookupStyle>single</LookupStyle>
+          <LookupTypes />
+          <displaynames>
+            <displayname description="Flight Connection 3" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="The (optional) third connection of the traveller's itinerary." languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="ppp_FlightConnection4">
+          <Type>lookup</Type>
+          <Name>ppp_flightconnection4</Name>
+          <LogicalName>ppp_flightconnection4</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>0</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.8</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
+          <LookupStyle>single</LookupStyle>
+          <LookupTypes />
+          <displaynames>
+            <displayname description="Flight Connection 4" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="The (optional) fourth connection of the traveller's itinerary." languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="ppp_FlightConnection5">
+          <Type>lookup</Type>
+          <Name>ppp_flightconnection5</Name>
+          <LogicalName>ppp_flightconnection5</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>0</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.8</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
+          <LookupStyle>single</LookupStyle>
+          <LookupTypes />
+          <displaynames>
+            <displayname description="Flight Connection 5" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="The (optional) fifth connection of the traveller's itinerary." languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="ppp_FlightConnection6">
+          <Type>lookup</Type>
+          <Name>ppp_flightconnection6</Name>
+          <LogicalName>ppp_flightconnection6</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>0</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.8</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
+          <LookupStyle>single</LookupStyle>
+          <LookupTypes />
+          <displaynames>
+            <displayname description="Flight Connection 6" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="The (optional) sixth connection of the traveller's itinerary." languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="ppp_FlightConnection7">
+          <Type>lookup</Type>
+          <Name>ppp_flightconnection7</Name>
+          <LogicalName>ppp_flightconnection7</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>0</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.8</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
+          <LookupStyle>single</LookupStyle>
+          <LookupTypes />
+          <displaynames>
+            <displayname description="Flight Connection 7" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="The (optional) seventh connection of the traveller's itinerary." languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="ppp_FlightConnection8">
+          <Type>lookup</Type>
+          <Name>ppp_flightconnection8</Name>
+          <LogicalName>ppp_flightconnection8</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>0</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.8</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
+          <LookupStyle>single</LookupStyle>
+          <LookupTypes />
+          <displaynames>
+            <displayname description="Flight Connection 8" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="The (optional) eight connection of the traveller's itinerary." languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="ppp_FlightConnection9">
+          <Type>lookup</Type>
+          <Name>ppp_flightconnection9</Name>
+          <LogicalName>ppp_flightconnection9</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>0</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.8</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
+          <LookupStyle>single</LookupStyle>
+          <LookupTypes />
+          <displaynames>
+            <displayname description="Flight Connection 9" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="The (optional) ninth connection of the traveller's itinerary." languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="ppp_FlightConnectionCount">
+          <Type>int</Type>
+          <Name>ppp_flightconnectioncount</Name>
+          <LogicalName>ppp_flightconnectioncount</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ImeMode>disabled</ImeMode>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.8</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>1</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
+          <Format>none</Format>
+          <MinValue>0</MinValue>
+          <MaxValue>10</MaxValue>
+          <displaynames>
+            <displayname description="Flight Connection Count" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="The total number of connections associated with the traveller's itinerary." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_FlightDestination">
@@ -1554,7 +1974,7 @@
             <displayname description="Flight Destination (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The final destination of the Traveller." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_FlightNumber">
@@ -1595,7 +2015,7 @@
             <displayname description="Flight Number (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The flight number associated with the Traveller's origin flight." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_FlightOrigin">
@@ -1635,7 +2055,7 @@
             <displayname description="Flight Origin (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The name of the aerodrome associated with the location of the Traveller's point of origin." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_FlightOriginDate">
@@ -1675,7 +2095,7 @@
             <displayname description="Flight Origin Date" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The date associated with the Traveller's intended initial flight departure." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_FlightOriginHour">
@@ -1715,7 +2135,7 @@
             <displayname description="Flight Origin Hour" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The hour (00 - 23) associated with the Traveller's intended initial flight departure." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_FlightOriginMinute">
@@ -1755,7 +2175,7 @@
             <displayname description="Flight Origin Minute" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The minute (0 -59) associated with the Traveller's intended initial flight departure." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_FlightOriginTime">
@@ -1793,6 +2213,67 @@
           <Behavior>3</Behavior>
           <displaynames>
             <displayname description="Flight Origin Time" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="The combination of Flight Origin Date, Flight Origin Hour and Flight Origin Minute associated with the Traveller's intended initial flight departure." languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="ppp_FormToggle">
+          <Type>bit</Type>
+          <Name>ppp_formtoggle</Name>
+          <LogicalName>ppp_formtoggle</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ImeMode>auto</ImeMode>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.8</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
+          <AppDefaultValue>0</AppDefaultValue>
+          <optionset Name="ppp_ppp_traveller_formtoggle">
+            <OptionSetType>bit</OptionSetType>
+            <IntroducedVersion>1.0.0.8</IntroducedVersion>
+            <IsCustomizable>1</IsCustomizable>
+            <displaynames>
+              <displayname description="Local Enumeration" languagecode="1033" />
+            </displaynames>
+            <Descriptions>
+              <Description description="" languagecode="1033" />
+            </Descriptions>
+            <options>
+              <option value="1">
+                <labels>
+                  <label description="Yes" languagecode="1033" />
+                </labels>
+              </option>
+              <option value="0">
+                <labels>
+                  <label description="No" languagecode="1033" />
+                </labels>
+              </option>
+            </options>
+          </optionset>
+          <displaynames>
+            <displayname description="Form Toggle (to be deleted)" languagecode="1033" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
@@ -1860,7 +2341,7 @@
             <displayname description="From Nominating Toggle (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="An indicator that the user select in the event that additional information is provided by the Nominating Agency." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_Gender">
@@ -1899,7 +2380,7 @@
             <displayname description="Gender" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The identified gender of the Traveller." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_IDCountry">
@@ -1938,7 +2419,7 @@
             <displayname description="ID Country" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The country that issued the presented passport to the Traveller." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_Iddetails">
@@ -1978,7 +2459,7 @@
             <displayname description="ID Details" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="All id numbers provided by the Traveller." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_IDsUsed">
@@ -2017,7 +2498,7 @@
             <displayname description="IDs Used (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The identification provided by the Traveller to the Air Carrier Representative." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_InvestigationRequired">
@@ -2053,10 +2534,10 @@
           <AppDefaultValue>-1</AppDefaultValue>
           <OptionSetName>ppp_investigationrequired</OptionSetName>
           <displaynames>
-            <displayname description="Investigation Required" languagecode="1033" />
+            <displayname description="Investigation Required " languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="(future functionality) - to be utilized to establish a link to the forthcoming AvSec inspection module." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_IsPresent">
@@ -2121,7 +2602,7 @@
             <displayname description="Is Present (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="An indicator as to whether or not the Traveller is currently onsite." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_IsPresentTime">
@@ -2161,7 +2642,7 @@
             <displayname description="Is Present Time" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="An indication that the Traveller is currently present." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_LastKnownAddress">
@@ -2202,7 +2683,7 @@
             <displayname description="Last Known Address (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The last known address provided by the Traveller." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_LastName">
@@ -2243,7 +2724,7 @@
             <displayname description="Last Name (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The last name of the Traveller." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_LawEnforcementNotified">
@@ -2304,7 +2785,7 @@
             <displayname description="Law Enforcement Notified" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="An indication by the user as to whether or not the Air Carrier Representative notified local Law Enforcement regarding the status of the Traveller." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_LawEnforcementNotifiedDetails">
@@ -2344,47 +2825,7 @@
             <displayname description="Law Enforcement Notified Details" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
-          </Descriptions>
-        </attribute>
-        <attribute PhysicalName="ppp_LawEnforcementNotifiedTime">
-          <Type>datetime</Type>
-          <Name>ppp_lawenforcementnotifiedtime</Name>
-          <LogicalName>ppp_lawenforcementnotifiedtime</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
-          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-          <ImeMode>auto</ImeMode>
-          <ValidForUpdateApi>1</ValidForUpdateApi>
-          <ValidForReadApi>1</ValidForReadApi>
-          <ValidForCreateApi>1</ValidForCreateApi>
-          <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>1</IsAuditEnabled>
-          <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0.0.8</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <CanModifySearchSettings>1</CanModifySearchSettings>
-          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
-          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-          <IsSortableEnabled>0</IsSortableEnabled>
-          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-          <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
-          <IsSearchable>1</IsSearchable>
-          <IsFilterable>0</IsFilterable>
-          <IsRetrievable>0</IsRetrievable>
-          <IsLocalizable>0</IsLocalizable>
-          <Format>datetime</Format>
-          <CanChangeDateTimeBehavior>1</CanChangeDateTimeBehavior>
-          <Behavior>1</Behavior>
-          <displaynames>
-            <displayname description="Law Enforcement Notified Time" languagecode="1033" />
-          </displaynames>
-          <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="Details of the information provided to local law enforcement." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_MatchFound">
@@ -2423,7 +2864,7 @@
             <displayname description="Match Found" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The option set that allows the user to indicate that the Traveller being vetted requires additional screening." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_MatchFoundConfirmation">
@@ -2524,7 +2965,7 @@
             <displayname description="Match Found Time" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The time at which the user indicated that additional screening is required." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_MiddleName">
@@ -2565,7 +3006,7 @@
             <displayname description="Middle Name (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The middle name provided by the Traveller." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_MinutesWaiting">
@@ -2606,7 +3047,7 @@
             <displayname description="Minutes Waiting (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The number of minuted that the Traveller has been delayed by the screening process, as indicated by the user." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_name">
@@ -2614,7 +3055,7 @@
           <Name>ppp_name</Name>
           <LogicalName>ppp_name</LogicalName>
           <RequiredLevel>none</RequiredLevel>
-          <DisplayMask>PrimaryName|ValidForAdvancedFind|ValidForForm|ValidForGrid|RequiredForForm</DisplayMask>
+          <DisplayMask>ActivityPointerRegardingName|PrimaryName|ValidForAdvancedFind|ValidForForm|ValidForGrid|RequiredForForm</DisplayMask>
           <ImeMode>auto</ImeMode>
           <ValidForUpdateApi>1</ValidForUpdateApi>
           <ValidForReadApi>1</ValidForReadApi>
@@ -2688,7 +3129,7 @@
             <displayname description="Name Provided Options (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The type of name provided by the Traveller." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_NewRecordTime">
@@ -2728,7 +3169,7 @@
             <displayname description="New Record Time" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The time at which a new record is created." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_NominatingAgencyNotes">
@@ -2769,7 +3210,7 @@
             <displayname description="Nominating Agency Notes (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="Information that the user must capture in the event that additional information is provided by the Nominating Agency." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_NominatingAgencyOptionOther">
@@ -2810,7 +3251,7 @@
             <displayname description="Nominating Agency Option Other (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="Used to document Nominating Agency Other Response Measure.  Visible when Nominating Agency Recommendation is toggled to Allowed - Other Response Measure.  " languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_NominatingAgencyOptions">
@@ -2850,7 +3291,7 @@
             <displayname description="Nominating Agency Options (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="Option set for analyst to select the Nominating Agency Recommendation." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_Observations">
@@ -2891,7 +3332,7 @@
             <displayname description="Observations (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="Free text field in which the analyst can document their observations." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_OpenSourceNotes">
@@ -2932,7 +3373,7 @@
             <displayname description="Open Source Notes (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="Information that the user must capture in the event that additional open source information is available." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_OpenSourceToggle">
@@ -2997,7 +3438,7 @@
             <displayname description="Open Source Toggle (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="An indication as to whether open source information exists and a means of making the  Open Source Notes field visible." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_OtherConsiderations">
@@ -3038,7 +3479,7 @@
             <displayname description="Other Considerations (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="Information that the user must capture in the event that other considerations were taken." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_OtherConsiderationsToggle">
@@ -3103,7 +3544,7 @@
             <displayname description="Other Considerations Toggle (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="An indication as to whether other considerations exist and a means of making the  Other Considerations field visible." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_PassportNumber">
@@ -3143,7 +3584,7 @@
             <displayname description="Passport Number" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="Free text to document ID document numbers." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_PaymentMethod">
@@ -3182,7 +3623,7 @@
             <displayname description="Payment Method" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="Option set to select the method of payment that was used to purchase a flight ticket." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_QuestionsforTC">
@@ -3223,7 +3664,7 @@
             <displayname description="Questions for TC (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="Information that the user must capture in the event that additional questions were posed." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_QuestionsforTCToggle">
@@ -3288,7 +3729,7 @@
             <displayname description="Questions for TC Toggle (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="An indication as to whether other questions exist and a means of making the Questions for TC field visible." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_RecordStatus">
@@ -3328,7 +3769,7 @@
             <displayname description="Record Status (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The current status of the record." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_RecourseLetterReceived">
@@ -3393,14 +3834,14 @@
             <displayname description="Recourse Letter Received (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="An indication as to whether the air carrier provided the traveller with a recourse letter." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_RepresentativePhoneNumber">
           <Type>nvarchar</Type>
           <Name>ppp_representativephonenumber</Name>
           <LogicalName>ppp_representativephonenumber</LogicalName>
-          <RequiredLevel>required</RequiredLevel>
+          <RequiredLevel>none</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
           <ImeMode>auto</ImeMode>
           <ValidForUpdateApi>1</ValidForUpdateApi>
@@ -3430,11 +3871,11 @@
           <MaxLength>4000</MaxLength>
           <Length>8000</Length>
           <displaynames>
-            <displayname description="Representative Phone Number" languagecode="1033" />
+            <displayname description="Representative Phone Number (Delete)" languagecode="1033" />
             <displayname description="Representative Phone Number (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="No longer used." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_ReturnFlightInfo">
@@ -3474,7 +3915,7 @@
             <displayname description="Return Flight Info" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="A description of the travellers scheduled return flight." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_ReturnTicketDate">
@@ -3514,7 +3955,7 @@
             <displayname description="Return Flight Date" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The date on which the Travellers return flight is scheduled." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_SATAID">
@@ -3555,7 +3996,7 @@
             <displayname description="SATA ID (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="A unique ID associated with the particular traveller." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_SeatRequestDetails">
@@ -3595,7 +4036,7 @@
             <displayname description="Seat Request Details" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="Details of any seat requests that were made by the traveller." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_SeatRequestMade">
@@ -3634,7 +4075,7 @@
             <displayname description="Seat Request Made" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="An indication as to whether a seat request was made by the traveller.  A means of making the Seat Request Details field visible." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_ShowBPF">
@@ -3692,10 +4133,10 @@
             </options>
           </optionset>
           <displaynames>
-            <displayname description="Show BPF" languagecode="1033" />
+            <displayname description="Show BPF (Delete)" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="A toggle to make the Business Process Flow visible/invisible." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_TicketPurchaseDate">
@@ -3736,7 +4177,7 @@
             <displayname description="Ticket Purchase Date (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The date on which the flight ticket was purchased." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_TicketPurchaseMethod">
@@ -3775,7 +4216,7 @@
             <displayname description="Ticket Purchase Method" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The method by which the flight ticket was purchased." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_TicketStored">
@@ -3811,10 +4252,10 @@
           <AppDefaultValue>-1</AppDefaultValue>
           <OptionSetName>ppp_ticketstored</OptionSetName>
           <displaynames>
-            <displayname description="Ticket Stored" languagecode="1033" />
+            <displayname description="Ticket Stored (Delete)" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="No longer required." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_TicketType">
@@ -3853,7 +4294,7 @@
             <displayname description="Ticket Type" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="An indication of the type of flight ticket." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_TravelAgencyAddress">
@@ -3893,7 +4334,7 @@
             <displayname description="Travel Agency Address" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The address of the travel agency if such an agency was used to purchase a flight ticket." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_TravelAgencyContactName">
@@ -3933,7 +4374,7 @@
             <displayname description="Travel Agency Contact Name" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The contact at a travel agency if such an agency was used to purchase a flight ticket." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_TravelAgencyContactPhoneNumber">
@@ -3973,7 +4414,7 @@
             <displayname description="Travel Agency Contact Phone Number" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The contact phone number at a travel agency if such an agency was used to purchase a flight ticket." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_TravelAgencyName">
@@ -4013,7 +4454,7 @@
             <displayname description="Travel Agency Name" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The name of the travel agency if such an agency was used to purchase a flight ticket." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_TravelCompanionsDetails">
@@ -4054,7 +4495,7 @@
             <displayname description="Travel Companions Details (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="A description of any travel companions if applicable. " languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_TravelCompanionsNumber">
@@ -4095,7 +4536,7 @@
             <displayname description="Travel Companions Number (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The number of travel companions." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_TravellerAutoNumber">
@@ -4136,7 +4577,7 @@
             <displayname description="Traveller Auto Number (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The unique record number for the traveller record." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_TravellerDenied">
@@ -4197,11 +4638,11 @@
             </options>
           </optionset>
           <displaynames>
-            <displayname description="Traveller Denied" languagecode="1033" />
+            <displayname description="Traveller Denied (Delete)" languagecode="1033" />
             <displayname description="Traveller Denied (fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="No longer required." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_TravellerId">
@@ -4279,7 +4720,7 @@
             <displayname description="Travel Purpose" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The reason the traveller is travelling." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_TravelPurposeOther">
@@ -4319,7 +4760,7 @@
             <displayname description="Travel Purpose Other" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="A description of the purpose of travel." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="processid">
@@ -4666,6 +5107,7 @@
       <AutoRouteToOwnerQueue>0</AutoRouteToOwnerQueue>
       <IsConnectionsEnabled>0</IsConnectionsEnabled>
       <IsDocumentManagementEnabled>0</IsDocumentManagementEnabled>
+      <AutoCreateAccessTeams>0</AutoCreateAccessTeams>
       <IsOneNoteIntegrationEnabled>0</IsOneNoteIntegrationEnabled>
       <IsKnowledgeManagementEnabled>0</IsKnowledgeManagementEnabled>
       <IsSLAEnabled>0</IsSLAEnabled>
@@ -4717,9 +5159,12 @@
       <CanChangeTrackingBeEnabled>1</CanChangeTrackingBeEnabled>
       <IsEnabledForExternalChannels>0</IsEnabledForExternalChannels>
       <IsSolutionAware>0</IsSolutionAware>
+      <HasRelatedNotes>True</HasRelatedNotes>
+      <HasRelatedActivities>True</HasRelatedActivities>
     </entity>
   </EntityInfo>
   <FormXml />
   <SavedQueries />
+  <Visualizations />
   <RibbonDiffXml />
 </Entity>

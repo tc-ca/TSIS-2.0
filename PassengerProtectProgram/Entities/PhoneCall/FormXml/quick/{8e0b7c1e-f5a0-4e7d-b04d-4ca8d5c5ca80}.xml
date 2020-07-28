@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform unmodified="1">
+    <formid>{8e0b7c1e-f5a0-4e7d-b04d-4ca8d5c5ca80}</formid>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form hasmargin="false" shownavigationbar="false">
+      <ancestor id="{8e0b7c1e-f5a0-4e7d-b04d-4ca8d5c5ca80}" />
+      <hiddencontrols>
+        <data id="modifiedby" datafieldname="modifiedby" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+      </hiddencontrols>
+      <tabs>
+        <tab name="general" verticallayout="true" id="{ddbec6c0-c9d7-49b0-b066-37452cc224d0}" IsUserDefined="0" locklevel="0" expanded="true" showlabel="false">
+          <labels>
+            <label description="General" languagecode="1033" />
+            <label description="Général" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="information" showlabel="false" showbar="false" locklevel="0" id="{3603de4a-0b25-42c9-a906-273fabeca938}" IsUserDefined="0" layout="varheight" labelwidth="115" celllabelposition="Left">
+                  <labels>
+                    <label description="Information" languagecode="1033" />
+                    <label description="Informations" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{158b4be7-0c89-d5ea-c13c-d8d21d2c4b96}" showlabel="true" locklevel="1">
+                        <labels>
+                          <label description="Subject" languagecode="1033" />
+                          <label description="Objet" languagecode="1036" />
+                        </labels>
+                        <control id="subject" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="subject" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1d00614b-5d61-0a18-4958-0490914a96b4}" showlabel="true" locklevel="1" rowspan="4">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                          <label description="Description" languagecode="1036" />
+                        </labels>
+                        <control id="description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="description" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{012D2FFE-9B71-4863-B0A6-9C9B1E35BF34}" showlabel="true" locklevel="1">
+                        <labels>
+                          <label description="Due" languagecode="1033" />
+                          <label description="Échéance" languagecode="1036" />
+                        </labels>
+                        <control id="scheduledend" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="scheduledend" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell showlabel="true" locklevel="1" id="{562A8CB1-4847-4740-9A0E-8207AC558BA8}">
+                        <labels>
+                          <label description="Call With" languagecode="1033" />
+                          <label description="Appeler avec" languagecode="1036" />
+                        </labels>
+                        <control id="from" classid="{CBFB742C-14E7-4a17-96BB-1A13F7F64AA2}" datafieldname="from" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell showlabel="true" locklevel="1" id="{43A73227-2BBD-4DEB-83E0-5FDE7BC0DF79}">
+                        <labels>
+                          <label description="Call With" languagecode="1033" />
+                          <label description="Appeler avec" languagecode="1036" />
+                        </labels>
+                        <control id="to" classid="{CBFB742C-14E7-4a17-96BB-1A13F7F64AA2}" datafieldname="to" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4986107d-9d3a-2618-bee6-550129dab595}" showlabel="true" locklevel="1">
+                        <labels>
+                          <label description="Direction" languagecode="1033" />
+                          <label description="Direction" languagecode="1036" />
+                        </labels>
+                        <control id="directioncode" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="directioncode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d2bb7f2d-9d5c-4a9f-8ab8-95baf0a6ebd5}" showlabel="true" locklevel="1">
+                        <labels>
+                          <label description="Left Voice Mail" languagecode="1033" />
+                          <label description="Message vocal laissé" languagecode="1036" />
+                        </labels>
+                        <control id="leftvoicemail" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="leftvoicemail" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Quick Form" languagecode="1033" />
+      <LocalizedName description="Quick Form" languagecode="1036" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="This is the form that is displayed for the Dynamics 365 quick form." languagecode="1033" />
+      <Description description="This is the form that is displayed for the Dynamics 365 quick form." languagecode="1036" />
+    </Descriptions>
+  </systemform>
+</forms>

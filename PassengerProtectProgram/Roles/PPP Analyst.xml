@@ -3,12 +3,14 @@
   <IsCustomizable>1</IsCustomizable>
   <RolePrivileges>
     <RolePrivilege name="prvAddressBook" level="Global" />
+    <RolePrivilege name="prvAppendovs_AirCarrier" level="Global" />
     <RolePrivilege name="prvAppendovs_Facility" level="Global" />
     <RolePrivilege name="prvAppendppp_repcallinfo" level="Local" />
     <RolePrivilege name="prvAppendppp_Traveller" level="Global" />
     <RolePrivilege name="prvAppendppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvAppendresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvAppendToAccount" level="Global" />
+    <RolePrivilege name="prvAppendToovs_AirCarrier" level="Global" />
     <RolePrivilege name="prvAppendToovs_Facility" level="Global" />
     <RolePrivilege name="prvAppendToppp_repcallinfo" level="Local" />
     <RolePrivilege name="prvAppendToppp_Traveller" level="Global" />
@@ -32,7 +34,6 @@
     <RolePrivilege name="prvCreateUserSettings" level="Local" />
     <RolePrivilege name="prvCreateWorkflow" level="Local" />
     <RolePrivilege name="prvDeleteExchangeSyncIdMapping" level="Basic" />
-    <RolePrivilege name="prvDeleteppp_Traveller" level="Global" />
     <RolePrivilege name="prvDeleteppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvDeleteresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvDeleteUserSettings" level="Local" />
@@ -49,6 +50,7 @@
     <RolePrivilege name="prvReadExchangeSyncIdMapping" level="Basic" />
     <RolePrivilege name="prvReadHierarchyRule" level="Global" />
     <RolePrivilege name="prvReadOptionSet" level="Global" />
+    <RolePrivilege name="prvReadovs_AirCarrier" level="Global" />
     <RolePrivilege name="prvReadovs_Facility" level="Global" />
     <RolePrivilege name="prvReadPluginAssembly" level="Global" />
     <RolePrivilege name="prvReadPluginType" level="Global" />

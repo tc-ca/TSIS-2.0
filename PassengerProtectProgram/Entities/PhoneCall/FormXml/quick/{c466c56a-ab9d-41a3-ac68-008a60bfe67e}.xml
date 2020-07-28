@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform unmodified="1">
+    <formid>{c466c56a-ab9d-41a3-ac68-008a60bfe67e}</formid>
+    <IntroducedVersion>8.0.0.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="{53809c24-e4da-4dbb-b0e4-8d152136943e}" name="tab_1" showlabel="false">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{051b4bb6-68e4-4d9b-9a8d-cc5ea202c121}" name="tab_1_column_1_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="PHONE CALL DETAILS" languagecode="1033" />
+                    <label description="DÉTAILS DE L'APPEL TÉLÉPHONIQUE" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{dcc15e6a-2571-7752-5be5-6eb2c81a6b01}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Subject" languagecode="1033" />
+                          <label description="Sujet" languagecode="1036" />
+                        </labels>
+                        <control id="subject" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="subject" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ed45c3c7-271c-cbdb-5290-43371b39eb8e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Call From" languagecode="1033" />
+                          <label description="Origine de l'appel" languagecode="1036" />
+                        </labels>
+                        <control id="from" classid="{CBFB742C-14E7-4a17-96BB-1A13F7F64AA2}" datafieldname="from" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{86932bd3-3282-9232-4707-04bd9873a454}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Call To" languagecode="1033" />
+                          <label description="Destination de l'appel" languagecode="1036" />
+                        </labels>
+                        <control id="to" classid="{CBFB742C-14E7-4a17-96BB-1A13F7F64AA2}" datafieldname="to" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{37124c20-d688-a445-ea10-000a7cd1099c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Phone Number" languagecode="1033" />
+                          <label description="Numéro de téléphone" languagecode="1036" />
+                        </labels>
+                        <control id="phonenumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="phonenumber" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b7967796-d66c-721e-880a-6ca738c94498}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Regarding" languagecode="1033" />
+                          <label description="Concernant" languagecode="1036" />
+                        </labels>
+                        <control id="regardingobjectid" classid="{F3015350-44A2-4aa0-97B5-00166532B5E9}" datafieldname="regardingobjectid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{86c0be92-db45-a612-1495-9ee138121759}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Activity Status" languagecode="1033" />
+                          <label description="Statut d'activité" languagecode="1036" />
+                        </labels>
+                        <control id="statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_1_section_2" showlabel="true" showbar="false" locklevel="0" id="{54188d3a-5b45-3024-ad6d-2426d6a12ce9}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="DESCRIPTION" languagecode="1033" />
+                    <label description="DESCRIPTION" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b0a5b33b-7264-1a1a-8974-2eb69c29ba50}" showlabel="true" locklevel="0" rowspan="4">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                          <label description="Description" languagecode="1036" />
+                        </labels>
+                        <control id="description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="description" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="tab_1_section_3" showlabel="true" showbar="false" locklevel="0" id="{41c9b242-0029-4596-2d8b-e35b81bc10d0}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="OTHER DETAILS" languagecode="1033" />
+                    <label description="AUTRES DÉTAILS" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{82c45e81-e9ed-20b6-d61a-6c454a90c0ac}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Priority" languagecode="1033" />
+                          <label description="Priorité" languagecode="1036" />
+                        </labels>
+                        <control id="prioritycode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="prioritycode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4a0a2b24-5b80-9a14-aeda-db02e23b65a4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Due" languagecode="1033" />
+                          <label description="Échéance" languagecode="1036" />
+                        </labels>
+                        <control id="scheduledend" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="scheduledend" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8180138b-04b2-3d2d-1c03-b9ae4758cb2d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Direction" languagecode="1033" />
+                          <label description="Direction" languagecode="1036" />
+                        </labels>
+                        <control id="directioncode" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="directioncode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{47cab81c-794b-dd84-eaa8-62bc2211c365}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                          <label description="Propriétaire" languagecode="1036" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="1">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Phone Call Reference Panel" languagecode="1033" />
+      <LocalizedName description="Volet de référence de l'appel téléphonique" languagecode="1036" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form that displays Reference Panel of Phone Call." languagecode="1033" />
+      <Description description="Formulaire affichant le volet de référence de l'appel téléphonique." languagecode="1036" />
+    </Descriptions>
+  </systemform>
+</forms>

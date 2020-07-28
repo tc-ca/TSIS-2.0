@@ -3,6 +3,7 @@
   <IsCustomizable>1</IsCustomizable>
   <RolePrivileges>
     <RolePrivilege name="prvActivateBusinessProcessFlow" level="Global" />
+    <RolePrivilege name="prvActivateBusinessRule" level="Global" />
     <RolePrivilege name="prvActOnBehalfOfAnotherUser" level="Global" />
     <RolePrivilege name="prvAddressBook" level="Global" />
     <RolePrivilege name="prvAppendAppModule" level="Global" />
@@ -10,25 +11,27 @@
     <RolePrivilege name="prvAppendExpiredProcess" level="Global" />
     <RolePrivilege name="prvAppendFeedback" level="Basic" />
     <RolePrivilege name="prvAppendNewProcess" level="Global" />
-    <RolePrivilege name="prvAppendovs_Facility" level="Local" />
+    <RolePrivilege name="prvAppendovs_AirCarrier" level="Global" />
+    <RolePrivilege name="prvAppendovs_Facility" level="Global" />
     <RolePrivilege name="prvAppendppp_repcallinfo" level="Local" />
     <RolePrivilege name="prvAppendppp_Traveller" level="Global" />
     <RolePrivilege name="prvAppendppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvAppendresco_UserSettings" level="Basic" />
-    <RolePrivilege name="prvAppendtc_Country" level="Local" />
+    <RolePrivilege name="prvAppendtc_Country" level="Global" />
     <RolePrivilege name="prvAppendToAccount" level="Global" />
     <RolePrivilege name="prvAppendToAppModule" level="Global" />
     <RolePrivilege name="prvAppendToDocumentTemplate" level="Global" />
     <RolePrivilege name="prvAppendToExpiredProcess" level="Global" />
     <RolePrivilege name="prvAppendToFeedback" level="Basic" />
     <RolePrivilege name="prvAppendToNewProcess" level="Global" />
-    <RolePrivilege name="prvAppendToovs_Facility" level="Local" />
+    <RolePrivilege name="prvAppendToovs_AirCarrier" level="Global" />
+    <RolePrivilege name="prvAppendToovs_Facility" level="Global" />
     <RolePrivilege name="prvAppendToPosition" level="Global" />
     <RolePrivilege name="prvAppendToppp_repcallinfo" level="Local" />
     <RolePrivilege name="prvAppendToppp_Traveller" level="Global" />
     <RolePrivilege name="prvAppendToppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvAppendToresco_UserSettings" level="Basic" />
-    <RolePrivilege name="prvAppendTotc_Country" level="Local" />
+    <RolePrivilege name="prvAppendTotc_Country" level="Global" />
     <RolePrivilege name="prvAppendTotc_Province" level="Local" />
     <RolePrivilege name="prvAppendToUser" level="Global" />
     <RolePrivilege name="prvAppendToUserSettings" level="Local" />
@@ -41,7 +44,6 @@
     <RolePrivilege name="prvAssignPosition" level="Global" />
     <RolePrivilege name="prvAssignppp_Traveller" level="Global" />
     <RolePrivilege name="prvAssignresco_UserSettings" level="Basic" />
-    <RolePrivilege name="prvAssigntc_Country" level="Local" />
     <RolePrivilege name="prvAssignworkflowbinary" level="Local" />
     <RolePrivilege name="prvBulkEdit" level="Global" />
     <RolePrivilege name="prvCreateAppModule" level="Global" />
@@ -51,12 +53,15 @@
     <RolePrivilege name="prvCreateFeedback" level="Basic" />
     <RolePrivilege name="prvCreateNewProcess" level="Global" />
     <RolePrivilege name="prvCreateOrgEmailTemplates" level="Global" />
+    <RolePrivilege name="prvCreateovs_AirCarrier" level="Global" />
+    <RolePrivilege name="prvCreateovs_Facility" level="Global" />
     <RolePrivilege name="prvCreateppp_repcallinfo" level="Local" />
     <RolePrivilege name="prvCreateppp_Traveller" level="Global" />
     <RolePrivilege name="prvCreateppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvCreateRelationship" level="Global" />
     <RolePrivilege name="prvCreateresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvCreateSharePointData" level="Global" />
+    <RolePrivilege name="prvCreatetc_Country" level="Global" />
     <RolePrivilege name="prvCreateUserApplicationMetadata" level="Basic" />
     <RolePrivilege name="prvCreateUserEntityUISettings" level="Basic" />
     <RolePrivilege name="prvCreateUserSettings" level="Local" />
@@ -100,6 +105,7 @@
     <RolePrivilege name="prvReadNewProcess" level="Global" />
     <RolePrivilege name="prvReadOptionSet" level="Global" />
     <RolePrivilege name="prvReadOrganization" level="Global" />
+    <RolePrivilege name="prvReadovs_AirCarrier" level="Global" />
     <RolePrivilege name="prvReadovs_Facility" level="Global" />
     <RolePrivilege name="prvReadPluginAssembly" level="Global" />
     <RolePrivilege name="prvReadPluginType" level="Global" />
@@ -135,7 +141,6 @@
     <RolePrivilege name="prvShareFeedback" level="Basic" />
     <RolePrivilege name="prvShareppp_Traveller" level="Global" />
     <RolePrivilege name="prvShareresco_UserSettings" level="Basic" />
-    <RolePrivilege name="prvSharetc_Country" level="Local" />
     <RolePrivilege name="prvShareworkflowbinary" level="Local" />
     <RolePrivilege name="prvSyncToOutlook" level="Global" />
     <RolePrivilege name="prvUseOfficeApps" level="Global" />
@@ -148,12 +153,15 @@
     <RolePrivilege name="prvWriteExpiredProcess" level="Global" />
     <RolePrivilege name="prvWriteFeedback" level="Basic" />
     <RolePrivilege name="prvWriteNewProcess" level="Global" />
+    <RolePrivilege name="prvWriteovs_AirCarrier" level="Global" />
+    <RolePrivilege name="prvWriteovs_Facility" level="Global" />
     <RolePrivilege name="prvWriteppp_repcallinfo" level="Local" />
     <RolePrivilege name="prvWriteppp_Traveller" level="Global" />
     <RolePrivilege name="prvWriteppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvWriteRelationship" level="Global" />
     <RolePrivilege name="prvWriteresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvWriteSharePointData" level="Global" />
+    <RolePrivilege name="prvWritetc_Country" level="Global" />
     <RolePrivilege name="prvWriteUserApplicationMetadata" level="Basic" />
     <RolePrivilege name="prvWriteUserEntityUISettings" level="Basic" />
     <RolePrivilege name="prvWriteUserSettings" level="Local" />

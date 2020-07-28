@@ -33,6 +33,7 @@
           <attribute name="ppp_name" />
           <attribute name="ppp_aircarrier" />
           <attribute name="ppp_travellerid" />
+          <order attribute="ppp_name" descending="true" />
         </entity>
       </fetch>
     </fetchxml>

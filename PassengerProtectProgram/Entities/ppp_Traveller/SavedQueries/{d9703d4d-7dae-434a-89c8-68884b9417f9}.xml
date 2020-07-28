@@ -25,7 +25,6 @@
         <entity name="ppp_traveller">
           <attribute name="ppp_name" />
           <attribute name="createdon" />
-          <order attribute="ppp_name" descending="false" />
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
           </filter>
@@ -34,6 +33,7 @@
           <attribute name="ownerid" />
           <attribute name="ppp_aircarrier" />
           <attribute name="ppp_travellerid" />
+          <order attribute="ppp_name" descending="true" />
         </entity>
       </fetch>
     </fetchxml>
