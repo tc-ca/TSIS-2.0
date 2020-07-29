@@ -11,8 +11,8 @@
   <TriggerOnDelete>0</TriggerOnDelete>
   <AsyncAutodelete>0</AsyncAutodelete>
   <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
-  <StateCode>1</StateCode>
-  <StatusCode>2</StatusCode>
+  <StateCode>0</StateCode>
+  <StatusCode>1</StatusCode>
   <RunAs>1</RunAs>
   <IsTransacted>1</IsTransacted>
   <IntroducedVersion>1.0.0.2</IntroducedVersion>
@@ -23,16 +23,20 @@
   <PrimaryEntity>ppp_Traveller</PrimaryEntity>
   <LocalizedNames>
     <LocalizedName languagecode="1033" description="Flight Origin cannot match Flight Destination" />
+    <LocalizedName languagecode="1036" description="Flight Origin cannot match Flight Destination(fr)" />
   </LocalizedNames>
   <Descriptions>
     <Description languagecode="1033" description="Click to add description" />
+    <Description languagecode="1036" description="Click to add description(fr)" />
   </Descriptions>
   <labels>
     <steplabels id="{5bc3416b-3819-474c-94f8-aad3fab5b2dc}">
       <label languagecode="1033" description="Flight Destination cannot be equal to Flight Origin" />
+      <label languagecode="1036" description="Flight Destination cannot be equal to Flight Origin(fr)" />
     </steplabels>
     <steplabels id="{54705e9d-914f-4149-902c-266886e187e3}">
       <label languagecode="1033" description="Flight Origin cannot be equal to Flight Destination" />
+      <label languagecode="1036" description="Flight Origin cannot be equal to Flight Destination(fr)" />
     </steplabels>
   </labels>
 </Workflow>

@@ -40,6 +40,7 @@
     <IntroducedVersion>1.0.0.2</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="All Draft Traveller Records" languagecode="1033" />
+      <LocalizedName description="All Draft Traveller Records(fr)" languagecode="1036" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

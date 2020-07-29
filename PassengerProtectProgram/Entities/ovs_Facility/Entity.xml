@@ -5,11 +5,11 @@
     <entity Name="ovs_Facility">
       <LocalizedNames>
         <LocalizedName description="Facility" languagecode="1033" />
-        <LocalizedName description="Facility (fr)" languagecode="1036" />
+        <LocalizedName description="0" languagecode="1036" />
       </LocalizedNames>
       <LocalizedCollectionNames>
         <LocalizedCollectionName description="Facilities" languagecode="1033" />
-        <LocalizedCollectionName description="Facilities (fr)" languagecode="1036" />
+        <LocalizedCollectionName description="Facilities(fr)" languagecode="1036" />
       </LocalizedCollectionNames>
       <Descriptions>
         <Description description="" languagecode="1033" />
@@ -49,11 +49,11 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Created By" languagecode="1033" />
-            <displayname description="Created By (fr)" languagecode="1036" />
+            <displayname description="Créé par" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier of the user who created the record." languagecode="1033" />
-            <Description description="Unique identifier of the user who created the record. (fr)" languagecode="1036" />
+            <Description description="Unique identifier of the user who created the record.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="CreatedOn">
@@ -91,11 +91,11 @@
           <Behavior>1</Behavior>
           <displaynames>
             <displayname description="Created On" languagecode="1033" />
-            <displayname description="Created On (fr)" languagecode="1036" />
+            <displayname description="Créé le" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Date and time when the record was created." languagecode="1033" />
-            <Description description="Date and time when the record was created. (fr)" languagecode="1036" />
+            <Description description="Date and time when the record was created.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="CreatedOnBehalfBy">
@@ -132,11 +132,11 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Created By (Delegate)" languagecode="1033" />
-            <displayname description="Created By (Delegate) (fr)" languagecode="1036" />
+            <displayname description="Créé par (délégué)" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier of the delegate user who created the record." languagecode="1033" />
-            <Description description="Unique identifier of the delegate user who created the record. (fr)" languagecode="1036" />
+            <Description description="Unique identifier of the delegate user who created the record.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ImportSequenceNumber">
@@ -174,11 +174,11 @@
           <MaxValue>2147483647</MaxValue>
           <displaynames>
             <displayname description="Import Sequence Number" languagecode="1033" />
-            <displayname description="Import Sequence Number (fr)" languagecode="1036" />
+            <displayname description="Numéro séquentiel d’importation" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Sequence number of the import that created this record." languagecode="1033" />
-            <Description description="Sequence number of the import that created this record. (fr)" languagecode="1036" />
+            <Description description="Sequence number of the import that created this record.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ModifiedBy">
@@ -215,11 +215,11 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Modified By" languagecode="1033" />
-            <displayname description="Modified By (fr)" languagecode="1036" />
+            <displayname description="Modifié par" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier of the user who modified the record." languagecode="1033" />
-            <Description description="Unique identifier of the user who modified the record. (fr)" languagecode="1036" />
+            <Description description="Unique identifier of the user who modified the record.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ModifiedOn">
@@ -257,11 +257,11 @@
           <Behavior>1</Behavior>
           <displaynames>
             <displayname description="Modified On" languagecode="1033" />
-            <displayname description="Modified On (fr)" languagecode="1036" />
+            <displayname description="Modifié le" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Date and time when the record was modified." languagecode="1033" />
-            <Description description="Date and time when the record was modified. (fr)" languagecode="1036" />
+            <Description description="Date and time when the record was modified.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ModifiedOnBehalfBy">
@@ -298,11 +298,11 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Modified By (Delegate)" languagecode="1033" />
-            <displayname description="Modified By (Delegate) (fr)" languagecode="1036" />
+            <displayname description="Modifié par (délégué)" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier of the delegate user who modified the record." languagecode="1033" />
-            <Description description="Unique identifier of the delegate user who modified the record. (fr)" languagecode="1036" />
+            <Description description="Unique identifier of the delegate user who modified the record.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="OverriddenCreatedOn">
@@ -340,11 +340,11 @@
           <Behavior>1</Behavior>
           <displaynames>
             <displayname description="Record Created On" languagecode="1033" />
-            <displayname description="Record Created On (fr)" languagecode="1036" />
+            <displayname description="Enregistrement créé le" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Date and time that the record was migrated." languagecode="1033" />
-            <Description description="Date and time that the record was migrated. (fr)" languagecode="1036" />
+            <Description description="Date and time that the record was migrated.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Accountid">
@@ -381,7 +381,7 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Organization" languagecode="1033" />
-            <displayname description="Organization (fr)" languagecode="1036" />
+            <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
@@ -422,7 +422,7 @@
           <Length>200</Length>
           <displaynames>
             <displayname description="Address1: City" languagecode="1033" />
-            <displayname description="Address1: City (fr)" languagecode="1036" />
+            <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
@@ -463,7 +463,7 @@
           <Accuracy>5</Accuracy>
           <displaynames>
             <displayname description="Address1: Latitude" languagecode="1033" />
-            <displayname description="Address1: Latitude (fr)" languagecode="1036" />
+            <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
@@ -504,7 +504,7 @@
           <Accuracy>5</Accuracy>
           <displaynames>
             <displayname description="Address1: Longitude" languagecode="1033" />
-            <displayname description="Address1: Longitude (fr)" languagecode="1036" />
+            <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
@@ -545,7 +545,7 @@
           <Length>200</Length>
           <displaynames>
             <displayname description="Address1: Postal Code" languagecode="1033" />
-            <displayname description="Address1: Postal Code (fr)" languagecode="1036" />
+            <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
@@ -586,7 +586,7 @@
           <Length>200</Length>
           <displaynames>
             <displayname description="Address1: State/Province" languagecode="1033" />
-            <displayname description="Address1: State/Province (fr)" languagecode="1036" />
+            <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
@@ -627,7 +627,7 @@
           <Length>200</Length>
           <displaynames>
             <displayname description="Address1: Street1" languagecode="1033" />
-            <displayname description="Address1: Street1 (fr)" languagecode="1036" />
+            <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
@@ -668,6 +668,7 @@
           <MaxValue>2147483647</MaxValue>
           <displaynames>
             <displayname description="Class" languagecode="1033" />
+            <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
@@ -707,7 +708,7 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Contact" languagecode="1033" />
-            <displayname description="Contact (fr)" languagecode="1036" />
+            <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
@@ -747,7 +748,7 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Country" languagecode="1033" />
-            <displayname description="Country (fr)" languagecode="1036" />
+            <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
@@ -788,6 +789,7 @@
           <MaxValue>2147483647</MaxValue>
           <displaynames>
             <displayname description="Elevation" languagecode="1033" />
+            <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
@@ -825,11 +827,11 @@
           <IsLocalizable>0</IsLocalizable>
           <displaynames>
             <displayname description="Facility" languagecode="1033" />
-            <displayname description="Facility (fr)" languagecode="1036" />
+            <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier for entity instances" languagecode="1033" />
-            <Description description="Unique identifier for entity instances (fr)" languagecode="1036" />
+            <Description description="Unique identifier for entity instances(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_FacilityNameEnglish">
@@ -867,6 +869,7 @@
           <Length>500</Length>
           <displaynames>
             <displayname description="Facility Name (English)" languagecode="1033" />
+            <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
@@ -907,6 +910,7 @@
           <Length>500</Length>
           <displaynames>
             <displayname description="Facility Name (French)" languagecode="1033" />
+            <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
@@ -946,7 +950,7 @@
           <OptionSetName>ovs_facilitytype</OptionSetName>
           <displaynames>
             <displayname description="Facility Type" languagecode="1033" />
-            <displayname description="Facility Type (fr)" languagecode="1036" />
+            <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
@@ -987,7 +991,7 @@
           <Length>200</Length>
           <displaynames>
             <displayname description="ICAO Code" languagecode="1033" />
-            <displayname description="ICAO Code (fr)" languagecode="1036" />
+            <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
@@ -1028,11 +1032,11 @@
           <Length>1000</Length>
           <displaynames>
             <displayname description="Facility Name" languagecode="1033" />
-            <displayname description="Name (fr)" languagecode="1036" />
+            <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Required name field" languagecode="1033" />
-            <Description description="Required name field (fr)" languagecode="1036" />
+            <Description description="Required name field(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Provinceid">
@@ -1069,7 +1073,7 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Province" languagecode="1033" />
-            <displayname description="Province (fr)" languagecode="1036" />
+            <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
@@ -1112,11 +1116,11 @@
           </LookupTypes>
           <displaynames>
             <displayname description="Owner" languagecode="1033" />
-            <displayname description="Owner (fr)" languagecode="1036" />
+            <displayname description="Propriétaire" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Owner Id" languagecode="1033" />
-            <Description description="Owner Id (fr)" languagecode="1036" />
+            <Description description="ID du propriétaire" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="OwningBusinessUnit">
@@ -1152,11 +1156,11 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Owning Business Unit" languagecode="1033" />
-            <displayname description="Owning Business Unit (fr)" languagecode="1036" />
+            <displayname description="Division propriétaire" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier for the business unit that owns the record" languagecode="1033" />
-            <Description description="Unique identifier for the business unit that owns the record (fr)" languagecode="1036" />
+            <Description description="Unique identifier for the business unit that owns the record(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="OwningTeam">
@@ -1193,11 +1197,11 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Owning Team" languagecode="1033" />
-            <displayname description="Owning Team (fr)" languagecode="1036" />
+            <displayname description="Équipe propriétaire" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier for the team that owns the record." languagecode="1033" />
-            <Description description="Unique identifier for the team that owns the record. (fr)" languagecode="1036" />
+            <Description description="Unique identifier for the team that owns the record.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="OwningUser">
@@ -1234,11 +1238,11 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Owning User" languagecode="1033" />
-            <displayname description="Owning User (fr)" languagecode="1036" />
+            <displayname description="Utilisateur propriétaire" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier for the user that owns the record." languagecode="1033" />
-            <Description description="Unique identifier for the user that owns the record. (fr)" languagecode="1036" />
+            <Description description="Unique identifier for the user that owns the record.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="statecode">
@@ -1277,34 +1281,34 @@
             <IsCustomizable>1</IsCustomizable>
             <displaynames>
               <displayname description="Status" languagecode="1033" />
-              <displayname description="Status (fr)" languagecode="1036" />
+              <displayname description="Statut" languagecode="1036" />
             </displaynames>
             <Descriptions>
               <Description description="Status of the Facility" languagecode="1033" />
-              <Description description="Status of the Facility (fr)" languagecode="1036" />
+              <Description description="Status of the Facility(fr)" languagecode="1036" />
             </Descriptions>
             <states>
               <state value="0" defaultstatus="1" invariantname="Active">
                 <labels>
                   <label description="Active" languagecode="1033" />
-                  <label description="Active (fr)" languagecode="1036" />
+                  <label description="Actif" languagecode="1036" />
                 </labels>
               </state>
               <state value="1" defaultstatus="2" invariantname="Inactive">
                 <labels>
                   <label description="Inactive" languagecode="1033" />
-                  <label description="Inactive (fr)" languagecode="1036" />
+                  <label description="Inactif" languagecode="1036" />
                 </labels>
               </state>
             </states>
           </optionset>
           <displaynames>
             <displayname description="Status" languagecode="1033" />
-            <displayname description="Status (fr)" languagecode="1036" />
+            <displayname description="Statut" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Status of the Facility" languagecode="1033" />
-            <Description description="Status of the Facility (fr)" languagecode="1036" />
+            <Description description="Status of the Facility(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="statuscode">
@@ -1343,34 +1347,34 @@
             <IsCustomizable>1</IsCustomizable>
             <displaynames>
               <displayname description="Status Reason" languagecode="1033" />
-              <displayname description="Status Reason (fr)" languagecode="1036" />
+              <displayname description="Raison du statut" languagecode="1036" />
             </displaynames>
             <Descriptions>
               <Description description="Reason for the status of the Facility" languagecode="1033" />
-              <Description description="Reason for the status of the Facility (fr)" languagecode="1036" />
+              <Description description="Reason for the status of the Facility(fr)" languagecode="1036" />
             </Descriptions>
             <statuses>
               <status value="1" state="0">
                 <labels>
                   <label description="Active" languagecode="1033" />
-                  <label description="Active (fr)" languagecode="1036" />
+                  <label description="Actif" languagecode="1036" />
                 </labels>
               </status>
               <status value="2" state="1">
                 <labels>
                   <label description="Inactive" languagecode="1033" />
-                  <label description="Inactive (fr)" languagecode="1036" />
+                  <label description="Inactif" languagecode="1036" />
                 </labels>
               </status>
             </statuses>
           </optionset>
           <displaynames>
             <displayname description="Status Reason" languagecode="1033" />
-            <displayname description="Status Reason (fr)" languagecode="1036" />
+            <displayname description="Raison du statut" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Reason for the status of the Facility" languagecode="1033" />
-            <Description description="Reason for the status of the Facility (fr)" languagecode="1036" />
+            <Description description="Reason for the status of the Facility(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="TimeZoneRuleVersionNumber">
@@ -1407,11 +1411,11 @@
           <MaxValue>2147483647</MaxValue>
           <displaynames>
             <displayname description="Time Zone Rule Version Number" languagecode="1033" />
-            <displayname description="Time Zone Rule Version Number (fr)" languagecode="1036" />
+            <displayname description="Numéro de version de la règle du fuseau horaire" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="For internal use only." languagecode="1033" />
-            <Description description="For internal use only. (fr)" languagecode="1036" />
+            <Description description="For internal use only.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="UTCConversionTimeZoneCode">
@@ -1448,11 +1452,11 @@
           <MaxValue>2147483647</MaxValue>
           <displaynames>
             <displayname description="UTC Conversion Time Zone Code" languagecode="1033" />
-            <displayname description="UTC Conversion Time Zone Code (fr)" languagecode="1036" />
+            <displayname description="Code de fuseau horaire pour la conversion UTC" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Time zone code that was in use when the record was created." languagecode="1033" />
-            <Description description="Time zone code that was in use when the record was created. (fr)" languagecode="1036" />
+            <Description description="Time zone code that was in use when the record was created.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
       </attributes>

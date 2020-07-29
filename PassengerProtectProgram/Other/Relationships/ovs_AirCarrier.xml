@@ -17,7 +17,8 @@
     <ReferencingAttributeName>ppp_AirCarrier</ReferencingAttributeName>
     <RelationshipDescription>
       <Descriptions>
-        <Description description="The ability to identify organization transporting passengers and cargo by aircraft" languagecode="1033" />
+        <Description description="The air carrier on which the traveller is ticketed." languagecode="1033" />
+        <Description description="The ability to identify organization transporting passengers and cargo by aircraft(fr)" languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>

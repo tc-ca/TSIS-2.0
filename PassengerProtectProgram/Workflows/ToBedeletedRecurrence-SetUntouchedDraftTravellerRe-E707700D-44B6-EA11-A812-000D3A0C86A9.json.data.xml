@@ -21,5 +21,6 @@
   <PrimaryEntity>none</PrimaryEntity>
   <LocalizedNames>
     <LocalizedName languagecode="1033" description=" To Be deleted? Recurrence -&gt; Set Untouched Draft Traveller Record for 7 days to Unresolved" />
+    <LocalizedName languagecode="1036" description=" To Be deleted? Recurrence -&gt; Set Untouched Draft Traveller Record for 7 days to Unresolved(fr)" />
   </LocalizedNames>
 </Workflow>

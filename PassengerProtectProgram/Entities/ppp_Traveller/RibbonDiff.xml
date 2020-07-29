@@ -114,41 +114,49 @@
     <LocLabel Id="Mscrm.SubGrid.ppp_traveller.AddExistingAssoc.Alt">
       <Titles>
         <Title description="Add Connections" languagecode="1033" />
+        <Title description="Add Connections(fr)" languagecode="1036" />
       </Titles>
     </LocLabel>
     <LocLabel Id="Mscrm.SubGrid.ppp_traveller.AddExistingAssoc.LabelText">
       <Titles>
         <Title description="Add Connections" languagecode="1033" />
+        <Title description="Add Connections(fr)" languagecode="1036" />
       </Titles>
     </LocLabel>
     <LocLabel Id="Mscrm.SubGrid.ppp_traveller.AddExistingAssoc.ToolTipDescription">
       <Titles>
         <Title description="Add a connection that already exists to the record you are working with." languagecode="1033" />
+        <Title description="Add a connection that already exists to the record you are working with.(fr)" languagecode="1036" />
       </Titles>
     </LocLabel>
     <LocLabel Id="Mscrm.SubGrid.ppp_traveller.AddExistingAssoc.ToolTipTitle">
       <Titles>
         <Title description="Add Connections" languagecode="1033" />
+        <Title description="Add Connections(fr)" languagecode="1036" />
       </Titles>
     </LocLabel>
     <LocLabel Id="Mscrm.SubGrid.ppp_traveller.AddExistingStandard.Alt">
       <Titles>
         <Title description="Add Connections" languagecode="1033" />
+        <Title description="Add Connections(fr)" languagecode="1036" />
       </Titles>
     </LocLabel>
     <LocLabel Id="Mscrm.SubGrid.ppp_traveller.AddExistingStandard.LabelText">
       <Titles>
         <Title description="Add Connections" languagecode="1033" />
+        <Title description="Add Connections(fr)" languagecode="1036" />
       </Titles>
     </LocLabel>
     <LocLabel Id="Mscrm.SubGrid.ppp_traveller.AddExistingStandard.ToolTipDescription">
       <Titles>
         <Title description="Add a connection that already exists to the record you are working with." languagecode="1033" />
+        <Title description="Add a connection that already exists to the record you are working with.(fr)" languagecode="1036" />
       </Titles>
     </LocLabel>
     <LocLabel Id="Mscrm.SubGrid.ppp_traveller.AddExistingStandard.ToolTipTitle">
       <Titles>
         <Title description="Add Connections" languagecode="1033" />
+        <Title description="Add Connections(fr)" languagecode="1036" />
       </Titles>
     </LocLabel>
   </LocLabels>

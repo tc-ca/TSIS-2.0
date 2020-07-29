@@ -23,13 +23,16 @@
   <PrimaryEntity>ppp_Traveller</PrimaryEntity>
   <LocalizedNames>
     <LocalizedName languagecode="1033" description="Initiate Investigation" />
+    <LocalizedName languagecode="1036" description="Initiate Investigation(fr)" />
   </LocalizedNames>
   <Descriptions>
     <Description languagecode="1033" description="Click to add description" />
+    <Description languagecode="1036" description="Click to add description(fr)" />
   </Descriptions>
   <labels>
     <steplabels id="{ce58ceb9-54f2-4256-9ca6-bb2c1eca5f2e}">
       <label languagecode="1033" description="Potential finding investigation required" />
+      <label languagecode="1036" description="Potential finding investigation required(fr)" />
     </steplabels>
   </labels>
 </Workflow>

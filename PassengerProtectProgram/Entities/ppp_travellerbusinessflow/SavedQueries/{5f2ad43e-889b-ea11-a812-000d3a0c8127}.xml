@@ -21,9 +21,11 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="Traveller Business Flow" languagecode="1033" />
+      <LocalizedName description="Flux d'affaire du voyageur" languagecode="1036" />
     </LocalizedNames>
     <Descriptions>
       <Description description="All active Traveller Business Flow" languagecode="1033" />
+      <Description description="All active Traveller Business Flow(fr)" languagecode="1036" />
     </Descriptions>
   </savedquery>
 </savedqueries>

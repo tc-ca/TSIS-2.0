@@ -16,7 +16,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="Unique identifier for the business unit that owns the record" languagecode="1033" />
-        <Description description="Identificateur unique de la division propriétaire de l'enregistrement" languagecode="1036" />
+        <Description description="Unique identifier for the business unit that owns the record(fr)" languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
   </EntityRelationship>
@@ -36,27 +36,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="Unique identifier for the business unit that owns the record" languagecode="1033" />
-        <Description description="Unique identifier for the business unit that owns the record (fr)" languagecode="1036" />
-      </Descriptions>
-    </RelationshipDescription>
-  </EntityRelationship>
-  <EntityRelationship Name="business_unit_ppp_repcallinfo">
-    <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>1</IsCustomizable>
-    <IntroducedVersion>1.0.0.2</IntroducedVersion>
-    <IsHierarchical>0</IsHierarchical>
-    <ReferencingEntityName>ppp_repcallinfo</ReferencingEntityName>
-    <ReferencedEntityName>BusinessUnit</ReferencedEntityName>
-    <CascadeAssign>NoCascade</CascadeAssign>
-    <CascadeDelete>NoCascade</CascadeDelete>
-    <CascadeReparent>NoCascade</CascadeReparent>
-    <CascadeShare>NoCascade</CascadeShare>
-    <CascadeUnshare>NoCascade</CascadeUnshare>
-    <ReferencingAttributeName>OwningBusinessUnit</ReferencingAttributeName>
-    <RelationshipDescription>
-      <Descriptions>
-        <Description description="Unique identifier for the business unit that owns the record" languagecode="1033" />
-        <Description description="Identificateur unique de la division propriétaire de l'enregistrement" languagecode="1036" />
+        <Description description="Unique identifier for the business unit that owns the record(fr)" languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
   </EntityRelationship>
@@ -76,7 +56,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="Unique identifier for the business unit that owns the record" languagecode="1033" />
-        <Description description="Identificateur unique de la division propriétaire de l'enregistrement" languagecode="1036" />
+        <Description description="Unique identifier for the business unit that owns the record(fr)" languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
   </EntityRelationship>
@@ -96,6 +76,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="Unique identifier for the business unit that owns the record" languagecode="1033" />
+        <Description description="Unique identifier for the business unit that owns the record(fr)" languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
   </EntityRelationship>
@@ -115,6 +96,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="Unique identifier for the business unit that owns the record" languagecode="1033" />
+        <Description description="Unique identifier for the business unit that owns the record(fr)" languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
   </EntityRelationship>

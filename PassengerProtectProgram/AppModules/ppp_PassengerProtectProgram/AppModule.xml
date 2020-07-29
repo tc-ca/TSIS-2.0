@@ -11,10 +11,8 @@
     <AppModuleComponent type="62" schemaName="ppp_PassengerProtectProgram" />
     <AppModuleComponent type="29" id="{f54fe17c-8e7a-47a9-8ac5-d0c2a77eef59}" />
     <AppModuleComponent type="1" schemaName="ovs_aircarrier" />
-    <AppModuleComponent type="1" schemaName="incident" />
     <AppModuleComponent type="1" schemaName="tc_country" />
     <AppModuleComponent type="1" schemaName="ovs_facility" />
-    <AppModuleComponent type="1" schemaName="msdyn_iotalert" />
     <AppModuleComponent type="1" schemaName="ppp_repcallinfo" />
     <AppModuleComponent type="60" id="{fed7d1dc-46b6-ea11-a812-000d3a0c8127}" />
     <AppModuleComponent type="1" schemaName="ppp_traveller" />
@@ -29,6 +27,6 @@
   </AppModuleRoleMaps>
   <LocalizedNames>
     <LocalizedName description="Passenger Protect Program" languagecode="1033" />
-    <LocalizedName description="Passenger Protect Program (fr)" languagecode="1036" />
+    <LocalizedName description="Passenger Protect Program(fr)" languagecode="1036" />
   </LocalizedNames>
 </AppModule>

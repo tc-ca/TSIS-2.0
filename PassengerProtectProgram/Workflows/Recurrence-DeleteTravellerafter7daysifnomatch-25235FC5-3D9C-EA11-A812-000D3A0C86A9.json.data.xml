@@ -21,5 +21,6 @@
   <PrimaryEntity>none</PrimaryEntity>
   <LocalizedNames>
     <LocalizedName languagecode="1033" description="Recurrence -&gt; Delete Traveller after 7 days if no match" />
+    <LocalizedName languagecode="1036" description="Recurrence -&gt; Delete Traveller after 7 days if no match(fr)" />
   </LocalizedNames>
 </Workflow>

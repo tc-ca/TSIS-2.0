@@ -3,6 +3,7 @@
   <IsCustomizable>1</IsCustomizable>
   <RolePrivileges>
     <RolePrivilege name="prvAddressBook" level="Global" />
+    <RolePrivilege name="prvAppendNote" level="Local" />
     <RolePrivilege name="prvAppendovs_AirCarrier" level="Global" />
     <RolePrivilege name="prvAppendovs_Facility" level="Global" />
     <RolePrivilege name="prvAppendppp_repcallinfo" level="Local" />
@@ -10,6 +11,7 @@
     <RolePrivilege name="prvAppendppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvAppendresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvAppendToAccount" level="Global" />
+    <RolePrivilege name="prvAppendToNote" level="Local" />
     <RolePrivilege name="prvAppendToovs_AirCarrier" level="Global" />
     <RolePrivilege name="prvAppendToovs_Facility" level="Global" />
     <RolePrivilege name="prvAppendToppp_repcallinfo" level="Local" />
@@ -25,6 +27,7 @@
     <RolePrivilege name="prvAssignresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvCreateAppModule" level="Global" />
     <RolePrivilege name="prvCreateExchangeSyncIdMapping" level="Basic" />
+    <RolePrivilege name="prvCreateNote" level="Local" />
     <RolePrivilege name="prvCreateOrgEmailTemplates" level="Global" />
     <RolePrivilege name="prvCreateppp_repcallinfo" level="Local" />
     <RolePrivilege name="prvCreateppp_Traveller" level="Global" />
@@ -49,6 +52,7 @@
     <RolePrivilege name="prvReadEntity" level="Global" />
     <RolePrivilege name="prvReadExchangeSyncIdMapping" level="Basic" />
     <RolePrivilege name="prvReadHierarchyRule" level="Global" />
+    <RolePrivilege name="prvReadNote" level="Local" />
     <RolePrivilege name="prvReadOptionSet" level="Global" />
     <RolePrivilege name="prvReadovs_AirCarrier" level="Global" />
     <RolePrivilege name="prvReadovs_Facility" level="Global" />

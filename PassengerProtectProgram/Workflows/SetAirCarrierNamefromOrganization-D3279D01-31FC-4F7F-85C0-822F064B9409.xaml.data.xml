@@ -22,5 +22,6 @@
   <PrimaryEntity>ovs_AirCarrier</PrimaryEntity>
   <LocalizedNames>
     <LocalizedName languagecode="1033" description="Set Air Carrier Name from Organization" />
+    <LocalizedName languagecode="1036" description="Set Air Carrier Name from Organization(fr)" />
   </LocalizedNames>
 </Workflow>

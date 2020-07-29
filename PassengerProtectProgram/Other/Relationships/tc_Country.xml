@@ -86,6 +86,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The country identified by the traveller's passport." languagecode="1033" />
+        <Description description="The country identified by the traveller's passport.(fr)" languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>
@@ -120,6 +121,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The country that issued the presented passport to the Traveller." languagecode="1033" />
+        <Description description="The country that issued the presented passport to the Traveller.(fr)" languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>

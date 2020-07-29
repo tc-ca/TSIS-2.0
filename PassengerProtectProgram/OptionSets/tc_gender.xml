@@ -6,21 +6,25 @@
   <IsCustomizable>1</IsCustomizable>
   <displaynames>
     <displayname description="Gender" languagecode="1033" />
+    <displayname description="Genre" languagecode="1036" />
   </displaynames>
   <options>
     <option value="948010000">
       <labels>
         <label description="Male" languagecode="1033" />
+        <label description="0" languagecode="1036" />
       </labels>
     </option>
     <option value="948010001">
       <labels>
         <label description="Female" languagecode="1033" />
+        <label description="0" languagecode="1036" />
       </labels>
     </option>
     <option value="948010002">
       <labels>
         <label description="Other" languagecode="1033" />
+        <label description="0" languagecode="1036" />
       </labels>
     </option>
   </options>

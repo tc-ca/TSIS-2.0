@@ -11,6 +11,7 @@
     <RolePrivilege name="prvAppendExpiredProcess" level="Global" />
     <RolePrivilege name="prvAppendFeedback" level="Basic" />
     <RolePrivilege name="prvAppendNewProcess" level="Global" />
+    <RolePrivilege name="prvAppendNote" level="Global" />
     <RolePrivilege name="prvAppendovs_AirCarrier" level="Global" />
     <RolePrivilege name="prvAppendovs_Facility" level="Global" />
     <RolePrivilege name="prvAppendppp_repcallinfo" level="Local" />
@@ -24,6 +25,7 @@
     <RolePrivilege name="prvAppendToExpiredProcess" level="Global" />
     <RolePrivilege name="prvAppendToFeedback" level="Basic" />
     <RolePrivilege name="prvAppendToNewProcess" level="Global" />
+    <RolePrivilege name="prvAppendToNote" level="Global" />
     <RolePrivilege name="prvAppendToovs_AirCarrier" level="Global" />
     <RolePrivilege name="prvAppendToovs_Facility" level="Global" />
     <RolePrivilege name="prvAppendToPosition" level="Global" />
@@ -52,6 +54,7 @@
     <RolePrivilege name="prvCreateExpiredProcess" level="Global" />
     <RolePrivilege name="prvCreateFeedback" level="Basic" />
     <RolePrivilege name="prvCreateNewProcess" level="Global" />
+    <RolePrivilege name="prvCreateNote" level="Global" />
     <RolePrivilege name="prvCreateOrgEmailTemplates" level="Global" />
     <RolePrivilege name="prvCreateovs_AirCarrier" level="Global" />
     <RolePrivilege name="prvCreateovs_Facility" level="Global" />
@@ -103,6 +106,7 @@
     <RolePrivilege name="prvReadImportJob" level="Global" />
     <RolePrivilege name="prvReadLicense" level="Global" />
     <RolePrivilege name="prvReadNewProcess" level="Global" />
+    <RolePrivilege name="prvReadNote" level="Global" />
     <RolePrivilege name="prvReadOptionSet" level="Global" />
     <RolePrivilege name="prvReadOrganization" level="Global" />
     <RolePrivilege name="prvReadovs_AirCarrier" level="Global" />

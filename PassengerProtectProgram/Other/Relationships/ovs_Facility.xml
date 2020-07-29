@@ -44,6 +44,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The (optional) first connection of the traveller's  itinerary." languagecode="1033" />
+        <Description description="The (optional) first connection of the traveller's  itinerary.(fr)" languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>
@@ -78,6 +79,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The (optional) tenth connection of the traveller's itinerary." languagecode="1033" />
+        <Description description="The (optional) tenth connection of the traveller's itinerary.(fr)" languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>
@@ -112,6 +114,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The (optional) second connection of the traveller's  itinerary." languagecode="1033" />
+        <Description description="The (optional) second connection of the traveller's  itinerary.(fr)" languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>
@@ -146,6 +149,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The (optional) third connection of the traveller's itinerary." languagecode="1033" />
+        <Description description="The (optional) third connection of the traveller's itinerary.(fr)" languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>
@@ -180,6 +184,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The (optional) fourth connection of the traveller's itinerary." languagecode="1033" />
+        <Description description="The (optional) fourth connection of the traveller's itinerary.(fr)" languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>
@@ -214,6 +219,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The (optional) fifth connection of the traveller's itinerary." languagecode="1033" />
+        <Description description="The (optional) fifth connection of the traveller's itinerary.(fr)" languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>
@@ -248,6 +254,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The (optional) sixth connection of the traveller's itinerary." languagecode="1033" />
+        <Description description="The (optional) sixth connection of the traveller's itinerary.(fr)" languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>
@@ -282,6 +289,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The (optional) seventh connection of the traveller's itinerary." languagecode="1033" />
+        <Description description="The (optional) seventh connection of the traveller's itinerary.(fr)" languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>
@@ -316,6 +324,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The (optional) eight connection of the traveller's itinerary." languagecode="1033" />
+        <Description description="The (optional) eight connection of the traveller's itinerary.(fr)" languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>
@@ -350,6 +359,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The (optional) ninth connection of the traveller's itinerary." languagecode="1033" />
+        <Description description="The (optional) ninth connection of the traveller's itinerary.(fr)" languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>
@@ -384,6 +394,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The final destination of the Traveller." languagecode="1033" />
+        <Description description="The final destination of the Traveller.(fr)" languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>
@@ -418,6 +429,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The name of the aerodrome associated with the location of the Traveller's point of origin." languagecode="1033" />
+        <Description description="The name of the aerodrome associated with the location of the Traveller's point of origin.(fr)" languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>

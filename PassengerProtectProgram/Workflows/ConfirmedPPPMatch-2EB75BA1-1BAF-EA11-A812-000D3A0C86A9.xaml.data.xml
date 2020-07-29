@@ -23,8 +23,10 @@
   <PrimaryEntity>ppp_Traveller</PrimaryEntity>
   <LocalizedNames>
     <LocalizedName languagecode="1033" description="Confirmed PPP Match" />
+    <LocalizedName languagecode="1036" description="Confirmed PPP Match(fr)" />
   </LocalizedNames>
   <Descriptions>
     <Description languagecode="1033" description="Click to add description" />
+    <Description languagecode="1036" description="Click to add description(fr)" />
   </Descriptions>
 </Workflow>

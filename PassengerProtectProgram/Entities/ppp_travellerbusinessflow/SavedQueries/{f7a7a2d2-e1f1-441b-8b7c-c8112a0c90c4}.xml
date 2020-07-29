@@ -45,6 +45,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="Active Traveller Business Flow on my Travellers" languagecode="1033" />
+      <LocalizedName description="Active Traveller Business Flow on my Travellers(fr)" languagecode="1036" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

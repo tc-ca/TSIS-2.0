@@ -6,7 +6,7 @@
   <IsCustomizable>1</IsCustomizable>
   <displaynames>
     <displayname description="Identification Type" languagecode="1033" />
-    <displayname description="Identification Type (fr)" languagecode="1036" />
+    <displayname description="Type d'identification" languagecode="1036" />
   </displaynames>
   <Descriptions>
     <Description description="" languagecode="1033" />
@@ -15,31 +15,31 @@
     <option value="927820000">
       <labels>
         <label description="Passport" languagecode="1033" />
-        <label description="Passport (fr)" languagecode="1036" />
+        <label description="Passeport" languagecode="1036" />
       </labels>
     </option>
     <option value="927820001">
       <labels>
         <label description="Drivers Licence" languagecode="1033" />
-        <label description="Drivers Licence (fr)" languagecode="1036" />
+        <label description="Permis de conduire" languagecode="1036" />
       </labels>
     </option>
     <option value="927820004">
       <labels>
         <label description="Government Issued ID (Provide Details)" languagecode="1033" />
-        <label description="Government Issued ID (Provide Details) (fr)" languagecode="1036" />
+        <label description="Pièce d'identité émise par le gouvernement (fournir des détails)" languagecode="1036" />
       </labels>
     </option>
     <option value="927820002">
       <labels>
         <label description="Student ID" languagecode="1033" />
-        <label description="Student ID (fr)" languagecode="1036" />
+        <label description="Carte d'étudiant" languagecode="1036" />
       </labels>
     </option>
     <option value="927820003">
       <labels>
         <label description="Other (Provide Details)" languagecode="1033" />
-        <label description="Other (Provide Details) (fr)" languagecode="1036" />
+        <label description="Autre (fournir des détails)" languagecode="1036" />
       </labels>
     </option>
   </options>

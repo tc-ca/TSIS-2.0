@@ -40,6 +40,7 @@
     <IntroducedVersion>1.0.0.2</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="All Active Travellers" languagecode="1033" />
+      <LocalizedName description="All Active Travellers(fr)" languagecode="1036" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

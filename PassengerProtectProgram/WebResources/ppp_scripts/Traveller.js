@@ -410,28 +410,20 @@ function showHideFlightConnections(eContext, connectionCountName, maxConnections
   }
 }
 
-function connectionsValidation(eContext, connectionsNameArray) {
+function flightValidation(eContext, flightNameArray) {
+  debugger;
   var formContext = eContext.getFormContext();
-  connectionCount = connectionsNameArray.length;
-  for (var i = 0; i < connectionCount; i++) {
-    for (var j = 0; j < connectionCount; j++) {
-      //If the connections aren't the same field
-      if (i != j) {
-        let connectionI = formContext.getAttribute(connectionsNameArray[i]).getValue();
-        let connectionJ = formContext.getAttribute(connectionsNameArray[j]).getValue();
-        //If they both have data
-        if (connectionI != null && connectionJ != null) {
-          //Check if they are equal
-          if (connectionI.id == connectionJ.id) {
-            formContext.getControl(connectionsNameArray[i]).setNotification("Flight Connection " + Number(i+1) + " cannot match Flight Connection " + Number(j+1));
-            formContext.getControl(connectionsNameArray[j]).setNotification("Flight Connection " + Number(j+1) + " cannot match Flight Connection " + Number(i+1));
-          } else {
-            formContext.getControl(connectionsNameArray[i]).clearNotification();
-            formContext.getControl(connectionsNameArray[j]).clearNotification();
-          }
-        }
+  for (var i = 0; i < flightNameArray.length; i++) {
+    formContext.getControl(flightNameArray[i]).clearNotification();
+  }
+  for (var x = 0; x < flightNameArray.length; x++) {
+    flightX = formContext.getAttribute(flightNameArray[x]).getValue()[0].id;
+    for (var y = 0; y < flightNameArray.length; y++) {
+      flightY = formContext.getAttribute(flightNameArray[y]).getValue()[0].id;
+      if (x != y && flightX != null && flightY != null && flightX == flightY) {
+        formContext.getControl(flightNameArray[x]).setNotification("Flights cannot match");
+        formContext.getControl(flightNameArray[y]).setNotification("Flights cannot match");
       }
     }
   }
 }
-

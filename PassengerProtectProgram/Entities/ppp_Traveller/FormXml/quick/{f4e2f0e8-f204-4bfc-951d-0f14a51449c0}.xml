@@ -17,14 +17,14 @@
                 <section showlabel="false" showbar="false" IsUserDefined="0" id="{5356654f-2b74-43d8-9764-15b1061bdbc3}">
                   <labels>
                     <label description="GENERAL" languagecode="1033" />
-                    <label description="GÉNÉRAL" languagecode="1036" />
+                    <label description="Général" languagecode="1036" />
                   </labels>
                   <rows>
                     <row>
                       <cell id="{39892bc3-682f-4303-a288-f6e912070ee3}">
                         <labels>
                           <label description="Traveller Record Number" languagecode="1033" />
-                          <label description="Traveller Record Number (fr)" languagecode="1036" />
+                          <label description="Numéro du dossier du voyageur" languagecode="1036" />
                         </labels>
                         <control id="ppp_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="ppp_name" />
                       </cell>

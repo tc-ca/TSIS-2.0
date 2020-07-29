@@ -23,5 +23,6 @@
   <PrimaryEntity>ppp_Traveller</PrimaryEntity>
   <LocalizedNames>
     <LocalizedName languagecode="1033" description="Toggle Match Confirmed Visibility" />
+    <LocalizedName languagecode="1036" description="Toggle Match Confirmed Visibility(fr)" />
   </LocalizedNames>
 </Workflow>

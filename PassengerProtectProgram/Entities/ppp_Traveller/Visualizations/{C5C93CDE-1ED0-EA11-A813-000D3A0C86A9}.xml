@@ -43,6 +43,7 @@
   <isdefault>0</isdefault>
   <LocalizedNames>
     <LocalizedName description="Call Type Report" languagecode="1033" />
+    <LocalizedName description="Call Type Report(fr)" languagecode="1036" />
   </LocalizedNames>
   <IsCustomizable>1</IsCustomizable>
   <IntroducedVersion>1.0.0.8</IntroducedVersion>

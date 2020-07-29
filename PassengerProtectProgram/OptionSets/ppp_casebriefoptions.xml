@@ -6,7 +6,7 @@
   <IsCustomizable>1</IsCustomizable>
   <displaynames>
     <displayname description="Case Brief Options" languagecode="1033" />
-    <displayname description="Case Brief Options (fr)" languagecode="1036" />
+    <displayname description="Option du dossier de cas" languagecode="1036" />
   </displaynames>
   <Descriptions>
     <Description description="" languagecode="1033" />
@@ -15,19 +15,19 @@
     <option value="927820000">
       <labels>
         <label description="Direction - Denied Boarding" languagecode="1033" />
-        <label description="Direction - Denied Boarding (fr)" languagecode="1036" />
+        <label description="Directive - Refus d'embarquement" languagecode="1036" />
       </labels>
     </option>
     <option value="927820001">
       <labels>
         <label description="Direction - Additional Screening" languagecode="1033" />
-        <label description="Direction - Additional Screening (fr)" languagecode="1036" />
+        <label description="Directive - Fouille additionelle" languagecode="1036" />
       </labels>
     </option>
     <option value="927820002">
       <labels>
         <label description="Allowed - Other Response Measure" languagecode="1033" />
-        <label description="Allowed - Other Response Measure (fr)" languagecode="1036" />
+        <label description="Autorisé - Autre mesure de réponse" languagecode="1036" />
       </labels>
     </option>
   </options>

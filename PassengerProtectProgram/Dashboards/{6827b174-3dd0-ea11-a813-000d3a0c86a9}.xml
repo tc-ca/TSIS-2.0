@@ -2,6 +2,7 @@
 <Dashboard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <LocalizedNames>
     <LocalizedName description="PPP Manager" languagecode="1033" />
+    <LocalizedName description="PPP Manager(fr)" languagecode="1036" />
   </LocalizedNames>
   <FormId>{6827b174-3dd0-ea11-a813-000d3a0c86a9}</FormId>
   <IsCustomizable>1</IsCustomizable>
@@ -13,6 +14,7 @@
           <tab showlabel="true" verticallayout="true" id="{4150dfe0-3091-4880-942d-b4db8a73a4a5}">
             <labels>
               <label description="Tab" languagecode="1033" />
+              <label description="Languette" languagecode="1036" />
             </labels>
             <columns>
               <column width="100%">
@@ -20,13 +22,14 @@
                   <section showlabel="false" showbar="false" columns="1111" id="{a07c0a40-96c6-483c-95df-e0af74b17401}">
                     <labels>
                       <label description="Section" languagecode="1033" />
+                      <label description="Section" languagecode="1036" />
                     </labels>
                     <rows>
                       <row>
                         <cell colspan="1" rowspan="12" showlabel="false" id="{c364fcb4-0d31-4cc7-8cfe-cb7aa4a3b664}" auto="false">
                           <labels>
                             <label description="Traveller" languagecode="1033" />
-                            <label description="Travellers (fr)" languagecode="1036" />
+                            <label description="Voyageur" languagecode="1036" />
                           </labels>
                           <control id="Componentc414149" uniqueid="{681d3610-773a-8420-5c41-052bb43326dd}" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
                             <parameters>
@@ -51,7 +54,7 @@
                         <cell colspan="1" rowspan="12" showlabel="false" id="{b2e9dba3-6985-4fdb-96e3-3b4b536391e4}" auto="false">
                           <labels>
                             <label description="Traveller" languagecode="1033" />
-                            <label description="Travellers (fr)" languagecode="1036" />
+                            <label description="Voyageur" languagecode="1036" />
                           </labels>
                           <control id="Component6064c37" uniqueid="{6aa39d65-d3ce-deac-eb17-b2c60d8dbcb2}" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
                             <parameters>
@@ -76,7 +79,7 @@
                         <cell colspan="1" rowspan="12" showlabel="false" id="{398c211b-e453-4306-91a9-094d69ad77b4}" auto="false">
                           <labels>
                             <label description="Traveller" languagecode="1033" />
-                            <label description="Travellers (fr)" languagecode="1036" />
+                            <label description="Voyageur" languagecode="1036" />
                           </labels>
                           <control id="Componentbb02212" uniqueid="{5d028c62-126d-146c-93b4-450620a41809}" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
                             <parameters>
@@ -124,6 +127,7 @@
           <tab showlabel="true" verticallayout="true" id="{1ddb7060-00ab-48ec-85ee-10e93463ae8d}">
             <labels>
               <label description="Tab" languagecode="1033" />
+              <label description="Languette" languagecode="1036" />
             </labels>
             <columns>
               <column width="100%">
@@ -131,13 +135,14 @@
                   <section showlabel="false" showbar="false" columns="1111" id="{5b75fbb8-4120-4c7a-872c-b979fc1bb5ee}">
                     <labels>
                       <label description="Section" languagecode="1033" />
+                      <label description="Section" languagecode="1036" />
                     </labels>
                     <rows>
                       <row>
                         <cell colspan="4" rowspan="12" showlabel="false" id="{2f032678-c701-45d3-a9b1-4b0595fb8aa6}" auto="false">
                           <labels>
                             <label description="Travellers" languagecode="1033" />
-                            <label description="Travellers (fr)" languagecode="1036" />
+                            <label description="Voyageurs" languagecode="1036" />
                           </labels>
                           <control id="Component3a353df" uniqueid="{3da42203-6182-db93-22be-a0e00281c395}" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
                             <parameters>

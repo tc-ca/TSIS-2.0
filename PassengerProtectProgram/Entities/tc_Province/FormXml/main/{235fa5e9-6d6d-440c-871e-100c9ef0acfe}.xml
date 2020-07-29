@@ -10,6 +10,7 @@
         <tab verticallayout="true" id="{c017f6b2-2d0e-4bb5-92f1-8d37b8821651}" IsUserDefined="1">
           <labels>
             <label description="General" languagecode="1033" />
+            <label description="Général" languagecode="1036" />
           </labels>
           <columns>
             <column width="100%">
@@ -17,12 +18,14 @@
                 <section showlabel="false" showbar="false" IsUserDefined="0" id="{de50b8c6-f799-4d54-bc58-7a87e8dff47b}">
                   <labels>
                     <label description="General" languagecode="1033" />
+                    <label description="Général" languagecode="1036" />
                   </labels>
                   <rows>
                     <row>
                       <cell id="{e1c27c3c-9063-47a5-a3da-e49a539bb4b2}">
                         <labels>
                           <label description="Province Name" languagecode="1033" />
+                          <label description="0" languagecode="1036" />
                         </labels>
                         <control id="tc_provincename" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tc_provincename" />
                       </cell>
@@ -31,6 +34,7 @@
                       <cell id="{e997096c-614d-4b8a-b40e-d9babeac4973}">
                         <labels>
                           <label description="Owner" languagecode="1033" />
+                          <label description="Propriétaire" languagecode="1036" />
                         </labels>
                         <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
                       </cell>
@@ -47,9 +51,11 @@
     <CanBeDeleted>1</CanBeDeleted>
     <LocalizedNames>
       <LocalizedName description="Information" languagecode="1033" />
+      <LocalizedName description="Information(fr)" languagecode="1036" />
     </LocalizedNames>
     <Descriptions>
       <Description description="A form for this entity." languagecode="1033" />
+      <Description description="A form for this entity.(fr)" languagecode="1036" />
     </Descriptions>
   </systemform>
 </forms>

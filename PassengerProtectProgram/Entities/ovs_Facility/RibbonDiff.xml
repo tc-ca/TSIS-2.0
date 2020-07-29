@@ -141,41 +141,49 @@
     <LocLabel Id="Mscrm.SubGrid.ovs_facility.AddExistingAssoc.Alt">
       <Titles>
         <Title description="Add Existing Aerodrome" languagecode="1033" />
+        <Title description="Add Existing Aerodrome(fr)" languagecode="1036" />
       </Titles>
     </LocLabel>
     <LocLabel Id="Mscrm.SubGrid.ovs_facility.AddExistingAssoc.LabelText">
       <Titles>
         <Title description="Add Existing Aerodrome" languagecode="1033" />
+        <Title description="Add Existing Aerodrome(fr)" languagecode="1036" />
       </Titles>
     </LocLabel>
     <LocLabel Id="Mscrm.SubGrid.ovs_facility.AddExistingAssoc.ToolTipDescription">
       <Titles>
         <Title description="Add an aerodrome that already exists to the record you are working with." languagecode="1033" />
+        <Title description="Add an aerodrome that already exists to the record you are working with.(fr)" languagecode="1036" />
       </Titles>
     </LocLabel>
     <LocLabel Id="Mscrm.SubGrid.ovs_facility.AddExistingAssoc.ToolTipTitle">
       <Titles>
         <Title description="Add Existing​​ Aerodrome" languagecode="1033" />
+        <Title description="Add Existing​​ Aerodrome(fr)" languagecode="1036" />
       </Titles>
     </LocLabel>
     <LocLabel Id="Mscrm.SubGrid.ovs_facility.AddExistingStandard.Alt">
       <Titles>
         <Title description="Add Existing Aerodrome" languagecode="1033" />
+        <Title description="Add Existing Aerodrome(fr)" languagecode="1036" />
       </Titles>
     </LocLabel>
     <LocLabel Id="Mscrm.SubGrid.ovs_facility.AddExistingStandard.LabelText">
       <Titles>
         <Title description="Add Existing Aerodrome" languagecode="1033" />
+        <Title description="Add Existing Aerodrome(fr)" languagecode="1036" />
       </Titles>
     </LocLabel>
     <LocLabel Id="Mscrm.SubGrid.ovs_facility.AddExistingStandard.ToolTipDescription">
       <Titles>
         <Title description="Add an Aerodrome that already exists to the record you are working with." languagecode="1033" />
+        <Title description="Add an Aerodrome that already exists to the record you are working with.(fr)" languagecode="1036" />
       </Titles>
     </LocLabel>
     <LocLabel Id="Mscrm.SubGrid.ovs_facility.AddExistingStandard.ToolTipTitle">
       <Titles>
         <Title description="Add Existing​​ Aerodrome" languagecode="1033" />
+        <Title description="Add Existing​​ Aerodrome(fr)" languagecode="1036" />
       </Titles>
     </LocLabel>
   </LocLabels>

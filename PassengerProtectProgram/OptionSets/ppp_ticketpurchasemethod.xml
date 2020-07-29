@@ -6,6 +6,7 @@
   <IsCustomizable>1</IsCustomizable>
   <displaynames>
     <displayname description="Ticket Purchase Method" languagecode="1033" />
+    <displayname description="Ticket Purchase Method(fr)" languagecode="1036" />
   </displaynames>
   <Descriptions>
     <Description description="" languagecode="1033" />
@@ -14,21 +15,25 @@
     <option value="927820000">
       <labels>
         <label description="Online" languagecode="1033" />
+        <label description="Online(fr)" languagecode="1036" />
       </labels>
     </option>
     <option value="927820001">
       <labels>
         <label description="Travel Agency" languagecode="1033" />
+        <label description="Travel Agency(fr)" languagecode="1036" />
       </labels>
     </option>
     <option value="927820002">
       <labels>
         <label description="Directly from Air Carrier" languagecode="1033" />
+        <label description="Directly from Air Carrier(fr)" languagecode="1036" />
       </labels>
     </option>
     <option value="927820003">
       <labels>
         <label description="Unknown" languagecode="1033" />
+        <label description="Inconnue" languagecode="1036" />
       </labels>
     </option>
   </options>

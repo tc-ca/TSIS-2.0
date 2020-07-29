@@ -40,6 +40,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="Traveller Business Flow Associated View" languagecode="1033" />
+      <LocalizedName description="Traveller Business Flow Associated View(fr)" languagecode="1036" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

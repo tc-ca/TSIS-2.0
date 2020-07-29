@@ -21,5 +21,6 @@
   <PrimaryEntity>none</PrimaryEntity>
   <LocalizedNames>
     <LocalizedName languagecode="1033" description="Send Draft Created Notification to Owner of Traveller Record" />
+    <LocalizedName languagecode="1036" description="Send Draft Created Notification to Owner of Traveller Record(fr)" />
   </LocalizedNames>
 </Workflow>
