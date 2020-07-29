@@ -6,7 +6,6 @@
     <RolePrivilege name="prvAppendNote" level="Local" />
     <RolePrivilege name="prvAppendovs_AirCarrier" level="Global" />
     <RolePrivilege name="prvAppendovs_Facility" level="Global" />
-    <RolePrivilege name="prvAppendppp_repcallinfo" level="Local" />
     <RolePrivilege name="prvAppendppp_Traveller" level="Global" />
     <RolePrivilege name="prvAppendppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvAppendresco_UserSettings" level="Basic" />
@@ -14,7 +13,6 @@
     <RolePrivilege name="prvAppendToNote" level="Local" />
     <RolePrivilege name="prvAppendToovs_AirCarrier" level="Global" />
     <RolePrivilege name="prvAppendToovs_Facility" level="Global" />
-    <RolePrivilege name="prvAppendToppp_repcallinfo" level="Local" />
     <RolePrivilege name="prvAppendToppp_Traveller" level="Global" />
     <RolePrivilege name="prvAppendToppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvAppendToresco_UserSettings" level="Basic" />
@@ -29,7 +27,6 @@
     <RolePrivilege name="prvCreateExchangeSyncIdMapping" level="Basic" />
     <RolePrivilege name="prvCreateNote" level="Local" />
     <RolePrivilege name="prvCreateOrgEmailTemplates" level="Global" />
-    <RolePrivilege name="prvCreateppp_repcallinfo" level="Local" />
     <RolePrivilege name="prvCreateppp_Traveller" level="Global" />
     <RolePrivilege name="prvCreateppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvCreateresco_UserSettings" level="Basic" />
@@ -58,7 +55,6 @@
     <RolePrivilege name="prvReadovs_Facility" level="Global" />
     <RolePrivilege name="prvReadPluginAssembly" level="Global" />
     <RolePrivilege name="prvReadPluginType" level="Global" />
-    <RolePrivilege name="prvReadppp_repcallinfo" level="Local" />
     <RolePrivilege name="prvReadppp_Traveller" level="Global" />
     <RolePrivilege name="prvReadppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvReadQuery" level="Global" />
@@ -85,7 +81,6 @@
     <RolePrivilege name="prvWorkflowExecution" level="Global" />
     <RolePrivilege name="prvWriteAppModule" level="Global" />
     <RolePrivilege name="prvWriteExchangeSyncIdMapping" level="Basic" />
-    <RolePrivilege name="prvWriteppp_repcallinfo" level="Local" />
     <RolePrivilege name="prvWriteppp_Traveller" level="Global" />
     <RolePrivilege name="prvWriteppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvWriteresco_UserSettings" level="Basic" />

@@ -140,7 +140,7 @@
                         <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" uniqueid="{ac8422ba-1b27-b7e1-a29a-a5b48b3e06c0}" disabled="false">
                           <parameters>
                             <UClientUniqueName>Timeline</UClientUniqueName>
-                            <UClientModules>Notes</UClientModules>
+                            <UClientModules>Activities,Notes</UClientModules>
                             <UClientDefaultModuleForCreateExperience>Notes</UClientDefaultModuleForCreateExperience>
                             <UClientShowFilterPane>true</UClientShowFilterPane>
                             <UClientExpandFilterPane>false</UClientExpandFilterPane>
@@ -157,7 +157,7 @@
                             <EmailConversationView>true</EmailConversationView>
                             <ShowArticleTab>false</ShowArticleTab>
                             <SelectDefaultLanguage>00000000-0000-0000-0000-000000000000</SelectDefaultLanguage>
-                            <UClientActivities>email</UClientActivities>
+                            <UClientActivities>phonecall,ppp_callinformation</UClientActivities>
                             <UClientActivityCardMap>appointment:4201:,campaignactivity:4402:,campaignresponse:4401:,email:4202:,fax:4204:,letter:4207:,opportunityclose:4208:,phonecall:4210:983dc188-2a05-4cfe-b907-4fbfae8c21f7,task:4212:,msdyn_bookingalert:10088:,ppp_callinformation:10333:,msfp_surveyinvite:10079:,msfp_surveyresponse:10080:</UClientActivityCardMap>
                           </parameters>
                         </control>

@@ -13,8 +13,6 @@
     <AppModuleComponent type="1" schemaName="ovs_aircarrier" />
     <AppModuleComponent type="1" schemaName="tc_country" />
     <AppModuleComponent type="1" schemaName="ovs_facility" />
-    <AppModuleComponent type="1" schemaName="ppp_repcallinfo" />
-    <AppModuleComponent type="60" id="{fed7d1dc-46b6-ea11-a812-000d3a0c8127}" />
     <AppModuleComponent type="1" schemaName="ppp_traveller" />
     <AppModuleComponent type="1" schemaName="ppp_travellerbusinessflow" />
     <AppModuleComponent type="1" schemaName="systemuser" />

@@ -14,7 +14,6 @@
     <RolePrivilege name="prvAppendNote" level="Global" />
     <RolePrivilege name="prvAppendovs_AirCarrier" level="Global" />
     <RolePrivilege name="prvAppendovs_Facility" level="Global" />
-    <RolePrivilege name="prvAppendppp_repcallinfo" level="Local" />
     <RolePrivilege name="prvAppendppp_Traveller" level="Global" />
     <RolePrivilege name="prvAppendppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvAppendresco_UserSettings" level="Basic" />
@@ -29,7 +28,6 @@
     <RolePrivilege name="prvAppendToovs_AirCarrier" level="Global" />
     <RolePrivilege name="prvAppendToovs_Facility" level="Global" />
     <RolePrivilege name="prvAppendToPosition" level="Global" />
-    <RolePrivilege name="prvAppendToppp_repcallinfo" level="Local" />
     <RolePrivilege name="prvAppendToppp_Traveller" level="Global" />
     <RolePrivilege name="prvAppendToppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvAppendToresco_UserSettings" level="Basic" />
@@ -58,7 +56,6 @@
     <RolePrivilege name="prvCreateOrgEmailTemplates" level="Global" />
     <RolePrivilege name="prvCreateovs_AirCarrier" level="Global" />
     <RolePrivilege name="prvCreateovs_Facility" level="Global" />
-    <RolePrivilege name="prvCreateppp_repcallinfo" level="Local" />
     <RolePrivilege name="prvCreateppp_Traveller" level="Global" />
     <RolePrivilege name="prvCreateppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvCreateRelationship" level="Global" />
@@ -114,7 +111,6 @@
     <RolePrivilege name="prvReadPluginAssembly" level="Global" />
     <RolePrivilege name="prvReadPluginType" level="Global" />
     <RolePrivilege name="prvReadPosition" level="Global" />
-    <RolePrivilege name="prvReadppp_repcallinfo" level="Local" />
     <RolePrivilege name="prvReadppp_Traveller" level="Global" />
     <RolePrivilege name="prvReadppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvReadQuery" level="Global" />
@@ -159,7 +155,6 @@
     <RolePrivilege name="prvWriteNewProcess" level="Global" />
     <RolePrivilege name="prvWriteovs_AirCarrier" level="Global" />
     <RolePrivilege name="prvWriteovs_Facility" level="Global" />
-    <RolePrivilege name="prvWriteppp_repcallinfo" level="Local" />
     <RolePrivilege name="prvWriteppp_Traveller" level="Global" />
     <RolePrivilege name="prvWriteppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvWriteRelationship" level="Global" />
