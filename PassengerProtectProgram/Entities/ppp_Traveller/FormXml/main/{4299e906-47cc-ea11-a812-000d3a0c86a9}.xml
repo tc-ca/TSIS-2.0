@@ -1217,12 +1217,21 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{e5bcd708-682d-7807-ae71-34790e95acd6}" showlabel="true" locklevel="0" labelid="{c8cc05f4-98f4-409e-90d5-27db867b8f4b}">
+                      <cell id="{277b8397-7962-e689-4005-d1a31aa25054}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="Ticket Type" languagecode="1033" />
-                          <label description="Type de billet" languagecode="1036" />
+                          <label description="Flight Connection 1" languagecode="1033" />
+                          <label description="Flight Connection 1(fr)" languagecode="1036" />
                         </labels>
-                        <control id="ppp_tickettype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ppp_tickettype" disabled="false" uniqueid="{013b6dec-e194-5b95-13d6-5dbb1c81c6c7}" />
+                        <control id="ppp_flightconnection1" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ppp_flightconnection1" disabled="true" uniqueid="{b136c611-c9c4-58b9-a349-360176a7139b}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{52FDDE5B-F4C5-41E7-8A14-A8798775792B}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
                       </cell>
                       <cell id="{6c8ac202-1383-dd3b-4e71-18b99ad856ac}" showlabel="false" labelid="{e33127be-f00a-4034-9020-a252022d55af}">
                         <labels>
@@ -1236,12 +1245,21 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{c5921cd2-511b-148d-788d-5658e2cea1e4}" showlabel="true" locklevel="0" labelid="{b27378d4-0814-4ea2-a71f-4f8f13f27aa4}">
+                      <cell id="{0681193c-b2e6-c88b-e64e-81b1b692be52}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="Return Flight Date" languagecode="1033" />
-                          <label description="Return Flight Date(fr)" languagecode="1036" />
+                          <label description="Flight Connection 2" languagecode="1033" />
+                          <label description="Flight Connection 2(fr)" languagecode="1036" />
                         </labels>
-                        <control id="ppp_returnticketdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="ppp_returnticketdate" disabled="false" uniqueid="{3cd6d3ac-730c-b870-b602-9634819e5e06}" />
+                        <control id="ppp_flightconnection2" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ppp_flightconnection2" disabled="true" uniqueid="{949b3916-aae9-24e1-ad37-bc047aa61b01}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{52FDDE5B-F4C5-41E7-8A14-A8798775792B}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
                       </cell>
                       <cell id="{b6aa859b-b724-dd12-68be-ed9c07a84a9b}" showlabel="false" labelid="{b4d5f300-7fd6-4e13-8b3b-c744b3f3b02c}">
                         <labels>
@@ -1255,12 +1273,26 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{24b53d43-3687-c06a-eece-1c02062e5681}" showlabel="true" locklevel="0" colspan="2" rowspan="4" labelid="{65ee7eee-4dbe-41c6-83c8-125bbf7863e4}">
+                      <cell id="{db016a65-ab22-707c-57aa-8202dad99896}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="Return Flight Details" languagecode="1033" />
-                          <label description="Return Flight Details(fr)" languagecode="1036" />
+                          <label description="Flight Connection 3" languagecode="1033" />
+                          <label description="Flight Connection 3(fr)" languagecode="1036" />
                         </labels>
-                        <control id="ppp_returnflightinfo" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_returnflightinfo" disabled="false" uniqueid="{c2b7eca7-095b-e46d-718a-6799a572a883}" />
+                        <control id="ppp_flightconnection3" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ppp_flightconnection3" disabled="true" uniqueid="{a90b589b-9999-4713-79d0-88318ab73230}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{52FDDE5B-F4C5-41E7-8A14-A8798775792B}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{09e61552-1429-ed84-0606-6389e1725ebc}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
                       </cell>
                       <cell id="{73854c0e-cd1c-d267-9982-2ea556377720}" showlabel="false" labelid="{4e463b61-2382-478d-ae7b-7a9a81ab5c4f}">
                         <labels>
@@ -1269,6 +1301,27 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{7e361be9-ec20-cccb-5112-7be630288d55}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Flight Connection 4" languagecode="1033" />
+                          <label description="Flight Connection 4(fr)" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_flightconnection4" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ppp_flightconnection4" disabled="true" uniqueid="{b5373da9-b7c5-c8e9-ca78-78d23a3568c2}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{52FDDE5B-F4C5-41E7-8A14-A8798775792B}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{1206912c-6c87-c512-9018-c174a617c300}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
                       <cell id="{e237aed5-34c9-aaee-cb94-b5d85574c9cc}" showlabel="false" labelid="{f67790fb-99c0-41c9-9b4b-c77f3dc77ada}">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -1276,6 +1329,27 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{94da0bbb-e909-7b3b-ddc1-6d754bb82e58}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Flight Connection 5" languagecode="1033" />
+                          <label description="Flight Connection 5(fr)" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_flightconnection5" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ppp_flightconnection5" disabled="true" uniqueid="{88a088a8-6e76-9485-3be2-097aa1ee78b6}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{52FDDE5B-F4C5-41E7-8A14-A8798775792B}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{0b7c79dc-d6b0-9441-8a07-c3bec2bda503}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
                       <cell id="{8127669c-8423-2e23-12c8-046506cc7528}" showlabel="false" labelid="{fab9eca4-038b-46f2-964c-233f589963cd}">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -1283,6 +1357,27 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{5b82498e-3370-a35d-347d-4d7ea9eeb695}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Flight Connection 6" languagecode="1033" />
+                          <label description="Flight Connection 6(fr)" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_flightconnection6" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ppp_flightconnection6" disabled="true" uniqueid="{b0ee7853-d3ba-3213-dde9-6559552285b6}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{52FDDE5B-F4C5-41E7-8A14-A8798775792B}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{9607b572-7d92-0670-29a4-1b58080c6809}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
                       <cell id="{29230067-5ac4-e3d9-4a23-9921ba94205e}" showlabel="false" labelid="{3615654b-da95-4825-a343-e978e8c7faca}">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -1290,14 +1385,23 @@
                       </cell>
                     </row>
                     <row>
-                      <cell showlabel="true" locklevel="0" id="{34a66b27-f8a6-443b-9f80-be4663348e93}" labelid="{8883a685-6124-465f-b718-ea47e61f090f}">
+                      <cell id="{90d2e4cb-c5a6-ba84-25d1-d07e73434d3c}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="Carry on Baggage" languagecode="1033" />
-                          <label description="Bagage à main" languagecode="1036" />
+                          <label description="Flight Connection 7" languagecode="1033" />
+                          <label description="Flight Connection 7(fr)" languagecode="1036" />
                         </labels>
-                        <control id="ppp_baggagecarryon" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="ppp_baggagecarryon" disabled="false" uniqueid="{2ff0a9d0-6871-47ad-aabb-2fee51a64903}" />
+                        <control id="ppp_flightconnection7" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ppp_flightconnection7" disabled="true" uniqueid="{581bd8bc-c5e2-1003-2c87-d1ad6b23d203}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{52FDDE5B-F4C5-41E7-8A14-A8798775792B}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
                       </cell>
-                      <cell id="{8143bc8b-b66a-d612-7d8e-7b9a4a269e65}" showlabel="false" labelid="{9418c63b-a673-42f7-9cb2-a969c3ae3bf6}">
+                      <cell id="{b10e052e-a874-d579-b8b2-74148dee21db}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -1309,14 +1413,23 @@
                       </cell>
                     </row>
                     <row>
-                      <cell showlabel="true" locklevel="0" id="{db9a5087-5636-485c-bc1f-d93a5791bd73}" labelid="{0b1d3dd2-d966-434c-b8b3-2105f0211bd6}">
+                      <cell id="{dacd6064-caa1-d97e-742e-141be931b47c}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="Checked Baggage" languagecode="1033" />
-                          <label description="Bagages enregistrés" languagecode="1036" />
+                          <label description="Flight Connection 8" languagecode="1033" />
+                          <label description="Flight Connection 8(fr)" languagecode="1036" />
                         </labels>
-                        <control id="ppp_baggagechecked" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="ppp_baggagechecked" disabled="false" uniqueid="{c12de3f3-cfe1-4dba-a423-a26450e219ee}" />
+                        <control id="ppp_flightconnection8" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ppp_flightconnection8" disabled="true" uniqueid="{7b3e3b04-e710-dc54-0151-32656c81d727}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{52FDDE5B-F4C5-41E7-8A14-A8798775792B}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
                       </cell>
-                      <cell id="{404722ae-5637-46dd-adda-e5726e564cc2}" showlabel="false" labelid="{472fa30c-8298-470e-bb83-3f6b9986da4e}">
+                      <cell id="{978c1a6c-182e-55a7-4c73-1e5ea2dba750}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -1328,20 +1441,27 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{d78642d5-b352-d803-5947-27cc3b0e9398}" showlabel="true" locklevel="0" colspan="2" rowspan="4" labelid="{25e16d9a-5249-4c30-91c6-c14081478267}">
+                      <cell id="{c422b6c2-9514-7332-26e3-696cb2a9c480}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="Checked Baggage Tag Number(s)" languagecode="1033" />
-                          <label description="Checked Baggage Tag Number(s)(fr)" languagecode="1036" />
+                          <label description="Flight Connection 9" languagecode="1033" />
+                          <label description="Flight Connection 9(fr)" languagecode="1036" />
                         </labels>
-                        <control id="ppp_checkedbaggagetagnumber" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_checkedbaggagetagnumber" disabled="false" uniqueid="{94474dc6-0506-9d17-c58c-9164db87a975}" />
+                        <control id="ppp_flightconnection9" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ppp_flightconnection9" disabled="true" uniqueid="{45bad098-6c02-d5bb-9e2b-bd7516c4abc9}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{52FDDE5B-F4C5-41E7-8A14-A8798775792B}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
                       </cell>
-                      <cell id="{e1088d2b-34a2-2460-dd31-c0d1dc3be1a8}" showlabel="false" labelid="{e18524b8-33e2-456f-a785-c482d0c539c2}">
+                      <cell id="{a90a9a5e-9799-0bd4-d071-6996581a34cc}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
-                    </row>
-                    <row>
                       <cell id="{5e852330-e40d-58b4-964e-446a310e9497}" showlabel="false" labelid="{8f151341-35c1-42f9-a2ab-b00767d22910}">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -1349,6 +1469,27 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{64acb4b7-bd83-00cd-a612-a7aa99d4610c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Flight Connection 10" languagecode="1033" />
+                          <label description="Flight Connection 10(fr)" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_flightconnection10" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ppp_flightconnection10" disabled="true" uniqueid="{4a17c312-b300-2de7-4c0e-a73b3c43e039}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{52FDDE5B-F4C5-41E7-8A14-A8798775792B}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{70c7832c-0a16-353c-d7c2-56ba7b11359a}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
                       <cell id="{d87c9452-4735-328b-6703-5e46441046e4}" showlabel="false" labelid="{9293d22c-e92d-48a8-93b8-e722f3797844}">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -1356,6 +1497,18 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{e5bcd708-682d-7807-ae71-34790e95acd6}" showlabel="true" locklevel="0" labelid="{c8cc05f4-98f4-409e-90d5-27db867b8f4b}">
+                        <labels>
+                          <label description="Ticket Type" languagecode="1033" />
+                          <label description="Type de billet" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_tickettype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ppp_tickettype" disabled="false" uniqueid="{013b6dec-e194-5b95-13d6-5dbb1c81c6c7}" />
+                      </cell>
+                      <cell id="{9763adb3-1056-11b2-bce7-c7dad42630c1}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
                       <cell id="{72a5461c-6334-b9a5-55d1-a7b8e5549576}" showlabel="false" labelid="{6c9c7068-58e9-4711-9ffc-3867bbd6d574}">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -1363,14 +1516,14 @@
                       </cell>
                     </row>
                     <row>
-                      <cell showlabel="true" locklevel="0" id="{3feda507-5e7f-45e7-8d34-09115a29adde}" labelid="{7a2c511a-1e10-457e-8b93-3657c1ddc2cd}">
+                      <cell id="{c5921cd2-511b-148d-788d-5658e2cea1e4}" showlabel="true" locklevel="0" labelid="{b27378d4-0814-4ea2-a71f-4f8f13f27aa4}">
                         <labels>
-                          <label description="Travel Companions" languagecode="1033" />
-                          <label description="Travel Companions(fr)" languagecode="1036" />
+                          <label description="Return Flight Date" languagecode="1033" />
+                          <label description="Return Flight Date(fr)" languagecode="1036" />
                         </labels>
-                        <control id="ppp_travelcompanionsnumber" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="ppp_travelcompanionsnumber" disabled="false" uniqueid="{0c837a5b-a7a7-481e-944e-dfe416f5c41c}" />
+                        <control id="ppp_returnticketdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="ppp_returnticketdate" disabled="false" uniqueid="{3cd6d3ac-730c-b870-b602-9634819e5e06}" />
                       </cell>
-                      <cell id="{da134b82-c43c-130a-b4a1-0b5980ab4766}" showlabel="false" labelid="{d932953c-7b45-4054-9492-f947a4d5b30c}">
+                      <cell id="{17e20393-7e5a-128d-77ab-2c1e29563e5d}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -1382,12 +1535,12 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{37523492-ee4a-22b7-8c4b-7d8b6279e081}" showlabel="true" locklevel="0" rowspan="3" colspan="2" labelid="{1b503fd6-8943-4ff9-a3d6-542ff7cfb88e}">
+                      <cell id="{24b53d43-3687-c06a-eece-1c02062e5681}" showlabel="true" locklevel="0" colspan="2" rowspan="4" labelid="{65ee7eee-4dbe-41c6-83c8-125bbf7863e4}">
                         <labels>
-                          <label description="Companion(s) Details" languagecode="1033" />
-                          <label description="Companion(s) Details(fr)" languagecode="1036" />
+                          <label description="Return Flight Details" languagecode="1033" />
+                          <label description="Return Flight Details(fr)" languagecode="1036" />
                         </labels>
-                        <control id="ppp_travelcompanionsdetails" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_travelcompanionsdetails" disabled="false" uniqueid="{7d8eee52-0329-3564-00e6-e497314cab0b}" />
+                        <control id="ppp_returnflightinfo" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_returnflightinfo" disabled="false" uniqueid="{c2b7eca7-095b-e46d-718a-6799a572a883}" />
                       </cell>
                       <cell id="{37366c2c-ec59-6ac1-5b23-e1ecc9089406}" showlabel="false" labelid="{a3ba007e-6bdd-4992-a752-8405f27bd85d}">
                         <labels>
@@ -1410,18 +1563,6 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{01e601e6-8a7e-4c60-aac5-09fb520b7622}" showlabel="true" locklevel="0" labelid="{342f37db-87b0-49b7-8953-1120339be8d5}">
-                        <labels>
-                          <label description="Ticket Purchase Date (YYYY-MM-DD)" languagecode="1033" />
-                          <label description="Ticket Purchase Date (YYYY-MM-DD)(fr)" languagecode="1036" />
-                        </labels>
-                        <control id="ppp_ticketpurchasedate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="ppp_ticketpurchasedate" disabled="false" uniqueid="{d1eb49aa-1745-b70b-cdeb-51b60ecc39b5}" />
-                      </cell>
-                      <cell id="{33e53d9d-7230-d518-350a-1ec9997d216d}" showlabel="false" labelid="{97a89165-7070-4c4a-96fb-6b04e3f8265e}">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
                       <cell id="{514e3476-88e2-3d3c-dc65-aab4a578b7a0}" showlabel="false" labelid="{0e75c188-5dc3-45b3-8b20-a8b78b6d8952}">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -1429,14 +1570,14 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{1a3d747d-ad9a-c00c-1851-9133684e7d75}" showlabel="true" locklevel="0" labelid="{1850b247-93d4-40f4-87ce-607a2deb5828}">
+                      <cell showlabel="true" locklevel="0" id="{34a66b27-f8a6-443b-9f80-be4663348e93}" labelid="{8883a685-6124-465f-b718-ea47e61f090f}">
                         <labels>
-                          <label description="Ticket Purchase Method" languagecode="1033" />
-                          <label description="Ticket Purchase Method(fr)" languagecode="1036" />
+                          <label description="Carry on Baggage" languagecode="1033" />
+                          <label description="Bagage à main" languagecode="1036" />
                         </labels>
-                        <control id="ppp_ticketpurchasemethod" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ppp_ticketpurchasemethod" disabled="false" uniqueid="{bed957d6-32b0-8a51-c09b-4bc2941115d5}" />
+                        <control id="ppp_baggagecarryon" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="ppp_baggagecarryon" disabled="false" uniqueid="{2ff0a9d0-6871-47ad-aabb-2fee51a64903}" />
                       </cell>
-                      <cell id="{b1bb6867-c834-8dc8-4092-2a14360616c4}" showlabel="false" labelid="{da1cb5bf-3225-4aa8-8f5a-a471e0ec4cf2}">
+                      <cell id="{8143bc8b-b66a-d612-7d8e-7b9a4a269e65}" showlabel="false" labelid="{9418c63b-a673-42f7-9cb2-a969c3ae3bf6}">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -1448,12 +1589,17 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{4b1a78d1-b89b-7b21-b6a6-6c93d23ee196}" showlabel="true" locklevel="0" visible="false" rowspan="4" colspan="2" labelid="{2b47604f-3cea-4fbe-a020-19518093f293}">
+                      <cell showlabel="true" locklevel="0" id="{db9a5087-5636-485c-bc1f-d93a5791bd73}" labelid="{0b1d3dd2-d966-434c-b8b3-2105f0211bd6}">
                         <labels>
-                          <label description="Travel Agency Name" languagecode="1033" />
-                          <label description="Travel Agency Name(fr)" languagecode="1036" />
+                          <label description="Checked Baggage" languagecode="1033" />
+                          <label description="Bagages enregistrés" languagecode="1036" />
                         </labels>
-                        <control id="ppp_travelagencyname" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_travelagencyname" disabled="false" uniqueid="{988269aa-c8a6-5747-7a34-1359c19269c2}" />
+                        <control id="ppp_baggagechecked" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="ppp_baggagechecked" disabled="false" uniqueid="{c12de3f3-cfe1-4dba-a423-a26450e219ee}" />
+                      </cell>
+                      <cell id="{404722ae-5637-46dd-adda-e5726e564cc2}" showlabel="false" labelid="{472fa30c-8298-470e-bb83-3f6b9986da4e}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
                       </cell>
                       <cell id="{ee0c5501-ba69-99ce-8e6c-69acaa7c096a}" showlabel="false" labelid="{6abfda7c-954a-4281-a826-7ec589d5d3e2}">
                         <labels>
@@ -1462,6 +1608,13 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{d78642d5-b352-d803-5947-27cc3b0e9398}" showlabel="true" locklevel="0" colspan="2" rowspan="4" labelid="{25e16d9a-5249-4c30-91c6-c14081478267}">
+                        <labels>
+                          <label description="Checked Baggage Tag Number(s)" languagecode="1033" />
+                          <label description="Checked Baggage Tag Number(s)(fr)" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_checkedbaggagetagnumber" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_checkedbaggagetagnumber" disabled="false" uniqueid="{94474dc6-0506-9d17-c58c-9164db87a975}" />
+                      </cell>
                       <cell id="{74320d5e-e74c-11dd-53be-15d90ec53122}" showlabel="false" labelid="{8631b0b1-c453-4aee-850f-ce4a6e8c1ae9}">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -1483,13 +1636,6 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{cc67ab2d-0e37-ab41-8d00-c05d74d58605}" showlabel="true" locklevel="0" visible="false" colspan="2" rowspan="4" labelid="{bb6c7faa-335b-4b37-b101-098bb39b1a3e}">
-                        <labels>
-                          <label description="Travel Agency Contact" languagecode="1033" />
-                          <label description="Travel Agency Contact(fr)" languagecode="1036" />
-                        </labels>
-                        <control id="ppp_travelagencycontactname" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_travelagencycontactname" disabled="false" uniqueid="{ea07e4c4-c5c8-3b0c-d786-ed1d2c15239e}" />
-                      </cell>
                       <cell id="{60b8060a-e493-1286-0aac-c8d3412224c5}" showlabel="false" labelid="{3abcfda0-0172-4de0-b4f9-ed8fc80a398d}">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -1497,6 +1643,18 @@
                       </cell>
                     </row>
                     <row>
+                      <cell showlabel="true" locklevel="0" id="{3feda507-5e7f-45e7-8d34-09115a29adde}" labelid="{7a2c511a-1e10-457e-8b93-3657c1ddc2cd}">
+                        <labels>
+                          <label description="Travel Companions" languagecode="1033" />
+                          <label description="Travel Companions(fr)" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_travelcompanionsnumber" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="ppp_travelcompanionsnumber" disabled="false" uniqueid="{0c837a5b-a7a7-481e-944e-dfe416f5c41c}" />
+                      </cell>
+                      <cell id="{da134b82-c43c-130a-b4a1-0b5980ab4766}" showlabel="false" labelid="{d932953c-7b45-4054-9492-f947a4d5b30c}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
                       <cell id="{10c798cb-c3d8-870d-a195-2d3b7a57189e}" showlabel="false" labelid="{fa3eaed0-b77f-4d9e-89ff-2b5637c9bba9}">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -1504,6 +1662,13 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{37523492-ee4a-22b7-8c4b-7d8b6279e081}" showlabel="true" locklevel="0" rowspan="3" colspan="2" labelid="{1b503fd6-8943-4ff9-a3d6-542ff7cfb88e}">
+                        <labels>
+                          <label description="Companion(s) Details" languagecode="1033" />
+                          <label description="Companion(s) Details(fr)" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_travelcompanionsdetails" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_travelcompanionsdetails" disabled="false" uniqueid="{7d8eee52-0329-3564-00e6-e497314cab0b}" />
+                      </cell>
                       <cell id="{9904958b-7274-6b79-0cc3-52c3d79ab9bc}" showlabel="false" labelid="{ae20c47f-f8a4-4fbe-8f5f-0e4c8e287c4c}">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -1518,13 +1683,6 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{b58e5ebc-9ccc-74d5-a44d-d019d38ee6d7}" showlabel="true" locklevel="0" visible="false" colspan="2" rowspan="4" labelid="{6fbb30f7-3eed-4366-928c-323b93ca18eb}">
-                        <labels>
-                          <label description="Contact Phone Number" languagecode="1033" />
-                          <label description="Contact Phone Number(fr)" languagecode="1036" />
-                        </labels>
-                        <control id="ppp_travelagencycontactphonenumber" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_travelagencycontactphonenumber" disabled="false" uniqueid="{8649e8c1-8c59-870d-2702-d4e4e501de91}" />
-                      </cell>
                       <cell id="{a4982015-3a16-1793-51ba-cb4b2886a428}" showlabel="false" labelid="{19ef0801-850a-4d8a-a4ca-8edb0b5ce2d6}">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -1532,6 +1690,18 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{01e601e6-8a7e-4c60-aac5-09fb520b7622}" showlabel="true" locklevel="0" labelid="{342f37db-87b0-49b7-8953-1120339be8d5}">
+                        <labels>
+                          <label description="Ticket Purchase Date (YYYY-MM-DD)" languagecode="1033" />
+                          <label description="Ticket Purchase Date (YYYY-MM-DD)(fr)" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_ticketpurchasedate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="ppp_ticketpurchasedate" disabled="false" uniqueid="{d1eb49aa-1745-b70b-cdeb-51b60ecc39b5}" />
+                      </cell>
+                      <cell id="{33e53d9d-7230-d518-350a-1ec9997d216d}" showlabel="false" labelid="{97a89165-7070-4c4a-96fb-6b04e3f8265e}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
                       <cell id="{6b04705d-630c-2c20-6aaa-e735a7bc8d22}" showlabel="false" labelid="{c1a1a492-9e63-445a-91df-b440cbb90c65}">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -1539,6 +1709,18 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{1a3d747d-ad9a-c00c-1851-9133684e7d75}" showlabel="true" locklevel="0" labelid="{1850b247-93d4-40f4-87ce-607a2deb5828}">
+                        <labels>
+                          <label description="Ticket Purchase Method" languagecode="1033" />
+                          <label description="Ticket Purchase Method(fr)" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_ticketpurchasemethod" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ppp_ticketpurchasemethod" disabled="false" uniqueid="{bed957d6-32b0-8a51-c09b-4bc2941115d5}" />
+                      </cell>
+                      <cell id="{b1bb6867-c834-8dc8-4092-2a14360616c4}" showlabel="false" labelid="{da1cb5bf-3225-4aa8-8f5a-a471e0ec4cf2}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
                       <cell id="{1169eca2-17b3-aa39-5a1e-5b9b2a3b79a0}" showlabel="false" labelid="{e3df479d-b9dc-4e0d-a65b-a524181c8928}">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -1546,6 +1728,13 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{4b1a78d1-b89b-7b21-b6a6-6c93d23ee196}" showlabel="true" locklevel="0" visible="false" rowspan="4" colspan="2" labelid="{2b47604f-3cea-4fbe-a020-19518093f293}">
+                        <labels>
+                          <label description="Travel Agency Name" languagecode="1033" />
+                          <label description="Travel Agency Name(fr)" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_travelagencyname" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_travelagencyname" disabled="false" uniqueid="{988269aa-c8a6-5747-7a34-1359c19269c2}" />
+                      </cell>
                       <cell id="{ed457538-9275-e143-80e4-a190a1413b66}" showlabel="false" labelid="{eaa14ea6-5c4f-4e08-a0a4-4f0501d77ab4}">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -1553,13 +1742,6 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{d37758e9-b3a3-ae89-239c-36e5d537b380}" showlabel="true" locklevel="0" visible="false" colspan="2" rowspan="4" labelid="{314c0771-3546-4a0a-a69e-81da5335a106}">
-                        <labels>
-                          <label description="Travel Agency Address" languagecode="1033" />
-                          <label description="Travel Agency Address(fr)" languagecode="1036" />
-                        </labels>
-                        <control id="ppp_travelagencyaddress" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_travelagencyaddress" disabled="false" uniqueid="{bd07ca02-6e38-9c55-c155-3d47328b02bd}" />
-                      </cell>
                       <cell id="{c5ac7321-e45e-4d94-b89d-96ac7c3759bb}" showlabel="false" labelid="{bccdb09d-1b31-4df8-8367-76b6a021423c}">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -1581,6 +1763,13 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{cc67ab2d-0e37-ab41-8d00-c05d74d58605}" showlabel="true" locklevel="0" visible="false" colspan="2" rowspan="4" labelid="{bb6c7faa-335b-4b37-b101-098bb39b1a3e}">
+                        <labels>
+                          <label description="Travel Agency Contact" languagecode="1033" />
+                          <label description="Travel Agency Contact(fr)" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_travelagencycontactname" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_travelagencycontactname" disabled="false" uniqueid="{ea07e4c4-c5c8-3b0c-d786-ed1d2c15239e}" />
+                      </cell>
                       <cell id="{338bbba3-42db-34ae-0789-4c81888c7930}" showlabel="false" labelid="{e2c1363f-cae4-4083-bac3-e64871eea64e}">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -1588,18 +1777,6 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{2ac9085a-e426-0e57-0736-8591066c651e}" showlabel="true" locklevel="0" labelid="{b7d01085-ff8c-47dd-bbb4-2e0a1277b1b8}">
-                        <labels>
-                          <label description="Ticket Payment Method" languagecode="1033" />
-                          <label description="Ticket Payment Method(fr)" languagecode="1036" />
-                        </labels>
-                        <control id="ppp_paymentmethod" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ppp_paymentmethod" disabled="false" uniqueid="{268c418e-49e6-d751-4e51-8374b758e651}" />
-                      </cell>
-                      <cell id="{31cee387-e0ee-de85-5358-cae9271e753d}" showlabel="false" labelid="{65cd0ba2-43db-4d44-8aec-76e77b7703ce}">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
                       <cell id="{842c4477-5e0b-b696-00b3-08463021d253}" showlabel="false" labelid="{81fcbcb9-3b02-428c-bf89-fd0ebba86bea}">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -1607,18 +1784,6 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{c83d8d7c-d0de-c6a6-7944-41d549519d35}" showlabel="true" locklevel="0" labelid="{cc0d559b-886e-4bdd-9d4a-6b0398cc03d3}">
-                        <labels>
-                          <label description="Traveller Seat Request?" languagecode="1033" />
-                          <label description="Traveller Seat Request?(fr)" languagecode="1036" />
-                        </labels>
-                        <control id="ppp_seatrequestmade" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ppp_seatrequestmade" disabled="false" uniqueid="{b008d5d0-c11c-c919-e461-ab12618822ce}" />
-                      </cell>
-                      <cell id="{d5c17668-658a-3475-5c37-1229075b3ac6}" showlabel="false" labelid="{892d6d31-b171-4685-ae17-a177ed20e4c3}">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
                       <cell id="{1dd39586-2d47-d004-dd21-e9db8b5a0e18}" showlabel="false" labelid="{2ee6a98b-796e-481c-9a8f-d9fc326e4546}">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -1626,13 +1791,6 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{a1a2ce37-1e12-689c-4077-73aa5c644930}" showlabel="true" locklevel="0" colspan="2" visible="false" rowspan="4" labelid="{89d68046-7e2f-4c94-b084-671b3b9a5be9}">
-                        <labels>
-                          <label description="Seat Request Details" languagecode="1033" />
-                          <label description="Seat Request Details(fr)" languagecode="1036" />
-                        </labels>
-                        <control id="ppp_seatrequestdetails" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_seatrequestdetails" disabled="false" uniqueid="{3c9537a8-a1e6-3da3-5dbe-ca4e6939933e}" />
-                      </cell>
                       <cell id="{2ab04ba6-53e2-c3ea-ac0a-c15760209d74}" showlabel="false" labelid="{7c8c2f0f-90d5-48d8-9645-2d948835bde0}">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -1640,6 +1798,13 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{b58e5ebc-9ccc-74d5-a44d-d019d38ee6d7}" showlabel="true" locklevel="0" visible="false" colspan="2" rowspan="4" labelid="{6fbb30f7-3eed-4366-928c-323b93ca18eb}">
+                        <labels>
+                          <label description="Contact Phone Number" languagecode="1033" />
+                          <label description="Contact Phone Number(fr)" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_travelagencycontactphonenumber" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_travelagencycontactphonenumber" disabled="false" uniqueid="{8649e8c1-8c59-870d-2702-d4e4e501de91}" />
+                      </cell>
                       <cell id="{6e80c7b2-d82c-d909-46a8-0300257dc0a8}" showlabel="false" labelid="{bf53d379-7083-482e-a7cc-d12a6339a46a}">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -1661,18 +1826,6 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{5b362011-1649-6494-9776-6e9a76b01ce3}" showlabel="true" locklevel="0" labelid="{6ca73a4c-5b65-4210-94ed-50ac6b2add06}">
-                        <labels>
-                          <label description="Purpose of Travel" languagecode="1033" />
-                          <label description="Raison du voyage" languagecode="1036" />
-                        </labels>
-                        <control id="ppp_travelpurpose" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ppp_travelpurpose" disabled="false" uniqueid="{8298642a-82bc-aa68-20ae-91c2677ebd00}" />
-                      </cell>
-                      <cell id="{bad1ed84-d8d6-4310-a34b-61abbb609d5a}" showlabel="false" labelid="{2b4367a8-a7c3-41ae-b899-e128f20ba7d2}">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
                       <cell id="{2e6cb76c-142e-0310-495e-c6151e97c9d8}" showlabel="false" labelid="{8177bd1e-55e9-42ff-91f5-6649f0750ae0}">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -1680,12 +1833,12 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{89bc1188-6acc-970c-2bec-08c704aa7cb2}" showlabel="true" locklevel="0" colspan="2" rowspan="4" labelid="{6d3d48ed-4ede-4632-9b89-b517a3cbf171}">
+                      <cell id="{d37758e9-b3a3-ae89-239c-36e5d537b380}" showlabel="true" locklevel="0" visible="false" colspan="2" rowspan="4" labelid="{314c0771-3546-4a0a-a69e-81da5335a106}">
                         <labels>
-                          <label description="Purpose of Travel Details" languagecode="1033" />
-                          <label description="détails de la raison du voyage" languagecode="1036" />
+                          <label description="Travel Agency Address" languagecode="1033" />
+                          <label description="Travel Agency Address(fr)" languagecode="1036" />
                         </labels>
-                        <control id="ppp_travelpurposeother" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_travelpurposeother" disabled="false" uniqueid="{1b20771c-0e5a-9615-88ba-b7e0eb1c8e10}" />
+                        <control id="ppp_travelagencyaddress" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_travelagencyaddress" disabled="false" uniqueid="{bd07ca02-6e38-9c55-c155-3d47328b02bd}" />
                       </cell>
                       <cell id="{255013b1-3c18-d428-3013-49967e971361}" showlabel="false" labelid="{8d639bf9-843e-4acd-bfbc-f08f49005f95}">
                         <labels>
@@ -1715,12 +1868,17 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{b6a6e53e-e894-3535-c59d-5cbc4ad73059}" showlabel="true" locklevel="0" rowspan="3" colspan="2" labelid="{3be7ada4-4fa7-407e-b400-4d10598f393e}">
+                      <cell id="{2ac9085a-e426-0e57-0736-8591066c651e}" showlabel="true" locklevel="0" labelid="{b7d01085-ff8c-47dd-bbb4-2e0a1277b1b8}">
                         <labels>
-                          <label description="Additional Travel Information" languagecode="1033" />
-                          <label description="Additional Travel Information(fr)" languagecode="1036" />
+                          <label description="Ticket Payment Method" languagecode="1033" />
+                          <label description="Ticket Payment Method(fr)" languagecode="1036" />
                         </labels>
-                        <control id="ppp_questionsfortc" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_questionsfortc" disabled="false" uniqueid="{e4162ed8-e810-b41b-9cc3-6d4d45eac925}" />
+                        <control id="ppp_paymentmethod" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ppp_paymentmethod" disabled="false" uniqueid="{268c418e-49e6-d751-4e51-8374b758e651}" />
+                      </cell>
+                      <cell id="{31cee387-e0ee-de85-5358-cae9271e753d}" showlabel="false" labelid="{65cd0ba2-43db-4d44-8aec-76e77b7703ce}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
                       </cell>
                       <cell id="{4bac5b67-8849-6738-15db-6e98439659e9}" showlabel="false" labelid="{d745f7fc-7bd0-4c38-a103-e46ed9753297}">
                         <labels>
@@ -1729,6 +1887,18 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{c83d8d7c-d0de-c6a6-7944-41d549519d35}" showlabel="true" locklevel="0" labelid="{cc0d559b-886e-4bdd-9d4a-6b0398cc03d3}">
+                        <labels>
+                          <label description="Traveller Seat Request?" languagecode="1033" />
+                          <label description="Traveller Seat Request?(fr)" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_seatrequestmade" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ppp_seatrequestmade" disabled="false" uniqueid="{b008d5d0-c11c-c919-e461-ab12618822ce}" />
+                      </cell>
+                      <cell id="{d5c17668-658a-3475-5c37-1229075b3ac6}" showlabel="false" labelid="{892d6d31-b171-4685-ae17-a177ed20e4c3}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
                       <cell id="{75a24271-d147-1b30-2621-271ae83583c8}" showlabel="false" labelid="{4a170614-561f-4d8a-960f-b0337eedf2e1}">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -1736,6 +1906,13 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{a1a2ce37-1e12-689c-4077-73aa5c644930}" showlabel="true" locklevel="0" colspan="2" visible="false" rowspan="4" labelid="{89d68046-7e2f-4c94-b084-671b3b9a5be9}">
+                        <labels>
+                          <label description="Seat Request Details" languagecode="1033" />
+                          <label description="Seat Request Details(fr)" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_seatrequestdetails" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_seatrequestdetails" disabled="false" uniqueid="{3c9537a8-a1e6-3da3-5dbe-ca4e6939933e}" />
+                      </cell>
                       <cell id="{b95d6486-624b-eddd-0329-b33e5c41c81a}" showlabel="false" labelid="{a3313490-765b-4529-af4d-78db936ee3c0}">
                         <labels>
                           <label description="" languagecode="1033" />
@@ -1743,75 +1920,103 @@
                       </cell>
                     </row>
                     <row>
-                      <cell showlabel="true" locklevel="0" id="{025c1db2-248b-4c12-889a-a9cf7b076767}" rowspan="7" colspan="2" auto="false" labelid="{378344ee-2076-40a9-b88c-0bf266bba5e7}">
-                        <labels>
-                          <label description="Flight Connections" languagecode="1033" />
-                          <label description="Vol de connexions" languagecode="1036" />
-                        </labels>
-                        <control id="gridFlightConnections2" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{e07ec7c8-a0e4-d665-4441-394e19a67706}">
-                          <parameters>
-                            <TargetEntityType>ovs_facility</TargetEntityType>
-                            <ViewId>{655FF8E3-0B80-EA11-A811-000D3A0C8127}</ViewId>
-                            <ViewIds>{58A84206-5C04-44F4-A1FC-7CB7107B8F08},{655FF8E3-0B80-EA11-A811-000D3A0C8127}</ViewIds>
-                            <EnableViewPicker>false</EnableViewPicker>
-                            <RelationshipName>ovs_ppp_Traveller_FlightConn_Facility</RelationshipName>
-                            <RecordsPerPage>4</RecordsPerPage>
-                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
-                            <IsUserView>false</IsUserView>
-                            <EnableQuickFind>false</EnableQuickFind>
-                            <EnableJumpBar>false</EnableJumpBar>
-                            <AutoExpand>Fixed</AutoExpand>
-                            <ChartGridMode>Grid</ChartGridMode>
-                            <VisualizationId />
-                            <IsUserChart>false</IsUserChart>
-                            <EnableChartPicker>false</EnableChartPicker>
-                            <RelationshipRoleOrdinal>2</RelationshipRoleOrdinal>
-                          </parameters>
-                        </control>
-                      </cell>
-                      <cell id="{7219a19d-0183-8349-aa83-07d0c20792b9}" showlabel="false" labelid="{e1c0bb7d-7c59-4564-b5c5-9b299de3213a}">
+                      <cell id="{71e1eb93-03ec-50b5-1737-d76bcbc2a68a}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
                     </row>
                     <row>
-                      <cell id="{728b046e-4e41-3bdc-2e37-6dba5b73a757}" showlabel="false" labelid="{51482000-9a5c-4ab2-b1e8-bb0f94043727}">
+                      <cell id="{6157a29d-27b7-7953-477e-aa0d57365e92}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
                     </row>
                     <row>
-                      <cell id="{a849c771-373d-3d4a-e888-43c901745d81}" showlabel="false" labelid="{ee2429ee-5bb9-486e-ac42-f9f8cf219543}">
+                      <cell id="{02856cac-d631-2b20-a04a-38d884e17281}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
                     </row>
                     <row>
-                      <cell id="{b2105081-2823-355e-3eed-29ba3a5c19ae}" showlabel="false" labelid="{22fe3a02-b0a5-4ec4-95b5-6e9816a6f862}">
+                      <cell id="{5b362011-1649-6494-9776-6e9a76b01ce3}" showlabel="true" locklevel="0" labelid="{6ca73a4c-5b65-4210-94ed-50ac6b2add06}">
+                        <labels>
+                          <label description="Purpose of Travel" languagecode="1033" />
+                          <label description="Raison du voyage" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_travelpurpose" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ppp_travelpurpose" disabled="false" uniqueid="{8298642a-82bc-aa68-20ae-91c2677ebd00}" />
+                      </cell>
+                      <cell id="{bad1ed84-d8d6-4310-a34b-61abbb609d5a}" showlabel="false" labelid="{2b4367a8-a7c3-41ae-b899-e128f20ba7d2}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{7cd59960-7d9c-66d0-74b8-69a59584ad2a}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
                     </row>
                     <row>
-                      <cell id="{7b33ba00-e1a9-159c-ccee-421ee92d6119}" showlabel="false" labelid="{b46a2f19-805a-4763-8be4-082995fb4c3a}">
+                      <cell id="{89bc1188-6acc-970c-2bec-08c704aa7cb2}" showlabel="true" locklevel="0" colspan="2" rowspan="4" labelid="{6d3d48ed-4ede-4632-9b89-b517a3cbf171}">
+                        <labels>
+                          <label description="Purpose of Travel Details" languagecode="1033" />
+                          <label description="détails de la raison du voyage" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_travelpurposeother" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_travelpurposeother" disabled="false" uniqueid="{1b20771c-0e5a-9615-88ba-b7e0eb1c8e10}" />
+                      </cell>
+                      <cell id="{c6ca7c6c-66cc-8340-7ee8-910ebbb01c5d}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
                     </row>
                     <row>
-                      <cell id="{2e196741-e1ca-eac4-cd37-c90863967e03}" showlabel="false" labelid="{a64b251d-097b-4c0e-b096-2e35beb5a9a1}">
+                      <cell id="{4a8e8b8a-a519-592b-b82e-7417c4ed09d2}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
                       </cell>
                     </row>
                     <row>
-                      <cell id="{37c5cb5c-4189-0575-9199-88b26079348d}" showlabel="false" labelid="{808ee9a3-58b5-4b11-bf8a-b9cc18d2de4c}">
+                      <cell id="{dc9032ec-a4aa-2355-46c1-1214523d15c2}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8ec2c69a-6603-0c6b-0972-c6661bc0a79a}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b6a6e53e-e894-3535-c59d-5cbc4ad73059}" showlabel="true" locklevel="0" rowspan="3" colspan="2" labelid="{3be7ada4-4fa7-407e-b400-4d10598f393e}">
+                        <labels>
+                          <label description="Additional Travel Information" languagecode="1033" />
+                          <label description="Additional Travel Information(fr)" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_questionsfortc" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_questionsfortc" disabled="false" uniqueid="{e4162ed8-e810-b41b-9cc3-6d4d45eac925}" />
+                      </cell>
+                      <cell id="{7a34c878-9439-0513-9349-9d08911dd533}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6137cee3-9c16-3094-7568-5d2c75bd3071}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{88d1d54d-8329-9a2d-b728-8e0a1a512dc4}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -2348,7 +2553,7 @@
             </column>
           </columns>
         </tab>
-        <tab name="tab_dev" id="{a0e338e7-5036-1379-07e5-b3a9068ad6c3}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false" labelid="{46c77fb7-9c24-4427-b7cf-055dc57095d4}">
+        <tab name="tab_dev" id="{a0e338e7-5036-1379-07e5-b3a9068ad6c3}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true" labelid="{46c77fb7-9c24-4427-b7cf-055dc57095d4}">
           <labels>
             <label description="Chronology" languagecode="1033" />
             <label description="Chronology(fr)" languagecode="1036" />
@@ -2865,7 +3070,7 @@
             <Handler functionName="showHideBusinessProcessFlow" libraryName="ppp_scripts/Traveller.js" handlerUniqueId="{e645764e-de74-8ead-6be1-19cb104a1dd1}" enabled="true" parameters="&quot;ppp_showbpf&quot;" passExecutionContext="true" />
             <Handler functionName="setTimeFieldNow" libraryName="ppp_scripts/Traveller.js" handlerUniqueId="{2515ebd0-0187-70b1-9892-d4bcb456c0b7}" enabled="true" parameters="&quot;ppp_newrecordtime&quot;, null, &quot;ppp_newrecordtime&quot;" passExecutionContext="true" />
             <Handler functionName="showHideFlightConnections" libraryName="ppp_scripts/Traveller.js" handlerUniqueId="{5829d70c-d9c3-2b29-1641-788b8b245111}" enabled="true" parameters="&quot;ppp_flightconnectioncount&quot;, 10" passExecutionContext="true" />
-            <Handler functionName="ReadOnlyOnClosed" libraryName="ppp_scripts/Traveller.js" handlerUniqueId="{ac7b9146-4597-671e-ca1a-e7e8e40915c9}" enabled="true" parameters="[&quot;ppp_name&quot;, &quot;ppp_aircarrier1&quot;, &quot;ppp_flightnumber1&quot;, &quot;ppp_flightorigin1&quot;, &quot;ppp_flightorigindate1&quot;, &quot;ppp_flightoriginhour1&quot;, &quot;ppp_flightdestination1&quot;, &quot;ppp_directiontime&quot;, &quot;ppp_newrecordtime&quot;, &quot;ppp_ispresenttime&quot;, &quot;ppp_matchfoundtime&quot;, &quot;ppp_directiontime1&quot;, &quot;ppp_finalstatustime&quot;, &quot;ppp_recordstatus&quot;], [&quot;header_ppp_recordstatus&quot;]" passExecutionContext="true" />
+            <Handler functionName="ReadOnlyOnClosed" libraryName="ppp_scripts/Traveller.js" handlerUniqueId="{ac7b9146-4597-671e-ca1a-e7e8e40915c9}" enabled="true" parameters="[&quot;ppp_name&quot;, &quot;ppp_aircarrier1&quot;, &quot;ppp_flightnumber1&quot;, &quot;ppp_flightorigin1&quot;, &quot;ppp_flightorigindate1&quot;, &quot;ppp_flightoriginhour1&quot;, &quot;ppp_flightdestination1&quot;, &quot;ppp_flightconnection11&quot;, &quot;ppp_flightconnection21&quot;, &quot;ppp_flightconnection31&quot;, &quot;ppp_flightconnection41&quot;, &quot;ppp_flightconnection51&quot;, &quot;ppp_flightconnection61&quot;, &quot;ppp_flightconnection71&quot;, &quot;ppp_flightconnection81&quot;, &quot;ppp_flightconnection91&quot;, &quot;ppp_flightconnection101&quot;,&quot;ppp_directiontime&quot;, &quot;ppp_newrecordtime&quot;, &quot;ppp_ispresenttime&quot;, &quot;ppp_matchfoundtime&quot;, &quot;ppp_directiontime1&quot;, &quot;ppp_finalstatustime&quot;, &quot;ppp_recordstatus&quot;], [&quot;header_ppp_recordstatus&quot;]" passExecutionContext="true" />
             <Handler functionName="setStartingFormState" libraryName="ppp_scripts/Traveller.js" handlerUniqueId="{1609854d-a351-e575-476a-9a46d0e6480d}" enabled="false" parameters="&quot;ppp_name&quot;, &#xA;[&quot;ppp_aircarrier&quot;, &quot;ppp_flightorigindate&quot;, &quot;ppp_flightdestination&quot;, &quot;ppp_calltype&quot;, &quot;ppp_flightorigin&quot;, &quot;ppp_ispresent&quot;],&#xA;[&quot;ppp_name&quot;,&quot;ppp_matchfound&quot;, &quot;ppp_flightnumber1&quot;, &quot;ppp_flightorigin1&quot;, &quot;ppp_flightorigindate1&quot;, &quot;ppp_flightoriginhour1&quot;, &quot;ppp_flightdestination1&quot;, &quot;ppp_directiontime&quot;, &quot;ppp_newrecordtime&quot;, &quot;ppp_ispresenttime&quot;, &quot;ppp_matchfoundtime&quot;, &quot;ppp_directiontime1&quot;, &quot;ppp_finalstatustime&quot;, &quot;ppp_recordstatus&quot;],&#xA;[&quot;header_ppp_recordstatus&quot;]" passExecutionContext="true" />
             <Handler functionName="showHideMatchConfirmed" libraryName="ppp_scripts/Traveller.js" handlerUniqueId="{72707a89-3c60-b858-c062-9787d92a39aa}" enabled="true" parameters="" passExecutionContext="true" />
           </Handlers>
@@ -2940,13 +3145,13 @@
         </event>
         <event name="onchange" application="false" active="false" attribute="ppp_recordstatus">
           <Handlers>
-            <Handler functionName="ReadOnlyOnClosed" libraryName="ppp_scripts/Traveller.js" handlerUniqueId="{ebcda760-51eb-aa4a-7992-1ee36e23e8a3}" enabled="true" parameters="[&quot;ppp_name&quot;, &quot;ppp_aircarrier1&quot;, &quot;ppp_aircarrier2&quot;, &quot;ppp_flightnumber1&quot;, &quot;ppp_flightorigin1&quot;, &quot;ppp_flightorigindate1&quot;, &quot;ppp_flightoriginhour1&quot;, &quot;ppp_flightdestination1&quot;, &quot;ppp_directiontime&quot;, &quot;ppp_newrecordtime&quot;, &quot;ppp_ispresenttime&quot;, &quot;ppp_matchfoundtime&quot;, &quot;ppp_directiontime1&quot;, &quot;ppp_finalstatustime&quot;, &quot;ppp_recordstatus&quot;], [&quot;header_ppp_recordstatus&quot;]" passExecutionContext="true" />
+            <Handler functionName="ReadOnlyOnClosed" libraryName="ppp_scripts/Traveller.js" handlerUniqueId="{ebcda760-51eb-aa4a-7992-1ee36e23e8a3}" enabled="true" parameters="[&quot;ppp_name&quot;, &quot;ppp_aircarrier1&quot;, &quot;ppp_flightnumber1&quot;, &quot;ppp_flightorigin1&quot;, &quot;ppp_flightorigindate1&quot;, &quot;ppp_flightoriginhour1&quot;, &quot;ppp_flightdestination1&quot;, &quot;ppp_flightconnection11&quot;, &quot;ppp_flightconnection21&quot;, &quot;ppp_flightconnection31&quot;, &quot;ppp_flightconnection41&quot;, &quot;ppp_flightconnection51&quot;, &quot;ppp_flightconnection61&quot;, &quot;ppp_flightconnection71&quot;, &quot;ppp_flightconnection81&quot;, &quot;ppp_flightconnection91&quot;, &quot;ppp_flightconnection101&quot;,&quot;ppp_directiontime&quot;, &quot;ppp_newrecordtime&quot;, &quot;ppp_ispresenttime&quot;, &quot;ppp_matchfoundtime&quot;, &quot;ppp_directiontime1&quot;, &quot;ppp_finalstatustime&quot;, &quot;ppp_recordstatus&quot;], [&quot;header_ppp_recordstatus&quot;]" passExecutionContext="true" />
           </Handlers>
         </event>
         <event name="onsave" application="false" active="false">
           <Handlers>
             <Handler functionName="showHideFlightConnections" libraryName="ppp_scripts/Traveller.js" handlerUniqueId="{7b026183-decc-4579-12d9-53c8de56e2d8}" enabled="true" parameters="&quot;ppp_flightconnectioncount&quot;, 10" passExecutionContext="true" />
-            <Handler functionName="ReadOnlyOnClosed" libraryName="ppp_scripts/Traveller.js" handlerUniqueId="{881a651e-ebd4-1e47-c76e-ee92923c3279}" enabled="true" parameters="[&quot;ppp_name&quot;, &quot;ppp_aircarrier1&quot;, &quot;ppp_flightnumber1&quot;, &quot;ppp_flightorigin1&quot;, &quot;ppp_flightorigindate1&quot;, &quot;ppp_flightoriginhour1&quot;, &quot;ppp_flightdestination1&quot;, &quot;ppp_directiontime&quot;, &quot;ppp_newrecordtime&quot;, &quot;ppp_ispresenttime&quot;, &quot;ppp_matchfoundtime&quot;, &quot;ppp_directiontime1&quot;, &quot;ppp_finalstatustime&quot;, &quot;ppp_recordstatus&quot;], [&quot;header_ppp_recordstatus&quot;]" passExecutionContext="true" />
+            <Handler functionName="ReadOnlyOnClosed" libraryName="ppp_scripts/Traveller.js" handlerUniqueId="{881a651e-ebd4-1e47-c76e-ee92923c3279}" enabled="true" parameters="[&quot;ppp_name&quot;, &quot;ppp_aircarrier1&quot;, &quot;ppp_flightnumber1&quot;, &quot;ppp_flightorigin1&quot;, &quot;ppp_flightorigindate1&quot;, &quot;ppp_flightoriginhour1&quot;, &quot;ppp_flightdestination1&quot;, &quot;ppp_flightconnection11&quot;, &quot;ppp_flightconnection21&quot;, &quot;ppp_flightconnection31&quot;, &quot;ppp_flightconnection41&quot;, &quot;ppp_flightconnection51&quot;, &quot;ppp_flightconnection61&quot;, &quot;ppp_flightconnection71&quot;, &quot;ppp_flightconnection81&quot;, &quot;ppp_flightconnection91&quot;, &quot;ppp_flightconnection101&quot;,&quot;ppp_directiontime&quot;, &quot;ppp_newrecordtime&quot;, &quot;ppp_ispresenttime&quot;, &quot;ppp_matchfoundtime&quot;, &quot;ppp_directiontime1&quot;, &quot;ppp_finalstatustime&quot;, &quot;ppp_recordstatus&quot;], [&quot;header_ppp_recordstatus&quot;]" passExecutionContext="true" />
             <Handler functionName="setStartingFormState" libraryName="ppp_scripts/Traveller.js" handlerUniqueId="{5c178ad5-7319-19a8-78ad-b2aba36a0033}" enabled="false" parameters="&quot;ppp_name&quot;, &#xA;[&quot;ppp_aircarrier&quot;,&quot;ppp_flightorigindate&quot;, &quot;ppp_flightdestination&quot;, &quot;ppp_calltype&quot;, &quot;ppp_flightorigin&quot;, &quot;ppp_ispresent&quot;],&#xA;[&quot;ppp_name&quot;,&quot;ppp_matchfound&quot;, &quot;ppp_flightnumber1&quot;, &quot;ppp_flightorigin1&quot;, &quot;ppp_flightorigindate1&quot;, &quot;ppp_flightoriginhour1&quot;, &quot;ppp_flightdestination1&quot;, &quot;ppp_directiontime&quot;, &quot;ppp_newrecordtime&quot;, &quot;ppp_ispresenttime&quot;, &quot;ppp_matchfoundtime&quot;, &quot;ppp_directiontime1&quot;, &quot;ppp_finalstatustime&quot;, &quot;ppp_recordstatus&quot;],&#xA;[&quot;header_ppp_recordstatus&quot;]" passExecutionContext="true" />
             <Handler functionName="showHideMatchConfirmed" libraryName="ppp_scripts/Traveller.js" handlerUniqueId="{a2a77821-948a-e3ca-7e74-6784596b754e}" enabled="true" parameters="" passExecutionContext="true" />
           </Handlers>

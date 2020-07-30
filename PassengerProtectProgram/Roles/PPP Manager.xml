@@ -45,8 +45,8 @@
     <RolePrivilege name="prvAssignppp_Traveller" level="Global" />
     <RolePrivilege name="prvAssignresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvAssignworkflowbinary" level="Local" />
+    <RolePrivilege name="prvBrowseAvailability" level="Global" />
     <RolePrivilege name="prvBulkEdit" level="Global" />
-    <RolePrivilege name="prvCreateAppModule" level="Global" />
     <RolePrivilege name="prvCreateDocumentTemplate" level="Global" />
     <RolePrivilege name="prvCreateExchangeSyncIdMapping" level="Basic" />
     <RolePrivilege name="prvCreateExpiredProcess" level="Global" />
@@ -124,6 +124,7 @@
     <RolePrivilege name="prvReadSdkMessageProcessingStepImage" level="Global" />
     <RolePrivilege name="prvReadSharePointData" level="Global" />
     <RolePrivilege name="prvReadSharePointDocument" level="Global" />
+    <RolePrivilege name="prvReadSystemApplicationMetadata" level="Global" />
     <RolePrivilege name="prvReadSystemForm" level="Global" />
     <RolePrivilege name="prvReadtc_Country" level="Global" />
     <RolePrivilege name="prvReadtc_Province" level="Local" />
@@ -133,6 +134,7 @@
     <RolePrivilege name="prvReadUserEntityUISettings" level="Basic" />
     <RolePrivilege name="prvReadUserSettings" level="Local" />
     <RolePrivilege name="prvReadWebResource" level="Global" />
+    <RolePrivilege name="prvReadWorkflow" level="Global" />
     <RolePrivilege name="prvReadworkflowbinary" level="Local" />
     <RolePrivilege name="prvReparentUser" level="Local" />
     <RolePrivilege name="prvRollupGoal" level="Global" />
@@ -147,7 +149,6 @@
     <RolePrivilege name="prvUseTabletApp" level="Global" />
     <RolePrivilege name="prvWebMailMerge" level="Global" />
     <RolePrivilege name="prvWorkflowExecution" level="Global" />
-    <RolePrivilege name="prvWriteAppModule" level="Global" />
     <RolePrivilege name="prvWriteDocumentTemplate" level="Global" />
     <RolePrivilege name="prvWriteExchangeSyncIdMapping" level="Basic" />
     <RolePrivilege name="prvWriteExpiredProcess" level="Global" />
