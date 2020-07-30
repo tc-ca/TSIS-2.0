@@ -403,10 +403,10 @@ function showHideFlightConnections(eContext, connectionCountName, maxConnections
   for (var i = 1; i <= maxConnections; i++) {
     if (connectionCount >= i) {
       formContext.getControl("ppp_flightconnection" + i).setVisible(true);
-      formContext.getControl("ppp_flightconnection" + i + "1").setVisible(true);
+      formContext.getControl("ppp_flightconnection" + i + "1").setVisible(true); //Second control on Detailed Travel Information
     } else {
       formContext.getControl("ppp_flightconnection" + i).setVisible(false);
-      formContext.getControl("ppp_flightconnection" + i + "1").setVisible(false);
+      formContext.getControl("ppp_flightconnection" + i + "1").setVisible(false); //Second control on Detailed Travel Information
       formContext.getAttribute("ppp_flightconnection" + i).setValue(null);
     }
   }
