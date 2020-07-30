@@ -125,55 +125,6 @@
                     </row>
                   </rows>
                 </section>
-                <section name="tab_10_section_1" showlabel="false" showbar="false" locklevel="0" id="{21dece1d-7b72-8a15-b144-27cad64067cd}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
-                  <labels>
-                    <label description="Section" languagecode="1033" />
-                    <label description="Section" languagecode="1036" />
-                  </labels>
-                  <rows>
-                    <row>
-                      <cell id="{6e2571bc-67ba-73ab-60e0-cebd22c5b9ad}" showlabel="true" rowspan="10" auto="false" colspan="1" locklevel="0">
-                        <labels>
-                          <label description="Note Text" languagecode="1033" />
-                          <label description="Note Text(fr)" languagecode="1036" />
-                        </labels>
-                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" uniqueid="{ac8422ba-1b27-b7e1-a29a-a5b48b3e06c0}" disabled="false">
-                          <parameters>
-                            <UClientUniqueName>Timeline</UClientUniqueName>
-                            <UClientModules>Activities,Notes</UClientModules>
-                            <UClientDefaultModuleForCreateExperience>Notes</UClientDefaultModuleForCreateExperience>
-                            <UClientShowFilterPane>true</UClientShowFilterPane>
-                            <UClientExpandFilterPane>false</UClientExpandFilterPane>
-                            <UClientOrderBy>descending</UClientOrderBy>
-                            <UClientRecordPerPage>10</UClientRecordPerPage>
-                            <UClientEnableWhatsNewFilter>false</UClientEnableWhatsNewFilter>
-                            <UClientSortActivitiesByValue>modifiedon</UClientSortActivitiesByValue>
-                            <UClientDisplayActivityHeaderUsing>defaultformat</UClientDisplayActivityHeaderUsing>
-                            <UClientCreateActivityUsing>quickcreateform</UClientCreateActivityUsing>
-                            <UClientDisplayActivityUsing>cardform</UClientDisplayActivityUsing>
-                            <DefaultTabId>ActivitiesTab</DefaultTabId>
-                            <OrderByActivityWall>descending</OrderByActivityWall>
-                            <SortActivityWall>modifiedon</SortActivityWall>
-                            <EmailConversationView>true</EmailConversationView>
-                            <ShowArticleTab>false</ShowArticleTab>
-                            <SelectDefaultLanguage>00000000-0000-0000-0000-000000000000</SelectDefaultLanguage>
-                            <UClientActivities>phonecall,ppp_callinformation</UClientActivities>
-                            <UClientActivityCardMap>appointment:4201:,campaignactivity:4402:,campaignresponse:4401:,email:4202:,fax:4204:,letter:4207:,opportunityclose:4208:,phonecall:4210:983dc188-2a05-4cfe-b907-4fbfae8c21f7,task:4212:,msdyn_bookingalert:10088:,ppp_callinformation:10333:,msfp_surveyinvite:10079:,msfp_surveyresponse:10080:</UClientActivityCardMap>
-                          </parameters>
-                        </control>
-                      </cell>
-                    </row>
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                  </rows>
-                </section>
                 <section name="tab_3_section_1" id="f4e66534-ca84-489c-86e1-b918505be3fe" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="111" labelwidth="115" labelid="{d120f9f9-6332-4e1f-a484-85f09e77efa4}">
                   <labels>
                     <label description="Flight Information" languagecode="1033" />
@@ -768,6 +719,73 @@
                         </labels>
                       </cell>
                       <cell id="{32cac660-1908-b2aa-358a-13c51d068969}" showlabel="false" labelid="{d230468d-84c9-4d33-9d8a-d8a319949d35}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e93cd682-aa57-809b-49b5-da6074023726}" showlabel="false" colspan="2" auto="false" rowspan="1" labelid="{30b323a3-963c-4afb-b0ea-2d2e90251df1}">
+                        <labels>
+                          <label description="Match Found Confirmation" languagecode="1033" />
+                          <label description="Confirmation de correspondance positive" languagecode="1036" />
+                        </labels>
+                        <control id="WebResource_traveller" classid="{9FDF5F91-88B1-47f4-AD53-C11EFC01A01D}">
+                          <parameters>
+                            <Url>ppp_Traveller.html</Url>
+                            <PassParameters>false</PassParameters>
+                            <ShowOnMobileClient>false</ShowOnMobileClient>
+                            <Security>false</Security>
+                            <Scrolling>no</Scrolling>
+                            <Border>false</Border>
+                            <WebResourceId>{27D1CF74-31AF-EA11-A812-000D3A0C8127}</WebResourceId>
+                          </parameters>
+                        </control>
+                        <events>
+                          <event name="onload" application="false">
+                            <dependencies />
+                          </event>
+                        </events>
+                      </cell>
+                      <cell id="{63ede42e-bc11-93b4-a83e-242cdc0a0274}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9434032d-753a-e4ae-0540-84e43d5d16ec}" showlabel="true" locklevel="0" labelid="{de79da95-eb4d-45fa-b564-a19fe9b43acb}">
+                        <labels>
+                          <label description="Match Confirmed" languagecode="1033" />
+                          <label description="Match Confirmed(fr)" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_matchfound" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ppp_matchfound" disabled="false" uniqueid="{e451c313-7bd3-c3b5-2c80-cd677d1969de}" />
+                      </cell>
+                      <cell id="{ed58524d-d392-7e14-2e85-d417a1bea67a}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{2aa2c803-2328-794c-e0ac-440604596657}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{37e2cd4e-000d-5907-eed5-197ba81869de}" showlabel="true" locklevel="0" visible="false" labelid="{92214979-22e1-48a5-bdd6-c8c2f2f6e6b8}">
+                        <labels>
+                          <label description="Match Found Confirmation" languagecode="1033" />
+                          <label description="Confirmation de correspondance positive" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_matchfoundconfirmation" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="ppp_matchfoundconfirmation" disabled="false" uniqueid="{d0bb6312-3916-6989-12d0-71bd79626b8a}" />
+                      </cell>
+                      <cell id="{48d9a9e7-7064-85e6-0927-2337ded6d858}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{bc5057b6-51c4-c62d-a94d-91c3a60cae05}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -2028,9 +2046,9 @@
             </column>
           </columns>
         </tab>
-        <tab name="tab_AnalystObservations" id="321e520d-565f-4ab1-8b95-76ee1b94bab0" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true" labelid="{830603e5-3a73-426e-9577-4137e9eacf80}">
+        <tab name="tab_Interactions" id="321e520d-565f-4ab1-8b95-76ee1b94bab0" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true" labelid="{830603e5-3a73-426e-9577-4137e9eacf80}">
           <labels>
-            <label description="Analyst Observations" languagecode="1033" />
+            <label description="Interactions" languagecode="1033" />
             <label description="Observations de l'analyste" languagecode="1036" />
           </labels>
           <columns>
@@ -2038,27 +2056,18 @@
               <sections>
                 <section name="tab_5_section_1" id="a8c9630c-5b05-4b3e-b426-2dd7491c32b5" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="111" labelwidth="115" labelid="{18f7bd7d-ec4f-42e1-be94-b0410cec66e1}">
                   <labels>
-                    <label description="Analyst Observations" languagecode="1033" />
+                    <label description="Interactions" languagecode="1033" />
                     <label description="Observations de l'analyste" languagecode="1036" />
                   </labels>
                   <rows>
                     <row>
-                      <cell id="{06525350-e97c-c445-1beb-638489630d06}" showlabel="true" locklevel="0" rowspan="10" colspan="3" labelid="{71d62591-5720-4b65-b764-27f7e82f9644}">
+                      <cell id="{0a6c7790-3193-ed6d-61b5-43ec30d2c027}" showlabel="true" rowspan="15" auto="false" colspan="3">
                         <labels>
-                          <label description="Observations" languagecode="1033" />
-                          <label description="Observations" languagecode="1036" />
+                          <label description="Note Text" languagecode="1033" />
                         </labels>
-                        <control id="ppp_observations" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_observations" disabled="false" uniqueid="{08c796cd-b092-6d91-639b-23d08ad3c730}" />
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" />
                       </cell>
                     </row>
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
                     <row>
                       <cell id="{ec92db27-231a-e0d2-7195-eb9a86a01807}" showlabel="false" labelid="{88a0b9cf-b473-4bbb-88b3-496bc59f5510}">
                         <labels>
@@ -2066,73 +2075,19 @@
                         </labels>
                       </cell>
                     </row>
-                    <row>
-                      <cell id="{e93cd682-aa57-809b-49b5-da6074023726}" showlabel="false" colspan="2" auto="false" rowspan="1" labelid="{30b323a3-963c-4afb-b0ea-2d2e90251df1}">
-                        <labels>
-                          <label description="Match Found Confirmation" languagecode="1033" />
-                          <label description="Confirmation de correspondance positive" languagecode="1036" />
-                        </labels>
-                        <control id="WebResource_traveller" classid="{9FDF5F91-88B1-47f4-AD53-C11EFC01A01D}">
-                          <parameters>
-                            <Url>ppp_Traveller.html</Url>
-                            <PassParameters>false</PassParameters>
-                            <ShowOnMobileClient>false</ShowOnMobileClient>
-                            <Security>false</Security>
-                            <Scrolling>no</Scrolling>
-                            <Border>false</Border>
-                            <WebResourceId>{27D1CF74-31AF-EA11-A812-000D3A0C8127}</WebResourceId>
-                          </parameters>
-                        </control>
-                        <events>
-                          <event name="onload" application="false">
-                            <dependencies />
-                          </event>
-                        </events>
-                      </cell>
-                      <cell id="{60c671a8-5636-ad51-b69b-5bb44ab0a0b1}" showlabel="false" labelid="{337abe48-f5af-4e19-b3c6-41ff765aa3d7}">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{9434032d-753a-e4ae-0540-84e43d5d16ec}" showlabel="true" locklevel="0" labelid="{de79da95-eb4d-45fa-b564-a19fe9b43acb}">
-                        <labels>
-                          <label description="Match Confirmed" languagecode="1033" />
-                          <label description="Match Confirmed(fr)" languagecode="1036" />
-                        </labels>
-                        <control id="ppp_matchfound" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ppp_matchfound" disabled="false" uniqueid="{e451c313-7bd3-c3b5-2c80-cd677d1969de}" />
-                      </cell>
-                      <cell id="{59c6c879-8d30-4b77-4acd-0eea09a3bbce}" showlabel="false">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                      <cell id="{cb02da50-8352-e6ad-91a2-a2d91d6b8343}" showlabel="false">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{37e2cd4e-000d-5907-eed5-197ba81869de}" showlabel="true" locklevel="0" visible="false" labelid="{92214979-22e1-48a5-bdd6-c8c2f2f6e6b8}">
-                        <labels>
-                          <label description="Match Found Confirmation" languagecode="1033" />
-                          <label description="Confirmation de correspondance positive" languagecode="1036" />
-                        </labels>
-                        <control id="ppp_matchfoundconfirmation" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="ppp_matchfoundconfirmation" disabled="false" uniqueid="{d0bb6312-3916-6989-12d0-71bd79626b8a}" />
-                      </cell>
-                      <cell id="{7c322c75-5024-4111-c86c-49b12314ab80}" showlabel="false">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                      <cell id="{6934a4ee-abb8-60cb-1880-ba0a0c7bcece}" showlabel="false">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
                   </rows>
                 </section>
               </sections>
