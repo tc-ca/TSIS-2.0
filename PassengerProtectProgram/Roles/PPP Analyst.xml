@@ -9,6 +9,7 @@
     <RolePrivilege name="prvAppendppp_Traveller" level="Global" />
     <RolePrivilege name="prvAppendppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvAppendresco_UserSettings" level="Basic" />
+    <RolePrivilege name="prvAppendtc_Country" level="Local" />
     <RolePrivilege name="prvAppendToAccount" level="Global" />
     <RolePrivilege name="prvAppendToNote" level="Local" />
     <RolePrivilege name="prvAppendToovs_AirCarrier" level="Global" />
@@ -16,6 +17,7 @@
     <RolePrivilege name="prvAppendToppp_Traveller" level="Global" />
     <RolePrivilege name="prvAppendToppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvAppendToresco_UserSettings" level="Basic" />
+    <RolePrivilege name="prvAppendTotc_Country" level="Local" />
     <RolePrivilege name="prvAppendTotc_Province" level="Global" />
     <RolePrivilege name="prvAppendToUser" level="Local" />
     <RolePrivilege name="prvAppendToUserSettings" level="Local" />
@@ -31,6 +33,7 @@
     <RolePrivilege name="prvCreateppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvCreateresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvCreateSharePointData" level="Global" />
+    <RolePrivilege name="prvCreatetc_Country" level="Local" />
     <RolePrivilege name="prvCreateUserSettings" level="Local" />
     <RolePrivilege name="prvCreateWorkflow" level="Local" />
     <RolePrivilege name="prvDeleteExchangeSyncIdMapping" level="Basic" />
@@ -67,6 +70,7 @@
     <RolePrivilege name="prvReadSharePointData" level="Global" />
     <RolePrivilege name="prvReadSharePointDocument" level="Global" />
     <RolePrivilege name="prvReadSystemForm" level="Global" />
+    <RolePrivilege name="prvReadtc_Country" level="Local" />
     <RolePrivilege name="prvReadtc_Province" level="Global" />
     <RolePrivilege name="prvReadTeam" level="Local" />
     <RolePrivilege name="prvReadUser" level="Local" />

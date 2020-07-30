@@ -411,18 +411,23 @@ function showHideFlightConnections(eContext, connectionCountName, maxConnections
 }
 
 function flightValidation(eContext, flightNameArray) {
-  debugger;
+  var globalContext = Xrm.Utility.getGlobalContext();
   var formContext = eContext.getFormContext();
   for (var i = 0; i < flightNameArray.length; i++) {
     formContext.getControl(flightNameArray[i]).clearNotification();
   }
   for (var x = 0; x < flightNameArray.length; x++) {
-    flightX = formContext.getAttribute(flightNameArray[x]).getValue()[0].id;
+    var flightX = formContext.getAttribute(flightNameArray[x])
     for (var y = 0; y < flightNameArray.length; y++) {
-      flightY = formContext.getAttribute(flightNameArray[y]).getValue()[0].id;
-      if (x != y && flightX != null && flightY != null && flightX == flightY) {
-        formContext.getControl(flightNameArray[x]).setNotification("Flights cannot match");
-        formContext.getControl(flightNameArray[y]).setNotification("Flights cannot match");
+      var flightY = formContext.getAttribute(flightNameArray[y])
+      if (x != y && flightX.getValue() != null && flightY.getValue() != null && flightX.getValue()[0].id == flightY.getValue()[0].id) {
+        if (globalContext.userSettings.languageId == 1033) {
+          formContext.getControl(flightNameArray[x]).setNotification("Flights cannot match");
+          formContext.getControl(flightNameArray[y]).setNotification("Flights cannot match");
+        } else {
+          formContext.getControl(flightNameArray[x]).setNotification("Flights cannot match (fr)");
+          formContext.getControl(flightNameArray[y]).setNotification("Flights cannot match (fr)");
+        }
       }
     }
   }
