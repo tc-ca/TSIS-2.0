@@ -15,8 +15,6 @@ function proceed(eContext) {
   formContext.getAttribute('ppp_matchfoundtime').setValue(new Date());
 
   formContext.data.save();
-
-  formContext.getControl('ppp_matchfound').setVisible(false);
   formContext.getControl('WebResource_traveller').setVisible(false);
   ToggleTabs(eContext);
   formContext.ui.tabs.get('tab_DetailedTravellerInformation').setFocus();
@@ -27,7 +25,6 @@ function ToggleTabs(eContext) {
   //confirmation.setSubmitMode("Always");
 
   ShowHideTabs(eContext, 'ppp_matchfoundconfirmation', false, [
-    'tab_TravelInformation',
     'tab_TravellerInformation',
   ]);
   ShowHideTabs(eContext, 'ppp_matchfoundconfirmation', true, [
@@ -301,13 +298,21 @@ function showHideMatchConfirmed(eContext) {
   var haveProceeded = formContext.getAttribute("ppp_matchfoundconfirmation").getValue();
 
   if (firstName && lastName && gender && dateOfBirth && isPresent && !haveProceeded) {
-    formContext.getControl("ppp_matchfound").setVisible(true);
-  } else {
-    formContext.getControl("ppp_matchfound").setVisible(false);
+    formContext.getControl("ppp_matchfound").setDisabled(false);
     formContext.getControl("WebResource_traveller").setVisible(false);
+  } else {
+    formContext.getControl("ppp_matchfound").setDisabled(true);
+    formContext.getControl("WebResource_traveller").setVisible(true);
     if (!haveProceeded) {
       formContext.getAttribute("ppp_matchfound").setValue(null);
     }
+  }
+  if (!recordIsNotClosed(formContext)) {
+    formContext.getControl("ppp_matchfound").setDisabled(true);
+  }
+  if (haveProceeded) {
+    formContext.getControl("ppp_matchfound").setDisabled(true);
+    formContext.getControl("WebResource_traveller").setVisible(false);
   }
 }
 
@@ -328,7 +333,6 @@ function toggleDisabledAllControls(eContext, disable, keepLockedList, keepUnlock
 
     //Toggle everything to match record closed status
     formContext.ui.controls.forEach(function (attribute) {
-      console.log(attribute.getName());
       var control = formContext.getControl(attribute.getName());
       if (control) {
         control.setDisabled(disable);
@@ -380,6 +384,8 @@ function setAttributesRequirementLevel(eContext, attributes, requirementLevel) {
   });
 }
 
+//If starting attribute doesn't exist, make nothing required and lock.
+//If starting attribute exists, require fields, and lock everything if record is closed, unlock if not closed.
 function setStartingFormState(eContext, startingAttribute, requiredAttributes, keepLockedList, keepUnLockedList) {
   var formContext = eContext.getFormContext();
   if (formContext.getAttribute(startingAttribute).getValue() == null) {
@@ -387,7 +393,42 @@ function setStartingFormState(eContext, startingAttribute, requiredAttributes, k
     toggleDisabledAllControls(eContext, true, [], [])
   } else {
     setAttributesRequirementLevel(eContext, requiredAttributes, "required");
-    toggleDisabledAllControls(eContext, false, keepLockedList, keepUnLockedList)
+    toggleDisabledAllControls(eContext, !recordIsNotClosed(formContext), keepLockedList, keepUnLockedList);
   }
 }
 
+function showHideFlightConnections(eContext, connectionCountName, maxConnections) {
+  var formContext = eContext.getFormContext();
+  var connectionCount = formContext.getAttribute(connectionCountName).getValue();
+  for (var i = 1; i <= maxConnections; i++) {
+    if (connectionCount >= i) {
+      formContext.getControl("ppp_flightconnection" + i).setVisible(true);
+    } else {
+      formContext.getControl("ppp_flightconnection" + i).setVisible(false);
+      formContext.getAttribute("ppp_flightconnection" + i).setValue(null);
+    }
+  }
+}
+
+function flightValidation(eContext, flightNameArray) {
+  var globalContext = Xrm.Utility.getGlobalContext();
+  var formContext = eContext.getFormContext();
+  for (var i = 0; i < flightNameArray.length; i++) {
+    formContext.getControl(flightNameArray[i]).clearNotification();
+  }
+  for (var x = 0; x < flightNameArray.length; x++) {
+    var flightX = formContext.getAttribute(flightNameArray[x])
+    for (var y = 0; y < flightNameArray.length; y++) {
+      var flightY = formContext.getAttribute(flightNameArray[y])
+      if (x != y && flightX.getValue() != null && flightY.getValue() != null && flightX.getValue()[0].id == flightY.getValue()[0].id) {
+        if (globalContext.userSettings.languageId == 1033) {
+          formContext.getControl(flightNameArray[x]).setNotification("Flights cannot match");
+          formContext.getControl(flightNameArray[y]).setNotification("Flights cannot match");
+        } else {
+          formContext.getControl(flightNameArray[x]).setNotification("Flights cannot match (fr)");
+          formContext.getControl(flightNameArray[y]).setNotification("Flights cannot match (fr)");
+        }
+      }
+    }
+  }
+}
