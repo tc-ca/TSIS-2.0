@@ -163,6 +163,7 @@
       <RootComponent type="60" id="{d8c74db0-5014-4916-8e66-967565f6f489}" behavior="0" />
       <RootComponent type="60" id="{f4e2f0e8-f204-4bfc-951d-0f14a51449c0}" behavior="0" />
       <RootComponent type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" behavior="0" />
+      <RootComponent type="61" schemaName="ppp_Feedback.html" behavior="0" />
       <RootComponent type="61" schemaName="ppp_scripts/Traveller.js" behavior="0" />
       <RootComponent type="61" schemaName="ppp_Traveller.html" behavior="0" />
       <RootComponent type="62" schemaName="ppp_PassengerProtectProgram" behavior="0" />

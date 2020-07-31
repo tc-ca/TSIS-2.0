@@ -50,7 +50,7 @@
     </Area>
   </SiteMap>
   <LocalizedNames>
-    <LocalizedName description="Passenger Protect Program(fr)" languagecode="1033" />
+    <LocalizedName description="Passenger Protect Program" languagecode="1033" />
     <LocalizedName description="Passenger Protect Program(fr)" languagecode="1036" />
   </LocalizedNames>
 </AppModuleSiteMap>
