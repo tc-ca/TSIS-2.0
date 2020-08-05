@@ -12,7 +12,7 @@
         <LocalizedCollectionName description="Air Carriers(fr)" languagecode="1036" />
       </LocalizedCollectionNames>
       <Descriptions>
-        <Description description="" languagecode="1033" />
+        <Description description="A person who operates a commercial air service." languagecode="1033" />
       </Descriptions>
       <attributes>
         <attribute PhysicalName="CreatedBy">
@@ -424,7 +424,7 @@
             <displayname description="Air Carrier Name(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="Required name field" languagecode="1033" />
+            <Description description="The legal name of the Air Carrier." languagecode="1033" />
             <Description description="Required name field(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -466,7 +466,7 @@
             <displayname description="Call Sign(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The international radio call sign of the Air carrier." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Country">
@@ -506,7 +506,7 @@
             <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The country associated with a Regulated Entity." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_ICAOCode">
@@ -547,7 +547,7 @@
             <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The Air Carrier designation code assigned by the International Civil Aviation Organization (ICAO). " languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Organization">
@@ -587,7 +587,7 @@
             <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="Organizations, including but not limited to  Regulated Entities, that Transport Canada has interactions with." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="OwnerId">
@@ -979,6 +979,7 @@
       <IsCollaboration>0</IsCollaboration>
       <AutoRouteToOwnerQueue>0</AutoRouteToOwnerQueue>
       <IsConnectionsEnabled>0</IsConnectionsEnabled>
+      <EntityColor></EntityColor>
       <IsDocumentManagementEnabled>0</IsDocumentManagementEnabled>
       <AutoCreateAccessTeams>0</AutoCreateAccessTeams>
       <IsOneNoteIntegrationEnabled>0</IsOneNoteIntegrationEnabled>
@@ -1028,6 +1029,7 @@
       <EnforceStateTransitions>0</EnforceStateTransitions>
       <CanChangeHierarchicalRelationship>1</CanChangeHierarchicalRelationship>
       <EntityHelpUrlEnabled>0</EntityHelpUrlEnabled>
+      <EntityHelpUrl></EntityHelpUrl>
       <ChangeTrackingEnabled>0</ChangeTrackingEnabled>
       <CanChangeTrackingBeEnabled>1</CanChangeTrackingBeEnabled>
       <IsEnabledForExternalChannels>0</IsEnabledForExternalChannels>

@@ -2275,137 +2275,6 @@
             <Description description="The combination of Flight Origin Date, Flight Origin Hour and Flight Origin Minute associated with the Traveller's intended initial flight departure.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
-        <attribute PhysicalName="ppp_FormToggle">
-          <Type>bit</Type>
-          <Name>ppp_formtoggle</Name>
-          <LogicalName>ppp_formtoggle</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
-          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-          <ImeMode>auto</ImeMode>
-          <ValidForUpdateApi>1</ValidForUpdateApi>
-          <ValidForReadApi>1</ValidForReadApi>
-          <ValidForCreateApi>1</ValidForCreateApi>
-          <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>1</IsAuditEnabled>
-          <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0.0.8</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <CanModifySearchSettings>1</CanModifySearchSettings>
-          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
-          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-          <IsSortableEnabled>0</IsSortableEnabled>
-          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-          <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
-          <IsSearchable>0</IsSearchable>
-          <IsFilterable>0</IsFilterable>
-          <IsRetrievable>0</IsRetrievable>
-          <IsLocalizable>0</IsLocalizable>
-          <AppDefaultValue>0</AppDefaultValue>
-          <optionset Name="ppp_ppp_traveller_formtoggle">
-            <OptionSetType>bit</OptionSetType>
-            <IntroducedVersion>1.0.0.8</IntroducedVersion>
-            <IsCustomizable>1</IsCustomizable>
-            <displaynames>
-              <displayname description="Local Enumeration" languagecode="1033" />
-              <displayname description="Dénombrement local" languagecode="1036" />
-            </displaynames>
-            <Descriptions>
-              <Description description="" languagecode="1033" />
-            </Descriptions>
-            <options>
-              <option value="1">
-                <labels>
-                  <label description="Yes" languagecode="1033" />
-                  <label description="Oui" languagecode="1036" />
-                </labels>
-              </option>
-              <option value="0">
-                <labels>
-                  <label description="No" languagecode="1033" />
-                  <label description="Non" languagecode="1036" />
-                </labels>
-              </option>
-            </options>
-          </optionset>
-          <displaynames>
-            <displayname description="Form Toggle (to be deleted)" languagecode="1033" />
-            <displayname description="Form Toggle (to be deleted)(fr)" languagecode="1036" />
-          </displaynames>
-          <Descriptions>
-            <Description description="" languagecode="1033" />
-          </Descriptions>
-        </attribute>
-        <attribute PhysicalName="ppp_FromNominatingToggle">
-          <Type>bit</Type>
-          <Name>ppp_fromnominatingtoggle</Name>
-          <LogicalName>ppp_fromnominatingtoggle</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
-          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-          <ImeMode>auto</ImeMode>
-          <ValidForUpdateApi>1</ValidForUpdateApi>
-          <ValidForReadApi>1</ValidForReadApi>
-          <ValidForCreateApi>1</ValidForCreateApi>
-          <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>1</IsAuditEnabled>
-          <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0.0.0</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <CanModifySearchSettings>1</CanModifySearchSettings>
-          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
-          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-          <IsSortableEnabled>0</IsSortableEnabled>
-          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-          <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
-          <IsSearchable>0</IsSearchable>
-          <IsFilterable>0</IsFilterable>
-          <IsRetrievable>0</IsRetrievable>
-          <IsLocalizable>0</IsLocalizable>
-          <AppDefaultValue>0</AppDefaultValue>
-          <optionset Name="ppp_ppp_traveller_fromnominatingtoggle">
-            <OptionSetType>bit</OptionSetType>
-            <IntroducedVersion>1.0.0.0</IntroducedVersion>
-            <IsCustomizable>1</IsCustomizable>
-            <displaynames>
-              <displayname description="Local Enumeration" languagecode="1033" />
-              <displayname description="Dénombrement local" languagecode="1036" />
-            </displaynames>
-            <Descriptions>
-              <Description description="" languagecode="1033" />
-            </Descriptions>
-            <options>
-              <option value="1">
-                <labels>
-                  <label description="Yes" languagecode="1033" />
-                  <label description="Oui" languagecode="1036" />
-                </labels>
-              </option>
-              <option value="0">
-                <labels>
-                  <label description="No" languagecode="1033" />
-                  <label description="Non" languagecode="1036" />
-                </labels>
-              </option>
-            </options>
-          </optionset>
-          <displaynames>
-            <displayname description="From Nominating Toggle" languagecode="1033" />
-            <displayname description="De l'organisme de parrainage" languagecode="1036" />
-          </displaynames>
-          <Descriptions>
-            <Description description="An indicator that the user select in the event that additional information is provided by the Nominating Agency." languagecode="1033" />
-            <Description description="An indicator that the user select in the event that additional information is provided by the Nominating Agency.(fr)" languagecode="1036" />
-          </Descriptions>
-        </attribute>
         <attribute PhysicalName="ppp_Gender">
           <Type>picklist</Type>
           <Name>ppp_gender</Name>
@@ -3269,6 +3138,45 @@
             <Description description="The time at which a new record is created.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
+        <attribute PhysicalName="ppp_NominatingAgencyAdditional">
+          <Type>picklist</Type>
+          <Name>ppp_nominatingagencyadditional</Name>
+          <LogicalName>ppp_nominatingagencyadditional</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ImeMode>auto</ImeMode>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.10</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
+          <AppDefaultValue>-1</AppDefaultValue>
+          <OptionSetName>ppp_nominatingagencyadditional</OptionSetName>
+          <displaynames>
+            <displayname description="Nominating Agency Additional Dropdown" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="An indicator that the user select in the event that additional information is provided by the Nominating Agency." languagecode="1033" />
+          </Descriptions>
+        </attribute>
         <attribute PhysicalName="ppp_NominatingAgencyNotes">
           <Type>nvarchar</Type>
           <Name>ppp_nominatingagencynotes</Name>
@@ -3436,6 +3344,45 @@
             <Description description="Free text field in which the analyst can document their observations.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
+        <attribute PhysicalName="ppp_OpenSourceAdditional">
+          <Type>picklist</Type>
+          <Name>ppp_opensourceadditional</Name>
+          <LogicalName>ppp_opensourceadditional</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ImeMode>auto</ImeMode>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.10</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
+          <AppDefaultValue>-1</AppDefaultValue>
+          <OptionSetName>ppp_opensourceadditional</OptionSetName>
+          <displaynames>
+            <displayname description="Open Source Dropdown" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="An indication as to whether open source information exists and a means of making the  Open Source Notes field visible." languagecode="1033" />
+          </Descriptions>
+        </attribute>
         <attribute PhysicalName="ppp_OpenSourceNotes">
           <Type>nvarchar</Type>
           <Name>ppp_opensourcenotes</Name>
@@ -3476,72 +3423,6 @@
           <Descriptions>
             <Description description="Information that the user must capture in the event that additional open source information is available." languagecode="1033" />
             <Description description="Information that the user must capture in the event that additional open source information is available.(fr)" languagecode="1036" />
-          </Descriptions>
-        </attribute>
-        <attribute PhysicalName="ppp_OpenSourceToggle">
-          <Type>bit</Type>
-          <Name>ppp_opensourcetoggle</Name>
-          <LogicalName>ppp_opensourcetoggle</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
-          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-          <ImeMode>auto</ImeMode>
-          <ValidForUpdateApi>1</ValidForUpdateApi>
-          <ValidForReadApi>1</ValidForReadApi>
-          <ValidForCreateApi>1</ValidForCreateApi>
-          <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>1</IsAuditEnabled>
-          <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0.0.0</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <CanModifySearchSettings>1</CanModifySearchSettings>
-          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
-          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-          <IsSortableEnabled>0</IsSortableEnabled>
-          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-          <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
-          <IsSearchable>0</IsSearchable>
-          <IsFilterable>0</IsFilterable>
-          <IsRetrievable>0</IsRetrievable>
-          <IsLocalizable>0</IsLocalizable>
-          <AppDefaultValue>0</AppDefaultValue>
-          <optionset Name="ppp_ppp_traveller_opensourcetoggle">
-            <OptionSetType>bit</OptionSetType>
-            <IntroducedVersion>1.0.0.0</IntroducedVersion>
-            <IsCustomizable>1</IsCustomizable>
-            <displaynames>
-              <displayname description="Local Enumeration" languagecode="1033" />
-              <displayname description="Dénombrement local" languagecode="1036" />
-            </displaynames>
-            <Descriptions>
-              <Description description="" languagecode="1033" />
-            </Descriptions>
-            <options>
-              <option value="1">
-                <labels>
-                  <label description="Yes" languagecode="1033" />
-                  <label description="Oui" languagecode="1036" />
-                </labels>
-              </option>
-              <option value="0">
-                <labels>
-                  <label description="No" languagecode="1033" />
-                  <label description="Non" languagecode="1036" />
-                </labels>
-              </option>
-            </options>
-          </optionset>
-          <displaynames>
-            <displayname description="Open Source Toggle" languagecode="1033" />
-            <displayname description="Cabillot de source ouverte" languagecode="1036" />
-          </displaynames>
-          <Descriptions>
-            <Description description="An indication as to whether open source information exists and a means of making the  Open Source Notes field visible." languagecode="1033" />
-            <Description description="An indication as to whether open source information exists and a means of making the  Open Source Notes field visible.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_OtherConsiderations">
@@ -3586,10 +3467,10 @@
             <Description description="Information that the user must capture in the event that other considerations were taken.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
-        <attribute PhysicalName="ppp_OtherConsiderationsToggle">
-          <Type>bit</Type>
-          <Name>ppp_otherconsiderationstoggle</Name>
-          <LogicalName>ppp_otherconsiderationstoggle</LogicalName>
+        <attribute PhysicalName="ppp_OtherConsiderationsDropdown">
+          <Type>picklist</Type>
+          <Name>ppp_otherconsiderationsdropdown</Name>
+          <LogicalName>ppp_otherconsiderationsdropdown</LogicalName>
           <RequiredLevel>none</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
           <ImeMode>auto</ImeMode>
@@ -3599,7 +3480,7 @@
           <IsCustomField>1</IsCustomField>
           <IsAuditEnabled>1</IsAuditEnabled>
           <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0.0.0</IntroducedVersion>
+          <IntroducedVersion>1.0.0.10</IntroducedVersion>
           <IsCustomizable>1</IsCustomizable>
           <IsRenameable>1</IsRenameable>
           <CanModifySearchSettings>1</CanModifySearchSettings>
@@ -3616,40 +3497,13 @@
           <IsFilterable>0</IsFilterable>
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
-          <AppDefaultValue>0</AppDefaultValue>
-          <optionset Name="ppp_ppp_traveller_otherconsiderationstoggle">
-            <OptionSetType>bit</OptionSetType>
-            <IntroducedVersion>1.0.0.0</IntroducedVersion>
-            <IsCustomizable>1</IsCustomizable>
-            <displaynames>
-              <displayname description="Local Enumeration" languagecode="1033" />
-              <displayname description="Dénombrement local" languagecode="1036" />
-            </displaynames>
-            <Descriptions>
-              <Description description="" languagecode="1033" />
-            </Descriptions>
-            <options>
-              <option value="1">
-                <labels>
-                  <label description="Yes" languagecode="1033" />
-                  <label description="Oui" languagecode="1036" />
-                </labels>
-              </option>
-              <option value="0">
-                <labels>
-                  <label description="No" languagecode="1033" />
-                  <label description="Non" languagecode="1036" />
-                </labels>
-              </option>
-            </options>
-          </optionset>
+          <AppDefaultValue>-1</AppDefaultValue>
+          <OptionSetName>ppp_otherconsiderationsdropdown</OptionSetName>
           <displaynames>
-            <displayname description="Other Considerations Toggle" languagecode="1033" />
-            <displayname description="Cabillot d'autre considérations" languagecode="1036" />
+            <displayname description="Other Considerations Dropdown" languagecode="1033" />
           </displaynames>
           <Descriptions>
             <Description description="An indication as to whether other considerations exist and a means of making the  Other Considerations field visible." languagecode="1033" />
-            <Description description="An indication as to whether other considerations exist and a means of making the  Other Considerations field visible.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_PassportNumber">

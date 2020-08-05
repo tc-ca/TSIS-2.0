@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.1.0.20742" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.1.0.21034" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>PassengerProtectProgram</UniqueName>
     <LocalizedNames>
@@ -99,7 +99,10 @@
       <RootComponent type="9" schemaName="ppp_investigationrequired" behavior="0" />
       <RootComponent type="9" schemaName="ppp_matchfound" behavior="0" />
       <RootComponent type="9" schemaName="ppp_nameprovidedoptions" behavior="0" />
+      <RootComponent type="9" schemaName="ppp_nominatingagencyadditional" behavior="0" />
       <RootComponent type="9" schemaName="ppp_nominatingagencyoptions" behavior="0" />
+      <RootComponent type="9" schemaName="ppp_opensourceadditional" behavior="0" />
+      <RootComponent type="9" schemaName="ppp_otherconsiderationsdropdown" behavior="0" />
       <RootComponent type="9" schemaName="ppp_paymentmethod" behavior="0" />
       <RootComponent type="9" schemaName="ppp_recordstatus" behavior="0" />
       <RootComponent type="9" schemaName="ppp_seatrequestmade" behavior="0" />
@@ -124,6 +127,7 @@
       <RootComponent type="29" id="{562ebcc2-9c9b-ea11-a812-000d3a0c86a9}" behavior="0" />
       <RootComponent type="29" id="{5ae038e7-9e9b-ea11-a812-000d3a0c86a9}" behavior="0" />
       <RootComponent type="29" id="{5c8c0312-6a2d-408c-85ba-9a1b4f211c7b}" behavior="0" />
+      <RootComponent type="29" id="{5c9e12fe-88d6-ea11-a813-000d3a0c86a9}" behavior="0" />
       <RootComponent type="29" id="{5d396542-6ac8-ea11-a812-000d3a0c8127}" behavior="0" />
       <RootComponent type="29" id="{5e89b7a0-0bd1-ea11-a813-000d3a0c86a9}" behavior="0" />
       <RootComponent type="29" id="{5ffd45ae-e6b6-ea11-a812-000d3a0c8127}" behavior="0" />

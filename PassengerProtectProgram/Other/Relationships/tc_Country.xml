@@ -17,7 +17,7 @@
     <ReferencingAttributeName>ovs_Country</ReferencingAttributeName>
     <RelationshipDescription>
       <Descriptions>
-        <Description description="" languagecode="1033" />
+        <Description description="The country associated with a Regulated Entity." languagecode="1033" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>
