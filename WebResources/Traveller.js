@@ -243,10 +243,8 @@ function statusChangeInProgress(eContext) {
 
   if (isPresent && recordStatus == 927820001) {
     setRecordStatus(eContext, 927820003);
-    formContext.getAttribute("ppp_ispresenttime").setValue(new Date());
   } else if (!isPresent && recordStatus == 927820003) {
     setRecordStatus(eContext, 927820001);
-    formContext.getAttribute("ppp_ispresenttime").setValue(null);
   }
 }
 
