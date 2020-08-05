@@ -427,11 +427,11 @@ function flightValidation(eContext, flightNameArray) {
       var flightY = formContext.getAttribute(flightNameArray[y])
       if (x != y && flightX.getValue() != null && flightY.getValue() != null && flightX.getValue()[0].id == flightY.getValue()[0].id) {
         if (globalContext.userSettings.languageId == 1033) {
-          formContext.getControl(flightNameArray[x]).setNotification("Duplicate aerodromes not permitted");
-          formContext.getControl(flightNameArray[y]).setNotification("Duplicate aerodromes not permitted");
+          formContext.getControl(flightNameArray[x]).setNotification("Duplicate aerodromes not permitted.");
+          formContext.getControl(flightNameArray[y]).setNotification("Duplicate aerodromes not permitted.");
         } else {
-          formContext.getControl(flightNameArray[x]).setNotification("Duplicate aerodromes not permitted (fr)");
-          formContext.getControl(flightNameArray[y]).setNotification("Duplicate aerodromes not permitted (fr)");
+          formContext.getControl(flightNameArray[x]).setNotification("Duplicate aerodromes not permitted. (fr)");
+          formContext.getControl(flightNameArray[y]).setNotification("Duplicate aerodromes not permitted. (fr)");
         }
       }
     }
