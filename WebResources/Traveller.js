@@ -239,11 +239,14 @@ function setRecordStatus(eContext, statusValue) {
 function statusChangeInProgress(eContext) {
   var formContext = eContext.getFormContext();
   var isPresent = formContext.getAttribute('ppp_ispresent').getValue();
-  var isDraft =
-    formContext.getAttribute('ppp_recordstatus').getValue() == 927820001;
+  var recordStatus = formContext.getAttribute('ppp_recordstatus').getValue();
 
-  if (isPresent && isDraft) {
+  if (isPresent && recordStatus == 927820001) {
     setRecordStatus(eContext, 927820003);
+    formContext.getAttribute("ppp_ispresenttime").setValue(new Date());
+  } else if (!isPresent && recordStatus == 927820003) {
+    setRecordStatus(eContext, 927820001);
+    formContext.getAttribute("ppp_ispresenttime").setValue(null);
   }
 }
 
@@ -403,10 +406,10 @@ function showHideFlightConnections(eContext, connectionCountName, maxConnections
   for (var i = 1; i <= maxConnections; i++) {
     if (connectionCount >= i) {
       formContext.getControl("ppp_flightconnection" + i).setVisible(true);
-      formContext.getControl("ppp_flightconnection" + i + "1").setVisible(true); //Second control on Detailed Travel Information
+      formContext.getControl("ppp_flightconnection" + i + "1").setVisible(true);
     } else {
       formContext.getControl("ppp_flightconnection" + i).setVisible(false);
-      formContext.getControl("ppp_flightconnection" + i + "1").setVisible(false); //Second control on Detailed Travel Information
+      formContext.getControl("ppp_flightconnection" + i + "1").setVisible(false);
       formContext.getAttribute("ppp_flightconnection" + i).setValue(null);
     }
   }
@@ -424,11 +427,11 @@ function flightValidation(eContext, flightNameArray) {
       var flightY = formContext.getAttribute(flightNameArray[y])
       if (x != y && flightX.getValue() != null && flightY.getValue() != null && flightX.getValue()[0].id == flightY.getValue()[0].id) {
         if (globalContext.userSettings.languageId == 1033) {
-          formContext.getControl(flightNameArray[x]).setNotification("Flights cannot match");
-          formContext.getControl(flightNameArray[y]).setNotification("Flights cannot match");
+          formContext.getControl(flightNameArray[x]).setNotification("Duplicate aerodromes not permitted");
+          formContext.getControl(flightNameArray[y]).setNotification("Duplicate aerodromes not permitted");
         } else {
-          formContext.getControl(flightNameArray[x]).setNotification("Flights cannot match (fr)");
-          formContext.getControl(flightNameArray[y]).setNotification("Flights cannot match (fr)");
+          formContext.getControl(flightNameArray[x]).setNotification("Duplicate aerodromes not permitted (fr)");
+          formContext.getControl(flightNameArray[y]).setNotification("Duplicate aerodromes not permitted (fr)");
         }
       }
     }
