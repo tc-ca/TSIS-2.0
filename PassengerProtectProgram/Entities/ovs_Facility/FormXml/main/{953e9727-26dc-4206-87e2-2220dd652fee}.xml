@@ -87,7 +87,7 @@
                     <row>
                       <cell id="{bccc4434-a0d2-469e-9c44-fe4dc4789363}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="Region" languagecode="1033" />
+                          <label description="State/Province" languagecode="1033" />
                           <label description="0" languagecode="1036" />
                         </labels>
                         <control id="ovs_address1stateprovince" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="ovs_address1stateprovince" disabled="false" />

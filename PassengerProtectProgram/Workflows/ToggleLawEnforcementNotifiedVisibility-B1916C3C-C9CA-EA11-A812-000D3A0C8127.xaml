@@ -61,7 +61,7 @@
                   <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
                   <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
                     <Sequence DisplayName="SetVisibilityStep1: Show Law Enforcement Notified">
-                      <mcwc:SetVisibility ControlId="ppp_lawenforcementnotified" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="ppp_traveller" IsVisible="True" />
+                      <mcwc:SetVisibility ControlId="ppp_lawenforcementagency" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="ppp_traveller" IsVisible="True" />
                     </Sequence>
                   </sco:Collection>
                 </mxswa:ActivityReference.Properties>
@@ -90,7 +90,7 @@
                   <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
                   <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
                     <Sequence DisplayName="SetVisibilityStep2: Hide Law Enforcement Notified">
-                      <mcwc:SetVisibility ControlId="ppp_lawenforcementnotified" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="ppp_traveller" IsVisible="False" />
+                      <mcwc:SetVisibility ControlId="ppp_lawenforcementagency" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="ppp_traveller" IsVisible="False" />
                     </Sequence>
                     <Sequence DisplayName="SetAttributeValueStep3: Set Law Enforcement Notified to No">
                       <Sequence.Variables>
@@ -98,20 +98,10 @@
                       </Sequence.Variables>
                       <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;ppp_traveller&quot;)]" />
                       <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
-                      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
-                        <mxswa:ActivityReference.Arguments>
-                          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CreateCrmType</InArgument>
-                          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Microsoft.Xrm.Sdk.Workflow.WorkflowPropertyType.Boolean, "0" }]</InArgument>
-                          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
-                            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Boolean" />
-                          </InArgument>
-                          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[SetAttributeValueStep3_1]</OutArgument>
-                        </mxswa:ActivityReference.Arguments>
-                      </mxswa:ActivityReference>
-                      <mxswa:SetEntityProperty Attribute="ppp_lawenforcementnotified" Entity="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" EntityName="ppp_traveller" Value="[SetAttributeValueStep3_1]">
+                      <mxswa:SetEntityProperty Attribute="ppp_lawenforcementagency" Entity="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" EntityName="ppp_traveller" Value="[SetAttributeValueStep3_1]">
                         <mxswa:SetEntityProperty.TargetType>
                           <InArgument x:TypeArguments="s:Type">
-                            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Boolean" />
+                            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
                           </InArgument>
                         </mxswa:SetEntityProperty.TargetType>
                       </mxswa:SetEntityProperty>

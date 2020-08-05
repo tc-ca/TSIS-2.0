@@ -30,24 +30,6 @@
                         <control id="bpf_ppp_traveller_ppp_travellerbusinessflow:ppp_ispresent" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="ppp_ispresent" relationship="bpf_ppp_traveller_ppp_travellerbusinessflow" isrequired="true" disabled="false" />
                       </cell>
                     </row>
-                    <row>
-                      <cell id="{1d1b7108-8278-4b46-bf75-9b9c1dbb638d}" showlabel="true" visible="true" labelid="{b02c6f07-e012-4860-a842-dea76ef47e07}">
-                        <labels>
-                          <label description="Representative" languagecode="1033" />
-                          <label description="Agent" languagecode="1036" />
-                        </labels>
-                        <control id="bpf_ppp_traveller_ppp_travellerbusinessflow:ppp_aircarrierrepresentative" classid="{e0dece4b-6fc8-4a8f-a065-082708572369}" datafieldname="ppp_aircarrierrepresentative" relationship="bpf_ppp_traveller_ppp_travellerbusinessflow" isrequired="true" disabled="false" />
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{ebef47a4-bf8e-48f9-adc4-52ad7c13b662}" showlabel="true" visible="true" labelid="{ba2a5c10-3dd8-4d4a-a505-4d26c8968249}">
-                        <labels>
-                          <label description="Representative Phone Number" languagecode="1033" />
-                          <label description="Numéro de téléphone du représentant" languagecode="1036" />
-                        </labels>
-                        <control id="bpf_ppp_traveller_ppp_travellerbusinessflow:ppp_representativephonenumber" classid="{e0dece4b-6fc8-4a8f-a065-082708572369}" datafieldname="ppp_representativephonenumber" relationship="bpf_ppp_traveller_ppp_travellerbusinessflow" isrequired="true" disabled="false" />
-                      </cell>
-                    </row>
                   </rows>
                 </section>
               </sections>
@@ -107,12 +89,10 @@
                   </labels>
                   <rows>
                     <row>
-                      <cell id="{6798d901-33ce-49d3-a720-ab3da8521448}" showlabel="true" visible="true" labelid="{9e4783f9-6f81-4341-b00d-7cd5c2e3d28e}">
+                      <cell id="{313647b8-43b1-ba53-668d-28b1ea0621a5}" showlabel="false">
                         <labels>
-                          <label description="Recourse Letter Received" languagecode="1033" />
-                          <label description="Lettre de redressement reçue" languagecode="1036" />
+                          <label description="" languagecode="1033" />
                         </labels>
-                        <control id="bpf_ppp_traveller_ppp_travellerbusinessflow:ppp_recourseletterreceived" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="ppp_recourseletterreceived" relationship="bpf_ppp_traveller_ppp_travellerbusinessflow" isrequired="false" disabled="false" />
                       </cell>
                     </row>
                   </rows>
@@ -209,6 +189,36 @@
           </columns>
         </tab>
       </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
     </form>
     <IsCustomizable>1</IsCustomizable>
     <CanBeDeleted>1</CanBeDeleted>

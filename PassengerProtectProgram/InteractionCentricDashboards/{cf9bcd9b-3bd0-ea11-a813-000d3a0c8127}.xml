@@ -10,7 +10,7 @@
   <FormXml>
     <forms type="interactioncentricdashboard">
       <form>
-        <tabs filterby="ppp_calltime" timeframe="2" primaryentitylogicalname="ppp_traveller" entityview="{D9703D4D-7DAE-434A-89C8-68884B9417F9}" dashboardCategory="1_1" tilespresent="false">
+        <tabs filterby="ppp_finalstatustime" timeframe="2" primaryentitylogicalname="ppp_traveller" entityview="{D9703D4D-7DAE-434A-89C8-68884B9417F9}" dashboardCategory="1_1" tilespresent="false">
           <tab showlabel="true" verticallayout="true" collapsible="true" id="{12a82d73-5552-43d7-984e-47242627cd30}">
             <labels>
               <label description="Visual Filters" languagecode="1033" />

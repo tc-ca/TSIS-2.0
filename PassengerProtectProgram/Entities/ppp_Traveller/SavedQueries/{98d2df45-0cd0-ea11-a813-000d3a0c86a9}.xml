@@ -14,7 +14,6 @@
           <cell name="ppp_matchfound" width="100" />
           <cell name="ppp_directionoptions" width="100" />
           <cell name="ppp_calltype" width="100" />
-          <cell name="ppp_calltime" width="100" />
           <cell name="createdon" width="100" />
           <cell name="ppp_recordstatus" width="100" />
         </row>
@@ -25,11 +24,9 @@
       <fetch version="1.0" output-format="xml-platform" mapping="logical">
         <entity name="ppp_traveller">
           <attribute name="ppp_name" />
-          <attribute name="ppp_travellerid" />
           <attribute name="ppp_matchfound" />
           <attribute name="ppp_directionoptions" />
           <attribute name="ppp_calltype" />
-          <attribute name="ppp_calltime" />
           <attribute name="createdon" />
           <filter type="and">
             <condition attribute="createdon" operator="in-fiscal-year" value="2020" />
@@ -39,6 +36,7 @@
             </filter>
           </filter>
           <attribute name="ppp_recordstatus" />
+          <attribute name="ppp_travellerid" />
         </entity>
       </fetch>
     </fetchxml>

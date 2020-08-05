@@ -91,6 +91,7 @@
     <RolePrivilege name="prvUseTabletApp" level="Global" />
     <RolePrivilege name="prvWorkflowExecution" level="Global" />
     <RolePrivilege name="prvWriteExchangeSyncIdMapping" level="Basic" />
+    <RolePrivilege name="prvWriteNote" level="Basic" />
     <RolePrivilege name="prvWriteppp_Traveller" level="Global" />
     <RolePrivilege name="prvWriteppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvWriteresco_UserSettings" level="Basic" />
