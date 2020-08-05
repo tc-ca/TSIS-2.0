@@ -92,6 +92,22 @@
                     <Sequence DisplayName="SetVisibilityStep2: Hide Minutes Waiting">
                       <mcwc:SetVisibility ControlId="ppp_minuteswaiting" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="ppp_traveller" IsVisible="False" />
                     </Sequence>
+                    <Sequence DisplayName="SetAttributeValueStep_SetVisibilityStep2_3: Clear Minutes Waiting">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:Object" Name="SetAttributeValueStep_SetVisibilityStep2_3_1" />
+                      </Sequence.Variables>
+                      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;ppp_traveller&quot;)]" />
+                      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+                      <mxswa:SetEntityProperty Attribute="ppp_minuteswaiting" Entity="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" EntityName="ppp_traveller" Value="[SetAttributeValueStep_SetVisibilityStep2_3_1]">
+                        <mxswa:SetEntityProperty.TargetType>
+                          <InArgument x:TypeArguments="s:Type">
+                            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Int32" />
+                          </InArgument>
+                        </mxswa:SetEntityProperty.TargetType>
+                      </mxswa:SetEntityProperty>
+                      <mcwc:SetAttributeValue DisplayName="SetAttributeValueStep_SetVisibilityStep2_3" Entity="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" EntityName="ppp_traveller" />
+                      <Assign x:TypeArguments="mxs:Entity" To="[InputEntities(&quot;primaryEntity&quot;)]" Value="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" />
+                    </Sequence>
                   </sco:Collection>
                 </mxswa:ActivityReference.Properties>
               </mxswa:ActivityReference>
