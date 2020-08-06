@@ -115,6 +115,7 @@
       <RootComponent type="29" id="{08387ea5-a99e-ea11-a812-000d3a0c8127}" behavior="0" />
       <RootComponent type="29" id="{08429e33-6fbd-ea11-a812-000d3a0c86a9}" behavior="0" />
       <RootComponent type="29" id="{08780b5e-29ba-ea11-a812-000d3a0c8127}" behavior="0" />
+      <RootComponent type="29" id="{110bb8db-f1d7-ea11-a813-000d3a0c8127}" behavior="0" />
       <RootComponent type="29" id="{223aa536-9f9b-ea11-a812-000d3a0c86a9}" behavior="0" />
       <RootComponent type="29" id="{25235fc5-3d9c-ea11-a812-000d3a0c86a9}" behavior="0" />
       <RootComponent type="29" id="{2eb75ba1-1baf-ea11-a812-000d3a0c86a9}" behavior="0" />
@@ -159,6 +160,7 @@
       <RootComponent type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" behavior="0" />
       <RootComponent type="61" schemaName="ppp_Feedback.html" behavior="0" />
       <RootComponent type="61" schemaName="ppp_scripts/Traveller.js" behavior="0" />
+      <RootComponent type="61" schemaName="ppp_scripts/travellerTS.js" behavior="0" />
       <RootComponent type="61" schemaName="ppp_Traveller.html" behavior="0" />
       <RootComponent type="62" schemaName="ppp_PassengerProtectProgram" behavior="0" />
       <RootComponent type="80" schemaName="ppp_PassengerProtectProgram" behavior="0" />

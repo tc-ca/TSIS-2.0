@@ -77,7 +77,7 @@
                     <row>
                       <cell id="{3bec92c1-5171-e70a-d26c-b80a36766488}" showlabel="true" locklevel="0" labelid="{c8afbbe5-fd49-45a4-8eb0-d6e561b82169}">
                         <labels>
-                          <label description="Flight Origin Date (local at origin)" languagecode="1033" />
+                          <label description="Flight Origin Date (local at origin) (YYYY-MM-DD)" languagecode="1033" />
                           <label description="Flight Origin Date (local at origin)(fr)" languagecode="1036" />
                         </labels>
                         <control id="ppp_flightorigindate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="ppp_flightorigindate" disabled="false" uniqueid="{e57300c9-3ee5-8bec-be93-7b0924467a54}" />
@@ -508,7 +508,7 @@
               <sections>
                 <section name="tab_7_section_1" id="f3ba0d6e-28af-44c3-a056-75a3bb6a9cdf" IsUserDefined="0" locklevel="0" showlabel="true" showbar="true" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115" labelid="{f3fe3b5f-707f-408a-a633-d7ac19e060c1}">
                   <labels>
-                    <label description="Detailed Traveller Information" languagecode="1033" />
+                    <label description="Traveller Information" languagecode="1033" />
                     <label description="Informations détaillées sur le voyageur" languagecode="1036" />
                   </labels>
                   <rows>
@@ -710,7 +710,7 @@
                     <row>
                       <cell id="{50e80625-3c83-147e-e896-89c72617bc9d}" showlabel="true" locklevel="0" labelid="{7698406d-3fa5-4556-a67e-226609a463ad}">
                         <labels>
-                          <label description="Flight Origin Date (local at origin)" languagecode="1033" />
+                          <label description="Flight Origin Date (local at origin) (YYYY-MM-DD)" languagecode="1033" />
                           <label description="Flight Origin Date (local at origin)(fr)" languagecode="1036" />
                         </labels>
                         <control id="ppp_flightorigindate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="ppp_flightorigindate" disabled="true" uniqueid="{57d424e3-4a9a-8d36-906e-9ee002b28558}" />
@@ -1647,12 +1647,10 @@
                 <label description="" languagecode="1033" />
               </labels>
             </cell>
-            <cell id="{902c45d1-4172-4928-8997-7821ae7f3ade}" showlabel="true" locklevel="0" labelid="{4cbfdfac-efec-41a9-a015-2fe82705613e}">
+            <cell id="{83c48836-b94a-40b6-7583-b7eedacc5779}" showlabel="false">
               <labels>
-                <label description="Record Status" languagecode="1033" />
-                <label description="Statut du dossier" languagecode="1036" />
+                <label description="" languagecode="1033" />
               </labels>
-              <control id="header_ppp_recordstatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="ppp_recordstatus" disabled="false" uniqueid="{e9c3c9a7-750b-ced7-42ba-2e344ca1d941}" />
             </cell>
             <cell id="{062da681-febd-403a-9798-be85fe3e7f2a}" showlabel="true" locklevel="0" labelid="{2f4e6fcc-cc03-466c-b89f-cb2e164ae673}">
               <labels>
@@ -1665,6 +1663,13 @@
                   <DisableMru>false</DisableMru>
                 </parameters>
               </control>
+            </cell>
+            <cell id="{902c45d1-4172-4928-8997-7821ae7f3ade}" showlabel="true" locklevel="0" labelid="{4cbfdfac-efec-41a9-a015-2fe82705613e}">
+              <labels>
+                <label description="Record Status" languagecode="1033" />
+                <label description="Statut du dossier" languagecode="1036" />
+              </labels>
+              <control id="header_ppp_recordstatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="ppp_recordstatus" disabled="false" uniqueid="{e9c3c9a7-750b-ced7-42ba-2e344ca1d941}" />
             </cell>
           </row>
         </rows>
@@ -1921,6 +1926,7 @@
       </Navigation>
       <formLibraries>
         <Library name="ppp_scripts/Traveller.js" libraryUniqueId="{cddd2bdb-d828-bda3-8e14-3abcc59e4734}" />
+        <Library name="ppp_scripts/travellerTS.js" libraryUniqueId="{d18b8287-6e7a-6a02-b6d4-6ad12e3c47b9}" />
       </formLibraries>
       <events>
         <event name="onload" application="false" active="false">
@@ -1937,6 +1943,8 @@
             <Handler functionName="ReadOnlyOnClosed" libraryName="ppp_scripts/Traveller.js" handlerUniqueId="{ac7b9146-4597-671e-ca1a-e7e8e40915c9}" enabled="true" parameters="[&quot;ppp_name&quot;, &quot;ppp_aircarrier1&quot;, &quot;ppp_flightnumber1&quot;, &quot;ppp_flightorigin1&quot;, &quot;ppp_flightorigindate1&quot;, &quot;ppp_flightoriginhour1&quot;, &quot;ppp_flightdestination1&quot;, &quot;ppp_flightconnection11&quot;, &quot;ppp_flightconnection21&quot;, &quot;ppp_flightconnection31&quot;, &quot;ppp_flightconnection41&quot;, &quot;ppp_flightconnection51&quot;, &quot;ppp_flightconnection61&quot;, &quot;ppp_flightconnection71&quot;, &quot;ppp_flightconnection81&quot;, &quot;ppp_flightconnection91&quot;, &quot;ppp_flightconnection101&quot;,&quot;ppp_directiontime&quot;, &quot;ppp_newrecordtime&quot;, &quot;ppp_ispresenttime&quot;, &quot;ppp_matchfoundtime&quot;, &quot;ppp_directiontime1&quot;, &quot;ppp_finalstatustime&quot;, &quot;ppp_recordstatus&quot;], [&quot;header_ppp_recordstatus&quot;]" passExecutionContext="true" />
             <Handler functionName="setStartingFormState" libraryName="ppp_scripts/Traveller.js" handlerUniqueId="{1609854d-a351-e575-476a-9a46d0e6480d}" enabled="false" parameters="&quot;ppp_name&quot;, &#xA;[&quot;ppp_aircarrier&quot;, &quot;ppp_flightorigindate&quot;, &quot;ppp_flightdestination&quot;, &quot;ppp_calltype&quot;, &quot;ppp_flightorigin&quot;, &quot;ppp_ispresent&quot;],&#xA;[&quot;ppp_name&quot;,&quot;ppp_matchfound&quot;, &quot;ppp_flightnumber1&quot;, &quot;ppp_flightorigin1&quot;, &quot;ppp_flightorigindate1&quot;, &quot;ppp_flightoriginhour1&quot;, &quot;ppp_flightdestination1&quot;, &quot;ppp_directiontime&quot;, &quot;ppp_newrecordtime&quot;, &quot;ppp_ispresenttime&quot;, &quot;ppp_matchfoundtime&quot;, &quot;ppp_directiontime1&quot;, &quot;ppp_finalstatustime&quot;, &quot;ppp_recordstatus&quot;],&#xA;[&quot;header_ppp_recordstatus&quot;]" passExecutionContext="true" />
             <Handler functionName="showHideMatchConfirmed" libraryName="ppp_scripts/Traveller.js" handlerUniqueId="{72707a89-3c60-b858-c062-9787d92a39aa}" enabled="true" parameters="" passExecutionContext="true" />
+            <Handler functionName="TSIS.ppp.onLoad" libraryName="ppp_scripts/travellerTS.js" handlerUniqueId="{52ab262a-5a2e-a690-3e6a-7ee918523ae7}" enabled="true" parameters="" passExecutionContext="true" />
+            <Handler functionName="TSIS.ppp.onLoad1" libraryName="ppp_scripts/travellerTS.js" handlerUniqueId="{4cd1dd24-7117-7962-1b1b-740d8b6d9b8d}" enabled="true" parameters="" passExecutionContext="true" />
           </Handlers>
         </event>
         <event name="onchange" application="false" active="false" attribute="ppp_idsused">
