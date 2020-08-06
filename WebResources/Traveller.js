@@ -404,9 +404,11 @@ function showHideFlightConnections(eContext, connectionCountName, maxConnections
   for (var i = 1; i <= maxConnections; i++) {
     if (connectionCount >= i) {
       formContext.getControl("ppp_flightconnection" + i).setVisible(true);
+      formContext.getAttribute("ppp_flightconnection" + i).setRequiredLevel("required");
       formContext.getControl("ppp_flightconnection" + i + "1").setVisible(true);
     } else {
       formContext.getControl("ppp_flightconnection" + i).setVisible(false);
+      formContext.getAttribute("ppp_flightconnection" + i).setRequiredLevel("none");
       formContext.getControl("ppp_flightconnection" + i + "1").setVisible(false);
       formContext.getAttribute("ppp_flightconnection" + i).setValue(null);
     }
