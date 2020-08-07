@@ -161,6 +161,10 @@ namespace Inspection.PPP
                 // Handle the exception.
                 throw new InvalidPluginExecutionException("OrganizationServiceFault", e);
             }
+            catch(InvalidPluginExecutionException e)
+            {
+                throw e;
+            }
             finally
             {
                 localcontext.Trace(string.Format(CultureInfo.InvariantCulture, "Exiting {0}.Execute()", this.ChildClassName));

@@ -163,6 +163,9 @@ rcf/
 # Microsoft Azure ApplicationInsights config file
 ApplicationInsights.config
 
+# XrmDefinitelyTyped conf file
+XrmDefinitelyTyped.exe.config
+
 # Windows Store app package directory
 AppPackages/
 BundleArtifacts/
