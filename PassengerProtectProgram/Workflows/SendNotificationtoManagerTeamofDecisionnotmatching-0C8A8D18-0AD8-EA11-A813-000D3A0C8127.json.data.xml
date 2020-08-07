@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Workflow WorkflowId="{110bb8db-f1d7-ea11-a813-000d3a0c8127}" Name="Send Manager Team Notification of True Match" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <JsonFileName>/Workflows/SendManagerTeamNotificationofTrueMatch-110BB8DB-F1D7-EA11-A813-000D3A0C8127.json</JsonFileName>
+<Workflow WorkflowId="{0c8a8d18-0ad8-ea11-a813-000d3a0c8127}" Name="Send Notification to Manager Team of Decision not matching Recommendations" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <JsonFileName>/Workflows/SendNotificationtoManagerTeamofDecisionnotmatching-0C8A8D18-0AD8-EA11-A813-000D3A0C8127.json</JsonFileName>
   <Type>1</Type>
   <Subprocess>0</Subprocess>
   <Category>5</Category>
@@ -21,6 +21,6 @@
   <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
   <PrimaryEntity>none</PrimaryEntity>
   <LocalizedNames>
-    <LocalizedName languagecode="1033" description="Send Manager Team Notification of True Match" />
+    <LocalizedName languagecode="1033" description="Send Notification to Manager Team of Decision not matching Recommendations" />
   </LocalizedNames>
 </Workflow>

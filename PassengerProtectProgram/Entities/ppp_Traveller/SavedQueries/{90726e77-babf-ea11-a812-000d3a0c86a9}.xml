@@ -41,7 +41,7 @@
     </fetchxml>
     <IntroducedVersion>1.0.0.3</IntroducedVersion>
     <LocalizedNames>
-      <LocalizedName description="All Closed Records" languagecode="1033" />
+      <LocalizedName description="Closed Records" languagecode="1033" />
       <LocalizedName description="All Closed Records(fr)" languagecode="1036" />
     </LocalizedNames>
   </savedquery>

@@ -25,9 +25,6 @@
         <entity name="ppp_traveller">
           <attribute name="ppp_name" />
           <attribute name="createdon" />
-          <filter type="and">
-            <condition attribute="statecode" operator="eq" value="0" />
-          </filter>
           <attribute name="ppp_flightnumber" />
           <attribute name="ppp_recordstatus" />
           <attribute name="ownerid" />
@@ -39,7 +36,7 @@
     </fetchxml>
     <IntroducedVersion>1.0.0.0</IntroducedVersion>
     <LocalizedNames>
-      <LocalizedName description="Active Travellers" languagecode="1033" />
+      <LocalizedName description="Active Traveller Validations" languagecode="1033" />
       <LocalizedName description="Active Travellers (fr)" languagecode="1036" />
     </LocalizedNames>
   </savedquery>
