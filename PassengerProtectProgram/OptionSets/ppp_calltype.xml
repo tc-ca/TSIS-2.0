@@ -4,27 +4,41 @@
   <IsGlobal>1</IsGlobal>
   <IntroducedVersion>1.0.0.7</IntroducedVersion>
   <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
   <displaynames>
     <displayname description="Call Type" languagecode="1033" />
+    <displayname description="Call Type(fr)" languagecode="1036" />
   </displaynames>
   <Descriptions>
     <Description description="" languagecode="1033" />
   </Descriptions>
   <options>
-    <option value="927820000">
+    <option value="927820000" ExternalValue="" Color="">
       <labels>
         <label description="Traveller Validation" languagecode="1033" />
+        <label description="Traveller Validation(fr)" languagecode="1036" />
       </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
     </option>
-    <option value="927820001">
+    <option value="927820001" ExternalValue="" Color="">
       <labels>
-        <label description="Test" languagecode="1033" />
+        <label description="Inspector Test" languagecode="1033" />
+        <label description="Test(fr)" languagecode="1036" />
       </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
     </option>
-    <option value="927820002">
+    <option value="927820002" ExternalValue="" Color="">
       <labels>
         <label description="Air Carrier Inquiry" languagecode="1033" />
+        <label description="Air Carrier Inquiry(fr)" languagecode="1036" />
       </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
     </option>
   </options>
 </optionset>

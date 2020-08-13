@@ -19,13 +19,14 @@
   <IsCustomizable>1</IsCustomizable>
   <BusinessProcessType>0</BusinessProcessType>
   <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
-  <ProcessTriggerFormId>{2df0c2f0-69aa-4edb-be91-abfdc11a00bb}</ProcessTriggerFormId>
-  <ProcessTriggerScope>1</ProcessTriggerScope>
+  <ProcessTriggerScope>2</ProcessTriggerScope>
   <PrimaryEntity>ppp_Traveller</PrimaryEntity>
   <LocalizedNames>
     <LocalizedName languagecode="1033" description="Toggle Travel Agency Visibility" />
+    <LocalizedName languagecode="1036" description="Toggle Travel Agency Visibility(fr)" />
   </LocalizedNames>
   <Descriptions>
     <Description languagecode="1033" description="Click to add description" />
+    <Description languagecode="1036" description="Click to add description(fr)" />
   </Descriptions>
 </Workflow>

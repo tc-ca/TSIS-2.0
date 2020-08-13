@@ -10,6 +10,7 @@
         <tab verticallayout="true" id="{8a6f9de1-7357-430d-8c34-552ace059e99}" IsUserDefined="1">
           <labels>
             <label description="General" languagecode="1033" />
+            <label description="Général" languagecode="1036" />
           </labels>
           <columns>
             <column width="100%">
@@ -17,12 +18,14 @@
                 <section showlabel="false" showbar="false" IsUserDefined="0" id="{8d43d179-aacf-4947-8421-1ab2aa4e6851}">
                   <labels>
                     <label description="General" languagecode="1033" />
+                    <label description="Général" languagecode="1036" />
                   </labels>
                   <rows>
                     <row>
                       <cell id="{58f50874-e94a-4494-8ded-a03f77028a70}" visible="false">
                         <labels>
                           <label description="Coumtry Name" languagecode="1033" />
+                          <label description="0" languagecode="1036" />
                         </labels>
                         <control id="tc_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tc_name" disabled="true" />
                       </cell>
@@ -31,6 +34,7 @@
                       <cell id="{feca54d1-a10c-4c81-bc65-b6adbd8409b5}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Country Name (English)" languagecode="1033" />
+                          <label description="0" languagecode="1036" />
                         </labels>
                         <control id="tc_countrynameenglish" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tc_countrynameenglish" disabled="false" />
                       </cell>
@@ -39,6 +43,7 @@
                       <cell id="{4bfd2345-cd45-4926-8c03-209e1486707c}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Country Name (French)" languagecode="1033" />
+                          <label description="0" languagecode="1036" />
                         </labels>
                         <control id="tc_countrynamefrench" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tc_countrynamefrench" disabled="false" />
                       </cell>
@@ -47,6 +52,7 @@
                       <cell id="{3d043873-b3bd-4a91-b60c-c5c86f352995}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Country ISO Code Alpha 2" languagecode="1033" />
+                          <label description="0" languagecode="1036" />
                         </labels>
                         <control id="tc_countryisocodealpha2" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tc_countryisocodealpha2" disabled="false" />
                       </cell>
@@ -55,6 +61,7 @@
                       <cell id="{01775e33-a163-4727-ae1d-d5fbdb52b3b7}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Country ISO Code Alpha 3" languagecode="1033" />
+                          <label description="0" languagecode="1036" />
                         </labels>
                         <control id="tc_countryisocodealpha3" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tc_countryisocodealpha3" disabled="false" />
                       </cell>
@@ -63,6 +70,7 @@
                       <cell id="{0d7bb333-7209-4cc0-8156-5f1a3445a42c}">
                         <labels>
                           <label description="Owner" languagecode="1033" />
+                          <label description="Propriétaire" languagecode="1036" />
                         </labels>
                         <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
                       </cell>
@@ -124,9 +132,11 @@
     <CanBeDeleted>1</CanBeDeleted>
     <LocalizedNames>
       <LocalizedName description="Information" languagecode="1033" />
+      <LocalizedName description="Information(fr)" languagecode="1036" />
     </LocalizedNames>
     <Descriptions>
       <Description description="A form for this entity." languagecode="1033" />
+      <Description description="A form for this entity.(fr)" languagecode="1036" />
     </Descriptions>
   </systemform>
 </forms>

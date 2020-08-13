@@ -12,7 +12,6 @@
         <row name="result" id="ovs_facilityid">
           <cell name="ovs_name" width="200" />
           <cell name="ovs_address1city" width="100" />
-          <cell name="ovs_provinceid" width="100" />
           <cell name="ovs_countryid" width="100" />
           <cell name="ovs_icaocode" width="100" />
         </row>
@@ -23,21 +22,20 @@
       <fetch version="1.0" output-format="xml-platform" mapping="logical">
         <entity name="ovs_facility">
           <attribute name="ovs_name" />
-          <attribute name="ovs_facilityid" />
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
           </filter>
           <attribute name="ovs_address1city" />
-          <attribute name="ovs_provinceid" />
           <attribute name="ovs_countryid" />
           <attribute name="ovs_icaocode" />
+          <attribute name="ovs_facilityid" />
         </entity>
       </fetch>
     </fetchxml>
     <IntroducedVersion>1.0.0.0</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="Airports" languagecode="1033" />
-      <LocalizedName description="Airports (fr)" languagecode="1036" />
+      <LocalizedName description="Airports(fr)" languagecode="1036" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

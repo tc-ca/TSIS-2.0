@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<InteractionCentricDashboard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LocalizedNames>
+    <LocalizedName description="PPP Manager" languagecode="1033" />
+    <LocalizedName description="PPP Manager(fr)" languagecode="1036" />
+  </LocalizedNames>
+  <FormId>{cf9bcd9b-3bd0-ea11-a813-000d3a0c8127}</FormId>
+  <IsCustomizable>1</IsCustomizable>
+  <IsDefault>0</IsDefault>
+  <FormXml>
+    <forms type="interactioncentricdashboard">
+      <form>
+        <tabs filterby="ppp_finalstatustime" timeframe="2" primaryentitylogicalname="ppp_traveller" entityview="{D9703D4D-7DAE-434A-89C8-68884B9417F9}" dashboardCategory="1_1" tilespresent="false">
+          <tab showlabel="true" verticallayout="true" collapsible="true" id="{12a82d73-5552-43d7-984e-47242627cd30}">
+            <labels>
+              <label description="Visual Filters" languagecode="1033" />
+              <label description="Visual Filters(fr)" languagecode="1036" />
+            </labels>
+            <columns>
+              <column width="100%">
+                <sections>
+                  <section name="VisualFilters" showlabel="false" showbar="false" columns="1111" id="{e2ed2cff-3f41-4f3d-a271-f5e3c3a41b98}">
+                    <labels>
+                      <label description="Section" languagecode="1033" />
+                      <label description="Section" languagecode="1036" />
+                    </labels>
+                    <rows>
+                      <row>
+                        <cell colspan="1" rowspan="12" showlabel="false" ischartcell="true" id="{ab846ccf-db4d-412b-b8fd-f9e95aace192}" auto="false">
+                          <labels>
+                            <label description="Traveller" languagecode="1033" />
+                            <label description="Voyageur" languagecode="1036" />
+                          </labels>
+                          <control id="Component7d1a736" uniqueid="{9540d856-cec4-a983-b52a-4d5de3bd44de}" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                            <parameters>
+                              <TargetEntityType>ppp_traveller</TargetEntityType>
+                              <ChartGridMode>Chart</ChartGridMode>
+                              <EnableQuickFind>false</EnableQuickFind>
+                              <EnableViewPicker>false</EnableViewPicker>
+                              <EnableJumpBar>false</EnableJumpBar>
+                              <RecordsPerPage>10</RecordsPerPage>
+                              <HeaderColorCode />
+                              <ViewId>{D9703D4D-7DAE-434A-89C8-68884B9417F9}</ViewId>
+                              <IsUserView>false</IsUserView>
+                              <ViewIds />
+                              <AutoExpand>Fixed</AutoExpand>
+                              <VisualizationId>{C5C93CDE-1ED0-EA11-A813-000D3A0C86A9}</VisualizationId>
+                              <IsUserChart>false</IsUserChart>
+                              <EnableChartPicker>false</EnableChartPicker>
+                              <RelationshipName />
+                            </parameters>
+                          </control>
+                        </cell>
+                        <cell colspan="1" rowspan="12" showlabel="false" ischartcell="true" id="{2a54a3d3-5100-4a72-93c9-45f384bf0fd7}" auto="false">
+                          <labels>
+                            <label description="Traveller" languagecode="1033" />
+                            <label description="Voyageur" languagecode="1036" />
+                          </labels>
+                          <control id="Componentcf50b97" uniqueid="{6a097067-8926-aa2e-98de-493633e84548}" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                            <parameters>
+                              <TargetEntityType>ppp_traveller</TargetEntityType>
+                              <ChartGridMode>Chart</ChartGridMode>
+                              <EnableQuickFind>false</EnableQuickFind>
+                              <EnableViewPicker>false</EnableViewPicker>
+                              <EnableJumpBar>false</EnableJumpBar>
+                              <RecordsPerPage>10</RecordsPerPage>
+                              <HeaderColorCode />
+                              <ViewId>{D9703D4D-7DAE-434A-89C8-68884B9417F9}</ViewId>
+                              <IsUserView>false</IsUserView>
+                              <ViewIds />
+                              <AutoExpand>Fixed</AutoExpand>
+                              <VisualizationId>{334105E6-39D0-EA11-A813-000D3A0C8127}</VisualizationId>
+                              <IsUserChart>false</IsUserChart>
+                              <EnableChartPicker>false</EnableChartPicker>
+                              <RelationshipName />
+                            </parameters>
+                          </control>
+                        </cell>
+                        <cell colspan="1" rowspan="12" showlabel="false" ischartcell="true" id="{8cd69c29-e178-452b-8028-905f01eca6a4}" auto="false">
+                          <labels>
+                            <label description="Traveller" languagecode="1033" />
+                            <label description="Voyageur" languagecode="1036" />
+                          </labels>
+                          <control id="Componenta10e9e8" uniqueid="{5aee0db1-4a5d-0730-e1a2-2ca768534c97}" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                            <parameters>
+                              <TargetEntityType>ppp_traveller</TargetEntityType>
+                              <ChartGridMode>Chart</ChartGridMode>
+                              <EnableQuickFind>false</EnableQuickFind>
+                              <EnableViewPicker>false</EnableViewPicker>
+                              <EnableJumpBar>false</EnableJumpBar>
+                              <RecordsPerPage>10</RecordsPerPage>
+                              <HeaderColorCode />
+                              <ViewId>{D9703D4D-7DAE-434A-89C8-68884B9417F9}</ViewId>
+                              <IsUserView>false</IsUserView>
+                              <ViewIds />
+                              <AutoExpand>Fixed</AutoExpand>
+                              <VisualizationId>{88D4548B-1ED0-EA11-A813-000D3A0C86A9}</VisualizationId>
+                              <IsUserChart>false</IsUserChart>
+                              <EnableChartPicker>false</EnableChartPicker>
+                              <RelationshipName />
+                            </parameters>
+                          </control>
+                        </cell>
+                        <cell colspan="1" rowspan="12" showlabel="false" ispreviewcell="true" ischartcell="true" id="{6db536cb-52c9-4dea-934c-7c6d949694ca}">
+                          <labels>
+                            <label description="" languagecode="1033" />
+                          </labels>
+                        </cell>
+                      </row>
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                    </rows>
+                  </section>
+                </sections>
+              </column>
+            </columns>
+          </tab>
+          <tab name="StreamsContainer" showlabel="true" verticallayout="true" collapsible="false" id="{2b91db13-b7bf-486d-8cbf-120af2bcb030}">
+            <labels>
+              <label description="Streams" languagecode="1033" />
+              <label description="Streams(fr)" languagecode="1036" />
+            </labels>
+            <columns>
+              <column width="100%">
+                <sections>
+                  <section name="Streams" showlabel="false" showbar="false" columns="1111" id="{8f01f75c-0fe6-4f7a-aa60-1dd19ed3fdff}">
+                    <labels>
+                      <label description="Section" languagecode="1033" />
+                      <label description="Section" languagecode="1036" />
+                    </labels>
+                    <rows>
+                      <row>
+                        <cell colspan="4" rowspan="12" showlabel="false" isstreamcell="true" id="{04815cc4-661d-4bc1-a060-9252ca72cde7}">
+                          <labels>
+                            <label description="" languagecode="1033" />
+                          </labels>
+                          <control id="Component{eb456758-5c07-e399-a474-8e0dba52bb6e}" classid="{EE9078C8-6946-4E2C-B8F8-35E65F4BE6A8}">
+                            <parameters>
+                              <StreamObjects>
+                                <ShowAsTiles>false</ShowAsTiles>
+                                <StreamObject id="{391d336a-c7e4-69eb-c655-e264dde250a2}" type="1">
+                                  <LogicalEntityName>ppp_traveller</LogicalEntityName>
+                                  <EntityViewId>{D9703D4D-7DAE-434A-89C8-68884B9417F9}</EntityViewId>
+                                </StreamObject>
+                              </StreamObjects>
+                            </parameters>
+                          </control>
+                        </cell>
+                      </row>
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                    </rows>
+                  </section>
+                </sections>
+              </column>
+            </columns>
+          </tab>
+        </tabs>
+      </form>
+    </forms>
+  </FormXml>
+  <IntroducedVersion>1.0.0.8</IntroducedVersion>
+  <IsTabletEnabled>0</IsTabletEnabled>
+</InteractionCentricDashboard>

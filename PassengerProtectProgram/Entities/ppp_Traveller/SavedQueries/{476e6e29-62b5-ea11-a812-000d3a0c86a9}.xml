@@ -11,7 +11,7 @@
       <grid name="resultset" jump="ppp_name" select="1" icon="1" preview="1">
         <row name="result" id="ppp_travellerid">
           <cell name="ppp_name" width="200" />
-          <cell name="ppp_aircarrier" width="187" />
+          <cell name="ppp_aircarrier" width="100" />
           <cell name="ppp_flightnumber" width="100" />
           <cell name="ppp_recordstatus" width="151" />
           <cell name="ownerid" width="100" />
@@ -24,7 +24,6 @@
       <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
         <entity name="ppp_traveller">
           <attribute name="ppp_name" />
-          <attribute name="ppp_aircarrier" />
           <attribute name="ppp_flightnumber" />
           <attribute name="ppp_recordstatus" />
           <attribute name="createdon" />
@@ -32,14 +31,16 @@
             <condition attribute="ppp_recordstatus" operator="eq" value="927820001" />
             <condition attribute="ownerid" operator="eq-userid" />
           </filter>
-          <attribute name="ppp_travellerid" />
           <attribute name="ownerid" />
+          <attribute name="ppp_aircarrier" />
+          <attribute name="ppp_travellerid" />
         </entity>
       </fetch>
     </fetchxml>
     <IntroducedVersion>1.0.0.2</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="Draft Traveller Records - Assigned to me" languagecode="1033" />
+      <LocalizedName description="Draft Traveller Records - Assigned to me(fr)" languagecode="1036" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

@@ -61,7 +61,7 @@
                       <cell id="{0200ce29-b314-4989-b751-6ec2e9591def}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Traveller Record Number" languagecode="1033" />
-                          <label description="Traveller Record Number (fr)" languagecode="1036" />
+                          <label description="Numéro du dossier du voyageur" languagecode="1036" />
                         </labels>
                         <control id="ppp_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="ppp_name" disabled="false" />
                       </cell>

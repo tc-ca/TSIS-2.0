@@ -6,7 +6,7 @@
   <IsCustomizable>1</IsCustomizable>
   <displaynames>
     <displayname description="Name Provided Options" languagecode="1033" />
-    <displayname description="Name Provided Options (fr)" languagecode="1036" />
+    <displayname description="Options du nom fournie" languagecode="1036" />
   </displaynames>
   <Descriptions>
     <Description description="" languagecode="1033" />
@@ -15,13 +15,13 @@
     <option value="927820000">
       <labels>
         <label description="Primary" languagecode="1033" />
-        <label description="Primary (fr)" languagecode="1036" />
+        <label description="Primaire" languagecode="1036" />
       </labels>
     </option>
     <option value="927820001">
       <labels>
         <label description="Alias / Name Variant" languagecode="1033" />
-        <label description="Alias / Name Variant (fr)" languagecode="1036" />
+        <label description="Alias / Variante de nom" languagecode="1036" />
       </labels>
     </option>
   </options>

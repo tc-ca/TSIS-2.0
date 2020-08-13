@@ -25,21 +25,22 @@
         <entity name="ppp_traveller">
           <attribute name="ppp_name" />
           <attribute name="createdon" />
-          <order attribute="ppp_name" descending="false" />
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
           </filter>
           <attribute name="ppp_flightnumber" />
           <attribute name="ppp_recordstatus" />
-          <attribute name="ppp_aircarrier" />
           <attribute name="ownerid" />
+          <attribute name="ppp_aircarrier" />
           <attribute name="ppp_travellerid" />
+          <order attribute="ppp_name" descending="true" />
         </entity>
       </fetch>
     </fetchxml>
     <IntroducedVersion>1.0.0.2</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="All Active Travellers" languagecode="1033" />
+      <LocalizedName description="All Active Travellers(fr)" languagecode="1036" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

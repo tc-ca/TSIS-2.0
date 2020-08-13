@@ -6,6 +6,7 @@
   <IsCustomizable>1</IsCustomizable>
   <displaynames>
     <displayname description="Air Carrier Action" languagecode="1033" />
+    <displayname description="Action du transporteur aérien" languagecode="1036" />
   </displaynames>
   <Descriptions>
     <Description description="" languagecode="1033" />
@@ -14,11 +15,13 @@
     <option value="927820000">
       <labels>
         <label description="Boarding Permitted" languagecode="1033" />
+        <label description="Embarquement autorisé" languagecode="1036" />
       </labels>
     </option>
     <option value="927820001">
       <labels>
         <label description="Boarding Denied" languagecode="1033" />
+        <label description="Embarquement refusé" languagecode="1036" />
       </labels>
     </option>
   </options>

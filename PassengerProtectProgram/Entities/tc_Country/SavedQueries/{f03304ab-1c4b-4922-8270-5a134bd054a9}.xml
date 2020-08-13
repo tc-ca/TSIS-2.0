@@ -31,6 +31,7 @@
     <IntroducedVersion>1.0.0.0</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="Country Lookup View" languagecode="1033" />
+      <LocalizedName description="Country Lookup View(fr)" languagecode="1036" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>
