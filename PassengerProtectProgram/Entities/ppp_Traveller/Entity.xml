@@ -550,7 +550,7 @@
             <displayname description="Transporteur aérien" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The air carrier on which the traveller is ticketed." languagecode="1033" />
+            <Description description="The Air Carrier associated with the Traveller's travel itinerary." languagecode="1033" />
             <Description description="The ability to identify organization transporting passengers and cargo by aircraft(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -592,7 +592,7 @@
             <displayname description="Bagage à main" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The number of carry on baggage that the traveller may be travelling with." languagecode="1033" />
+            <Description description="The number of pieces of carry on baggage in the possession of the Traveller." languagecode="1033" />
             <Description description="The number of carry on baggage that the traveller may be travelling with.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -634,7 +634,7 @@
             <displayname description="Bagages enregistrés" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The number of checked baggage that the traveller may be travelling with." languagecode="1033" />
+            <Description description="The number of pieces of checked baggage in the possession of the Traveller." languagecode="1033" />
             <Description description="The number of checked baggage that the traveller may be travelling with.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -675,7 +675,7 @@
             <displayname description="Call Type(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The type of call received by the PPP analyst" languagecode="1033" />
+            <Description description="The type of record to be documented by the analyst." languagecode="1033" />
             <Description description="The type of call received by the PPP analyst(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -717,7 +717,7 @@
             <displayname description="Autre Option du dossier de cas" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="Documented details from the Case Brief." languagecode="1033" />
+            <Description description="Details of the Case Brief - Other Measure response." languagecode="1033" />
             <Description description="Documented details from the Case Brief.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -758,7 +758,7 @@
             <displayname description="Case Brief Recommendation(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The list of case brief recommendations that an analyst must select from." languagecode="1033" />
+            <Description description="The list of case brief recommendations that an analyst may select from." languagecode="1033" />
             <Description description="The list of case brief recommendations that an analyst must select from.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -800,7 +800,7 @@
             <displayname description="Checked Baggage Tag Number(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The id/number of the traveller's checked baggage." languagecode="1033" />
+            <Description description="The id/number(s) of the Traveller's checked baggage." languagecode="1033" />
             <Description description="The id/number of the traveller's checked baggage.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -841,7 +841,7 @@
             <displayname description="Citoyenneté" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The country identified by the traveller's passport." languagecode="1033" />
+            <Description description="The Traveller's citizenship." languagecode="1033" />
             <Description description="The country identified by the traveller's passport.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -921,11 +921,11 @@
           <CanChangeDateTimeBehavior>1</CanChangeDateTimeBehavior>
           <Behavior>1</Behavior>
           <displaynames>
-            <displayname description="Date of Birth (YYYY-MM-DD)" languagecode="1033" />
+            <displayname description="Date of Birth" languagecode="1033" />
             <displayname description="Date de naissance (AAAA-MM-JJ)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The date of birth provided by the traveller." languagecode="1033" />
+            <Description description="The Traveller's date of birth." languagecode="1033" />
             <Description description="The date of birth provided by the traveller.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -967,7 +967,7 @@
             <displayname description="Directive - Autre option" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="Details provided by the Analyst that identify Other Measured Response information." languagecode="1033" />
+            <Description description="Details of the decision - Other Measure response." languagecode="1033" />
             <Description description="Details provided by the Analyst that identify Other Measured Response information.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -1008,7 +1008,7 @@
             <displayname description="Options de la directive " languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The list of direction options associated with the traveller that the analyst must choose from, based on the evidence collected." languagecode="1033" />
+            <Description description="The list of decisions that an analyst must select from." languagecode="1033" />
             <Description description="The list of direction options associated with the traveller that the analyst must choose from, based on the evidence collected.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -1050,7 +1050,7 @@
             <displayname description="Heure de la directive" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The time at which the analyst renders their decision." languagecode="1033" />
+            <Description description="The time at which the analyst documents the decision." languagecode="1033" />
             <Description description="The time at which the analyst renders their decision.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -1092,7 +1092,7 @@
             <displayname description="Final Status Time(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The time at which the record is closed" languagecode="1033" />
+            <Description description="The time at which the record is closed." languagecode="1033" />
             <Description description="The time at which the record is closed(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -1134,7 +1134,7 @@
             <displayname description="Prénom" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The first name provided by the Traveller." languagecode="1033" />
+            <Description description="The Traveller's first name." languagecode="1033" />
             <Description description="The first name provided by the Traveller.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -1174,7 +1174,7 @@
             <displayname description="Flight Connection 1(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The (optional) first connection of the traveller's  itinerary." languagecode="1033" />
+            <Description description="The Traveller's first flight connection." languagecode="1033" />
             <Description description="The (optional) first connection of the traveller's  itinerary.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -1214,7 +1214,7 @@
             <displayname description="Flight Connection 10(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The (optional) tenth connection of the traveller's itinerary." languagecode="1033" />
+            <Description description="The Traveller's  tenth flight connection." languagecode="1033" />
             <Description description="The (optional) tenth connection of the traveller's itinerary.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -1254,7 +1254,7 @@
             <displayname description="Flight Connection 2(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The (optional) second connection of the traveller's  itinerary." languagecode="1033" />
+            <Description description="The Traveller's second flight connection. " languagecode="1033" />
             <Description description="The (optional) second connection of the traveller's  itinerary.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -1294,7 +1294,7 @@
             <displayname description="Flight Connection 3(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The (optional) third connection of the traveller's itinerary." languagecode="1033" />
+            <Description description="The Traveller's third flight connection." languagecode="1033" />
             <Description description="The (optional) third connection of the traveller's itinerary.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -1334,7 +1334,7 @@
             <displayname description="Flight Connection 4(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The (optional) fourth connection of the traveller's itinerary." languagecode="1033" />
+            <Description description="The Traveller's fourth flight connection." languagecode="1033" />
             <Description description="The (optional) fourth connection of the traveller's itinerary.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -1374,7 +1374,7 @@
             <displayname description="Flight Connection 5(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The (optional) fifth connection of the traveller's itinerary." languagecode="1033" />
+            <Description description="The Traveller's fifth flight connection." languagecode="1033" />
             <Description description="The (optional) fifth connection of the traveller's itinerary.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -1414,7 +1414,7 @@
             <displayname description="Flight Connection 6(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The (optional) sixth connection of the traveller's itinerary." languagecode="1033" />
+            <Description description="The Traveller's sixth flight connection." languagecode="1033" />
             <Description description="The (optional) sixth connection of the traveller's itinerary.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -1454,7 +1454,7 @@
             <displayname description="Flight Connection 7(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The (optional) seventh connection of the traveller's itinerary." languagecode="1033" />
+            <Description description="The Traveller's seventh flight connection." languagecode="1033" />
             <Description description="The (optional) seventh connection of the traveller's itinerary.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -1494,7 +1494,7 @@
             <displayname description="Flight Connection 8(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The (optional) eight connection of the traveller's itinerary." languagecode="1033" />
+            <Description description="The Traveller's eighth flight connection." languagecode="1033" />
             <Description description="The (optional) eight connection of the traveller's itinerary.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -1534,7 +1534,7 @@
             <displayname description="Flight Connection 9(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The (optional) ninth connection of the traveller's itinerary." languagecode="1033" />
+            <Description description="The Traveller's ninth flight connection." languagecode="1033" />
             <Description description="The (optional) ninth connection of the traveller's itinerary.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -1576,7 +1576,7 @@
             <displayname description="Flight Connection Count(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The total number of connections associated with the traveller's itinerary." languagecode="1033" />
+            <Description description="The number of the Traveller's flight connections. " languagecode="1033" />
             <Description description="The total number of connections associated with the traveller's itinerary.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -1617,7 +1617,7 @@
             <displayname description="Destination du vol" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The final destination of the Traveller." languagecode="1033" />
+            <Description description="The Aerodrome identified as the Traveller's final destination." languagecode="1033" />
             <Description description="The final destination of the Traveller.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -1659,7 +1659,7 @@
             <displayname description="Numéro du vol" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The flight number associated with the Traveller's origin flight." languagecode="1033" />
+            <Description description="The Traveller's departure flight number." languagecode="1033" />
             <Description description="The flight number associated with the Traveller's origin flight.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -1700,7 +1700,7 @@
             <displayname description="Origine du vol" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The name of the aerodrome associated with the location of the Traveller's point of origin." languagecode="1033" />
+            <Description description="The Aerodrome identified as the Traveller's departure location." languagecode="1033" />
             <Description description="The name of the aerodrome associated with the location of the Traveller's point of origin.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -1742,7 +1742,7 @@
             <displayname description="Flight Origin Date(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The date associated with the Traveller's intended initial flight departure." languagecode="1033" />
+            <Description description="The Traveller's departure date of their Origin Flight. " languagecode="1033" />
             <Description description="The date associated with the Traveller's intended initial flight departure.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -1784,7 +1784,7 @@
             <displayname description="Flight Origin Hour(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The hour (00 - 23) associated with the Traveller's intended initial flight departure." languagecode="1033" />
+            <Description description="The estimated time of departure associated with the Traveller's flight." languagecode="1033" />
             <Description description="The hour (00 - 23) associated with the Traveller's intended initial flight departure.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -1909,7 +1909,7 @@
             <displayname description="Genre" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The identified gender of the Traveller." languagecode="1033" />
+            <Description description="The  Traveller's gender." languagecode="1033" />
             <Description description="The identified gender of the Traveller.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -1950,7 +1950,7 @@
             <displayname description="Pièce d'identité Pays" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The country that issued the presented passport to the Traveller." languagecode="1033" />
+            <Description description="The Country that issued the identification documentation presented by the Traveller." languagecode="1033" />
             <Description description="The country that issued the presented passport to the Traveller.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -1992,7 +1992,7 @@
             <displayname description="Détails de la pièce d'identit" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="All id numbers provided by the Traveller." languagecode="1033" />
+            <Description description="Details regarding the identification provided by the Traveller." languagecode="1033" />
             <Description description="All id numbers provided by the Traveller.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -2032,7 +2032,7 @@
             <displayname description="ID Presented(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The identification provided by the Traveller to the Air Carrier Representative." languagecode="1033" />
+            <Description description="The Identification presented to the Air Carrier Representative by the Traveller." languagecode="1033" />
             <Description description="The identification provided by the Traveller to the Air Carrier Representative.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -2098,7 +2098,7 @@
             <displayname description="Est présent" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="An indicator as to whether or not the Traveller is currently onsite." languagecode="1033" />
+            <Description description="An indicator as to whether the Traveller is present at the check-in counter." languagecode="1033" />
             <Description description="An indicator as to whether or not the Traveller is currently onsite.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -2140,7 +2140,7 @@
             <displayname description="L'heure actuelle est" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="An indication that the Traveller is currently present." languagecode="1033" />
+            <Description description="The time at which the analyst indicates the Traveller is present at the check-in counter." languagecode="1033" />
             <Description description="An indication that the Traveller is currently present.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -2182,7 +2182,7 @@
             <displayname description="Dernière adresse connue" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The last known address provided by the Traveller." languagecode="1033" />
+            <Description description="The Traveller's last known address." languagecode="1033" />
             <Description description="The last known address provided by the Traveller.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -2224,7 +2224,7 @@
             <displayname description="Nom de famille" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The last name of the Traveller." languagecode="1033" />
+            <Description description="The Traveller's last name." languagecode="1033" />
             <Description description="The last name of the Traveller.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -2261,10 +2261,10 @@
           <AppDefaultValue>-1</AppDefaultValue>
           <OptionSetName>ppp_nominatingagencyadditional</OptionSetName>
           <displaynames>
-            <displayname description="Law Enforcement Agency" languagecode="1033" />
+            <displayname description="Law Enforcement Agency Notified" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="An indication as to whether or not a Law Enforcement Agency was notified that a Traveller was denied boarding." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_LawEnforcementNotifiedDetails">
@@ -2305,7 +2305,7 @@
             <displayname description="Law Enforcement Notified Details(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="Details of the information provided to local law enforcement." languagecode="1033" />
+            <Description description="Details of the information provided to the Law Enforcement Agency." languagecode="1033" />
             <Description description="Details of the information provided to local law enforcement.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -2346,74 +2346,8 @@
             <displayname description="Correspondance positive" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The option set that allows the user to indicate that the Traveller being vetted requires additional screening." languagecode="1033" />
+            <Description description="An indication as to whether the Traveller is a positive match." languagecode="1033" />
             <Description description="The option set that allows the user to indicate that the Traveller being vetted requires additional screening.(fr)" languagecode="1036" />
-          </Descriptions>
-        </attribute>
-        <attribute PhysicalName="ppp_MatchFoundConfirmation">
-          <Type>bit</Type>
-          <Name>ppp_matchfoundconfirmation</Name>
-          <LogicalName>ppp_matchfoundconfirmation</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
-          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-          <ImeMode>auto</ImeMode>
-          <ValidForUpdateApi>1</ValidForUpdateApi>
-          <ValidForReadApi>1</ValidForReadApi>
-          <ValidForCreateApi>1</ValidForCreateApi>
-          <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>1</IsAuditEnabled>
-          <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0.0.2</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <CanModifySearchSettings>1</CanModifySearchSettings>
-          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
-          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-          <IsSortableEnabled>0</IsSortableEnabled>
-          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-          <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
-          <IsSearchable>0</IsSearchable>
-          <IsFilterable>0</IsFilterable>
-          <IsRetrievable>0</IsRetrievable>
-          <IsLocalizable>0</IsLocalizable>
-          <AppDefaultValue>0</AppDefaultValue>
-          <optionset Name="ppp_ppp_traveller_matchfoundconfirmation">
-            <OptionSetType>bit</OptionSetType>
-            <IntroducedVersion>1.0.0.2</IntroducedVersion>
-            <IsCustomizable>1</IsCustomizable>
-            <displaynames>
-              <displayname description="Local Enumeration" languagecode="1033" />
-              <displayname description="Dénombrement local" languagecode="1036" />
-            </displaynames>
-            <Descriptions>
-              <Description description="" languagecode="1033" />
-            </Descriptions>
-            <options>
-              <option value="1">
-                <labels>
-                  <label description="Yes" languagecode="1033" />
-                  <label description="Oui" languagecode="1036" />
-                </labels>
-              </option>
-              <option value="0">
-                <labels>
-                  <label description="No" languagecode="1033" />
-                  <label description="Non" languagecode="1036" />
-                </labels>
-              </option>
-            </options>
-          </optionset>
-          <displaynames>
-            <displayname description="Match Found Confirmation" languagecode="1033" />
-            <displayname description="Confirmation de correspondance positive" languagecode="1036" />
-          </displaynames>
-          <Descriptions>
-            <Description description="This is a hidden field on the form, used to make sure the user clicks 'Proceed' button in the web resource." languagecode="1033" />
-            <Description description="This is a hidden field on the form, used to make sure the user clicks 'Proceed' button in the web resource.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_MatchFoundTime">
@@ -2454,7 +2388,7 @@
             <displayname description="Heure de correspondance positive" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The time at which the user indicated that additional screening is required." languagecode="1033" />
+            <Description description="The time at which a positive match was identified." languagecode="1033" />
             <Description description="The time at which the user indicated that additional screening is required.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -2496,7 +2430,7 @@
             <displayname description="Deuxième nom" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The middle name provided by the Traveller." languagecode="1033" />
+            <Description description="The Traveller's middle name." languagecode="1033" />
             <Description description="The middle name provided by the Traveller.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -2538,7 +2472,7 @@
             <displayname description="Minutes d'attente" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The number of minuted that the Traveller has been delayed by the screening process, as indicated by the user." languagecode="1033" />
+            <Description description="The number of minutes that the Traveller has been waiting in line, while a SATA check is being performed." languagecode="1033" />
             <Description description="The number of minuted that the Traveller has been delayed by the screening process, as indicated by the user.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -2580,7 +2514,7 @@
             <displayname description="Reference Number(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="Required name field" languagecode="1033" />
+            <Description description="The Traveller validation Reference Number." languagecode="1033" />
             <Description description="Required name field(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -2621,7 +2555,7 @@
             <displayname description="Options du nom fournie" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The type of name provided by the Traveller." languagecode="1033" />
+            <Description description=" An indication as to whether the name provided by the Traveller is their primary name, or a variant/alias." languagecode="1033" />
             <Description description="The type of name provided by the Traveller.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -2663,7 +2597,7 @@
             <displayname description="New Record Time(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The time at which a new record is created." languagecode="1033" />
+            <Description description="The time when a new Traveller Validation Record is created. " languagecode="1033" />
             <Description description="The time at which a new record is created.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -2703,7 +2637,7 @@
             <displayname description="Nominating Agency Additional Dropdown" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="An indicator that the user select in the event that additional information is provided by the Nominating Agency." languagecode="1033" />
+            <Description description="An indication as to whether or not the Nominating Agency provided additional information." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_NominatingAgencyNotes">
@@ -2744,7 +2678,7 @@
             <displayname description="Notes de l'organisme de parrainage" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="Information that the user must capture in the event that additional information is provided by the Nominating Agency." languagecode="1033" />
+            <Description description="Details regarding additional Information provided by the Nominating Agency." languagecode="1033" />
             <Description description="Information that the user must capture in the event that additional information is provided by the Nominating Agency.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -2786,7 +2720,7 @@
             <displayname description="Autre option de l'organisme de parrainage" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="Used to document Nominating Agency Other Response Measure.  Visible when Nominating Agency Recommendation is toggled to Allowed - Other Response Measure.  " languagecode="1033" />
+            <Description description="Details regarding the Nominating Agency - Other Measure response." languagecode="1033" />
             <Description description="Used to document Nominating Agency Other Response Measure.  Visible when Nominating Agency Recommendation is toggled to Allowed - Other Response Measure.  (fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -2827,7 +2761,7 @@
             <displayname description="Options de l'organisme de parrainage" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="Option set for analyst to select the Nominating Agency Recommendation." languagecode="1033" />
+            <Description description="The list of options used to select the Nominating Agency Recommendation." languagecode="1033" />
             <Description description="Option set for analyst to select the Nominating Agency Recommendation.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -2867,7 +2801,7 @@
             <displayname description="Open Source Dropdown" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="An indication as to whether open source information exists and a means of making the  Open Source Notes field visible." languagecode="1033" />
+            <Description description="An indication as to whether or not there is additional Open Source information." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_OpenSourceNotes">
@@ -2908,7 +2842,7 @@
             <displayname description="Note de source ouverte" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="Information that the user must capture in the event that additional open source information is available." languagecode="1033" />
+            <Description description="Details of the Open Source information." languagecode="1033" />
             <Description description="Information that the user must capture in the event that additional open source information is available.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -2950,7 +2884,7 @@
             <displayname description="Autres considérations" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="Information that the user must capture in the event that other considerations were taken." languagecode="1033" />
+            <Description description="Details of the Other Considerations." languagecode="1033" />
             <Description description="Information that the user must capture in the event that other considerations were taken.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -2990,7 +2924,7 @@
             <displayname description="Other Considerations Dropdown" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="An indication as to whether other considerations exist and a means of making the  Other Considerations field visible." languagecode="1033" />
+            <Description description="An indication as to whether or not Other Considerations exist or have been considered." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_PaymentMethod">
@@ -3030,7 +2964,7 @@
             <displayname description="Payment Method(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="Option set to select the method of payment that was used to purchase a flight ticket." languagecode="1033" />
+            <Description description="The method of Payment used by the Traveller to purchase their ticket." languagecode="1033" />
             <Description description="Option set to select the method of payment that was used to purchase a flight ticket.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -3068,11 +3002,11 @@
           <MaxLength>4000</MaxLength>
           <Length>8000</Length>
           <displaynames>
-            <displayname description="Questions for TC" languagecode="1033" />
+            <displayname description="Additional Travel Information" languagecode="1033" />
             <displayname description="Questions de TC" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="Information that the user must capture in the event that additional questions were posed." languagecode="1033" />
+            <Description description="Additional details regrading the Traveller's itinerary." languagecode="1033" />
             <Description description="Information that the user must capture in the event that additional questions were posed.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -3153,7 +3087,7 @@
             <displayname description="Recourse Letter Provided" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="An indication as to whether or not the Traveller was provided with a recourse letter." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_ReturnFlightInfo">
@@ -3194,7 +3128,7 @@
             <displayname description="Return Flight Info(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="A description of the travellers scheduled return flight." languagecode="1033" />
+            <Description description="The Traveller's Return flight details." languagecode="1033" />
             <Description description="A description of the travellers scheduled return flight.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -3278,7 +3212,7 @@
             <displayname description="Identité LSDA" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="A unique ID associated with the particular traveller." languagecode="1033" />
+            <Description description="The Traveller's SATA ID." languagecode="1033" />
             <Description description="A unique ID associated with the particular traveller.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -3320,7 +3254,7 @@
             <displayname description="Seat Request Details(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="Details of any seat requests that were made by the traveller." languagecode="1033" />
+            <Description description="Details of the seat request made by the Traveller." languagecode="1033" />
             <Description description="Details of any seat requests that were made by the traveller.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -3361,74 +3295,8 @@
             <displayname description="Seat Request Made(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="An indication as to whether a seat request was made by the traveller.  A means of making the Seat Request Details field visible." languagecode="1033" />
+            <Description description="An indication as to whether or not a seat request was made by the Traveller." languagecode="1033" />
             <Description description="An indication as to whether a seat request was made by the traveller.  A means of making the Seat Request Details field visible.(fr)" languagecode="1036" />
-          </Descriptions>
-        </attribute>
-        <attribute PhysicalName="ppp_ShowBPF">
-          <Type>bit</Type>
-          <Name>ppp_showbpf</Name>
-          <LogicalName>ppp_showbpf</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
-          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-          <ImeMode>auto</ImeMode>
-          <ValidForUpdateApi>1</ValidForUpdateApi>
-          <ValidForReadApi>1</ValidForReadApi>
-          <ValidForCreateApi>1</ValidForCreateApi>
-          <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>1</IsAuditEnabled>
-          <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0.0.2</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <CanModifySearchSettings>1</CanModifySearchSettings>
-          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
-          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-          <IsSortableEnabled>0</IsSortableEnabled>
-          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-          <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
-          <IsSearchable>0</IsSearchable>
-          <IsFilterable>0</IsFilterable>
-          <IsRetrievable>0</IsRetrievable>
-          <IsLocalizable>0</IsLocalizable>
-          <AppDefaultValue>1</AppDefaultValue>
-          <optionset Name="ppp_ppp_traveller_showbpf">
-            <OptionSetType>bit</OptionSetType>
-            <IntroducedVersion>1.0.0.2</IntroducedVersion>
-            <IsCustomizable>1</IsCustomizable>
-            <displaynames>
-              <displayname description="Local Enumeration" languagecode="1033" />
-              <displayname description="Dénombrement local" languagecode="1036" />
-            </displaynames>
-            <Descriptions>
-              <Description description="" languagecode="1033" />
-            </Descriptions>
-            <options>
-              <option value="1">
-                <labels>
-                  <label description="Yes" languagecode="1033" />
-                  <label description="Oui" languagecode="1036" />
-                </labels>
-              </option>
-              <option value="0">
-                <labels>
-                  <label description="No" languagecode="1033" />
-                  <label description="Non" languagecode="1036" />
-                </labels>
-              </option>
-            </options>
-          </optionset>
-          <displaynames>
-            <displayname description="Show BPF (Delete)" languagecode="1033" />
-            <displayname description="Show BPF (Delete)(fr)" languagecode="1036" />
-          </displaynames>
-          <Descriptions>
-            <Description description="A toggle to make the Business Process Flow visible/invisible." languagecode="1033" />
-            <Description description="A toggle to make the Business Process Flow visible/invisible.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ppp_TicketPurchaseDate">
@@ -3469,7 +3337,7 @@
             <displayname description="Date d'achat du billet" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The date on which the flight ticket was purchased." languagecode="1033" />
+            <Description description="The date on which the Traveller purchased their flight ticket." languagecode="1033" />
             <Description description="The date on which the flight ticket was purchased.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -3510,7 +3378,7 @@
             <displayname description="Ticket Purchase Method(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The method by which the flight ticket was purchased." languagecode="1033" />
+            <Description description="The method by which the Traveller purchased their flight ticket.&#xA;" languagecode="1033" />
             <Description description="The method by which the flight ticket was purchased.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -3551,7 +3419,7 @@
             <displayname description="Type de billet" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="An indication of the type of flight ticket." languagecode="1033" />
+            <Description description="The type of ticket purchased by the Traveller." languagecode="1033" />
             <Description description="An indication of the type of flight ticket.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -3593,7 +3461,7 @@
             <displayname description="Travel Agency Address(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The address of the travel agency if such an agency was used to purchase a flight ticket." languagecode="1033" />
+            <Description description="The address of the travel agency used by the Traveller to purchase a flight ticket." languagecode="1033" />
             <Description description="The address of the travel agency if such an agency was used to purchase a flight ticket.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -3635,7 +3503,7 @@
             <displayname description="Travel Agency Contact Name(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The contact at a travel agency if such an agency was used to purchase a flight ticket." languagecode="1033" />
+            <Description description="The contact at a travel agency used by the Traveller to purchase a flight ticket." languagecode="1033" />
             <Description description="The contact at a travel agency if such an agency was used to purchase a flight ticket.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -3677,7 +3545,7 @@
             <displayname description="Travel Agency Contact Phone Number(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The contact phone number at a travel agency if such an agency was used to purchase a flight ticket." languagecode="1033" />
+            <Description description="The contact phone number at a travel agency." languagecode="1033" />
             <Description description="The contact phone number at a travel agency if such an agency was used to purchase a flight ticket.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -3719,7 +3587,7 @@
             <displayname description="Travel Agency Name(fr)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The name of the travel agency if such an agency was used to purchase a flight ticket." languagecode="1033" />
+            <Description description="The name of the travel agency used by the Traveller to purchase a flight ticket." languagecode="1033" />
             <Description description="The name of the travel agency if such an agency was used to purchase a flight ticket.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -3761,7 +3629,7 @@
             <displayname description="Détails des compagnons de voyage" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="A description of any travel companions if applicable. " languagecode="1033" />
+            <Description description="A description of the Traveller's companions, if applicable." languagecode="1033" />
             <Description description="A description of any travel companions if applicable. (fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -3803,7 +3671,7 @@
             <displayname description="Nombre de compagnons de voyage" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The number of travel companions." languagecode="1033" />
+            <Description description="The number of travel companions accompanying the Traveller." languagecode="1033" />
             <Description description="The number of travel companions.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -3845,7 +3713,7 @@
             <displayname description="Numéro automatique du voyageur" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The unique record number for the traveller record." languagecode="1033" />
+            <Description description="The unique record number for the Traveller record.&#xA;" languagecode="1033" />
             <Description description="The unique record number for the traveller record.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -3925,7 +3793,7 @@
             <displayname description="But du voyage" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The reason the traveller is travelling." languagecode="1033" />
+            <Description description="The Traveller's identified purpose for travelling." languagecode="1033" />
             <Description description="The reason the traveller is travelling.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -3967,7 +3835,7 @@
             <displayname description="Autre but du voyage" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="A description of the purpose of travel." languagecode="1033" />
+            <Description description="Details regarding the Traveller's reason for travelling." languagecode="1033" />
             <Description description="A description of the purpose of travel.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>

@@ -171,15 +171,6 @@
                         </control>
                       </cell>
                     </row>
-                    <row>
-                      <cell id="{b7453130-9c49-c2ed-b56b-b2ab89945ade}" showlabel="false" locklevel="0" visible="false">
-                        <labels>
-                          <label description="Show BPF (Delete)" languagecode="1033" />
-                          <label description="Show BPF (Delete)(fr)" languagecode="1036" />
-                        </labels>
-                        <control id="ppp_showbpf" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="ppp_showbpf" disabled="false" uniqueid="{d60983e9-4229-0a5d-ec87-2ca803bacc79}" />
-                      </cell>
-                    </row>
                   </rows>
                 </section>
                 <section name="tab_General_section_4" showlabel="true" showbar="true" locklevel="0" id="{e28ac4e6-d2c7-e5de-87b6-b10068acaa8b}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
@@ -1971,6 +1962,7 @@
       <events>
         <event name="onload" application="false" active="false">
           <Handlers>
+            <Handler functionName="TSIS.PPP.SaveOnLoad" libraryName="ppp_scripts/travellerTS.js" handlerUniqueId="{66b20930-2cda-257c-ae72-0411b922976e}" enabled="true" parameters="" passExecutionContext="true" />
             <Handler functionName="TSIS.PPP.ShowHideTabs" libraryName="ppp_scripts/travellerTS.js" handlerUniqueId="{cd9d7555-5752-967d-958a-08d3e27ebe8d}" enabled="true" parameters="" passExecutionContext="true" />
             <Handler functionName="TSIS.PPP.showHideBusinessProcessFlow" libraryName="ppp_scripts/travellerTS.js" handlerUniqueId="{e645764e-de74-8ead-6be1-19cb104a1dd1}" enabled="true" parameters="" passExecutionContext="true" />
             <Handler functionName="TSIS.PPP.setTimeFieldNow" libraryName="ppp_scripts/travellerTS.js" handlerUniqueId="{2515ebd0-0187-70b1-9892-d4bcb456c0b7}" enabled="true" parameters="&quot;ppp_newrecordtime&quot;, null, &quot;ppp_newrecordtime&quot;" passExecutionContext="true" />

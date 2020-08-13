@@ -347,46 +347,6 @@
             <Description description="Date and time that the record was migrated.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
-        <attribute PhysicalName="ovs_Accountid">
-          <Type>lookup</Type>
-          <Name>ovs_accountid</Name>
-          <LogicalName>ovs_accountid</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
-          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-          <ImeMode>auto</ImeMode>
-          <ValidForUpdateApi>1</ValidForUpdateApi>
-          <ValidForReadApi>1</ValidForReadApi>
-          <ValidForCreateApi>1</ValidForCreateApi>
-          <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>0</IsAuditEnabled>
-          <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0.0.0</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <CanModifySearchSettings>1</CanModifySearchSettings>
-          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
-          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-          <IsSortableEnabled>0</IsSortableEnabled>
-          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-          <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
-          <IsSearchable>0</IsSearchable>
-          <IsFilterable>0</IsFilterable>
-          <IsRetrievable>0</IsRetrievable>
-          <IsLocalizable>0</IsLocalizable>
-          <LookupStyle>single</LookupStyle>
-          <LookupTypes />
-          <displaynames>
-            <displayname description="Organization" languagecode="1033" />
-            <displayname description="0" languagecode="1036" />
-          </displaynames>
-          <Descriptions>
-            <Description description="" languagecode="1033" />
-          </Descriptions>
-        </attribute>
         <attribute PhysicalName="ovs_Address1City">
           <Type>nvarchar</Type>
           <Name>ovs_address1city</Name>
@@ -425,7 +385,7 @@
             <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The city where the facility is located." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Address1Latitude">
@@ -466,7 +426,7 @@
             <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The latitude associated with the facility." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Address1Longitude">
@@ -507,7 +467,7 @@
             <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The longitude associated with the facility." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Address1PostalCode">
@@ -548,7 +508,7 @@
             <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The postal code associated with the facility." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Address1StateProvince">
@@ -589,7 +549,7 @@
             <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The state or province where the facility is located." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Address1Street1">
@@ -630,7 +590,7 @@
             <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The street address associated with the facility." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Class">
@@ -671,7 +631,7 @@
             <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The class of aerodrome as designated by ISSO." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Contactid">
@@ -711,7 +671,7 @@
             <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The primary person of contact associated with the facility." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Countryid">
@@ -751,7 +711,7 @@
             <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The country where the facility is located." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Elevation">
@@ -792,7 +752,7 @@
             <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The elevation above sea level of the facility." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_FacilityId">
@@ -872,7 +832,7 @@
             <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The legal English name of the facility." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_FacilityNameFrench">
@@ -913,7 +873,7 @@
             <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The legal French name of the facility." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_FacilityType">
@@ -953,7 +913,7 @@
             <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The category of facility associated with the location. " languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_ICAOCode">
@@ -994,7 +954,7 @@
             <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The unique airport code that designates each airport around the world." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Name">
@@ -1035,7 +995,7 @@
             <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="Required name field" languagecode="1033" />
+            <Description description="The name of the facility." languagecode="1033" />
             <Description description="Required name field(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>

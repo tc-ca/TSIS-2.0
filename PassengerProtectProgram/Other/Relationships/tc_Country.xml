@@ -51,7 +51,7 @@
     <ReferencingAttributeName>ovs_Countryid</ReferencingAttributeName>
     <RelationshipDescription>
       <Descriptions>
-        <Description description="" languagecode="1033" />
+        <Description description="The country where the facility is located." languagecode="1033" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>
@@ -85,7 +85,7 @@
     <ReferencingAttributeName>ppp_Citizenship</ReferencingAttributeName>
     <RelationshipDescription>
       <Descriptions>
-        <Description description="The country identified by the traveller's passport." languagecode="1033" />
+        <Description description="The Traveller's citizenship." languagecode="1033" />
         <Description description="The country identified by the traveller's passport.(fr)" languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
@@ -120,7 +120,7 @@
     <ReferencingAttributeName>ppp_IDCountry</ReferencingAttributeName>
     <RelationshipDescription>
       <Descriptions>
-        <Description description="The country that issued the presented passport to the Traveller." languagecode="1033" />
+        <Description description="The Country that issued the identification documentation presented by the Traveller." languagecode="1033" />
         <Description description="The country that issued the presented passport to the Traveller.(fr)" languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>

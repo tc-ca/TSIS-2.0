@@ -15,7 +15,6 @@
     <RolePrivilege name="prvAppendovs_AirCarrier" level="Global" />
     <RolePrivilege name="prvAppendovs_Facility" level="Global" />
     <RolePrivilege name="prvAppendppp_Traveller" level="Global" />
-    <RolePrivilege name="prvAppendppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvAppendresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvAppendtc_Country" level="Global" />
     <RolePrivilege name="prvAppendToAccount" level="Global" />
@@ -29,7 +28,6 @@
     <RolePrivilege name="prvAppendToovs_Facility" level="Global" />
     <RolePrivilege name="prvAppendToPosition" level="Global" />
     <RolePrivilege name="prvAppendToppp_Traveller" level="Global" />
-    <RolePrivilege name="prvAppendToppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvAppendToresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvAppendTotc_Country" level="Global" />
     <RolePrivilege name="prvAppendTotc_Province" level="Local" />
@@ -57,7 +55,6 @@
     <RolePrivilege name="prvCreateovs_AirCarrier" level="Global" />
     <RolePrivilege name="prvCreateovs_Facility" level="Global" />
     <RolePrivilege name="prvCreateppp_Traveller" level="Global" />
-    <RolePrivilege name="prvCreateppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvCreateRelationship" level="Global" />
     <RolePrivilege name="prvCreateresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvCreateSharePointData" level="Global" />
@@ -73,7 +70,6 @@
     <RolePrivilege name="prvDeleteFeedback" level="Basic" />
     <RolePrivilege name="prvDeleteInteractionForEmail" level="Basic" />
     <RolePrivilege name="prvDeleteNewProcess" level="Global" />
-    <RolePrivilege name="prvDeleteppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvDeleteRelationship" level="Global" />
     <RolePrivilege name="prvDeleteresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvDeleteUserApplicationMetadata" level="Basic" />
@@ -112,7 +108,6 @@
     <RolePrivilege name="prvReadPluginType" level="Global" />
     <RolePrivilege name="prvReadPosition" level="Global" />
     <RolePrivilege name="prvReadppp_Traveller" level="Global" />
-    <RolePrivilege name="prvReadppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvReadQuery" level="Global" />
     <RolePrivilege name="prvReadRecordAuditHistory" level="Global" />
     <RolePrivilege name="prvReadRelationship" level="Global" />
@@ -158,7 +153,6 @@
     <RolePrivilege name="prvWriteovs_AirCarrier" level="Global" />
     <RolePrivilege name="prvWriteovs_Facility" level="Global" />
     <RolePrivilege name="prvWriteppp_Traveller" level="Global" />
-    <RolePrivilege name="prvWriteppp_travellerbusinessflow" level="Global" />
     <RolePrivilege name="prvWriteRelationship" level="Global" />
     <RolePrivilege name="prvWriteresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvWriteSharePointData" level="Global" />

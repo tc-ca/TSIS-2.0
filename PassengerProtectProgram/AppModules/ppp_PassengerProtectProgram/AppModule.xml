@@ -10,11 +10,9 @@
   <NavigationType>0</NavigationType>
   <AppModuleComponents>
     <AppModuleComponent type="62" schemaName="ppp_PassengerProtectProgram" />
-    <AppModuleComponent type="29" id="{f54fe17c-8e7a-47a9-8ac5-d0c2a77eef59}" />
     <AppModuleComponent type="1" schemaName="ovs_aircarrier" />
     <AppModuleComponent type="1" schemaName="tc_country" />
     <AppModuleComponent type="1" schemaName="ovs_facility" />
-    <AppModuleComponent type="1" schemaName="ppp_travellerbusinessflow" />
     <AppModuleComponent type="1" schemaName="ppp_traveller" />
     <AppModuleComponent type="1" schemaName="systemuser" />
   </AppModuleComponents>

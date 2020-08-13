@@ -4,6 +4,12 @@ var TSIS;
     var PPP;
     (function (PPP) {
         var Form;
+        function SaveOnLoad(eContext) {
+            Form = eContext.getFormContext();
+            if (Form.getAttribute('ppp_name').getValue() == null)
+                Form.data.save();
+        }
+        PPP.SaveOnLoad = SaveOnLoad;
         function proceed(eContext) {
             //var eContext = window.parentExecutionContext;
             Form = eContext.getFormContext();

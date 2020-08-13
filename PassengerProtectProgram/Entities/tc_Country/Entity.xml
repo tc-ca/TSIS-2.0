@@ -722,7 +722,7 @@
             <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The unique two character country ISO code." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="tc_CountryISOCodeAlpha3">
@@ -763,7 +763,7 @@
             <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The unique three character country ISO code." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="tc_CountryNameEnglish">
@@ -804,7 +804,7 @@
             <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The legal English name of the country." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="tc_CountryNameFrench">
@@ -845,7 +845,7 @@
             <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="" languagecode="1033" />
+            <Description description="The legal French name of the country." languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="tc_Name">
@@ -886,7 +886,7 @@
             <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="Required name field" languagecode="1033" />
+            <Description description="The name of the country." languagecode="1033" />
             <Description description="Required name field(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
