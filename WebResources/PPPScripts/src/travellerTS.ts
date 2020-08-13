@@ -1,6 +1,10 @@
 namespace TSIS.PPP {
   var Form: Form.ppp_traveller.Main.mainform;
 
+  export function SaveOnLoad(eContext: Xrm.ExecutionContext<any, any>) {
+    Form = <Form.ppp_traveller.Main.mainform>eContext.getFormContext();
+    if (Form.getAttribute('ppp_name').getValue() == null) Form.data.save();
+  }
   export function proceed(eContext: Xrm.ExecutionContext<any, any>) {
     //var eContext = window.parentExecutionContext;
     Form = <Form.ppp_traveller.Main.mainform>eContext.getFormContext();
