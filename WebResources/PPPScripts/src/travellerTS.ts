@@ -117,8 +117,10 @@ namespace TSIS.PPP {
 
     if (isPresent && recordStatus == 927820001) {
       setRecordStatus(eContext, 927820003);
+      Form.getAttribute('ppp_ispresenttime').setValue(new Date());
     } else if (!isPresent && recordStatus == 927820003) {
       setRecordStatus(eContext, 927820001);
+      Form.getAttribute('ppp_ispresenttime').setValue(null);
     }
   }
 
