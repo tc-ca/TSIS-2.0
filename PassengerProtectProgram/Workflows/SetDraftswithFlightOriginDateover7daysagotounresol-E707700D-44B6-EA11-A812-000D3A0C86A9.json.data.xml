@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Workflow WorkflowId="{25235fc5-3d9c-ea11-a812-000d3a0c86a9}" Name="Recurrence -&gt; Delete Traveller after 7 days if no match" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <JsonFileName>/Workflows/Recurrence-DeleteTravellerafter7daysifnomatch-25235FC5-3D9C-EA11-A812-000D3A0C86A9.json</JsonFileName>
+<Workflow WorkflowId="{e707700d-44b6-ea11-a812-000d3a0c86a9}" Name="Set Drafts with Flight Origin Date over 7 days ago to unresolved and notify Manager team" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <JsonFileName>/Workflows/SetDraftswithFlightOriginDateover7daysagotounresol-E707700D-44B6-EA11-A812-000D3A0C86A9.json</JsonFileName>
   <Type>1</Type>
   <Subprocess>0</Subprocess>
   <Category>5</Category>
@@ -20,7 +20,7 @@
   <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
   <PrimaryEntity>none</PrimaryEntity>
   <LocalizedNames>
-    <LocalizedName languagecode="1033" description="Recurrence -&gt; Delete Traveller after 7 days if no match" />
-    <LocalizedName languagecode="1036" description="Recurrence -&gt; Delete Traveller after 7 days if no match(fr)" />
+    <LocalizedName languagecode="1033" description="Set Drafts with Flight Origin Date over 7 days ago to unresolved and notify Manager team" />
+    <LocalizedName languagecode="1036" description=" To Be deleted? Recurrence -&gt; Set Untouched Draft Traveller Record for 7 days to Unresolved(fr)" />
   </LocalizedNames>
 </Workflow>
