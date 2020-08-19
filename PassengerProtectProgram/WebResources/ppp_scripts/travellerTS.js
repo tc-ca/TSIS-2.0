@@ -194,6 +194,19 @@ var TSIS;
             toggleDisabledAllControls(eContext, recordClosed, keepLockedList, keepUnlockedList);
         }
         PPP.ReadOnlyOnClosed = ReadOnlyOnClosed;
+        function statusOnChange(eContext, keepLockedList, keepUnlockedList) {
+            Form = eContext.getFormContext();
+            var recordStatus = Form.getAttribute('ppp_recordstatus').getValue();
+            var recordClosed = recordStatus == 927820002 /* Closed */ ||
+                recordStatus == 927820005 /* Unresolved */;
+            if (recordClosed) {
+                Form.data.save();
+            }
+            if (Form.data.isValid()) {
+                toggleDisabledAllControls(eContext, recordClosed, keepLockedList, keepUnlockedList);
+            }
+        }
+        PPP.statusOnChange = statusOnChange;
         function toggleDisabledAllControls(eContext, disable, keepLockedList, keepUnlockedList) {
             Form = eContext.getFormContext();
             //Toggle everything to match record closed status

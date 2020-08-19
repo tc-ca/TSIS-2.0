@@ -502,11 +502,6 @@
                             <WebResourceId>{27D1CF74-31AF-EA11-A812-000D3A0C8127}</WebResourceId>
                           </parameters>
                         </control>
-                        <events>
-                          <event name="onload" application="false">
-                            <dependencies />
-                          </event>
-                        </events>
                       </cell>
                     </row>
                     <row>
@@ -1641,11 +1636,6 @@
                             <WebResourceId>{8BAA5CED-A1D2-EA11-A813-000D3A0C86A9}</WebResourceId>
                           </parameters>
                         </control>
-                        <events>
-                          <event name="onload" application="false">
-                            <dependencies />
-                          </event>
-                        </events>
                       </cell>
                     </row>
                   </rows>
@@ -1957,7 +1947,6 @@
       </Navigation>
       <formLibraries>
         <Library name="ppp_scripts/travellerTS.js" libraryUniqueId="{d18b8287-6e7a-6a02-b6d4-6ad12e3c47b9}" />
-        <Library name="ppp_scripts/Traveller.js" libraryUniqueId="{cddd2bdb-d828-bda3-8e14-3abcc59e4734}" />
       </formLibraries>
       <events>
         <event name="onload" application="false" active="false">
@@ -2024,7 +2013,7 @@
         </event>
         <event name="onchange" application="false" active="false" attribute="ppp_recordstatus">
           <Handlers>
-            <Handler functionName="TSIS.PPP.ReadOnlyOnClosed" libraryName="ppp_scripts/travellerTS.js" handlerUniqueId="{ebcda760-51eb-aa4a-7992-1ee36e23e8a3}" enabled="true" parameters="[&quot;ppp_name&quot;, &quot;ppp_aircarrier1&quot;, &quot;ppp_flightnumber1&quot;, &quot;ppp_flightorigin1&quot;, &quot;ppp_flightorigindate1&quot;, &quot;ppp_flightoriginhour1&quot;, &quot;ppp_flightdestination1&quot;, &quot;ppp_flightconnection11&quot;, &quot;ppp_flightconnection21&quot;, &quot;ppp_flightconnection31&quot;, &quot;ppp_flightconnection41&quot;, &quot;ppp_flightconnection51&quot;, &quot;ppp_flightconnection61&quot;, &quot;ppp_flightconnection71&quot;, &quot;ppp_flightconnection81&quot;, &quot;ppp_flightconnection91&quot;, &quot;ppp_flightconnection101&quot;,&quot;ppp_directiontime&quot;, &quot;ppp_newrecordtime&quot;, &quot;ppp_ispresenttime&quot;, &quot;ppp_matchfoundtime&quot;, &quot;ppp_directiontime1&quot;, &quot;ppp_finalstatustime&quot;, &quot;ppp_recordstatus&quot;], [&quot;header_ppp_recordstatus&quot;]" passExecutionContext="true" />
+            <Handler functionName="TSIS.PPP.statusOnChange" libraryName="ppp_scripts/travellerTS.js" handlerUniqueId="{ebcda760-51eb-aa4a-7992-1ee36e23e8a3}" enabled="true" parameters="[&quot;ppp_name&quot;, &quot;ppp_aircarrier1&quot;, &quot;ppp_flightnumber1&quot;, &quot;ppp_flightorigin1&quot;, &quot;ppp_flightorigindate1&quot;, &quot;ppp_flightoriginhour1&quot;, &quot;ppp_flightdestination1&quot;, &quot;ppp_flightconnection11&quot;, &quot;ppp_flightconnection21&quot;, &quot;ppp_flightconnection31&quot;, &quot;ppp_flightconnection41&quot;, &quot;ppp_flightconnection51&quot;, &quot;ppp_flightconnection61&quot;, &quot;ppp_flightconnection71&quot;, &quot;ppp_flightconnection81&quot;, &quot;ppp_flightconnection91&quot;, &quot;ppp_flightconnection101&quot;,&quot;ppp_directiontime&quot;, &quot;ppp_newrecordtime&quot;, &quot;ppp_ispresenttime&quot;, &quot;ppp_matchfoundtime&quot;, &quot;ppp_directiontime1&quot;, &quot;ppp_finalstatustime&quot;, &quot;ppp_recordstatus&quot;], [&quot;header_ppp_recordstatus&quot;]" passExecutionContext="true" />
           </Handlers>
         </event>
         <event name="onsave" application="false" active="false">

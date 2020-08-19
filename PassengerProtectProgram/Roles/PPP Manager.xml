@@ -17,6 +17,7 @@
     <RolePrivilege name="prvAppendppp_Traveller" level="Global" />
     <RolePrivilege name="prvAppendresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvAppendtc_Country" level="Global" />
+    <RolePrivilege name="prvAppendtc_Province" level="Local" />
     <RolePrivilege name="prvAppendToAccount" level="Global" />
     <RolePrivilege name="prvAppendToAppModule" level="Global" />
     <RolePrivilege name="prvAppendToDocumentTemplate" level="Global" />
@@ -59,6 +60,7 @@
     <RolePrivilege name="prvCreateresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvCreateSharePointData" level="Global" />
     <RolePrivilege name="prvCreatetc_Country" level="Global" />
+    <RolePrivilege name="prvCreatetc_Province" level="Local" />
     <RolePrivilege name="prvCreateUserApplicationMetadata" level="Basic" />
     <RolePrivilege name="prvCreateUserEntityUISettings" level="Basic" />
     <RolePrivilege name="prvCreateUserSettings" level="Local" />
