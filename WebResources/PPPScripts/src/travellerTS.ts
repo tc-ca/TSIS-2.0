@@ -236,6 +236,29 @@ namespace TSIS.PPP {
     );
   }
 
+  export function statusOnChange(
+    eContext: Xrm.ExecutionContext<any, any>,
+    keepLockedList: string[],
+    keepUnlockedList: string[]
+  ) {
+    Form = <Form.ppp_traveller.Main.mainform>eContext.getFormContext();
+    var recordStatus = Form.getAttribute('ppp_recordstatus').getValue();
+    var recordClosed =
+      recordStatus == ppp_recordstatus.Closed ||
+      recordStatus == ppp_recordstatus.Unresolved;
+    if (recordClosed) {
+      Form.data.save();
+    }
+    if (Form.data.isValid()) {
+      toggleDisabledAllControls(
+        eContext,
+        recordClosed,
+        keepLockedList,
+        keepUnlockedList
+      );
+    }
+  }
+
   export function toggleDisabledAllControls(
     eContext: Xrm.ExecutionContext<any, any>,
     disable: boolean,
