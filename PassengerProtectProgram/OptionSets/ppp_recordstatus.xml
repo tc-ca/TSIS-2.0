@@ -12,12 +12,6 @@
     <Description description="" languagecode="1033" />
   </Descriptions>
   <options>
-    <option value="927820000">
-      <labels>
-        <label description="New" languagecode="1033" />
-        <label description="Nouveau" languagecode="1036" />
-      </labels>
-    </option>
     <option value="927820001">
       <labels>
         <label description="Draft" languagecode="1033" />
@@ -34,12 +28,6 @@
       <labels>
         <label description="In Progress" languagecode="1033" />
         <label description="En cours" languagecode="1036" />
-      </labels>
-    </option>
-    <option value="927820004">
-      <labels>
-        <label description="Further Action Required" languagecode="1033" />
-        <label description="Action supplémentaire requise" languagecode="1036" />
       </labels>
     </option>
     <option value="927820005">
