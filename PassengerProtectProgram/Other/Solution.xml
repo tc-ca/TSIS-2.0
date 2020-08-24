@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.1.0.21645" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.1.0.21932" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>PassengerProtectProgram</UniqueName>
     <LocalizedNames>
@@ -159,29 +159,34 @@
       <RootComponent type="60" id="{d8c74db0-5014-4916-8e66-967565f6f489}" behavior="0" />
       <RootComponent type="60" id="{f4e2f0e8-f204-4bfc-951d-0f14a51449c0}" behavior="0" />
       <RootComponent type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" behavior="0" />
+      <RootComponent type="61" schemaName="ppp_assets/favicon.ico" behavior="0" />
+      <RootComponent type="61" schemaName="ppp_assets/sig-spl.png" behavior="0" />
+      <RootComponent type="61" schemaName="ppp_assets/sp-bg-1.jpg" behavior="0" />
+      <RootComponent type="61" schemaName="ppp_assets/wmms-spl.png" behavior="0" />
+      <RootComponent type="61" schemaName="ppp_css/messages.min.css" behavior="0" />
+      <RootComponent type="61" schemaName="ppp_css/noscript.min.css" behavior="0" />
+      <RootComponent type="61" schemaName="ppp_css/theme.min.css" behavior="0" />
+      <RootComponent type="61" schemaName="ppp_css/wet-boew.min.css" behavior="0" />
       <RootComponent type="61" schemaName="ppp_Feedback.html" behavior="0" />
       <RootComponent type="61" schemaName="ppp_scripts/Traveller.js" behavior="0" />
       <RootComponent type="61" schemaName="ppp_scripts/travellerTS.js" behavior="0" />
       <RootComponent type="61" schemaName="ppp_Traveller.html" behavior="0" />
+      <RootComponent type="61" schemaName="ppp_welcomepage.html" behavior="0" />
       <RootComponent type="62" schemaName="ppp_PassengerProtectProgram" behavior="0" />
       <RootComponent type="80" schemaName="ppp_PassengerProtectProgram" behavior="0" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
-        <Required key="3" type="66" schemaName="driv_DR.TimePicker" displayName="driv_DR.TimePicker" solution="TimePickerPCF (1.0.0.7)" />
-        <Dependent key="1" type="60" displayName="main form" parentDisplayName="Traveller Validation" id="{4299e906-47cc-ea11-a812-000d3a0c86a9}" />
+        <Required key="4" type="66" schemaName="driv_DR.TimePicker" displayName="driv_DR.TimePicker" solution="TimePickerPCF (1.0.0.7)" />
+        <Dependent key="3" type="60" displayName="main form" parentDisplayName="Traveller Validation" id="{4299e906-47cc-ea11-a812-000d3a0c86a9}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="5" type="61" schemaName="msdyn_/AdvancedInAppShell.htm" displayName="msdyn_/AdvancedInAppShell.htm" solution="AppModuleWebResources (2.5)" />
+        <Required key="5" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
         <Dependent key="6" type="80" schemaName="ppp_PassengerProtectProgram" displayName="Passenger Protect Program" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="7" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
-        <Dependent key="6" type="80" schemaName="ppp_PassengerProtectProgram" displayName="Passenger Protect Program" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="7" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
-        <Dependent key="7" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" />
+        <Required key="5" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent key="5" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>
