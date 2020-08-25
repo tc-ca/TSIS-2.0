@@ -503,7 +503,7 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Country" languagecode="1033" />
-            <displayname description="0" languagecode="1036" />
+            <displayname description="Pays" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The country associated with a Regulated Entity." languagecode="1033" />
@@ -544,7 +544,7 @@
           <Length>6</Length>
           <displaynames>
             <displayname description="ICAO Code" languagecode="1033" />
-            <displayname description="0" languagecode="1036" />
+            <displayname description="Code OACI" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The Air Carrier designation code assigned by the International Civil Aviation Organization (ICAO). " languagecode="1033" />
@@ -584,7 +584,7 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Organization" languagecode="1033" />
-            <displayname description="0" languagecode="1036" />
+            <displayname description="Organization" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Organizations, including but not limited to  Regulated Entities, that Transport Canada has interactions with." languagecode="1033" />

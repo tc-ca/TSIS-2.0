@@ -34,7 +34,7 @@
                       <cell id="{feca54d1-a10c-4c81-bc65-b6adbd8409b5}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Country Name (English)" languagecode="1033" />
-                          <label description="0" languagecode="1036" />
+                          <label description="Nom du pays (Anglais)" languagecode="1036" />
                         </labels>
                         <control id="tc_countrynameenglish" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tc_countrynameenglish" disabled="false" />
                       </cell>
@@ -43,7 +43,7 @@
                       <cell id="{4bfd2345-cd45-4926-8c03-209e1486707c}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Country Name (French)" languagecode="1033" />
-                          <label description="0" languagecode="1036" />
+                          <label description="Country Name (French)" languagecode="1036" />
                         </labels>
                         <control id="tc_countrynamefrench" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tc_countrynamefrench" disabled="false" />
                       </cell>
@@ -52,7 +52,7 @@
                       <cell id="{3d043873-b3bd-4a91-b60c-c5c86f352995}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Country ISO Code Alpha 2" languagecode="1033" />
-                          <label description="0" languagecode="1036" />
+                          <label description="Code ISO du pays Alpha 2" languagecode="1036" />
                         </labels>
                         <control id="tc_countryisocodealpha2" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tc_countryisocodealpha2" disabled="false" />
                       </cell>
@@ -61,7 +61,7 @@
                       <cell id="{01775e33-a163-4727-ae1d-d5fbdb52b3b7}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Country ISO Code Alpha 3" languagecode="1033" />
-                          <label description="0" languagecode="1036" />
+                          <label description="Code ISO du pays Alpha 3" languagecode="1036" />
                         </labels>
                         <control id="tc_countryisocodealpha3" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tc_countryisocodealpha3" disabled="false" />
                       </cell>

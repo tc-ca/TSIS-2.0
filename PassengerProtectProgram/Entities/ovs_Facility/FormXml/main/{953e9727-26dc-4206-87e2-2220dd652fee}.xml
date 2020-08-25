@@ -52,7 +52,7 @@
                       <cell id="{c1d53239-ff2f-46e1-aef3-21f2c2b27da9}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="ICAO" languagecode="1033" />
-                          <label description="0" languagecode="1036" />
+                          <label description="OACI" languagecode="1036" />
                         </labels>
                         <control id="ovs_icaocode" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="ovs_icaocode" disabled="false" />
                       </cell>
@@ -61,7 +61,7 @@
                       <cell id="{4bb1e6a9-b394-4af9-9792-71558d734f91}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Class" languagecode="1033" />
-                          <label description="0" languagecode="1036" />
+                          <label description="Classe" languagecode="1036" />
                         </labels>
                         <control id="ovs_class" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="ovs_class" disabled="false" />
                       </cell>
@@ -70,7 +70,7 @@
                       <cell id="{641d22c4-6d18-40fa-8348-f764131d0901}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Country" languagecode="1033" />
-                          <label description="0" languagecode="1036" />
+                          <label description="Pays" languagecode="1036" />
                         </labels>
                         <control id="ovs_countryid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ovs_countryid" disabled="false" />
                       </cell>
@@ -79,7 +79,7 @@
                       <cell id="{b5df4279-12cc-4ca7-9796-8660b55ec361}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="City" languagecode="1033" />
-                          <label description="0" languagecode="1036" />
+                          <label description="Ville" languagecode="1036" />
                         </labels>
                         <control id="ovs_address1city" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="ovs_address1city" disabled="false" />
                       </cell>
@@ -97,7 +97,7 @@
                       <cell id="{ec3507e0-c65a-4755-a578-15400509b9ff}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Elevation" languagecode="1033" />
-                          <label description="0" languagecode="1036" />
+                          <label description="Élévation" languagecode="1036" />
                         </labels>
                         <control id="ovs_elevation" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="ovs_elevation" disabled="false" />
                       </cell>
@@ -106,7 +106,7 @@
                       <cell id="{7cab7400-1e6e-4291-bcc7-700c91b79c0b}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Latitude" languagecode="1033" />
-                          <label description="0" languagecode="1036" />
+                          <label description="Latitude" languagecode="1036" />
                         </labels>
                         <control id="ovs_address1latitude" classid="{0D2C745A-E5A8-4C8F-BA63-C6D3BB604660}" datafieldname="ovs_address1latitude" disabled="false" />
                       </cell>
@@ -115,7 +115,7 @@
                       <cell id="{2dff77d5-d14e-4188-914e-ea6ae4608163}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Longitude" languagecode="1033" />
-                          <label description="0" languagecode="1036" />
+                          <label description="Longitude" languagecode="1036" />
                         </labels>
                         <control id="ovs_address1longitude" classid="{0D2C745A-E5A8-4C8F-BA63-C6D3BB604660}" datafieldname="ovs_address1longitude" disabled="false" />
                       </cell>

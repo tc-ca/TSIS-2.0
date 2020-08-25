@@ -24,6 +24,6 @@
   </AppModuleRoleMaps>
   <LocalizedNames>
     <LocalizedName description="Passenger Protect Program" languagecode="1033" />
-    <LocalizedName description="Passenger Protect Program(fr)" languagecode="1036" />
+    <LocalizedName description="Programme de protection des passagers" languagecode="1036" />
   </LocalizedNames>
 </AppModule>

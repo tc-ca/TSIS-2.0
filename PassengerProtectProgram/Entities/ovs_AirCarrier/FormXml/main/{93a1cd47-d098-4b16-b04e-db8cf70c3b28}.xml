@@ -43,7 +43,7 @@
                       <cell id="{e3c60a46-ca37-594e-d676-0d65c513921c}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Country" languagecode="1033" />
-                          <label description="0" languagecode="1036" />
+                          <label description="Pays" languagecode="1036" />
                         </labels>
                         <control id="ovs_country" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ovs_country" disabled="false" />
                       </cell>
@@ -52,7 +52,7 @@
                       <cell id="{4d645927-69c2-8ec4-6ca9-6308cd09455d}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Organization" languagecode="1033" />
-                          <label description="0" languagecode="1036" />
+                          <label description="Organization" languagecode="1036" />
                         </labels>
                         <control id="ovs_organization" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ovs_organization" disabled="false" />
                       </cell>

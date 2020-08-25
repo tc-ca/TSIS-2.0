@@ -708,7 +708,7 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Country" languagecode="1033" />
-            <displayname description="0" languagecode="1036" />
+            <displayname description="Pays" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The country where the facility is located." languagecode="1033" />
@@ -749,7 +749,7 @@
           <MaxValue>2147483647</MaxValue>
           <displaynames>
             <displayname description="Elevation" languagecode="1033" />
-            <displayname description="0" languagecode="1036" />
+            <displayname description="Élévation" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The elevation above sea level of the facility." languagecode="1033" />

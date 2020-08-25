@@ -5,7 +5,7 @@
     <entity Name="tc_Country">
       <LocalizedNames>
         <LocalizedName description="Country" languagecode="1033" />
-        <LocalizedName description="0" languagecode="1036" />
+        <LocalizedName description="Pays" languagecode="1036" />
       </LocalizedNames>
       <LocalizedCollectionNames>
         <LocalizedCollectionName description="Countries" languagecode="1033" />
@@ -677,7 +677,7 @@
           <IsLocalizable>0</IsLocalizable>
           <displaynames>
             <displayname description="Country" languagecode="1033" />
-            <displayname description="0" languagecode="1036" />
+            <displayname description="Pays" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier for entity instances" languagecode="1033" />
@@ -801,7 +801,7 @@
           <Length>200</Length>
           <displaynames>
             <displayname description="Country Name (English)" languagecode="1033" />
-            <displayname description="0" languagecode="1036" />
+            <displayname description="Nom du pays (Anglais)" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The legal English name of the country." languagecode="1033" />
@@ -842,7 +842,7 @@
           <Length>200</Length>
           <displaynames>
             <displayname description="Country Name (French)" languagecode="1033" />
-            <displayname description="0" languagecode="1036" />
+            <displayname description="Country Name (French)" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The legal French name of the country." languagecode="1033" />
@@ -883,7 +883,7 @@
           <Length>200</Length>
           <displaynames>
             <displayname description="Country Name" languagecode="1033" />
-            <displayname description="0" languagecode="1036" />
+            <displayname description="Nom du pays" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The name of the country." languagecode="1033" />

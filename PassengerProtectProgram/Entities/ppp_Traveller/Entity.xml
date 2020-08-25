@@ -5,7 +5,7 @@
     <entity Name="ppp_Traveller">
       <LocalizedNames>
         <LocalizedName description="Traveller Validation" languagecode="1033" />
-        <LocalizedName description="Voyageur" languagecode="1036" />
+        <LocalizedName description="Validation du voyageur" languagecode="1036" />
       </LocalizedNames>
       <LocalizedCollectionNames>
         <LocalizedCollectionName description="Traveller Validations" languagecode="1033" />
@@ -755,7 +755,7 @@
           <OptionSetName>ppp_casebriefoptions</OptionSetName>
           <displaynames>
             <displayname description="Case Brief Recommendation" languagecode="1033" />
-            <displayname description="Case Brief Recommendation(fr)" languagecode="1036" />
+            <displayname description="Recommandation du dossier de cas" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The list of case brief recommendations that an analyst may select from." languagecode="1033" />
@@ -1089,7 +1089,7 @@
           <Behavior>1</Behavior>
           <displaynames>
             <displayname description="Final Status Time" languagecode="1033" />
-            <displayname description="Final Status Time(fr)" languagecode="1036" />
+            <displayname description="Heure du statut final" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The time at which the record is closed." languagecode="1033" />
@@ -1171,7 +1171,7 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Flight Connection 1" languagecode="1033" />
-            <displayname description="Flight Connection 1(fr)" languagecode="1036" />
+            <displayname description="Vol de connexions 1" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The Traveller's first flight connection." languagecode="1033" />
@@ -1211,7 +1211,7 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Flight Connection 10" languagecode="1033" />
-            <displayname description="Flight Connection 10(fr)" languagecode="1036" />
+            <displayname description="Vol de connexions 10" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The Traveller's  tenth flight connection." languagecode="1033" />
@@ -1251,7 +1251,7 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Flight Connection 2" languagecode="1033" />
-            <displayname description="Flight Connection 2(fr)" languagecode="1036" />
+            <displayname description="Vol de connexions 2" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The Traveller's second flight connection. " languagecode="1033" />
@@ -1291,7 +1291,7 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Flight Connection 3" languagecode="1033" />
-            <displayname description="Flight Connection 3(fr)" languagecode="1036" />
+            <displayname description="Vol de connexions 3" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The Traveller's third flight connection." languagecode="1033" />
@@ -1331,7 +1331,7 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Flight Connection 4" languagecode="1033" />
-            <displayname description="Flight Connection 4(fr)" languagecode="1036" />
+            <displayname description="Vol de connexions 4" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The Traveller's fourth flight connection." languagecode="1033" />
@@ -1371,7 +1371,7 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Flight Connection 5" languagecode="1033" />
-            <displayname description="Flight Connection 5(fr)" languagecode="1036" />
+            <displayname description="Vol de connexions 5" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The Traveller's fifth flight connection." languagecode="1033" />
@@ -1411,7 +1411,7 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Flight Connection 6" languagecode="1033" />
-            <displayname description="Flight Connection 6(fr)" languagecode="1036" />
+            <displayname description="Vol de connexions 6" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The Traveller's sixth flight connection." languagecode="1033" />
@@ -1451,7 +1451,7 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Flight Connection 7" languagecode="1033" />
-            <displayname description="Flight Connection 7(fr)" languagecode="1036" />
+            <displayname description="Vol de connexions 7" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The Traveller's seventh flight connection." languagecode="1033" />
@@ -1491,7 +1491,7 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Flight Connection 8" languagecode="1033" />
-            <displayname description="Flight Connection 8(fr)" languagecode="1036" />
+            <displayname description="Vol de connexions 8" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The Traveller's eighth flight connection." languagecode="1033" />
@@ -1531,7 +1531,7 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Flight Connection 9" languagecode="1033" />
-            <displayname description="Flight Connection 9(fr)" languagecode="1036" />
+            <displayname description="Vol de connexions 9" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The Traveller's ninth flight connection." languagecode="1033" />
@@ -1739,7 +1739,7 @@
           <Behavior>1</Behavior>
           <displaynames>
             <displayname description="Flight Origin Date" languagecode="1033" />
-            <displayname description="Flight Origin Date(fr)" languagecode="1036" />
+            <displayname description="Date d'origine du vol" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The Traveller's departure date of their Origin Flight. " languagecode="1033" />
@@ -2511,7 +2511,7 @@
           <Length>200</Length>
           <displaynames>
             <displayname description="Reference Number" languagecode="1033" />
-            <displayname description="Reference Number(fr)" languagecode="1036" />
+            <displayname description="Numéro de référence" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The Traveller validation Reference Number." languagecode="1033" />
@@ -2594,7 +2594,7 @@
           <Behavior>1</Behavior>
           <displaynames>
             <displayname description="New Record Time" languagecode="1033" />
-            <displayname description="New Record Time(fr)" languagecode="1036" />
+            <displayname description="Nouvelle heure d'enregistrement" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The time when a new Traveller Validation Record is created. " languagecode="1033" />
@@ -3003,7 +3003,7 @@
           <Length>8000</Length>
           <displaynames>
             <displayname description="Additional Travel Information" languagecode="1033" />
-            <displayname description="Questions de TC" languagecode="1036" />
+            <displayname description="Informations supplémentaires du voyage " languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Additional details regrading the Traveller's itinerary." languagecode="1033" />
@@ -3251,7 +3251,7 @@
           <Length>2000</Length>
           <displaynames>
             <displayname description="Seat Request Details" languagecode="1033" />
-            <displayname description="Seat Request Details(fr)" languagecode="1036" />
+            <displayname description="Détails de la demande de siège" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Details of the seat request made by the Traveller." languagecode="1033" />
@@ -3375,10 +3375,10 @@
           <OptionSetName>ppp_ticketpurchasemethod</OptionSetName>
           <displaynames>
             <displayname description="Ticket Purchase Method" languagecode="1033" />
-            <displayname description="Ticket Purchase Method(fr)" languagecode="1036" />
+            <displayname description="Méthode d'achat du billets" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The method by which the Traveller purchased their flight ticket.&#xA;" languagecode="1033" />
+            <Description description="The method by which the Traveller purchased their flight ticket. " languagecode="1033" />
             <Description description="The method by which the flight ticket was purchased.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
@@ -3458,7 +3458,7 @@
           <Length>2000</Length>
           <displaynames>
             <displayname description="Travel Agency Address" languagecode="1033" />
-            <displayname description="Travel Agency Address(fr)" languagecode="1036" />
+            <displayname description="Adresse de l'agence de voyage" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The address of the travel agency used by the Traveller to purchase a flight ticket." languagecode="1033" />
@@ -3584,7 +3584,7 @@
           <Length>2000</Length>
           <displaynames>
             <displayname description="Travel Agency Name" languagecode="1033" />
-            <displayname description="Travel Agency Name(fr)" languagecode="1036" />
+            <displayname description="Nom de l'agence de voyage" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The name of the travel agency used by the Traveller to purchase a flight ticket." languagecode="1033" />
@@ -3713,7 +3713,7 @@
             <displayname description="Numéro automatique du voyageur" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The unique record number for the Traveller record.&#xA;" languagecode="1033" />
+            <Description description="The unique record number for the Traveller record. " languagecode="1033" />
             <Description description="The unique record number for the traveller record.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>

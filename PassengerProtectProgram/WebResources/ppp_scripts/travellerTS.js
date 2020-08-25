@@ -47,10 +47,15 @@ var TSIS;
             if (field.getValue() != 927820000 /* Yes */) {
                 return;
             }
+            var globalContext = Xrm.Utility.getGlobalContext();
             var confirmStrings = {
                 text: 'By clicking the proceed button, you will be redirected to the next page and will NOT be able to modify the information on this page.',
                 title: 'Confirmation Match Found',
             };
+            if (globalContext.userSettings.languageId == 1036) {
+                confirmStrings.text = 'En cliquant sur le bouton Continuer, vous serez redirigé vers la page suivante et ne pourrez PAS modifier les informations de cette page.';
+                confirmStrings.title = 'Correspondance positive trouvée';
+            }
             var confirmOptions = { height: 200, width: 450 };
             Xrm.Navigation.openConfirmDialog(confirmStrings, confirmOptions).then(function (success) {
                 if (success.confirmed) {
