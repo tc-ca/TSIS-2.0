@@ -16,7 +16,7 @@
     <option value="927820000" ExternalValue="" Color="">
       <labels>
         <label description="One-way" languagecode="1033" />
-        <label description="One-way(fr)" languagecode="1036" />
+        <label description="Sens Unique" languagecode="1036" />
       </labels>
       <Descriptions>
         <Description description="" languagecode="1033" />

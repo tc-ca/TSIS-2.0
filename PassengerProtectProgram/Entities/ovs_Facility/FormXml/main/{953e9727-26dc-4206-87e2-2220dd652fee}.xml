@@ -25,7 +25,7 @@
                       <cell id="{70baa5d7-2581-4906-8aa3-23c2778c7cae}" visible="false">
                         <labels>
                           <label description="Airport Name" languagecode="1033" />
-                          <label description="0" languagecode="1036" />
+                          <label description="Nom de l'aérodrome" languagecode="1036" />
                         </labels>
                         <control id="ovs_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="ovs_name" disabled="true" />
                       </cell>
@@ -34,7 +34,7 @@
                       <cell id="{7839b471-8502-4323-bebd-c43cb958f61e}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Airport Name (English)" languagecode="1033" />
-                          <label description="0" languagecode="1036" />
+                          <label description="Nom de l'aérodrome (Anglais)" languagecode="1036" />
                         </labels>
                         <control id="ovs_facilitynameenglish" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="ovs_facilitynameenglish" disabled="false" />
                       </cell>
@@ -43,7 +43,7 @@
                       <cell id="{a9dab571-73ab-4f5f-8042-f45be7e71d39}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Airport Name (French)" languagecode="1033" />
-                          <label description="0" languagecode="1036" />
+                          <label description="Nom de l'aérodrome (Français)" languagecode="1036" />
                         </labels>
                         <control id="ovs_facilitynamefrench" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="ovs_facilitynamefrench" disabled="false" />
                       </cell>
