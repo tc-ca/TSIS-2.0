@@ -31,7 +31,7 @@
     <IntroducedVersion>1.0.0.0</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="Traveller Lookup View" languagecode="1033" />
-      <LocalizedName description="Traveller Lookup View (fr)" languagecode="1036" />
+      <LocalizedName description="Voyageur – Affichage de la recherche " languagecode="1036" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

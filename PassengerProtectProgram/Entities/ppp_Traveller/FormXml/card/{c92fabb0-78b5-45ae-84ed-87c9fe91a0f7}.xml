@@ -112,7 +112,7 @@
     <CanBeDeleted>1</CanBeDeleted>
     <LocalizedNames>
       <LocalizedName description="Information" languagecode="1033" />
-      <LocalizedName description="Information (fr)" languagecode="1036" />
+      <LocalizedName description="Information" languagecode="1036" />
     </LocalizedNames>
     <Descriptions>
       <Description description="A card form for this entity." languagecode="1033" />

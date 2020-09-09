@@ -7,6 +7,7 @@
     <RolePrivilege name="prvActOnBehalfOfAnotherUser" level="Global" />
     <RolePrivilege name="prvAddressBook" level="Global" />
     <RolePrivilege name="prvAppendAppModule" level="Global" />
+    <RolePrivilege name="prvAppendBusinessUnit" level="Local" />
     <RolePrivilege name="prvAppendDocumentTemplate" level="Global" />
     <RolePrivilege name="prvAppendExpiredProcess" level="Global" />
     <RolePrivilege name="prvAppendFeedback" level="Basic" />
@@ -18,8 +19,10 @@
     <RolePrivilege name="prvAppendresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvAppendtc_Country" level="Global" />
     <RolePrivilege name="prvAppendtc_Province" level="Local" />
+    <RolePrivilege name="prvAppendTeam" level="Local" />
     <RolePrivilege name="prvAppendToAccount" level="Global" />
     <RolePrivilege name="prvAppendToAppModule" level="Global" />
+    <RolePrivilege name="prvAppendToBusinessUnit" level="Local" />
     <RolePrivilege name="prvAppendToDocumentTemplate" level="Global" />
     <RolePrivilege name="prvAppendToExpiredProcess" level="Global" />
     <RolePrivilege name="prvAppendToFeedback" level="Basic" />
@@ -32,6 +35,7 @@
     <RolePrivilege name="prvAppendToresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvAppendTotc_Country" level="Global" />
     <RolePrivilege name="prvAppendTotc_Province" level="Local" />
+    <RolePrivilege name="prvAppendToTeam" level="Local" />
     <RolePrivilege name="prvAppendToUser" level="Global" />
     <RolePrivilege name="prvAppendToUserSettings" level="Local" />
     <RolePrivilege name="prvAppendToWorkflow" level="Local" />
@@ -92,6 +96,7 @@
     <RolePrivilege name="prvReadAsyncOperation" level="Local" />
     <RolePrivilege name="prvReadAttribute" level="Global" />
     <RolePrivilege name="prvReadAuditSummary" level="Global" />
+    <RolePrivilege name="prvReadBusinessUnit" level="Local" />
     <RolePrivilege name="prvReadDocumentTemplate" level="Global" />
     <RolePrivilege name="prvReadEntity" level="Global" />
     <RolePrivilege name="prvReadExchangeSyncIdMapping" level="Basic" />
@@ -159,6 +164,7 @@
     <RolePrivilege name="prvWriteresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvWriteSharePointData" level="Global" />
     <RolePrivilege name="prvWritetc_Country" level="Global" />
+    <RolePrivilege name="prvWriteUser" level="Local" />
     <RolePrivilege name="prvWriteUserApplicationMetadata" level="Basic" />
     <RolePrivilege name="prvWriteUserEntityUISettings" level="Basic" />
     <RolePrivilege name="prvWriteUserSettings" level="Local" />

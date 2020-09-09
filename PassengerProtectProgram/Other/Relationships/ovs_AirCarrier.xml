@@ -18,7 +18,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The Air Carrier associated with the Traveller's travel itinerary." languagecode="1033" />
-        <Description description="The ability to identify organization transporting passengers and cargo by aircraft(fr)" languagecode="1036" />
+        <Description description="Le transporteur aérien associé à l’itinéraire de voyage du voyageur." languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>

@@ -9,10 +9,11 @@
       </LocalizedNames>
       <LocalizedCollectionNames>
         <LocalizedCollectionName description="Countries" languagecode="1033" />
-        <LocalizedCollectionName description="Countries(fr)" languagecode="1036" />
+        <LocalizedCollectionName description="Pays" languagecode="1036" />
       </LocalizedCollectionNames>
       <Descriptions>
         <Description description="A nation occupying a particular territory." languagecode="1033" />
+        <Description description="Une nation qui occupe un territoire particulier." languagecode="1036" />
       </Descriptions>
       <attributes>
         <attribute PhysicalName="CreatedBy">
@@ -95,7 +96,7 @@
           </displaynames>
           <Descriptions>
             <Description description="Date and time when the record was created." languagecode="1033" />
-            <Description description="Date and time when the record was created.(fr)" languagecode="1036" />
+            <Description description="Date et heure de création du dossier." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="CreatedOnBehalfBy">
@@ -261,7 +262,7 @@
           </displaynames>
           <Descriptions>
             <Description description="Date and time when the record was modified." languagecode="1033" />
-            <Description description="Date and time when the record was modified.(fr)" languagecode="1036" />
+            <Description description="Date et heure de modification du dossier." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ModifiedOnBehalfBy">
@@ -344,7 +345,7 @@
           </displaynames>
           <Descriptions>
             <Description description="Date and time that the record was migrated." languagecode="1033" />
-            <Description description="Date and time that the record was migrated.(fr)" languagecode="1036" />
+            <Description description="Date et heure de migration du dossier." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="OwnerId">
@@ -719,10 +720,11 @@
           <Length>200</Length>
           <displaynames>
             <displayname description="Country ISO Code Alpha 2" languagecode="1033" />
-            <displayname description="0" languagecode="1036" />
+            <displayname description="Code ISO du pays Alpha 2" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The unique two character country ISO code." languagecode="1033" />
+            <Description description="Le code de pays ISO unique à deux caractères." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="tc_CountryISOCodeAlpha3">
@@ -760,10 +762,11 @@
           <Length>200</Length>
           <displaynames>
             <displayname description="Country ISO Code Alpha 3" languagecode="1033" />
-            <displayname description="0" languagecode="1036" />
+            <displayname description="Code ISO du pays Alpha 3" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The unique three character country ISO code." languagecode="1033" />
+            <Description description="Le code de pays ISO unique à trois caractères." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="tc_CountryNameEnglish">
@@ -805,6 +808,7 @@
           </displaynames>
           <Descriptions>
             <Description description="The legal English name of the country." languagecode="1033" />
+            <Description description="Le nom légal du pays en anglais." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="tc_CountryNameFrench">
@@ -842,10 +846,11 @@
           <Length>200</Length>
           <displaynames>
             <displayname description="Country Name (French)" languagecode="1033" />
-            <displayname description="Country Name (French)" languagecode="1036" />
+            <displayname description="Nom du pays (Français)" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The legal French name of the country." languagecode="1033" />
+            <Description description="Le nom légal du pays en français." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="tc_Name">
@@ -887,7 +892,7 @@
           </displaynames>
           <Descriptions>
             <Description description="The name of the country." languagecode="1033" />
-            <Description description="Required name field(fr)" languagecode="1036" />
+            <Description description="Le nom du pays." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="TimeZoneRuleVersionNumber">

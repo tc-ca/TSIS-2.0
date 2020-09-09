@@ -87,7 +87,7 @@
                       <cell id="{ed52ee83-da46-e5b5-1dbd-ab8844d1e148}" showlabel="true" locklevel="0" labelid="{86c82108-61b1-4d44-8599-6e3e14acebae}">
                         <labels>
                           <label description="Flight Origin Time (local at origin)" languagecode="1033" />
-                          <label description="Heure d'origine du vol (locale au départ)" languagecode="1036" />
+                          <label description="Heure d'origine du vol (locale au départ) (AAAA-MM-JJ)" languagecode="1036" />
                         </labels>
                         <control id="ppp_flightoriginhour" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="ppp_flightoriginhour" disabled="false" uniqueid="{3a0426e8-b418-4015-dbae-0d9c82d3d7ee}" />
                       </cell>
@@ -146,6 +146,7 @@
                 <section name="tab_General_section_3" showlabel="true" showbar="true" locklevel="0" id="{2d8d3945-bb21-2313-167c-5ce8b9d62d26}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
                   <labels>
                     <label description="Reference" languagecode="1033" />
+                    <label description="Référence" languagecode="1036" />
                   </labels>
                   <rows>
                     <row>
@@ -176,6 +177,7 @@
                 <section name="tab_General_section_4" showlabel="true" showbar="true" locklevel="0" id="{e28ac4e6-d2c7-e5de-87b6-b10068acaa8b}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
                   <labels>
                     <label description="Flight Connections" languagecode="1033" />
+                    <label description="Correspondances" languagecode="1036" />
                   </labels>
                   <rows>
                     <row>
@@ -405,7 +407,7 @@
                       <cell id="{9492efc4-08fc-462a-9d87-edb3e909c306}" showlabel="true" locklevel="0" labelid="{09be6728-2a52-42b6-bcd5-c3efbe0ea0ba}">
                         <labels>
                           <label description="Minutes Waiting in Line Prior to Call" languagecode="1033" />
-                          <label description="Minutes Waiting in Line Prior to Call(fr)" languagecode="1036" />
+                          <label description="Minutes d’attente en file avant l’appel" languagecode="1036" />
                         </labels>
                         <control id="ppp_minuteswaiting" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="ppp_minuteswaiting" disabled="false" uniqueid="{3b8928fb-9102-425e-bff7-ec5971e478d2}" />
                       </cell>
@@ -610,6 +612,7 @@
                 <section name="tab_DetailedTravellerInformation_section_2" showlabel="true" showbar="true" locklevel="0" id="{2a60c619-1a70-b060-c739-852a97e99b7a}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
                   <labels>
                     <label description="Identification Information" languagecode="1033" />
+                    <label description="Information d’identification" languagecode="1036" />
                   </labels>
                   <rows>
                     <row>
@@ -737,7 +740,7 @@
                       <cell id="{50e80625-3c83-147e-e896-89c72617bc9d}" showlabel="true" locklevel="0" labelid="{7698406d-3fa5-4556-a67e-226609a463ad}">
                         <labels>
                           <label description="Flight Origin Date (local at origin) (YYYY-MM-DD)" languagecode="1033" />
-                          <label description="Flight Origin Date (local at origin)(fr)" languagecode="1036" />
+                          <label description="Date d'origine du vol (locale au départ) (AAAA-MM-JJ)" languagecode="1036" />
                         </labels>
                         <control id="ppp_flightorigindate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="ppp_flightorigindate" disabled="true" uniqueid="{57d424e3-4a9a-8d36-906e-9ee002b28558}" />
                       </cell>
@@ -746,7 +749,7 @@
                       <cell id="{9db079d5-e73a-6421-5cd8-4116260d288b}" showlabel="true" locklevel="0" labelid="{d40bcbe4-5ced-44d2-a9eb-f6f888836fa8}">
                         <labels>
                           <label description="Flight Origin Time (local at origin)" languagecode="1033" />
-                          <label description="Flight Origin Time (local at origin)(fr)" languagecode="1036" />
+                          <label description="Heure d'origine du vol (locale au départ) (AAAA-MM-JJ)" languagecode="1036" />
                         </labels>
                         <control id="ppp_flightoriginhour" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="ppp_flightoriginhour" disabled="true" uniqueid="{64a4c9d4-44b3-604e-dd8c-42b57c27aea9}" />
                       </cell>
@@ -976,6 +979,7 @@
                 <section name="tab_TravelDetails_section_2" showlabel="true" showbar="true" locklevel="0" id="{849dce74-9598-30a0-9490-19a768b27a3e}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
                   <labels>
                     <label description="Travel Details" languagecode="1033" />
+                    <label description="Détails sur le voyage" languagecode="1036" />
                   </labels>
                   <rows>
                     <row>
@@ -996,7 +1000,7 @@
                       <cell id="{c5921cd2-511b-148d-788d-5658e2cea1e4}" showlabel="true" locklevel="0" labelid="{b27378d4-0814-4ea2-a71f-4f8f13f27aa4}">
                         <labels>
                           <label description="Return Flight Date" languagecode="1033" />
-                          <label description="Return Flight Date(fr)" languagecode="1036" />
+                          <label description="Date du vol de retour" languagecode="1036" />
                         </labels>
                         <control id="ppp_returnticketdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="ppp_returnticketdate" disabled="false" uniqueid="{3cd6d3ac-730c-b870-b602-9634819e5e06}" />
                       </cell>
@@ -1010,7 +1014,7 @@
                       <cell id="{24b53d43-3687-c06a-eece-1c02062e5681}" showlabel="true" locklevel="0" colspan="2" rowspan="4" labelid="{65ee7eee-4dbe-41c6-83c8-125bbf7863e4}">
                         <labels>
                           <label description="Return Flight Details" languagecode="1033" />
-                          <label description="Return Flight Details(fr)" languagecode="1036" />
+                          <label description="Détails sur le vol de retour" languagecode="1036" />
                         </labels>
                         <control id="ppp_returnflightinfo" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_returnflightinfo" disabled="false" uniqueid="{c2b7eca7-095b-e46d-718a-6799a572a883}" />
                       </cell>
@@ -1050,7 +1054,7 @@
                       <cell id="{d78642d5-b352-d803-5947-27cc3b0e9398}" showlabel="true" locklevel="0" colspan="2" rowspan="4" labelid="{25e16d9a-5249-4c30-91c6-c14081478267}">
                         <labels>
                           <label description="Checked Baggage Tag Number(s)" languagecode="1033" />
-                          <label description="Checked Baggage Tag Number(s)(fr)" languagecode="1036" />
+                          <label description="Numéro(s) d’étiquette(s) de bagage(s) enregistré(s)" languagecode="1036" />
                         </labels>
                         <control id="ppp_checkedbaggagetagnumber" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_checkedbaggagetagnumber" disabled="false" uniqueid="{94474dc6-0506-9d17-c58c-9164db87a975}" />
                       </cell>
@@ -1062,7 +1066,7 @@
                       <cell showlabel="true" locklevel="0" id="{3feda507-5e7f-45e7-8d34-09115a29adde}" labelid="{7a2c511a-1e10-457e-8b93-3657c1ddc2cd}">
                         <labels>
                           <label description="Travel Companions" languagecode="1033" />
-                          <label description="Travel Companions(fr)" languagecode="1036" />
+                          <label description="Compagnons de voyage" languagecode="1036" />
                         </labels>
                         <control id="ppp_travelcompanionsnumber" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="ppp_travelcompanionsnumber" disabled="false" uniqueid="{0c837a5b-a7a7-481e-944e-dfe416f5c41c}" />
                       </cell>
@@ -1076,7 +1080,7 @@
                       <cell id="{37523492-ee4a-22b7-8c4b-7d8b6279e081}" showlabel="true" locklevel="0" rowspan="3" colspan="2" labelid="{1b503fd6-8943-4ff9-a3d6-542ff7cfb88e}">
                         <labels>
                           <label description="Companion(s) Details" languagecode="1033" />
-                          <label description="Companion(s) Details(fr)" languagecode="1036" />
+                          <label description="Détails sur le(s) compagnon(s)" languagecode="1036" />
                         </labels>
                         <control id="ppp_travelcompanionsdetails" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_travelcompanionsdetails" disabled="false" uniqueid="{7d8eee52-0329-3564-00e6-e497314cab0b}" />
                       </cell>
@@ -1191,7 +1195,7 @@
                       <cell id="{a1a2ce37-1e12-689c-4077-73aa5c644930}" showlabel="true" locklevel="0" colspan="2" visible="false" rowspan="4" labelid="{89d68046-7e2f-4c94-b084-671b3b9a5be9}">
                         <labels>
                           <label description="Seat Request Details" languagecode="1033" />
-                          <label description="Seat Request Details(fr)" languagecode="1036" />
+                          <label description="Détails de la demande de place" languagecode="1036" />
                         </labels>
                         <control id="ppp_seatrequestdetails" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_seatrequestdetails" disabled="false" uniqueid="{3c9537a8-a1e6-3da3-5dbe-ca4e6939933e}" />
                       </cell>
@@ -1260,6 +1264,7 @@
                       <cell id="{0a6c7790-3193-ed6d-61b5-43ec30d2c027}" showlabel="true" rowspan="15" auto="false" colspan="2" locklevel="0">
                         <labels>
                           <label description="Note Text" languagecode="1033" />
+                          <label description="Texte de la note" languagecode="1036" />
                         </labels>
                         <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" uniqueid="{470bb16d-4485-0aa7-5d9a-abb0dd5a2a80}" disabled="false">
                           <parameters>
@@ -1338,7 +1343,7 @@
                       <cell id="{2e5e2b0a-4a99-bd0a-32ad-b505c563d3c9}" showlabel="true" locklevel="0" rowspan="3" colspan="2" labelid="{cd0a94e6-5ab2-4f17-b505-f996553361dc}">
                         <labels>
                           <label description="Case Brief Other Response Measure Details" languagecode="1033" />
-                          <label description="Case Brief Other Response Measure Details(fr)" languagecode="1036" />
+                          <label description="Détails – Dossier de cas – Autre mesure d’intervention " languagecode="1036" />
                         </labels>
                         <control id="ppp_casebriefoptionother" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_casebriefoptionother" disabled="false" uniqueid="{1248d689-7c4b-1531-71e0-3ec47c2e6565}" />
                       </cell>
@@ -1363,7 +1368,7 @@
                       <cell id="{d8c03420-8702-42cc-4a44-31e144253c80}" showlabel="true" locklevel="0" rowspan="3" colspan="2" labelid="{f7a0d1ad-862e-4d3c-a135-68573bf527d7}">
                         <labels>
                           <label description="Nominating Agency Other Response Measure Details" languagecode="1033" />
-                          <label description="Nominating Agency Other Response Measure Details(fr)" languagecode="1036" />
+                          <label description="Détails des autres mesures d’intervention de l’organisme responsable" languagecode="1036" />
                         </labels>
                         <control id="ppp_nominatingagencyoptionother" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_nominatingagencyoptionother" disabled="false" uniqueid="{5bb843a5-7dde-eaca-ab49-c62ea6230976}" />
                       </cell>
@@ -1373,7 +1378,7 @@
                     <row>
                       <cell id="{d2520a20-dd64-9ea1-c761-9071524268c5}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="Nominating Agency Additional Dropdown" languagecode="1033" />
+                          <label description="Nominating Agency" languagecode="1033" />
                           <label description="Nouvelles informations  de l'organisme de parrainage" languagecode="1036" />
                         </labels>
                         <control id="ppp_nominatingagencyadditional" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ppp_nominatingagencyadditional" disabled="false" uniqueid="{69517a39-865a-8851-3111-3b15164a2a29}" />
@@ -1388,7 +1393,7 @@
                       <cell id="{7478362b-7898-a553-8e96-1cd316376611}" showlabel="true" locklevel="0" rowspan="3" colspan="2" labelid="{8fdf4bd4-8789-4a2f-ba7f-a9c9e19fb37a}">
                         <labels>
                           <label description="Nominating Agency Information Details" languagecode="1033" />
-                          <label description="Nominating Agency Information Details(fr)" languagecode="1036" />
+                          <label description="Détails de l’information sur l’organisme responsable" languagecode="1036" />
                         </labels>
                         <control id="ppp_nominatingagencynotes" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_nominatingagencynotes" disabled="false" uniqueid="{772dd445-e23a-3c91-92a5-b3c30c9a2039}" />
                       </cell>
@@ -1398,7 +1403,7 @@
                     <row>
                       <cell id="{e3b54382-25d8-6808-b341-d6a081b8a66b}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="Open Source Dropdown" languagecode="1033" />
+                          <label description="Open Source" languagecode="1033" />
                           <label description="De nouvelles informations sur les sources ouvertes ?" languagecode="1036" />
                         </labels>
                         <control id="ppp_opensourceadditional" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ppp_opensourceadditional" disabled="false" uniqueid="{a12db28b-ed98-499e-1aea-17c4c5088294}" />
@@ -1413,7 +1418,7 @@
                       <cell id="{46331794-0e34-8a70-59ed-64d957858a65}" showlabel="true" locklevel="0" rowspan="3" colspan="2" labelid="{99552464-413b-4899-89c8-34de79382e79}">
                         <labels>
                           <label description="Open Source Information Details" languagecode="1033" />
-                          <label description="Open Source Information Details(fr)" languagecode="1036" />
+                          <label description="Détails de l’information de sources ouvertes" languagecode="1036" />
                         </labels>
                         <control id="ppp_opensourcenotes" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_opensourcenotes" disabled="false" uniqueid="{e3b733e2-50de-3159-47a7-961563999951}" />
                       </cell>
@@ -1423,7 +1428,7 @@
                     <row>
                       <cell id="{6038c8d7-b41b-1be4-6137-d4e9d8cd2dc3}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="Other Considerations Dropdown" languagecode="1033" />
+                          <label description="Other Considerations" languagecode="1033" />
                           <label description="Autres considérations" languagecode="1036" />
                         </labels>
                         <control id="ppp_otherconsiderationsdropdown" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ppp_otherconsiderationsdropdown" disabled="false" uniqueid="{e45a60c8-5966-0096-5a89-ed5a3b9c4e53}" />
@@ -1483,7 +1488,7 @@
                       <cell id="{d68bac5a-3010-1b0a-61a4-9c007a5451cb}" showlabel="true" locklevel="0" rowspan="3" colspan="2" labelid="{79cb3e72-faa7-417f-923b-af4567b68446}">
                         <labels>
                           <label description="Other Response Measures Details" languagecode="1033" />
-                          <label description="Other Response Measures Details(fr)" languagecode="1036" />
+                          <label description="Détails des autres mesures d’intervention" languagecode="1036" />
                         </labels>
                         <control id="ppp_directionoptionother" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_directionoptionother" disabled="false" uniqueid="{13d8099d-a597-e3d6-cacc-1557dddcbe7d}" />
                       </cell>
@@ -1508,6 +1513,7 @@
                       <cell id="{7a67ab5a-1b4b-051c-9975-621ca13c6526}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Law Enforcement Agency Notified" languagecode="1033" />
+                          <label description="Service de police notifié" languagecode="1036" />
                         </labels>
                         <control id="ppp_lawenforcementagency" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ppp_lawenforcementagency" disabled="false" uniqueid="{3c84d047-4189-c06a-cbea-00ae4cdeabab}" />
                       </cell>
@@ -1521,7 +1527,7 @@
                       <cell id="{45ab76b7-92c7-c2e2-5ec5-93621741528d}" showlabel="true" locklevel="0" colspan="2" rowspan="4" labelid="{8f1c6ca5-f19a-4ace-9d77-90496166e88f}">
                         <labels>
                           <label description="Law Enforcement Notification Details" languagecode="1033" />
-                          <label description="Law Enforcement Notification Details(fr)" languagecode="1036" />
+                          <label description="Détails – Notification du service de police" languagecode="1036" />
                         </labels>
                         <control id="ppp_lawenforcementnotifieddetails" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_lawenforcementnotifieddetails" disabled="false" uniqueid="{0d6c4891-0565-6ec2-cc64-485dd1792291}" />
                       </cell>
@@ -1533,6 +1539,7 @@
                       <cell id="{210d47d3-d3dd-625e-512e-64471288052a}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Recourse Letter Provided" languagecode="1033" />
+                          <label description="Lettre de recours fournie" languagecode="1036" />
                         </labels>
                         <control id="ppp_recourseletterprovided" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ppp_recourseletterprovided" disabled="false" uniqueid="{17c9d0c8-6249-4096-4551-48117544bd16}" />
                       </cell>
@@ -1621,12 +1628,14 @@
                 <section name="tab_dev_section_2" showlabel="true" showbar="true" locklevel="0" id="{47c311e4-33d2-900e-1904-51475d9683e9}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Right" celllabelposition="Left">
                   <labels>
                     <label description="User Feedback" languagecode="1033" />
+                    <label description="Commentaires des utilisateurs" languagecode="1036" />
                   </labels>
                   <rows>
                     <row>
                       <cell id="{46e7c9bb-cd9a-cdc8-1e3e-ea18d513ca41}" showlabel="false" colspan="1" auto="false" rowspan="1">
                         <labels>
                           <label description="Feedback" languagecode="1033" />
+                          <label description="Rétroaction" languagecode="1036" />
                         </labels>
                         <control id="WebResource_Feedback" classid="{9FDF5F91-88B1-47f4-AD53-C11EFC01A01D}">
                           <parameters>
@@ -2101,7 +2110,7 @@
     <CanBeDeleted>1</CanBeDeleted>
     <LocalizedNames>
       <LocalizedName description="main form" languagecode="1033" />
-      <LocalizedName description="main form(fr)" languagecode="1036" />
+      <LocalizedName description="Formulaire principal" languagecode="1036" />
     </LocalizedNames>
     <Descriptions>
       <Description description="A form for this entity." languagecode="1033" />

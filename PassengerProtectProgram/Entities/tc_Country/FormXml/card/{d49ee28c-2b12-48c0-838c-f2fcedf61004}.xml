@@ -61,7 +61,7 @@
                       <cell id="{ad21dfe9-bf54-4dca-af91-9a1f97f9f6d7}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Coumtry Name" languagecode="1033" />
-                          <label description="0" languagecode="1036" />
+                          <label description="Nom du pays" languagecode="1036" />
                         </labels>
                         <control id="tc_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tc_name" disabled="false" />
                       </cell>
@@ -112,7 +112,7 @@
     <CanBeDeleted>1</CanBeDeleted>
     <LocalizedNames>
       <LocalizedName description="Information" languagecode="1033" />
-      <LocalizedName description="Information(fr)" languagecode="1036" />
+      <LocalizedName description="Information" languagecode="1036" />
     </LocalizedNames>
     <Descriptions>
       <Description description="A card form for this entity." languagecode="1033" />

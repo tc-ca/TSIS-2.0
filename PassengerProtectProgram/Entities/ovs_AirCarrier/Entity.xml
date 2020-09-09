@@ -9,10 +9,11 @@
       </LocalizedNames>
       <LocalizedCollectionNames>
         <LocalizedCollectionName description="Air Carriers" languagecode="1033" />
-        <LocalizedCollectionName description="Air Carriers(fr)" languagecode="1036" />
+        <LocalizedCollectionName description="Transporteurs aériens" languagecode="1036" />
       </LocalizedCollectionNames>
       <Descriptions>
         <Description description="A person who operates a commercial air service." languagecode="1033" />
+        <Description description="Une personne qui exploite un service aérien commercial." languagecode="1036" />
       </Descriptions>
       <attributes>
         <attribute PhysicalName="CreatedBy">
@@ -95,7 +96,7 @@
           </displaynames>
           <Descriptions>
             <Description description="Date and time when the record was created." languagecode="1033" />
-            <Description description="Date and time when the record was created.(fr)" languagecode="1036" />
+            <Description description="Date et heure de création du dossier." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="CreatedOnBehalfBy">
@@ -261,7 +262,7 @@
           </displaynames>
           <Descriptions>
             <Description description="Date and time when the record was modified." languagecode="1033" />
-            <Description description="Date and time when the record was modified.(fr)" languagecode="1036" />
+            <Description description="Date et heure de modification du dossier." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ModifiedOnBehalfBy">
@@ -344,7 +345,7 @@
           </displaynames>
           <Descriptions>
             <Description description="Date and time that the record was migrated." languagecode="1033" />
-            <Description description="Date and time that the record was migrated.(fr)" languagecode="1036" />
+            <Description description="Date et heure de migration du dossier." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_AirCarrierId">
@@ -421,11 +422,11 @@
           <Length>200</Length>
           <displaynames>
             <displayname description="Air Carrier Name" languagecode="1033" />
-            <displayname description="Air Carrier Name(fr)" languagecode="1036" />
+            <displayname description="Nom du transporteur aérien" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The legal name of the Air Carrier." languagecode="1033" />
-            <Description description="Required name field(fr)" languagecode="1036" />
+            <Description description="Le nom légal du transporteur aérien." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_CallSign">
@@ -463,10 +464,11 @@
           <Length>200</Length>
           <displaynames>
             <displayname description="Call Sign" languagecode="1033" />
-            <displayname description="Call Sign(fr)" languagecode="1036" />
+            <displayname description="Indicatif d’appel" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The international radio call sign of the Air carrier." languagecode="1033" />
+            <Description description="L’indicatif d’appel radio international du transporteur aérien." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Country">
@@ -507,6 +509,7 @@
           </displaynames>
           <Descriptions>
             <Description description="The country associated with a Regulated Entity." languagecode="1033" />
+            <Description description="Le pays associé à une entité réglementée." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_ICAOCode">
@@ -548,6 +551,7 @@
           </displaynames>
           <Descriptions>
             <Description description="The Air Carrier designation code assigned by the International Civil Aviation Organization (ICAO). " languagecode="1033" />
+            <Description description="Le code de désignation du transporteur aérien attribué par l’Organisation de l’aviation civile internationale (OACI). " languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Organization">
@@ -588,6 +592,7 @@
           </displaynames>
           <Descriptions>
             <Description description="Organizations, including but not limited to  Regulated Entities, that Transport Canada has interactions with." languagecode="1033" />
+            <Description description="Les organisations, y compris les entités réglementées, avec lesquelles Transports Canada interagit." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="OwnerId">

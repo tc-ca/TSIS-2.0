@@ -25,7 +25,7 @@
                       <cell id="{58f50874-e94a-4494-8ded-a03f77028a70}" visible="false">
                         <labels>
                           <label description="Coumtry Name" languagecode="1033" />
-                          <label description="0" languagecode="1036" />
+                          <label description="Nom du pays" languagecode="1036" />
                         </labels>
                         <control id="tc_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tc_name" disabled="true" />
                       </cell>
@@ -43,7 +43,7 @@
                       <cell id="{4bfd2345-cd45-4926-8c03-209e1486707c}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Country Name (French)" languagecode="1033" />
-                          <label description="Country Name (French)" languagecode="1036" />
+                          <label description="Nom du pays (Français)" languagecode="1036" />
                         </labels>
                         <control id="tc_countrynamefrench" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tc_countrynamefrench" disabled="false" />
                       </cell>
@@ -132,7 +132,7 @@
     <CanBeDeleted>1</CanBeDeleted>
     <LocalizedNames>
       <LocalizedName description="Information" languagecode="1033" />
-      <LocalizedName description="Information(fr)" languagecode="1036" />
+      <LocalizedName description="Information" languagecode="1036" />
     </LocalizedNames>
     <Descriptions>
       <Description description="A form for this entity." languagecode="1033" />

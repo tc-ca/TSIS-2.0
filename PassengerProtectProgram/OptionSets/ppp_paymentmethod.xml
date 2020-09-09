@@ -6,7 +6,7 @@
   <IsCustomizable>1</IsCustomizable>
   <displaynames>
     <displayname description="Payment Method" languagecode="1033" />
-    <displayname description="Payment Method(fr)" languagecode="1036" />
+    <displayname description="Mode de paiement" languagecode="1036" />
   </displaynames>
   <Descriptions>
     <Description description="" languagecode="1033" />

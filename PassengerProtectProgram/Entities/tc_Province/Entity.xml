@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Entity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Name LocalizedName="Province" OriginalName="Province">tc_Province</Name>
+  <Name LocalizedName="Region" OriginalName="Province">tc_Province</Name>
   <EntityInfo>
     <entity Name="tc_Province">
       <LocalizedNames>
-        <LocalizedName description="Province" languagecode="1033" />
-        <LocalizedName description="0" languagecode="1036" />
+        <LocalizedName description="Region" languagecode="1033" />
+        <LocalizedName description="Région" languagecode="1036" />
       </LocalizedNames>
       <LocalizedCollectionNames>
         <LocalizedCollectionName description="Provinces" languagecode="1033" />
@@ -95,7 +95,7 @@
           </displaynames>
           <Descriptions>
             <Description description="Date and time when the record was created." languagecode="1033" />
-            <Description description="Date and time when the record was created.(fr)" languagecode="1036" />
+            <Description description="Date et heure de création du dossier." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="CreatedOnBehalfBy">
@@ -261,7 +261,7 @@
           </displaynames>
           <Descriptions>
             <Description description="Date and time when the record was modified." languagecode="1033" />
-            <Description description="Date and time when the record was modified.(fr)" languagecode="1036" />
+            <Description description="Date et heure de modification du dossier." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ModifiedOnBehalfBy">
@@ -344,7 +344,7 @@
           </displaynames>
           <Descriptions>
             <Description description="Date and time that the record was migrated." languagecode="1033" />
-            <Description description="Date and time that the record was migrated.(fr)" languagecode="1036" />
+            <Description description="Date et heure de migration du dossier." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="OwnerId">

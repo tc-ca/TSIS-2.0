@@ -1,18 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Entity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Name LocalizedName="Facility" OriginalName="Facility">ovs_Facility</Name>
+  <Name LocalizedName="Aerodrome" OriginalName="Facility">ovs_Facility</Name>
   <EntityInfo>
     <entity Name="ovs_Facility">
       <LocalizedNames>
-        <LocalizedName description="Facility" languagecode="1033" />
-        <LocalizedName description="0" languagecode="1036" />
+        <LocalizedName description="Aerodrome" languagecode="1033" />
+        <LocalizedName description="Aérodrome" languagecode="1036" />
       </LocalizedNames>
       <LocalizedCollectionNames>
         <LocalizedCollectionName description="Facilities" languagecode="1033" />
-        <LocalizedCollectionName description="Facilities(fr)" languagecode="1036" />
+        <LocalizedCollectionName description="Installations" languagecode="1036" />
       </LocalizedCollectionNames>
       <Descriptions>
         <Description description="Any area of land or water (including the frozen surface thereof) used for for the arrival, departure, movement or servicing of aircraft." languagecode="1033" />
+        <Description description="Toute zone terrestre ou maritime (y compris la surface gelée de celle-ci) utilisée pour l’arrivée, le départ, le mouvement ou l’entretien des aéronefs." languagecode="1036" />
       </Descriptions>
       <attributes>
         <attribute PhysicalName="CreatedBy">
@@ -95,7 +96,7 @@
           </displaynames>
           <Descriptions>
             <Description description="Date and time when the record was created." languagecode="1033" />
-            <Description description="Date and time when the record was created.(fr)" languagecode="1036" />
+            <Description description="Date et heure de création du dossier." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="CreatedOnBehalfBy">
@@ -261,7 +262,7 @@
           </displaynames>
           <Descriptions>
             <Description description="Date and time when the record was modified." languagecode="1033" />
-            <Description description="Date and time when the record was modified.(fr)" languagecode="1036" />
+            <Description description="Date et heure de modification du dossier." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ModifiedOnBehalfBy">
@@ -344,7 +345,7 @@
           </displaynames>
           <Descriptions>
             <Description description="Date and time that the record was migrated." languagecode="1033" />
-            <Description description="Date and time that the record was migrated.(fr)" languagecode="1036" />
+            <Description description="Date et heure de migration du dossier." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Address1City">
@@ -381,11 +382,12 @@
           <MaxLength>100</MaxLength>
           <Length>200</Length>
           <displaynames>
-            <displayname description="Address1: City" languagecode="1033" />
-            <displayname description="0" languagecode="1036" />
+            <displayname description="City" languagecode="1033" />
+            <displayname description="Ville" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The city where the facility is located." languagecode="1033" />
+            <Description description="The city where the aerodrome is located." languagecode="1033" />
+            <Description description="La ville où se trouve l’aérodrome." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Address1Latitude">
@@ -422,11 +424,12 @@
           <MaxValue>1000000000</MaxValue>
           <Accuracy>5</Accuracy>
           <displaynames>
-            <displayname description="Address1: Latitude" languagecode="1033" />
-            <displayname description="0" languagecode="1036" />
+            <displayname description="Latitude" languagecode="1033" />
+            <displayname description="Latitude" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The latitude associated with the facility." languagecode="1033" />
+            <Description description="The latitude associated with the aerodrome." languagecode="1033" />
+            <Description description="La latitude associée à l’aérodrome." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Address1Longitude">
@@ -463,11 +466,12 @@
           <MaxValue>1000000000</MaxValue>
           <Accuracy>5</Accuracy>
           <displaynames>
-            <displayname description="Address1: Longitude" languagecode="1033" />
-            <displayname description="0" languagecode="1036" />
+            <displayname description="Longitude" languagecode="1033" />
+            <displayname description="Longitude" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The longitude associated with the facility." languagecode="1033" />
+            <Description description="The longitude associated with the aerodrome." languagecode="1033" />
+            <Description description="La longitude associée à l’aérodrome." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Address1PostalCode">
@@ -504,11 +508,12 @@
           <MaxLength>100</MaxLength>
           <Length>200</Length>
           <displaynames>
-            <displayname description="Address1: Postal Code" languagecode="1033" />
-            <displayname description="0" languagecode="1036" />
+            <displayname description="Postal Code" languagecode="1033" />
+            <displayname description="Code postal" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The postal code associated with the facility." languagecode="1033" />
+            <Description description="The postal code associated with the aerodrome." languagecode="1033" />
+            <Description description="Le code postal associé à l’aérodrome." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Address1StateProvince">
@@ -545,11 +550,12 @@
           <MaxLength>100</MaxLength>
           <Length>200</Length>
           <displaynames>
-            <displayname description="Address1: State/Province" languagecode="1033" />
-            <displayname description="0" languagecode="1036" />
+            <displayname description="Region" languagecode="1033" />
+            <displayname description="Région" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The state or province where the facility is located." languagecode="1033" />
+            <Description description="The state or province where the aerodrome is located." languagecode="1033" />
+            <Description description="L’État ou la province où se trouve l’aérodrome." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Address1Street1">
@@ -590,7 +596,8 @@
             <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The street address associated with the facility." languagecode="1033" />
+            <Description description="The street address associated with the aerodrome." languagecode="1033" />
+            <Description description="L’adresse municipale associée à l’aérodrome." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Class">
@@ -628,10 +635,11 @@
           <MaxValue>2147483647</MaxValue>
           <displaynames>
             <displayname description="Class" languagecode="1033" />
-            <displayname description="0" languagecode="1036" />
+            <displayname description="Classe" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The class of aerodrome as designated by ISSO." languagecode="1033" />
+            <Description description="The class of aerodrome as designated by ICAO." languagecode="1033" />
+            <Description description="La catégorie d’aérodrome telle que désignée par l’OACI." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Contactid">
@@ -668,10 +676,11 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Contact" languagecode="1033" />
-            <displayname description="0" languagecode="1036" />
+            <displayname description="Personne-ressource" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The primary person of contact associated with the facility." languagecode="1033" />
+            <Description description="The primary person of contact associated with the aerodrome." languagecode="1033" />
+            <Description description="La principale personne-ressource associée à l’aérodrome." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Countryid">
@@ -711,7 +720,8 @@
             <displayname description="Pays" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The country where the facility is located." languagecode="1033" />
+            <Description description="The country where the aerodrome is located." languagecode="1033" />
+            <Description description="Le pays où l’aérodrome est situé." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Elevation">
@@ -752,7 +762,8 @@
             <displayname description="Élévation" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The elevation above sea level of the facility." languagecode="1033" />
+            <Description description="The elevation above sea level of the aerodrome." languagecode="1033" />
+            <Description description="L’altitude au-dessus du niveau de la mer de l’aérodrome." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_FacilityId">
@@ -786,8 +797,8 @@
           <IsRetrievable>1</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
           <displaynames>
-            <displayname description="Facility" languagecode="1033" />
-            <displayname description="0" languagecode="1036" />
+            <displayname description="Aerodrome" languagecode="1033" />
+            <displayname description="Aérodrome" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier for entity instances" languagecode="1033" />
@@ -828,11 +839,12 @@
           <MaxLength>250</MaxLength>
           <Length>500</Length>
           <displaynames>
-            <displayname description="Facility Name (English)" languagecode="1033" />
-            <displayname description="0" languagecode="1036" />
+            <displayname description="Aerodrome Name (English)" languagecode="1033" />
+            <displayname description="Nom de l'aérodrome (Anglais)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The legal English name of the facility." languagecode="1033" />
+            <Description description="The legal English name of the aerodrome." languagecode="1033" />
+            <Description description="Le nom légal de l’aérodrome en anglais." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_FacilityNameFrench">
@@ -869,11 +881,12 @@
           <MaxLength>250</MaxLength>
           <Length>500</Length>
           <displaynames>
-            <displayname description="Facility Name (French)" languagecode="1033" />
-            <displayname description="0" languagecode="1036" />
+            <displayname description="Aerodrome Name (French)" languagecode="1033" />
+            <displayname description="Nom de l'aérodrome (Français)" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The legal French name of the facility." languagecode="1033" />
+            <Description description="The legal French name of the aerodrome." languagecode="1033" />
+            <Description description="Le nom légal de l’aérodrome en français." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_FacilityType">
@@ -910,10 +923,11 @@
           <OptionSetName>ovs_facilitytype</OptionSetName>
           <displaynames>
             <displayname description="Facility Type" languagecode="1033" />
-            <displayname description="0" languagecode="1036" />
+            <displayname description="Type d’installation" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The category of facility associated with the location. " languagecode="1033" />
+            <Description description="La catégorie d’installation associée à l’emplacement. " languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_ICAOCode">
@@ -951,10 +965,11 @@
           <Length>200</Length>
           <displaynames>
             <displayname description="ICAO Code" languagecode="1033" />
-            <displayname description="0" languagecode="1036" />
+            <displayname description="Code OACI" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="The unique airport code that designates each airport around the world." languagecode="1033" />
+            <Description description="Le code d’aéroport unique qui désigne chaque aéroport dans le monde entier." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ovs_Name">
@@ -991,12 +1006,12 @@
           <MaxLength>500</MaxLength>
           <Length>1000</Length>
           <displaynames>
-            <displayname description="Facility Name" languagecode="1033" />
-            <displayname description="0" languagecode="1036" />
+            <displayname description="Aerodrome Name" languagecode="1033" />
+            <displayname description="Nom de l'aérodrome" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The name of the facility." languagecode="1033" />
-            <Description description="Required name field(fr)" languagecode="1036" />
+            <Description description="The name of the aerodrome." languagecode="1033" />
+            <Description description="Le nom de l’aérodrome." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="OwnerId">
@@ -1204,8 +1219,8 @@
               <displayname description="Statut" languagecode="1036" />
             </displaynames>
             <Descriptions>
-              <Description description="Status of the Facility" languagecode="1033" />
-              <Description description="Status of the Facility(fr)" languagecode="1036" />
+              <Description description="Status of the aerodrome" languagecode="1033" />
+              <Description description="Status of the aerodrome (fr)" languagecode="1036" />
             </Descriptions>
             <states>
               <state value="0" defaultstatus="1" invariantname="Active">
@@ -1227,8 +1242,8 @@
             <displayname description="Statut" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="Status of the Facility" languagecode="1033" />
-            <Description description="Status of the Facility(fr)" languagecode="1036" />
+            <Description description="Status of the aerodrome" languagecode="1033" />
+            <Description description="Status of the aerodrome (fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="statuscode">
@@ -1270,8 +1285,8 @@
               <displayname description="Raison du statut" languagecode="1036" />
             </displaynames>
             <Descriptions>
-              <Description description="Reason for the status of the Facility" languagecode="1033" />
-              <Description description="Reason for the status of the Facility(fr)" languagecode="1036" />
+              <Description description="Reason for the status of the aerodrome" languagecode="1033" />
+              <Description description="Reason for the status of the aerodrome (fr)" languagecode="1036" />
             </Descriptions>
             <statuses>
               <status value="1" state="0">
@@ -1293,8 +1308,8 @@
             <displayname description="Raison du statut" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="Reason for the status of the Facility" languagecode="1033" />
-            <Description description="Reason for the status of the Facility(fr)" languagecode="1036" />
+            <Description description="Reason for the status of the aerodrome" languagecode="1033" />
+            <Description description="Reason for the status of the aerodrome (fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="TimeZoneRuleVersionNumber">
@@ -1376,7 +1391,6 @@
           </displaynames>
           <Descriptions>
             <Description description="Time zone code that was in use when the record was created." languagecode="1033" />
-            <Description description="Time zone code that was in use when the record was created.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
       </attributes>
