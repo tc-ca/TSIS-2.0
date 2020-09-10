@@ -672,11 +672,9 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Owning Business Unit" languagecode="1033" />
-            <displayname description="Division propriétaire" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier for the business unit that owns the record" languagecode="1033" />
-            <Description description="Unique identifier for the business unit that owns the record(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="OwningTeam">
@@ -713,11 +711,9 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Owning Team" languagecode="1033" />
-            <displayname description="Équipe propriétaire" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier for the team that owns the record." languagecode="1033" />
-            <Description description="Unique identifier for the team that owns the record.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="OwningUser">
@@ -754,11 +750,9 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Owning User" languagecode="1033" />
-            <displayname description="Utilisateur propriétaire" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier for the user that owns the record." languagecode="1033" />
-            <Description description="Unique identifier for the user that owns the record.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="statecode">
@@ -927,11 +921,9 @@
           <MaxValue>2147483647</MaxValue>
           <displaynames>
             <displayname description="Time Zone Rule Version Number" languagecode="1033" />
-            <displayname description="Numéro de version de la règle du fuseau horaire" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="For internal use only." languagecode="1033" />
-            <Description description="For internal use only.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="UTCConversionTimeZoneCode">
@@ -968,11 +960,9 @@
           <MaxValue>2147483647</MaxValue>
           <displaynames>
             <displayname description="UTC Conversion Time Zone Code" languagecode="1033" />
-            <displayname description="Code de fuseau horaire pour la conversion UTC" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Time zone code that was in use when the record was created." languagecode="1033" />
-            <Description description="Time zone code that was in use when the record was created.(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
       </attributes>

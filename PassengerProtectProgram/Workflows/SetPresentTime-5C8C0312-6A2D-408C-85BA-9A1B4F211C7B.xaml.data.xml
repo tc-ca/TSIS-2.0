@@ -21,6 +21,5 @@
   <PrimaryEntity>ppp_Traveller</PrimaryEntity>
   <LocalizedNames>
     <LocalizedName languagecode="1033" description="Set Present Time" />
-    <LocalizedName languagecode="1036" description="Set Present Time(fr)" />
   </LocalizedNames>
 </Workflow>

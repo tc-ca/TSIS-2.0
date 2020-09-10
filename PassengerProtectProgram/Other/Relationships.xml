@@ -19,6 +19,7 @@
   <EntityRelationship Name="ovs_AirCarrier_Organization_Account" />
   <EntityRelationship Name="ovs_Facility_ovs_Contactid_Contact" />
   <EntityRelationship Name="ovs_Facility_ovs_Countryid_tc_Country" />
+  <EntityRelationship Name="ovs_ppp_Traveller_FlightConn_Facility" />
   <EntityRelationship Name="owner_ovs_aircarrier" />
   <EntityRelationship Name="owner_ovs_facility" />
   <EntityRelationship Name="owner_ppp_traveller" />

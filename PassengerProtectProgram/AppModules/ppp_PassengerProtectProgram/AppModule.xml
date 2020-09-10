@@ -22,10 +22,10 @@
     <AppModuleComponent type="1" schemaName="systemuser" />
   </AppModuleComponents>
   <AppModuleRoleMaps>
-    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
     <Role id="{70abdd18-59b6-ea11-a812-000d3a0c8127}" />
-    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
     <Role id="{ebcb2437-59b6-ea11-a812-000d3a0c8127}" />
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
   </AppModuleRoleMaps>
   <LocalizedNames>
     <LocalizedName description="Passenger Protect Program" languagecode="1033" />

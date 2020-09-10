@@ -7,7 +7,7 @@
       <LocalizedName description="Programme de protection des passagers" languagecode="1036" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.10</Version>
+    <Version>1.0.0.11</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>passengerprotectprogrampublisher</UniqueName>
@@ -176,11 +176,11 @@
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
-        <Required key="0" type="1" schemaName="msdyn_iotalert" displayName="IoT Alert" solution="IoTConnector (1.8.1.7)" />
+        <Required key="0" type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
         <Dependent key="1" type="80" schemaName="ppp_PassengerProtectProgram" displayName="Passenger Protect Program" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="2" type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Required key="2" type="1" schemaName="msdyn_iotalert" displayName="IoT Alert" solution="IoTConnector (1.8.1.7)" />
         <Dependent key="1" type="80" schemaName="ppp_PassengerProtectProgram" displayName="Passenger Protect Program" />
       </MissingDependency>
       <MissingDependency>
@@ -188,8 +188,20 @@
         <Dependent key="1" type="80" schemaName="ppp_PassengerProtectProgram" displayName="Passenger Protect Program" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="7" type="66" schemaName="driv_DR.TimePicker" displayName="driv_DR.TimePicker" solution="TimePickerPCF (1.0.0.7)" />
-        <Dependent key="5" type="60" displayName="main form" parentDisplayName="Traveller Validation" id="{4299e906-47cc-ea11-a812-000d3a0c86a9}" />
+        <Required key="4" type="1" schemaName="ovs_forecastquarter" displayName="Forecast Quarter" solution="Active" />
+        <Dependent key="5" type="1" schemaName="tc_province" displayName="Region" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="6" type="66" schemaName="MscrmControls.NumberInput.NumberInputControl" displayName="MscrmControls.NumberInput.NumberInputControl" solution="BaseCustomControlsCore (9.0.2008.4010)" />
+        <Dependent key="7" type="60" displayName="main form" parentDisplayName="Traveller Validation" id="{4299e906-47cc-ea11-a812-000d3a0c86a9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="8" type="66" schemaName="driv_DR.TimePicker" displayName="driv_DR.TimePicker" solution="TimePickerPCF (1.0.0.7)" />
+        <Dependent key="7" type="60" displayName="main form" parentDisplayName="Traveller Validation" id="{4299e906-47cc-ea11-a812-000d3a0c86a9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="9" type="66" schemaName="MscrmControls.FlipSwitch.FlipSwitchControl" displayName="MscrmControls.FlipSwitch.FlipSwitchControl" solution="CustomControlsCore (9.1.0000.22531)" />
+        <Dependent key="7" type="60" displayName="main form" parentDisplayName="Traveller Validation" id="{4299e906-47cc-ea11-a812-000d3a0c86a9}" />
       </MissingDependency>
       <MissingDependency>
         <Required key="3" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
