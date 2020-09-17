@@ -7,6 +7,7 @@
     <RolePrivilege name="prvActOnBehalfOfAnotherUser" level="Global" />
     <RolePrivilege name="prvAddressBook" level="Global" />
     <RolePrivilege name="prvAppendAppModule" level="Global" />
+    <RolePrivilege name="prvAppendBusinessUnit" level="Local" />
     <RolePrivilege name="prvAppendDocumentTemplate" level="Global" />
     <RolePrivilege name="prvAppendExpiredProcess" level="Global" />
     <RolePrivilege name="prvAppendFeedback" level="Basic" />
@@ -14,11 +15,13 @@
     <RolePrivilege name="prvAppendNote" level="Local" />
     <RolePrivilege name="prvAppendovs_AirCarrier" level="Global" />
     <RolePrivilege name="prvAppendovs_Facility" level="Global" />
-    <RolePrivilege name="prvAppendppp_Traveller" level="Global" />
-    <RolePrivilege name="prvAppendresco_UserSettings" level="Basic" />
+    <RolePrivilege name="prvAppendppp_Traveller" level="Local" />
     <RolePrivilege name="prvAppendtc_Country" level="Global" />
+    <RolePrivilege name="prvAppendtc_Province" level="Local" />
+    <RolePrivilege name="prvAppendTeam" level="Local" />
     <RolePrivilege name="prvAppendToAccount" level="Global" />
     <RolePrivilege name="prvAppendToAppModule" level="Global" />
+    <RolePrivilege name="prvAppendToBusinessUnit" level="Local" />
     <RolePrivilege name="prvAppendToDocumentTemplate" level="Global" />
     <RolePrivilege name="prvAppendToExpiredProcess" level="Global" />
     <RolePrivilege name="prvAppendToFeedback" level="Basic" />
@@ -27,10 +30,10 @@
     <RolePrivilege name="prvAppendToovs_AirCarrier" level="Global" />
     <RolePrivilege name="prvAppendToovs_Facility" level="Global" />
     <RolePrivilege name="prvAppendToPosition" level="Global" />
-    <RolePrivilege name="prvAppendToppp_Traveller" level="Global" />
-    <RolePrivilege name="prvAppendToresco_UserSettings" level="Basic" />
+    <RolePrivilege name="prvAppendToppp_Traveller" level="Local" />
     <RolePrivilege name="prvAppendTotc_Country" level="Global" />
     <RolePrivilege name="prvAppendTotc_Province" level="Local" />
+    <RolePrivilege name="prvAppendToTeam" level="Local" />
     <RolePrivilege name="prvAppendToUser" level="Global" />
     <RolePrivilege name="prvAppendToUserSettings" level="Local" />
     <RolePrivilege name="prvAppendToWorkflow" level="Local" />
@@ -40,8 +43,7 @@
     <RolePrivilege name="prvAssignFeedback" level="Basic" />
     <RolePrivilege name="prvAssignManager" level="Local" />
     <RolePrivilege name="prvAssignPosition" level="Global" />
-    <RolePrivilege name="prvAssignppp_Traveller" level="Global" />
-    <RolePrivilege name="prvAssignresco_UserSettings" level="Basic" />
+    <RolePrivilege name="prvAssignppp_Traveller" level="Local" />
     <RolePrivilege name="prvAssignworkflowbinary" level="Local" />
     <RolePrivilege name="prvBrowseAvailability" level="Global" />
     <RolePrivilege name="prvBulkEdit" level="Global" />
@@ -54,11 +56,11 @@
     <RolePrivilege name="prvCreateOrgEmailTemplates" level="Global" />
     <RolePrivilege name="prvCreateovs_AirCarrier" level="Global" />
     <RolePrivilege name="prvCreateovs_Facility" level="Global" />
-    <RolePrivilege name="prvCreateppp_Traveller" level="Global" />
+    <RolePrivilege name="prvCreateppp_Traveller" level="Local" />
     <RolePrivilege name="prvCreateRelationship" level="Global" />
-    <RolePrivilege name="prvCreateresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvCreateSharePointData" level="Global" />
     <RolePrivilege name="prvCreatetc_Country" level="Global" />
+    <RolePrivilege name="prvCreatetc_Province" level="Local" />
     <RolePrivilege name="prvCreateUserApplicationMetadata" level="Basic" />
     <RolePrivilege name="prvCreateUserEntityUISettings" level="Basic" />
     <RolePrivilege name="prvCreateUserSettings" level="Local" />
@@ -71,7 +73,6 @@
     <RolePrivilege name="prvDeleteInteractionForEmail" level="Basic" />
     <RolePrivilege name="prvDeleteNewProcess" level="Global" />
     <RolePrivilege name="prvDeleteRelationship" level="Global" />
-    <RolePrivilege name="prvDeleteresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvDeleteUserApplicationMetadata" level="Basic" />
     <RolePrivilege name="prvDeleteUserEntityUISettings" level="Basic" />
     <RolePrivilege name="prvDeleteUserSettings" level="Local" />
@@ -90,6 +91,7 @@
     <RolePrivilege name="prvReadAsyncOperation" level="Local" />
     <RolePrivilege name="prvReadAttribute" level="Global" />
     <RolePrivilege name="prvReadAuditSummary" level="Global" />
+    <RolePrivilege name="prvReadBusinessUnit" level="Local" />
     <RolePrivilege name="prvReadDocumentTemplate" level="Global" />
     <RolePrivilege name="prvReadEntity" level="Global" />
     <RolePrivilege name="prvReadExchangeSyncIdMapping" level="Basic" />
@@ -107,11 +109,10 @@
     <RolePrivilege name="prvReadPluginAssembly" level="Global" />
     <RolePrivilege name="prvReadPluginType" level="Global" />
     <RolePrivilege name="prvReadPosition" level="Global" />
-    <RolePrivilege name="prvReadppp_Traveller" level="Global" />
+    <RolePrivilege name="prvReadppp_Traveller" level="Local" />
     <RolePrivilege name="prvReadQuery" level="Global" />
     <RolePrivilege name="prvReadRecordAuditHistory" level="Global" />
     <RolePrivilege name="prvReadRelationship" level="Global" />
-    <RolePrivilege name="prvReadresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvReadRole" level="Local" />
     <RolePrivilege name="prvReadSavedQueryVisualizations" level="Global" />
     <RolePrivilege name="prvReadSdkMessage" level="Global" />
@@ -136,8 +137,7 @@
     <RolePrivilege name="prvSendAsUser" level="Global" />
     <RolePrivilege name="prvSendInviteForLive" level="Global" />
     <RolePrivilege name="prvShareFeedback" level="Basic" />
-    <RolePrivilege name="prvShareppp_Traveller" level="Global" />
-    <RolePrivilege name="prvShareresco_UserSettings" level="Basic" />
+    <RolePrivilege name="prvShareppp_Traveller" level="Local" />
     <RolePrivilege name="prvShareworkflowbinary" level="Local" />
     <RolePrivilege name="prvSyncToOutlook" level="Global" />
     <RolePrivilege name="prvUseOfficeApps" level="Global" />
@@ -152,11 +152,11 @@
     <RolePrivilege name="prvWriteNote" level="Basic" />
     <RolePrivilege name="prvWriteovs_AirCarrier" level="Global" />
     <RolePrivilege name="prvWriteovs_Facility" level="Global" />
-    <RolePrivilege name="prvWriteppp_Traveller" level="Global" />
+    <RolePrivilege name="prvWriteppp_Traveller" level="Local" />
     <RolePrivilege name="prvWriteRelationship" level="Global" />
-    <RolePrivilege name="prvWriteresco_UserSettings" level="Basic" />
     <RolePrivilege name="prvWriteSharePointData" level="Global" />
     <RolePrivilege name="prvWritetc_Country" level="Global" />
+    <RolePrivilege name="prvWriteUser" level="Local" />
     <RolePrivilege name="prvWriteUserApplicationMetadata" level="Basic" />
     <RolePrivilege name="prvWriteUserEntityUISettings" level="Basic" />
     <RolePrivilege name="prvWriteUserSettings" level="Local" />

@@ -61,7 +61,7 @@
                       <cell id="{56b13e9f-6786-4a5c-b291-bd5541a4e51f}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Air Carrier Name" languagecode="1033" />
-                          <label description="Air Carrier Name(fr)" languagecode="1036" />
+                          <label description="Nom du transporteur aérien" languagecode="1036" />
                         </labels>
                         <control id="ovs_aircarriername" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="ovs_aircarriername" disabled="false" />
                       </cell>
@@ -112,7 +112,7 @@
     <CanBeDeleted>1</CanBeDeleted>
     <LocalizedNames>
       <LocalizedName description="Information" languagecode="1033" />
-      <LocalizedName description="Information(fr)" languagecode="1036" />
+      <LocalizedName description="Information" languagecode="1036" />
     </LocalizedNames>
     <Descriptions>
       <Description description="A card form for this entity." languagecode="1033" />

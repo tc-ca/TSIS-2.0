@@ -7,7 +7,7 @@
   <ExternalTypeName></ExternalTypeName>
   <displaynames>
     <displayname description="Call Type" languagecode="1033" />
-    <displayname description="Call Type(fr)" languagecode="1036" />
+    <displayname description="Type d’appel" languagecode="1036" />
   </displaynames>
   <Descriptions>
     <Description description="" languagecode="1033" />
@@ -16,7 +16,7 @@
     <option value="927820000" ExternalValue="" Color="">
       <labels>
         <label description="Traveller Validation" languagecode="1033" />
-        <label description="Traveller Validation(fr)" languagecode="1036" />
+        <label description="Validation du voyageur" languagecode="1036" />
       </labels>
       <Descriptions>
         <Description description="" languagecode="1033" />
@@ -25,7 +25,7 @@
     <option value="927820001" ExternalValue="" Color="">
       <labels>
         <label description="Inspector Test" languagecode="1033" />
-        <label description="Test(fr)" languagecode="1036" />
+        <label description="Teste" languagecode="1036" />
       </labels>
       <Descriptions>
         <Description description="" languagecode="1033" />
@@ -34,7 +34,7 @@
     <option value="927820002" ExternalValue="" Color="">
       <labels>
         <label description="Air Carrier Inquiry" languagecode="1033" />
-        <label description="Air Carrier Inquiry(fr)" languagecode="1036" />
+        <label description="Demande de transporteur aérien" languagecode="1036" />
       </labels>
       <Descriptions>
         <Description description="" languagecode="1033" />

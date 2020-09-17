@@ -23,10 +23,8 @@
   <PrimaryEntity>ppp_Traveller</PrimaryEntity>
   <LocalizedNames>
     <LocalizedName languagecode="1033" description="Toggle Law Enforcement Notified Visibility" />
-    <LocalizedName languagecode="1036" description="Toggle Law Enforcement Notified Visibility(fr)" />
   </LocalizedNames>
   <Descriptions>
     <Description languagecode="1033" description="Click to add description" />
-    <Description languagecode="1036" description="Click to add description(fr)" />
   </Descriptions>
 </Workflow>

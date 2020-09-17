@@ -32,7 +32,7 @@
     <IntroducedVersion>1.0.0.0</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="Traveller Associated View" languagecode="1033" />
-      <LocalizedName description="Traveller Associated View (fr)" languagecode="1036" />
+      <LocalizedName description="Voyageur – Affichage connexe" languagecode="1036" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

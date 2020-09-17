@@ -24,10 +24,8 @@
   <PrimaryEntity>ppp_Traveller</PrimaryEntity>
   <LocalizedNames>
     <LocalizedName languagecode="1033" description="Toggle visibility of Recourse Letter field" />
-    <LocalizedName languagecode="1036" description="Toggle visibility of Recourse Letter field(fr)" />
   </LocalizedNames>
   <Descriptions>
     <Description languagecode="1033" description="Click to add description" />
-    <Description languagecode="1036" description="Click to add description(fr)" />
   </Descriptions>
 </Workflow>

@@ -29,7 +29,7 @@
     <IntroducedVersion>1.0.0.0</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="Traveller Advanced Find View" languagecode="1033" />
-      <LocalizedName description="Traveller Advanced Find View (fr)" languagecode="1036" />
+      <LocalizedName description="Voyageur – Affichage de recherche avancée" languagecode="1036" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

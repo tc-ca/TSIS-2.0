@@ -10,8 +10,8 @@
   <EntityRelationships />
   <OrganizationSettings />
   <optionsets />
+  <Reports />
   <Dashboards />
-  <InteractionCentricDashboards />
   <WebResources />
   <CustomControls />
   <AppModuleSiteMaps />

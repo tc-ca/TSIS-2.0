@@ -32,7 +32,7 @@
     <IntroducedVersion>1.0.0.0</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="Inactive Countries" languagecode="1033" />
-      <LocalizedName description="Inactive Countries(fr)" languagecode="1036" />
+      <LocalizedName description="Pays inactifs" languagecode="1036" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

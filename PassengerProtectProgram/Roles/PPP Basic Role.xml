@@ -3,13 +3,18 @@
   <IsCustomizable>1</IsCustomizable>
   <RolePrivileges>
     <RolePrivilege name="prvCreateSharePointData" level="Global" />
+    <RolePrivilege name="prvReadovs_AirCarrier" level="Local" />
+    <RolePrivilege name="prvReadovs_Facility" level="Local" />
     <RolePrivilege name="prvReadPluginAssembly" level="Global" />
     <RolePrivilege name="prvReadPluginType" level="Global" />
+    <RolePrivilege name="prvReadppp_Traveller" level="Local" />
     <RolePrivilege name="prvReadSdkMessage" level="Global" />
     <RolePrivilege name="prvReadSdkMessageProcessingStep" level="Global" />
     <RolePrivilege name="prvReadSdkMessageProcessingStepImage" level="Global" />
     <RolePrivilege name="prvReadSharePointData" level="Global" />
     <RolePrivilege name="prvReadSharePointDocument" level="Global" />
+    <RolePrivilege name="prvReadtc_Country" level="Local" />
+    <RolePrivilege name="prvReadtc_Province" level="Local" />
     <RolePrivilege name="prvWriteSharePointData" level="Global" />
   </RolePrivileges>
 </Role>

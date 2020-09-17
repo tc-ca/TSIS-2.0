@@ -6,7 +6,7 @@
   <IsCustomizable>1</IsCustomizable>
   <displaynames>
     <displayname description="Facility Type" languagecode="1033" />
-    <displayname description="0" languagecode="1036" />
+    <displayname description="Type d’installation" languagecode="1036" />
   </displaynames>
   <Descriptions>
     <Description description="" languagecode="1033" />
@@ -15,7 +15,7 @@
     <option value="918640000">
       <labels>
         <label description="Aerodrome" languagecode="1033" />
-        <label description="0" languagecode="1036" />
+        <label description="Aérodrome" languagecode="1036" />
       </labels>
     </option>
     <option value="918640001">

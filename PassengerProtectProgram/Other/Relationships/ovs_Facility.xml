@@ -44,7 +44,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The Traveller's first flight connection." languagecode="1033" />
-        <Description description="The (optional) first connection of the traveller's  itinerary.(fr)" languagecode="1036" />
+        <Description description="La première correspondance du voyageur." languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>
@@ -79,7 +79,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The Traveller's  tenth flight connection." languagecode="1033" />
-        <Description description="The (optional) tenth connection of the traveller's itinerary.(fr)" languagecode="1036" />
+        <Description description="La dixième correspondance du voyageur." languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>
@@ -114,7 +114,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The Traveller's second flight connection. " languagecode="1033" />
-        <Description description="The (optional) second connection of the traveller's  itinerary.(fr)" languagecode="1036" />
+        <Description description="La deuxième correspondance du voyageur. " languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>
@@ -149,7 +149,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The Traveller's third flight connection." languagecode="1033" />
-        <Description description="The (optional) third connection of the traveller's itinerary.(fr)" languagecode="1036" />
+        <Description description="La troisième correspondance du voyageur." languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>
@@ -184,7 +184,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The Traveller's fourth flight connection." languagecode="1033" />
-        <Description description="The (optional) fourth connection of the traveller's itinerary.(fr)" languagecode="1036" />
+        <Description description="La quatrième correspondance du voyageur." languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>
@@ -219,7 +219,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The Traveller's fifth flight connection." languagecode="1033" />
-        <Description description="The (optional) fifth connection of the traveller's itinerary.(fr)" languagecode="1036" />
+        <Description description="La cinquième correspondance du voyageur." languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>
@@ -289,7 +289,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The Traveller's seventh flight connection." languagecode="1033" />
-        <Description description="The (optional) seventh connection of the traveller's itinerary.(fr)" languagecode="1036" />
+        <Description description="La septième correspondance du voyageur." languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>
@@ -324,7 +324,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The Traveller's eighth flight connection." languagecode="1033" />
-        <Description description="The (optional) eight connection of the traveller's itinerary.(fr)" languagecode="1036" />
+        <Description description="La huitième correspondance du voyageur." languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>
@@ -359,7 +359,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The Traveller's ninth flight connection." languagecode="1033" />
-        <Description description="The (optional) ninth connection of the traveller's itinerary.(fr)" languagecode="1036" />
+        <Description description="La neuvième correspondance du voyageur." languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>
@@ -394,7 +394,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The Aerodrome identified as the Traveller's final destination." languagecode="1033" />
-        <Description description="The final destination of the Traveller.(fr)" languagecode="1036" />
+        <Description description="L’aérodrome identifié comme la destination finale du voyageur." languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>
@@ -429,7 +429,7 @@
     <RelationshipDescription>
       <Descriptions>
         <Description description="The Aerodrome identified as the Traveller's departure location." languagecode="1033" />
-        <Description description="The name of the aerodrome associated with the location of the Traveller's point of origin.(fr)" languagecode="1036" />
+        <Description description="L’aérodrome identifié comme le lieu de départ du voyageur." languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>
     <EntityRelationshipRoles>

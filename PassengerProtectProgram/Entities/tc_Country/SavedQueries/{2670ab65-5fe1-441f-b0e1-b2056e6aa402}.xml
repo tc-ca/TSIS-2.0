@@ -40,7 +40,7 @@
     <IntroducedVersion>1.0.0.0</IntroducedVersion>
     <LocalizedNames>
       <LocalizedName description="Active Countries" languagecode="1033" />
-      <LocalizedName description="Active Countries(fr)" languagecode="1036" />
+      <LocalizedName description="Pays actifs" languagecode="1036" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

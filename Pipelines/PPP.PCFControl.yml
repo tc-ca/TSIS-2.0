@@ -28,7 +28,15 @@ steps:
   - task: PowerPlatformImportSolution@0
     inputs:
       authenticationType: 'PowerPlatformSPN'
-      PowerPlatformSPN: 'TSIS 2.0 QA'
-      SolutionInputFile: '$(Build.SourcesDirectory)\PCFControls\$(PCFControlName).zip'
+      PowerPlatformSPN: 'ROM QA'
+      SolutionInputFile: '$(Build.SourcesDirectory)\PCFControls\DateTwoOptionPCF_1_0_0_1_managed.zip'
+      AsyncOperation: true
+      MaxAsyncWaitTime: '240'
+
+  - task: PowerPlatformImportSolution@0
+    inputs:
+      authenticationType: 'PowerPlatformSPN'
+      PowerPlatformSPN: 'ROM QA'
+      SolutionInputFile: '$(Build.SourcesDirectory)\PCFControls\TimePickerPCF_1_0_0_6_24H_Format.zip'
       AsyncOperation: true
       MaxAsyncWaitTime: '240'

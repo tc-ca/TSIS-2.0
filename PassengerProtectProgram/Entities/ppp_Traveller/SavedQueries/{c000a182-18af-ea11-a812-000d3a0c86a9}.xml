@@ -5,7 +5,7 @@
     <CanBeDeleted>1</CanBeDeleted>
     <isquickfindquery>0</isquickfindquery>
     <isprivate>0</isprivate>
-    <isdefault>1</isdefault>
+    <isdefault>0</isdefault>
     <savedqueryid>{c000a182-18af-ea11-a812-000d3a0c86a9}</savedqueryid>
     <layoutxml>
       <grid name="resultset" jump="ppp_name" select="1" icon="1" preview="1">
@@ -31,19 +31,19 @@
           <attribute name="ppp_name" />
           <attribute name="ppp_aircarrier" />
           <attribute name="ppp_travellerid" />
-          <filter type="and">
-            <condition attribute="ppp_recordstatus" operator="eq" value="927820001" />
-          </filter>
           <attribute name="ppp_flightorigin" />
           <order attribute="ppp_flightorigin" descending="false" />
           <order attribute="ppp_aircarrier" descending="false" />
+          <filter type="and">
+            <condition attribute="ppp_recordstatus" operator="eq" value="927820001" />
+          </filter>
         </entity>
       </fetch>
     </fetchxml>
     <IntroducedVersion>1.0.0.2</IntroducedVersion>
     <LocalizedNames>
-      <LocalizedName description="Draft Traveller Records" languagecode="1033" />
-      <LocalizedName description="All Draft Traveller Records(fr)" languagecode="1036" />
+      <LocalizedName description="Draft Traveller Validation Records" languagecode="1033" />
+      <LocalizedName description="Ébauche des dossiers de validation des voyageurs" languagecode="1036" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

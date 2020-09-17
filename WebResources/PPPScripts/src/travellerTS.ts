@@ -47,12 +47,16 @@ namespace TSIS.PPP {
     if (field.getValue() != ppp_matchfound.Yes) {
       return;
     }
-
+    var globalContext = Xrm.Utility.getGlobalContext();
     var confirmStrings = {
       text:
         'By clicking the proceed button, you will be redirected to the next page and will NOT be able to modify the information on this page.',
       title: 'Confirmation Match Found',
     };
+    if (globalContext.userSettings.languageId == 1036) {
+      confirmStrings.text = 'En cliquant sur le bouton Continuer, vous serez redirigé vers la page suivante et ne pourrez PAS modifier les informations de cette page.';
+      confirmStrings.title = 'Correspondance positive trouvée';
+    }
     var confirmOptions = { height: 200, width: 450 };
     Xrm.Navigation.openConfirmDialog(confirmStrings, confirmOptions).then(
       function (success) {
@@ -234,6 +238,29 @@ namespace TSIS.PPP {
       keepLockedList,
       keepUnlockedList
     );
+  }
+
+  export function statusOnChange(
+    eContext: Xrm.ExecutionContext<any, any>,
+    keepLockedList: string[],
+    keepUnlockedList: string[]
+  ) {
+    Form = <Form.ppp_traveller.Main.mainform>eContext.getFormContext();
+    var recordStatus = Form.getAttribute('ppp_recordstatus').getValue();
+    var recordClosed =
+      recordStatus == ppp_recordstatus.Closed ||
+      recordStatus == ppp_recordstatus.Unresolved;
+    if (recordClosed) {
+      Form.data.save();
+    }
+    if (Form.data.isValid()) {
+      toggleDisabledAllControls(
+        eContext,
+        recordClosed,
+        keepLockedList,
+        keepUnlockedList
+      );
+    }
   }
 
   export function toggleDisabledAllControls(
