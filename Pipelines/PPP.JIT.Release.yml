@@ -50,7 +50,7 @@ steps:
 - task: PowerPlatformExportSolution@0
   inputs:
     authenticationType: 'PowerPlatformSPN'
-    PowerPlatformSPN: 'TSIS 2.0 Dev'
+    PowerPlatformSPN: 'ROM JIT'
     SolutionName: '$(SolutionName)'
     SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName)_managed.zip'
     Managed: true
