@@ -13,11 +13,9 @@
   <AppModuleComponents>
     <AppModuleComponent type="62" schemaName="ppp_PassengerProtectProgram" />
     <AppModuleComponent type="60" id="{dc3db1af-12e7-ea11-a817-000d3a0c86a9}" />
-    <AppModuleComponent type="1" schemaName="ovs_aircarrier" />
-    <AppModuleComponent type="1" schemaName="incident" />
-    <AppModuleComponent type="1" schemaName="tc_country" />
     <AppModuleComponent type="1" schemaName="ovs_facility" />
-    <AppModuleComponent type="1" schemaName="msdyn_iotalert" />
+    <AppModuleComponent type="1" schemaName="ovs_aircarrier" />
+    <AppModuleComponent type="1" schemaName="tc_country" />
     <AppModuleComponent type="1" schemaName="ppp_traveller" />
     <AppModuleComponent type="1" schemaName="systemuser" />
   </AppModuleComponents>
