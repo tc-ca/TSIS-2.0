@@ -205,11 +205,11 @@
       </MissingDependency>
       <MissingDependency>
         <Required key="6" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
-        <Dependent key="6" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" />
+        <Dependent key="7" type="80" schemaName="ppp_PassengerProtectProgram" displayName="Passenger Protect Program" />
       </MissingDependency>
       <MissingDependency>
         <Required key="6" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
-        <Dependent key="7" type="80" schemaName="ppp_PassengerProtectProgram" displayName="Passenger Protect Program" />
+        <Dependent key="6" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>
