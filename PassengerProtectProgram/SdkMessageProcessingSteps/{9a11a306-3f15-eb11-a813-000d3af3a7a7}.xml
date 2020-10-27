@@ -49,9 +49,6 @@
         &lt;Item&gt;
             &lt;Field&gt;ppp_IDCountry&lt;/Field&gt;
         &lt;/Item&gt;
-        &lt;Item&gt;
-            &lt;Field&gt;ppp_flightdestination&lt;/Field&gt;
-        &lt;/Item&gt;
     &lt;/Items&gt;
 &lt;/Settings&gt;</Configuration>
   <Description>Core.Localization.Retrieve: Retrieve of any Entity</Description>
