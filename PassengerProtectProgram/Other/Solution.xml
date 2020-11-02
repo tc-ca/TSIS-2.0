@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.1.0.24638" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.1.0.24930" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>PassengerProtectProgram</UniqueName>
     <LocalizedNames>
@@ -192,11 +192,11 @@
         <Dependent key="1" type="1" schemaName="tc_province" displayName="Region" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="2" type="66" schemaName="MscrmControls.FlipSwitch.FlipSwitchControl" displayName="MscrmControls.FlipSwitch.FlipSwitchControl" solution="CustomControlsCore (9.1.0000.24638)" />
+        <Required key="2" type="66" schemaName="MscrmControls.FlipSwitch.FlipSwitchControl" displayName="MscrmControls.FlipSwitch.FlipSwitchControl" solution="CustomControlsCore (9.1.0000.24930)" />
         <Dependent key="3" type="60" displayName="main form" parentDisplayName="Traveller Validation" id="{4299e906-47cc-ea11-a812-000d3a0c86a9}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="4" type="66" schemaName="MscrmControls.NumberInput.NumberInputControl" displayName="MscrmControls.NumberInput.NumberInputControl" solution="BaseCustomControlsCore (9.0.2010.2011)" />
+        <Required key="4" type="66" schemaName="MscrmControls.NumberInput.NumberInputControl" displayName="MscrmControls.NumberInput.NumberInputControl" solution="BaseCustomControlsCore (9.0.2010.3017)" />
         <Dependent key="3" type="60" displayName="main form" parentDisplayName="Traveller Validation" id="{4299e906-47cc-ea11-a812-000d3a0c86a9}" />
       </MissingDependency>
       <MissingDependency>
@@ -205,11 +205,11 @@
       </MissingDependency>
       <MissingDependency>
         <Required key="6" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
-        <Dependent key="6" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" />
+        <Dependent key="7" type="80" schemaName="ppp_PassengerProtectProgram" displayName="Passenger Protect Program" />
       </MissingDependency>
       <MissingDependency>
         <Required key="6" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
-        <Dependent key="7" type="80" schemaName="ppp_PassengerProtectProgram" displayName="Passenger Protect Program" />
+        <Dependent key="6" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>

@@ -381,7 +381,7 @@
             <label description="Informations du voyageur" languagecode="1036" />
           </labels>
           <columns>
-            <column width="100%">
+            <column width="50%">
               <sections>
                 <section name="tab_4_section_1" id="31a993ae-3d6c-4463-957d-1db4439f98c9" IsUserDefined="0" locklevel="0" showlabel="true" showbar="true" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115" labelid="{4588c6cf-07cd-435c-8f94-d8d9e23e94eb}">
                   <labels>
@@ -520,6 +520,92 @@
                         </labels>
                       </cell>
                     </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="tab_TravellerInformation_section_2" showlabel="true" showbar="true" locklevel="0" id="{2b885394-3a46-d997-86a7-d2c7d16ec7de}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Identification Information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{41d81986-55ee-2346-5daa-34225153de60}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="ID Presented (Select all appropriate)" languagecode="1033" />
+                          <label description="Pièce d'identité présenté" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_idsused" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="ppp_idsused" disabled="false" uniqueid="{d101776a-1686-923d-5018-e4c2b0c00123}" />
+                      </cell>
+                      <cell id="{3dbd084c-6d2c-e84d-dbc6-20c942577cd3}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{41c05712-6477-4a86-9cb4-6231399e156d}" showlabel="true" locklevel="0" colspan="2" rowspan="4">
+                        <labels>
+                          <label description="ID Details/Numbers" languagecode="1033" />
+                          <label description="Détails de la pièce d'identit" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_iddetails" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_iddetails" disabled="false" uniqueid="{d6c87326-8797-0a3c-49ec-921e97329db4}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{2702ee91-3088-c869-4dd5-19d924676187}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="ID - Country of Issuance" languagecode="1033" />
+                          <label description="Pièce d'identité Pays" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_idcountry" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ppp_idcountry" disabled="false" uniqueid="{58a13d10-096a-a04e-bece-205865700461}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{F03304AB-1C4B-4922-8270-5A134BD054A9}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{78d73678-c79c-92ad-7139-4785d2325c54}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{49d7b033-d2a8-17ab-6c09-0b6ebd8e8b05}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Citizenship" languagecode="1033" />
+                          <label description="Citoyenneté" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_citizenship" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ppp_citizenship" disabled="false" />
+                      </cell>
+                      <cell id="{c9aa8281-4b8d-14be-8374-8b18817594e3}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c2d87a5e-dc70-3859-25b0-2de8b632e094}" showlabel="true" locklevel="0" colspan="2" rowspan="4">
+                        <labels>
+                          <label description="Last Known Address" languagecode="1033" />
+                          <label description="Dernière adresse connue" languagecode="1036" />
+                        </labels>
+                        <control id="ppp_lastknownaddress" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_lastknownaddress" disabled="false" uniqueid="{8400d1c5-980c-a58b-2a53-285b70ee6291}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
                   </rows>
                 </section>
               </sections>
@@ -670,7 +756,7 @@
                           <label description="Citizenship" languagecode="1033" />
                           <label description="Citoyenneté" languagecode="1036" />
                         </labels>
-                        <control id="ppp_citizenship" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ppp_citizenship" disabled="false" />
+                        <control id="ppp_citizenship" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ppp_citizenship" disabled="false" uniqueid="{ea8271d2-581c-2533-acb1-c9741933d128}" />
                       </cell>
                       <cell id="{c976ec7d-b97c-ce2d-d93a-6c05658332b5}" showlabel="false">
                         <labels>
@@ -1378,7 +1464,7 @@
                     <row>
                       <cell id="{d2520a20-dd64-9ea1-c761-9071524268c5}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="Nominating Agency" languagecode="1033" />
+                          <label description="New Information from Nominating Agency" languagecode="1033" />
                           <label description="Nouvelles informations  de l'organisme de parrainage" languagecode="1036" />
                         </labels>
                         <control id="ppp_nominatingagencyadditional" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ppp_nominatingagencyadditional" disabled="false" uniqueid="{69517a39-865a-8851-3111-3b15164a2a29}" />
@@ -1392,7 +1478,7 @@
                     <row>
                       <cell id="{7478362b-7898-a553-8e96-1cd316376611}" showlabel="true" locklevel="0" rowspan="3" colspan="2" labelid="{8fdf4bd4-8789-4a2f-ba7f-a9c9e19fb37a}">
                         <labels>
-                          <label description="Nominating Agency Information Details" languagecode="1033" />
+                          <label description="Details of New Information from Nominating Agency" languagecode="1033" />
                           <label description="Détails de l’information sur l’organisme responsable" languagecode="1036" />
                         </labels>
                         <control id="ppp_nominatingagencynotes" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_nominatingagencynotes" disabled="false" uniqueid="{772dd445-e23a-3c91-92a5-b3c30c9a2039}" />
@@ -1403,7 +1489,7 @@
                     <row>
                       <cell id="{e3b54382-25d8-6808-b341-d6a081b8a66b}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="Open Source" languagecode="1033" />
+                          <label description="New Information from Open Source" languagecode="1033" />
                           <label description="De nouvelles informations sur les sources ouvertes ?" languagecode="1036" />
                         </labels>
                         <control id="ppp_opensourceadditional" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ppp_opensourceadditional" disabled="false" uniqueid="{a12db28b-ed98-499e-1aea-17c4c5088294}" />
@@ -1417,7 +1503,7 @@
                     <row>
                       <cell id="{46331794-0e34-8a70-59ed-64d957858a65}" showlabel="true" locklevel="0" rowspan="3" colspan="2" labelid="{99552464-413b-4899-89c8-34de79382e79}">
                         <labels>
-                          <label description="Open Source Information Details" languagecode="1033" />
+                          <label description="Details of New Information from Open Source" languagecode="1033" />
                           <label description="Détails de l’information de sources ouvertes" languagecode="1036" />
                         </labels>
                         <control id="ppp_opensourcenotes" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="ppp_opensourcenotes" disabled="false" uniqueid="{e3b733e2-50de-3159-47a7-961563999951}" />
