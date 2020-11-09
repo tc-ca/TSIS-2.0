@@ -160,13 +160,24 @@ var TSIS;
         PPP.setDateTime = setDateTime;
         function showHideMatchConfirmed(eContext) {
             Form = eContext.getFormContext();
+debugger;
+            var callType = Form.getAttribute('ppp_calltype').getValue();
+            var airCarrier = Form.getAttribute('ppp_aircarrier').getValue();
+            var flightOriginDate = Form.getAttribute('ppp_flightorigindate').getValue();
+            var flightOrigin = Form.getAttribute('ppp_flightorigin').getValue();
+            var flightDestination = Form.getAttribute('ppp_flightdestination').getValue();
             var firstName = Form.getAttribute('ppp_firstname').getValue();
             var lastName = Form.getAttribute('ppp_lastname').getValue();
             var gender = Form.getAttribute('ppp_gender').getValue();
             var dateOfBirth = Form.getAttribute('ppp_dateofbirth').getValue();
             var isPresent = Form.getAttribute('ppp_ispresent').getValue();
             var haveProceeded = Form.getAttribute('ppp_matchfound').getValue() == 927820000 /* Yes */;
-            if (firstName &&
+            if (callType &&
+                airCarrier &&
+                flightOriginDate &&
+                flightOrigin &&
+                flightDestination &&
+                firstName &&
                 lastName &&
                 gender &&
                 dateOfBirth &&

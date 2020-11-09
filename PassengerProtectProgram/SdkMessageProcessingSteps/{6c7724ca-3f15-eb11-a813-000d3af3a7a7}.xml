@@ -44,13 +44,10 @@
             &lt;Field&gt;ppp_flightdestination&lt;/Field&gt;
         &lt;/Item&gt;
         &lt;Item&gt;
-            &lt;Field&gt;ppp_Citizenship&lt;/Field&gt;
+            &lt;Field&gt;ppp_citizenship&lt;/Field&gt;
         &lt;/Item&gt;
         &lt;Item&gt;
-            &lt;Field&gt;ppp_IDCountry&lt;/Field&gt;
-        &lt;/Item&gt;
-        &lt;Item&gt;
-            &lt;Field&gt;ppp_flightdestination&lt;/Field&gt;
+            &lt;Field&gt;ppp_idcountry&lt;/Field&gt;
         &lt;/Item&gt;
     &lt;/Items&gt;
 &lt;/Settings&gt;</Configuration>

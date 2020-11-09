@@ -2087,6 +2087,7 @@
         <event name="onchange" application="false" active="false" attribute="ppp_flightorigindate">
           <Handlers>
             <Handler functionName="TSIS.PPP.setDateTime" libraryName="ppp_scripts/travellerTS.js" handlerUniqueId="{01173896-17ee-866d-c707-7c88006cc6d5}" enabled="true" parameters="&quot;ppp_flightorigindate&quot;, &quot;ppp_flightoriginhour&quot;, &quot;ppp_flightoriginminute&quot;, &quot;ppp_flightorigintime&quot;" passExecutionContext="true" />
+            <Handler functionName="TSIS.PPP.showHideMatchConfirmed" libraryName="ppp_scripts/travellerTS.js" handlerUniqueId="{47b4b6d2-98d0-7442-0790-6076b3d2358a}" enabled="true" parameters="" passExecutionContext="true" />
           </Handlers>
         </event>
         <event name="onchange" application="false" active="false" attribute="ppp_firstname">
@@ -2180,11 +2181,23 @@
         <event name="onchange" application="false" active="false" attribute="ppp_flightorigin">
           <Handlers>
             <Handler functionName="TSIS.PPP.flightValidation" libraryName="ppp_scripts/travellerTS.js" handlerUniqueId="{51e06b90-a022-5534-6850-a5293bba9a0e}" enabled="true" parameters="[&quot;ppp_flightorigin&quot;, &quot;ppp_flightdestination&quot;, &quot;ppp_flightconnection1&quot;, &quot;ppp_flightconnection2&quot;, &quot;ppp_flightconnection3&quot;, &quot;ppp_flightconnection4&quot;, &quot;ppp_flightconnection5&quot;, &quot;ppp_flightconnection6&quot;, &quot;ppp_flightconnection7&quot;, &quot;ppp_flightconnection8&quot;, &quot;ppp_flightconnection9&quot;, &quot;ppp_flightconnection10&quot;,]&#xA;" passExecutionContext="true" />
+            <Handler functionName="TSIS.PPP.showHideMatchConfirmed" libraryName="ppp_scripts/travellerTS.js" handlerUniqueId="{7283c35c-cee8-c835-abac-264479d6ea05}" enabled="true" parameters="" passExecutionContext="true" />
           </Handlers>
         </event>
         <event name="onchange" application="false" active="false" attribute="ppp_flightdestination">
           <Handlers>
             <Handler functionName="TSIS.PPP.flightValidation" libraryName="ppp_scripts/travellerTS.js" handlerUniqueId="{dd8a61a0-d471-38b1-da73-1e369e7938b3}" enabled="true" parameters="[&quot;ppp_flightorigin&quot;, &quot;ppp_flightdestination&quot;, &quot;ppp_flightconnection1&quot;, &quot;ppp_flightconnection2&quot;, &quot;ppp_flightconnection3&quot;, &quot;ppp_flightconnection4&quot;, &quot;ppp_flightconnection5&quot;, &quot;ppp_flightconnection6&quot;, &quot;ppp_flightconnection7&quot;, &quot;ppp_flightconnection8&quot;, &quot;ppp_flightconnection9&quot;, &quot;ppp_flightconnection10&quot;,]&#xA;" passExecutionContext="true" />
+            <Handler functionName="TSIS.PPP.showHideMatchConfirmed" libraryName="ppp_scripts/travellerTS.js" handlerUniqueId="{12c3e48e-1286-b19b-90b7-1cd133eb7179}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="ppp_calltype">
+          <Handlers>
+            <Handler functionName="TSIS.PPP.showHideMatchConfirmed" libraryName="ppp_scripts/travellerTS.js" handlerUniqueId="{622c2954-bc69-89d7-8da1-5ee6ca0d1627}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="ppp_aircarrier">
+          <Handlers>
+            <Handler functionName="TSIS.PPP.showHideMatchConfirmed" libraryName="ppp_scripts/travellerTS.js" handlerUniqueId="{a5540480-9db3-2641-ba34-d6987ddd7986}" enabled="true" parameters="" passExecutionContext="true" />
           </Handlers>
         </event>
       </events>
