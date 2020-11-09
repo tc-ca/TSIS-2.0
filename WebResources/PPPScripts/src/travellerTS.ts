@@ -188,6 +188,11 @@ namespace TSIS.PPP {
     eContext: Xrm.ExecutionContext<any, any>
   ) {
     Form = <Form.ppp_traveller.Main.mainform>eContext.getFormContext();
+    var callType = Form.getAttribute('ppp_calltype').getValue();
+    var airCarrier = Form.getAttribute('ppp_aircarrier').getValue();
+    var flightOriginDate = Form.getAttribute('ppp_flightorigindate').getValue();
+    var flightOrigin = Form.getAttribute('ppp_flightorigin').getValue();
+    var flightDestination = Form.getAttribute('ppp_flightdestination').getValue();
     var firstName = Form.getAttribute('ppp_firstname').getValue();
     var lastName = Form.getAttribute('ppp_lastname').getValue();
     var gender = Form.getAttribute('ppp_gender').getValue();
@@ -197,6 +202,11 @@ namespace TSIS.PPP {
       Form.getAttribute('ppp_matchfound').getValue() == ppp_matchfound.Yes;
 
     if (
+      callType &&
+      airCarrier &&
+      flightOriginDate &&
+      flightOrigin &&
+      flightDestination &&
       firstName &&
       lastName &&
       gender &&
