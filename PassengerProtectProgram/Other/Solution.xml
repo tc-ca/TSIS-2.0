@@ -205,12 +205,16 @@
         <Dependent key="3" type="60" displayName="main form" parentDisplayName="Traveller Validation" id="{4299e906-47cc-ea11-a812-000d3a0c86a9}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="6" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
-        <Dependent key="6" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" />
+        <Required key="6" type="connectionreference" displayName="ppp_sharedcommondataserviceforapps_e8686" solution="Active" id.connectionreferencelogicalname="ppp_sharedcommondataserviceforapps_e8686" />
+        <Dependent key="7" type="29" displayName="Set Drafts with Flight Origin Date over 7 days ago to unresolved and notify Manager team" id="{e707700d-44b6-ea11-a812-000d3a0c86a9}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="6" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
-        <Dependent key="7" type="80" schemaName="ppp_PassengerProtectProgram" displayName="Passenger Protect Program" />
+        <Required key="8" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent key="9" type="80" schemaName="ppp_PassengerProtectProgram" displayName="Passenger Protect Program" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="8" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent key="8" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>
