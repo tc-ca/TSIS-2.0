@@ -341,7 +341,7 @@
           <Behavior>1</Behavior>
           <displaynames>
             <displayname description="Record Created On" languagecode="1033" />
-            <displayname description="Enregistrement créé le" languagecode="1036" />
+            <displayname description="Dossier créé le" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Date and time that the record was migrated." languagecode="1033" />
@@ -675,6 +675,7 @@
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier for the business unit that owns the record" languagecode="1033" />
+            <Description description="Identificateur unique de la division propriétaire du dossier." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="OwningTeam">
@@ -714,6 +715,7 @@
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier for the team that owns the record." languagecode="1033" />
+            <Description description="Identificateur unique de l'équipe propriétaire du dossier." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="OwningUser">
@@ -963,6 +965,7 @@
           </displaynames>
           <Descriptions>
             <Description description="Time zone code that was in use when the record was created." languagecode="1033" />
+            <Description description="Code du fuseau horaire utilisé à la création du dossier." languagecode="1036" />
           </Descriptions>
         </attribute>
       </attributes>

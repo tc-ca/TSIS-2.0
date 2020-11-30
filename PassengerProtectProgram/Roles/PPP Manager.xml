@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Role id="{ebcb2437-59b6-ea11-a812-000d3a0c8127}" name="PPP Manager" isinherited="0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Role id="{ebcb2437-59b6-ea11-a812-000d3a0c8127}" name="PPP Manager" isinherited="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <IsCustomizable>1</IsCustomizable>
   <RolePrivileges>
     <RolePrivilege name="prvActivateBusinessProcessFlow" level="Global" />
@@ -44,6 +44,7 @@
     <RolePrivilege name="prvAssignManager" level="Local" />
     <RolePrivilege name="prvAssignPosition" level="Global" />
     <RolePrivilege name="prvAssignppp_Traveller" level="Local" />
+    <RolePrivilege name="prvAssignUserQuery" level="Basic" />
     <RolePrivilege name="prvAssignworkflowbinary" level="Local" />
     <RolePrivilege name="prvBrowseAvailability" level="Global" />
     <RolePrivilege name="prvBulkEdit" level="Global" />
@@ -57,12 +58,14 @@
     <RolePrivilege name="prvCreateovs_AirCarrier" level="Global" />
     <RolePrivilege name="prvCreateovs_Facility" level="Global" />
     <RolePrivilege name="prvCreateppp_Traveller" level="Local" />
+    <RolePrivilege name="prvCreateQuery" level="Global" />
     <RolePrivilege name="prvCreateRelationship" level="Global" />
     <RolePrivilege name="prvCreateSharePointData" level="Global" />
     <RolePrivilege name="prvCreatetc_Country" level="Global" />
     <RolePrivilege name="prvCreatetc_Province" level="Local" />
     <RolePrivilege name="prvCreateUserApplicationMetadata" level="Basic" />
     <RolePrivilege name="prvCreateUserEntityUISettings" level="Basic" />
+    <RolePrivilege name="prvCreateUserQuery" level="Basic" />
     <RolePrivilege name="prvCreateUserSettings" level="Local" />
     <RolePrivilege name="prvCreateWorkflow" level="Local" />
     <RolePrivilege name="prvCreateworkflowbinary" level="Local" />
@@ -75,6 +78,7 @@
     <RolePrivilege name="prvDeleteRelationship" level="Global" />
     <RolePrivilege name="prvDeleteUserApplicationMetadata" level="Basic" />
     <RolePrivilege name="prvDeleteUserEntityUISettings" level="Basic" />
+    <RolePrivilege name="prvDeleteUserQuery" level="Basic" />
     <RolePrivilege name="prvDeleteUserSettings" level="Local" />
     <RolePrivilege name="prvDeleteworkflowbinary" level="Local" />
     <RolePrivilege name="prvDisableUser" level="Local" />
@@ -128,6 +132,7 @@
     <RolePrivilege name="prvReadUser" level="Global" />
     <RolePrivilege name="prvReadUserApplicationMetadata" level="Basic" />
     <RolePrivilege name="prvReadUserEntityUISettings" level="Basic" />
+    <RolePrivilege name="prvReadUserQuery" level="Basic" />
     <RolePrivilege name="prvReadUserSettings" level="Local" />
     <RolePrivilege name="prvReadWebResource" level="Global" />
     <RolePrivilege name="prvReadWorkflow" level="Global" />
@@ -138,6 +143,7 @@
     <RolePrivilege name="prvSendInviteForLive" level="Global" />
     <RolePrivilege name="prvShareFeedback" level="Basic" />
     <RolePrivilege name="prvShareppp_Traveller" level="Local" />
+    <RolePrivilege name="prvShareUserQuery" level="Basic" />
     <RolePrivilege name="prvShareworkflowbinary" level="Local" />
     <RolePrivilege name="prvSyncToOutlook" level="Global" />
     <RolePrivilege name="prvUseOfficeApps" level="Global" />
@@ -153,12 +159,14 @@
     <RolePrivilege name="prvWriteovs_AirCarrier" level="Global" />
     <RolePrivilege name="prvWriteovs_Facility" level="Global" />
     <RolePrivilege name="prvWriteppp_Traveller" level="Local" />
+    <RolePrivilege name="prvWriteQuery" level="Global" />
     <RolePrivilege name="prvWriteRelationship" level="Global" />
     <RolePrivilege name="prvWriteSharePointData" level="Global" />
     <RolePrivilege name="prvWritetc_Country" level="Global" />
     <RolePrivilege name="prvWriteUser" level="Local" />
     <RolePrivilege name="prvWriteUserApplicationMetadata" level="Basic" />
     <RolePrivilege name="prvWriteUserEntityUISettings" level="Basic" />
+    <RolePrivilege name="prvWriteUserQuery" level="Basic" />
     <RolePrivilege name="prvWriteUserSettings" level="Local" />
     <RolePrivilege name="prvWriteWorkflow" level="Local" />
     <RolePrivilege name="prvWriteworkflowbinary" level="Local" />

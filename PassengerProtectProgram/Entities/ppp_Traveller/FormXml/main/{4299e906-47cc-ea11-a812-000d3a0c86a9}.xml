@@ -10,7 +10,7 @@
         <tab verticallayout="true" id="{82fe370b-5ab9-4c23-9815-0c0b1b16d167}" IsUserDefined="1" name="tab_General" expanded="true" locklevel="0" showlabel="true" labelid="{e51eea32-09c2-43f2-8d80-bf4838c868dc}">
           <labels>
             <label description="General" languagecode="1033" />
-            <label description="Général" languagecode="1036" />
+            <label description="Généralités" languagecode="1036" />
           </labels>
           <columns>
             <column width="50%">
@@ -1659,7 +1659,7 @@
                       <cell id="{754e75b8-55e0-ad90-24ee-8ee05e975018}" showlabel="true" locklevel="0" labelid="{d8f910e2-1fd4-4e51-bf83-4f47e379baf2}">
                         <labels>
                           <label description="New Record Time" languagecode="1033" />
-                          <label description="Nouvelle heure d'enregistrement" languagecode="1036" />
+                          <label description="Heure de création du dossier" languagecode="1036" />
                         </labels>
                         <control id="ppp_newrecordtime" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="ppp_newrecordtime" disabled="true" uniqueid="{8a184b63-8dc8-8054-9a28-5d95c418d5e0}" />
                       </cell>

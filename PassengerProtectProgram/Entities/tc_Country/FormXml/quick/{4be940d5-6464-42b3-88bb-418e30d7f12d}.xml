@@ -17,7 +17,7 @@
                 <section showlabel="false" showbar="false" IsUserDefined="0" id="{63ce2cf1-3e72-4b9c-9997-e19625d14450}">
                   <labels>
                     <label description="GENERAL" languagecode="1033" />
-                    <label description="Général" languagecode="1036" />
+                    <label description="Généralités" languagecode="1036" />
                   </labels>
                   <rows>
                     <row>

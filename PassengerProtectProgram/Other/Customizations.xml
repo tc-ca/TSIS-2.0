@@ -27,6 +27,13 @@
       <statecode>0</statecode>
       <statuscode>1</statuscode>
     </connectionreference>
+    <connectionreference connectionreferencelogicalname="ppp_sharedsendmail_4e5d9">
+      <connectionreferencedisplayname>Mail</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_sendmail</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
     <connectionreference connectionreferencelogicalname="ppp_sharedsendmail_fa130">
       <connectionreferencedisplayname>Mail</connectionreferencedisplayname>
       <connectorid>/providers/Microsoft.PowerApps/apis/shared_sendmail</connectorid>

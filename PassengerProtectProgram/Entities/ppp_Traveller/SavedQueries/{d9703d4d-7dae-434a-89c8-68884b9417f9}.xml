@@ -35,6 +35,7 @@
             <filter type="or">
               <condition attribute="ppp_recordstatus" operator="eq" value="927820001" />
               <condition attribute="ppp_recordstatus" operator="eq" value="927820003" />
+              <condition attribute="ppp_recordstatus" operator="eq" value="927820002" />
             </filter>
           </filter>
         </entity>
