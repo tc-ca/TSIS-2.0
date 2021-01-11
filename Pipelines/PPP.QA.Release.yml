@@ -49,19 +49,9 @@ steps:
     authenticationType: 'PowerPlatformSPN'
     PowerPlatformSPN: 'ROM QA'
 
-- task: PowerPlatformExportSolution@0
-  inputs:
-    authenticationType: 'PowerPlatformSPN'
-    PowerPlatformSPN: 'ROM QA'
-    SolutionName: '$(SolutionName)'
-    SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName)_managed.zip'
-    Managed: true
-    AsyncOperation: true
-    MaxAsyncWaitTime: '60'
-
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '$(Build.ArtifactStagingDirectory)\$(SolutionName)_managed.zip'
+    targetPath: '$(Build.ArtifactStagingDirectory)\$(SolutionName).zip'
     artifact: 'drop'
     publishLocation: 'pipeline'
 
