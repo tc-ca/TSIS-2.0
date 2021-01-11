@@ -32,12 +32,16 @@ steps:
     PowerPlatformSPN: 'ROM Dev'
     SolutionName: '$(SolutionName)'
     SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName).zip'
+    Managed: true
+    AsyncOperation: true
+    MaxAsyncWaitTime: '60'
     ExportRelationshipRoles: true
 
 - task: PowerPlatformUnpackSolution@0
   inputs:
     SolutionInputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName).zip'
     SolutionTargetFolder: '$(Build.SourcesDirectory)\$(SolutionName)'
+    SolutionType: 'Managed'
 
 - powershell: |
    echo "Committing all CDS solution changes"
