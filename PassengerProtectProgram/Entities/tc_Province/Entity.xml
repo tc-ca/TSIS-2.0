@@ -1,19 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Entity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Name LocalizedName="Country" OriginalName="Country">tc_Country</Name>
+  <Name LocalizedName="Region" OriginalName="Province">tc_Province</Name>
   <EntityInfo>
-    <entity Name="tc_Country">
+    <entity Name="tc_Province">
       <LocalizedNames>
-        <LocalizedName description="Country" languagecode="1033" />
-        <LocalizedName description="Pays" languagecode="1036" />
+        <LocalizedName description="Region" languagecode="1033" />
+        <LocalizedName description="Région" languagecode="1036" />
       </LocalizedNames>
       <LocalizedCollectionNames>
-        <LocalizedCollectionName description="Countries" languagecode="1033" />
-        <LocalizedCollectionName description="Pays" languagecode="1036" />
+        <LocalizedCollectionName description="Provinces" languagecode="1033" />
+        <LocalizedCollectionName description="Provinces(fr)" languagecode="1036" />
       </LocalizedCollectionNames>
       <Descriptions>
-        <Description description="A nation occupying a particular territory." languagecode="1033" />
-        <Description description="Une nation qui occupe un territoire particulier." languagecode="1036" />
+        <Description description="" languagecode="1033" />
       </Descriptions>
       <attributes>
         <attribute PhysicalName="CreatedBy">
@@ -341,7 +340,7 @@
           <Behavior>1</Behavior>
           <displaynames>
             <displayname description="Record Created On" languagecode="1033" />
-            <displayname description="Dossier créé le" languagecode="1036" />
+            <displayname description="Enregistrement créé le" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Date and time that the record was migrated." languagecode="1033" />
@@ -428,7 +427,6 @@
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier for the business unit that owns the record" languagecode="1033" />
-            <Description description="Identificateur unique de la division propriétaire du dossier." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="OwningTeam">
@@ -468,7 +466,6 @@
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier for the team that owns the record." languagecode="1033" />
-            <Description description="Identificateur unique de l'équipe propriétaire du dossier." languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="OwningUser">
@@ -540,7 +537,7 @@
           <IsFilterable>1</IsFilterable>
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
-          <optionset Name="tc_country_statecode">
+          <optionset Name="tc_province_statecode">
             <OptionSetType>state</OptionSetType>
             <IntroducedVersion>1.0.0.0</IntroducedVersion>
             <IsCustomizable>1</IsCustomizable>
@@ -549,8 +546,8 @@
               <displayname description="Statut" languagecode="1036" />
             </displaynames>
             <Descriptions>
-              <Description description="Status of the Country" languagecode="1033" />
-              <Description description="Status of the Country(fr)" languagecode="1036" />
+              <Description description="Status of the Province" languagecode="1033" />
+              <Description description="Status of the Province(fr)" languagecode="1036" />
             </Descriptions>
             <states>
               <state value="0" defaultstatus="1" invariantname="Active">
@@ -572,8 +569,8 @@
             <displayname description="Statut" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="Status of the Country" languagecode="1033" />
-            <Description description="Status of the Country(fr)" languagecode="1036" />
+            <Description description="Status of the Province" languagecode="1033" />
+            <Description description="Status of the Province(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="statuscode">
@@ -606,7 +603,7 @@
           <IsFilterable>0</IsFilterable>
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
-          <optionset Name="tc_country_statuscode">
+          <optionset Name="tc_province_statuscode">
             <OptionSetType>status</OptionSetType>
             <IntroducedVersion>1.0.0.0</IntroducedVersion>
             <IsCustomizable>1</IsCustomizable>
@@ -615,8 +612,8 @@
               <displayname description="Raison du statut" languagecode="1036" />
             </displaynames>
             <Descriptions>
-              <Description description="Reason for the status of the Country" languagecode="1033" />
-              <Description description="Reason for the status of the Country(fr)" languagecode="1036" />
+              <Description description="Reason for the status of the Province" languagecode="1033" />
+              <Description description="Reason for the status of the Province(fr)" languagecode="1036" />
             </Descriptions>
             <statuses>
               <status value="1" state="0">
@@ -638,14 +635,95 @@
             <displayname description="Raison du statut" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="Reason for the status of the Country" languagecode="1033" />
-            <Description description="Reason for the status of the Country(fr)" languagecode="1036" />
+            <Description description="Reason for the status of the Province" languagecode="1033" />
+            <Description description="Reason for the status of the Province(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
-        <attribute PhysicalName="tc_CountryId">
+        <attribute PhysicalName="tc_Country">
+          <Type>lookup</Type>
+          <Name>tc_country</Name>
+          <LogicalName>tc_country</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ImeMode>auto</ImeMode>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>0</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.0</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
+          <LookupStyle>single</LookupStyle>
+          <LookupTypes />
+          <displaynames>
+            <displayname description="Country" languagecode="1033" />
+            <displayname description="Pays" languagecode="1036" />
+          </displaynames>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="tc_ProvinceCode">
+          <Type>nvarchar</Type>
+          <Name>tc_provincecode</Name>
+          <LogicalName>tc_provincecode</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ImeMode>auto</ImeMode>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.0</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
+          <Format>text</Format>
+          <MaxLength>100</MaxLength>
+          <Length>200</Length>
+          <displaynames>
+            <displayname description="Province Code" languagecode="1033" />
+            <displayname description="0" languagecode="1036" />
+          </displaynames>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="tc_ProvinceId">
           <Type>primarykey</Type>
-          <Name>tc_countryid</Name>
-          <LogicalName>tc_countryid</LogicalName>
+          <Name>tc_provinceid</Name>
+          <LogicalName>tc_provinceid</LogicalName>
           <RequiredLevel>systemrequired</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|RequiredForGrid</DisplayMask>
           <ImeMode>auto</ImeMode>
@@ -673,187 +751,19 @@
           <IsRetrievable>1</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
           <displaynames>
-            <displayname description="Country" languagecode="1033" />
-            <displayname description="Pays" languagecode="1036" />
+            <displayname description="Province" languagecode="1033" />
+            <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier for entity instances" languagecode="1033" />
             <Description description="Unique identifier for entity instances(fr)" languagecode="1036" />
           </Descriptions>
         </attribute>
-        <attribute PhysicalName="tc_CountryISOCodeAlpha2">
+        <attribute PhysicalName="tc_ProvinceName">
           <Type>nvarchar</Type>
-          <Name>tc_countryisocodealpha2</Name>
-          <LogicalName>tc_countryisocodealpha2</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
-          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-          <ImeMode>auto</ImeMode>
-          <ValidForUpdateApi>1</ValidForUpdateApi>
-          <ValidForReadApi>1</ValidForReadApi>
-          <ValidForCreateApi>1</ValidForCreateApi>
-          <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>1</IsAuditEnabled>
-          <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0.0.0</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <CanModifySearchSettings>1</CanModifySearchSettings>
-          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
-          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-          <IsSortableEnabled>0</IsSortableEnabled>
-          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-          <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
-          <IsSearchable>0</IsSearchable>
-          <IsFilterable>0</IsFilterable>
-          <IsRetrievable>0</IsRetrievable>
-          <IsLocalizable>0</IsLocalizable>
-          <Format>text</Format>
-          <MaxLength>2</MaxLength>
-          <Length>200</Length>
-          <displaynames>
-            <displayname description="Country ISO Code Alpha 2" languagecode="1033" />
-            <displayname description="Code ISO du pays Alpha 2" languagecode="1036" />
-          </displaynames>
-          <Descriptions>
-            <Description description="The unique two character country ISO code." languagecode="1033" />
-            <Description description="Le code de pays ISO unique à deux caractères." languagecode="1036" />
-          </Descriptions>
-        </attribute>
-        <attribute PhysicalName="tc_CountryISOCodeAlpha3">
-          <Type>nvarchar</Type>
-          <Name>tc_countryisocodealpha3</Name>
-          <LogicalName>tc_countryisocodealpha3</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
-          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-          <ImeMode>auto</ImeMode>
-          <ValidForUpdateApi>1</ValidForUpdateApi>
-          <ValidForReadApi>1</ValidForReadApi>
-          <ValidForCreateApi>1</ValidForCreateApi>
-          <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>1</IsAuditEnabled>
-          <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0.0.0</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <CanModifySearchSettings>1</CanModifySearchSettings>
-          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
-          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-          <IsSortableEnabled>0</IsSortableEnabled>
-          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-          <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
-          <IsSearchable>0</IsSearchable>
-          <IsFilterable>0</IsFilterable>
-          <IsRetrievable>0</IsRetrievable>
-          <IsLocalizable>0</IsLocalizable>
-          <Format>text</Format>
-          <MaxLength>100</MaxLength>
-          <Length>200</Length>
-          <displaynames>
-            <displayname description="Country ISO Code Alpha 3" languagecode="1033" />
-            <displayname description="Code ISO du pays Alpha 3" languagecode="1036" />
-          </displaynames>
-          <Descriptions>
-            <Description description="The unique three character country ISO code." languagecode="1033" />
-            <Description description="Le code de pays ISO unique à trois caractères." languagecode="1036" />
-          </Descriptions>
-        </attribute>
-        <attribute PhysicalName="tc_CountryNameEnglish">
-          <Type>nvarchar</Type>
-          <Name>tc_countrynameenglish</Name>
-          <LogicalName>tc_countrynameenglish</LogicalName>
+          <Name>tc_provincename</Name>
+          <LogicalName>tc_provincename</LogicalName>
           <RequiredLevel>required</RequiredLevel>
-          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-          <ImeMode>auto</ImeMode>
-          <ValidForUpdateApi>1</ValidForUpdateApi>
-          <ValidForReadApi>1</ValidForReadApi>
-          <ValidForCreateApi>1</ValidForCreateApi>
-          <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>1</IsAuditEnabled>
-          <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0.0.0</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <CanModifySearchSettings>1</CanModifySearchSettings>
-          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
-          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-          <IsSortableEnabled>0</IsSortableEnabled>
-          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-          <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
-          <IsSearchable>0</IsSearchable>
-          <IsFilterable>0</IsFilterable>
-          <IsRetrievable>0</IsRetrievable>
-          <IsLocalizable>0</IsLocalizable>
-          <Format>text</Format>
-          <MaxLength>100</MaxLength>
-          <Length>200</Length>
-          <displaynames>
-            <displayname description="Country Name (English)" languagecode="1033" />
-            <displayname description="Nom du pays (Anglais)" languagecode="1036" />
-          </displaynames>
-          <Descriptions>
-            <Description description="The legal English name of the country." languagecode="1033" />
-            <Description description="Le nom légal du pays en anglais." languagecode="1036" />
-          </Descriptions>
-        </attribute>
-        <attribute PhysicalName="tc_CountryNameFrench">
-          <Type>nvarchar</Type>
-          <Name>tc_countrynamefrench</Name>
-          <LogicalName>tc_countrynamefrench</LogicalName>
-          <RequiredLevel>required</RequiredLevel>
-          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-          <ImeMode>auto</ImeMode>
-          <ValidForUpdateApi>1</ValidForUpdateApi>
-          <ValidForReadApi>1</ValidForReadApi>
-          <ValidForCreateApi>1</ValidForCreateApi>
-          <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>1</IsAuditEnabled>
-          <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0.0.0</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <CanModifySearchSettings>1</CanModifySearchSettings>
-          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
-          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-          <IsSortableEnabled>0</IsSortableEnabled>
-          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-          <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
-          <IsSearchable>0</IsSearchable>
-          <IsFilterable>0</IsFilterable>
-          <IsRetrievable>0</IsRetrievable>
-          <IsLocalizable>0</IsLocalizable>
-          <Format>text</Format>
-          <MaxLength>100</MaxLength>
-          <Length>200</Length>
-          <displaynames>
-            <displayname description="Country Name (French)" languagecode="1033" />
-            <displayname description="Nom du pays (Français)" languagecode="1036" />
-          </displaynames>
-          <Descriptions>
-            <Description description="The legal French name of the country." languagecode="1033" />
-            <Description description="Le nom légal du pays en français." languagecode="1036" />
-          </Descriptions>
-        </attribute>
-        <attribute PhysicalName="tc_Name">
-          <Type>nvarchar</Type>
-          <Name>tc_name</Name>
-          <LogicalName>tc_name</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
           <DisplayMask>PrimaryName|ValidForAdvancedFind|ValidForForm|ValidForGrid|RequiredForForm</DisplayMask>
           <ImeMode>auto</ImeMode>
           <ValidForUpdateApi>1</ValidForUpdateApi>
@@ -883,12 +793,94 @@
           <MaxLength>100</MaxLength>
           <Length>200</Length>
           <displaynames>
-            <displayname description="Country Name" languagecode="1033" />
-            <displayname description="Nom du pays" languagecode="1036" />
+            <displayname description="Province Name" languagecode="1033" />
+            <displayname description="0" languagecode="1036" />
           </displaynames>
           <Descriptions>
-            <Description description="The name of the country." languagecode="1033" />
-            <Description description="Le nom du pays." languagecode="1036" />
+            <Description description="Required name field" languagecode="1033" />
+            <Description description="Required name field(fr)" languagecode="1036" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="tc_ProvinceNameEnglish">
+          <Type>nvarchar</Type>
+          <Name>tc_provincenameenglish</Name>
+          <LogicalName>tc_provincenameenglish</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ImeMode>auto</ImeMode>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.0</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
+          <Format>text</Format>
+          <MaxLength>100</MaxLength>
+          <Length>200</Length>
+          <displaynames>
+            <displayname description="Province Name (English)" languagecode="1033" />
+            <displayname description="0" languagecode="1036" />
+          </displaynames>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="tc_ProvinceNameFrench">
+          <Type>nvarchar</Type>
+          <Name>tc_provincenamefrench</Name>
+          <LogicalName>tc_provincenamefrench</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ImeMode>auto</ImeMode>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.0</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
+          <Format>text</Format>
+          <MaxLength>100</MaxLength>
+          <Length>200</Length>
+          <displaynames>
+            <displayname description="Province Name (French)" languagecode="1033" />
+            <displayname description="0" languagecode="1036" />
+          </displaynames>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="TimeZoneRuleVersionNumber">
@@ -967,11 +959,10 @@
           </displaynames>
           <Descriptions>
             <Description description="Time zone code that was in use when the record was created." languagecode="1033" />
-            <Description description="Code du fuseau horaire utilisé à la création du dossier." languagecode="1036" />
           </Descriptions>
         </attribute>
       </attributes>
-      <EntitySetName>tc_countries</EntitySetName>
+      <EntitySetName>tc_provinces</EntitySetName>
       <IsDuplicateCheckSupported>1</IsDuplicateCheckSupported>
       <IsBusinessProcessEnabled>0</IsBusinessProcessEnabled>
       <IsRequiredOffline>0</IsRequiredOffline>
@@ -979,7 +970,6 @@
       <IsCollaboration>0</IsCollaboration>
       <AutoRouteToOwnerQueue>0</AutoRouteToOwnerQueue>
       <IsConnectionsEnabled>0</IsConnectionsEnabled>
-      <EntityColor></EntityColor>
       <IsDocumentManagementEnabled>0</IsDocumentManagementEnabled>
       <AutoCreateAccessTeams>0</AutoCreateAccessTeams>
       <IsOneNoteIntegrationEnabled>0</IsOneNoteIntegrationEnabled>
@@ -1029,7 +1019,6 @@
       <EnforceStateTransitions>0</EnforceStateTransitions>
       <CanChangeHierarchicalRelationship>1</CanChangeHierarchicalRelationship>
       <EntityHelpUrlEnabled>0</EntityHelpUrlEnabled>
-      <EntityHelpUrl></EntityHelpUrl>
       <ChangeTrackingEnabled>0</ChangeTrackingEnabled>
       <CanChangeTrackingBeEnabled>1</CanChangeTrackingBeEnabled>
       <IsEnabledForExternalChannels>0</IsEnabledForExternalChannels>

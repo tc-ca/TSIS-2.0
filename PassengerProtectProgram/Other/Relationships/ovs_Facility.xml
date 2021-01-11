@@ -87,7 +87,7 @@
     <ReferencingAttributeName>ppp_FlightConnection2</ReferencingAttributeName>
     <RelationshipDescription>
       <Descriptions>
-        <Description description="The Traveller's second flight connection. " languagecode="1033" />
+        <Description description="The Traveller's second flight connection." languagecode="1033" />
         <Description description="La deuxième correspondance du voyageur. " languagecode="1036" />
       </Descriptions>
     </RelationshipDescription>

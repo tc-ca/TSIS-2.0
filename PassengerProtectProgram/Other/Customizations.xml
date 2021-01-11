@@ -27,16 +27,9 @@
       <statecode>0</statecode>
       <statuscode>1</statuscode>
     </connectionreference>
-    <connectionreference connectionreferencelogicalname="ppp_sharedsendmail_4e5d9">
-      <connectionreferencedisplayname>Mail</connectionreferencedisplayname>
-      <connectorid>/providers/Microsoft.PowerApps/apis/shared_sendmail</connectorid>
-      <iscustomizable>1</iscustomizable>
-      <statecode>0</statecode>
-      <statuscode>1</statuscode>
-    </connectionreference>
-    <connectionreference connectionreferencelogicalname="ppp_sharedsendmail_fa130">
-      <connectionreferencedisplayname>Mail</connectionreferencedisplayname>
-      <connectorid>/providers/Microsoft.PowerApps/apis/shared_sendmail</connectorid>
+    <connectionreference connectionreferencelogicalname="ppp_sharedoffice365_d678e">
+      <connectionreferencedisplayname>Office 365 Outlook</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_office365</connectorid>
       <iscustomizable>1</iscustomizable>
       <statecode>0</statecode>
       <statuscode>1</statuscode>
