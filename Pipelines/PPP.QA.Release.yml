@@ -31,6 +31,7 @@ steps:
   inputs:
     SolutionSourceFolder: '$(Build.SourcesDirectory)\$(SolutionName)'
     SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName).zip'
+    SolutionType: 'Managed'
 
 - task: PowerPlatformImportSolution@0
   inputs:
@@ -41,6 +42,7 @@ steps:
     MaxAsyncWaitTime: '240'
     OverwriteUnmanagedCustomizations: true
     SkipProductUpdateDependencies: true
+    ConvertToManaged: true
 
 - task: PowerPlatformPublishCustomizations@0
   inputs:
@@ -52,13 +54,14 @@ steps:
     authenticationType: 'PowerPlatformSPN'
     PowerPlatformSPN: 'ROM QA'
     SolutionName: '$(SolutionName)'
-    SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName)_unmanaged.zip'
+    SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName)_managed.zip'
+    Managed: true
     AsyncOperation: true
     MaxAsyncWaitTime: '60'
 
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '$(Build.ArtifactStagingDirectory)\$(SolutionName)_unmanaged.zip'
+    targetPath: '$(Build.ArtifactStagingDirectory)\$(SolutionName)_managed.zip'
     artifact: 'drop'
     publishLocation: 'pipeline'
 
