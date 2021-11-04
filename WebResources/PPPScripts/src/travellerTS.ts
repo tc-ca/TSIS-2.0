@@ -61,10 +61,8 @@ namespace TSIS.PPP {
     Xrm.Navigation.openConfirmDialog(confirmStrings, confirmOptions).then(
       function (success) {
         if (success.confirmed) {
-          console.log('Dialog closed using OK button.');
           proceed(eContext);
         } else {
-          console.log('Dialog closed using Cancel button or X.');
           //If user cancels, reset the value.
           field.setValue(null);
         }
@@ -424,5 +422,5 @@ namespace TSIS.PPP {
         }
       }
     }
-  }
+    }
 }
