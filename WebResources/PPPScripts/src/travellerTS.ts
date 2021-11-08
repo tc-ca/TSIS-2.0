@@ -1,6 +1,6 @@
 namespace TSIS.PPP {
   var Form: Form.ppp_traveller.Main.mainform;
-
+    var currentRecordStatus: number;
   export function SaveOnLoad(eContext: Xrm.ExecutionContext<any, any>) {
     Form = <Form.ppp_traveller.Main.mainform>eContext.getFormContext();
     if (Form.getAttribute('ppp_name').getValue() == null) Form.data.save();
@@ -61,10 +61,8 @@ namespace TSIS.PPP {
     Xrm.Navigation.openConfirmDialog(confirmStrings, confirmOptions).then(
       function (success) {
         if (success.confirmed) {
-          console.log('Dialog closed using OK button.');
           proceed(eContext);
         } else {
-          console.log('Dialog closed using Cancel button or X.');
           //If user cancels, reset the value.
           field.setValue(null);
         }
@@ -86,20 +84,6 @@ namespace TSIS.PPP {
     Form.ui.tabs.get('tab_TravelDetails').setVisible(matchfound);
     Form.ui.tabs.get('tab_RecommendedAction').setVisible(matchfound);
     Form.ui.tabs.get('tab_Decision').setVisible(matchfound);
-  }
-
-  //Toggles display of the BPF. Takes the Form and the the name of the twoOption field that was changed as a string.
-  export function showHideBusinessProcessFlow(
-    eContext: Xrm.ExecutionContext<any, any>
-  ) {
-    Form = <Form.ppp_traveller.Main.mainform>eContext.getFormContext();
-    var field: Xrm.OptionSetAttribute<boolean> = Form.getAttribute(
-      'ppp_showbpf'
-    );
-    var twoOptionFieldValue = field.getValue();
-
-    if (twoOptionFieldValue == null) return;
-    Form.ui.process.setVisible(twoOptionFieldValue); //Shows BPF if twoOptionFieldValue is true, hides if false
   }
 
   //Sets the record status to the given status value
@@ -245,23 +229,82 @@ namespace TSIS.PPP {
     keepLockedList: string[],
     keepUnlockedList: string[]
   ) {
-    Form = <Form.ppp_traveller.Main.mainform>eContext.getFormContext();
-    var recordStatus = Form.getAttribute('ppp_recordstatus').getValue();
-    var recordClosed =
-      recordStatus == ppp_recordstatus.Closed ||
-      recordStatus == ppp_recordstatus.Unresolved;
-    if (recordClosed) {
-      Form.data.save();
+      Form = <Form.ppp_traveller.Main.mainform>eContext.getFormContext();
+      let travellerId = Form.data.entity.getId();
+      var recordStatus = Form.getAttribute('ppp_recordstatus').getValue();
+      var recordClosed =
+        recordStatus == ppp_recordstatus.Closed ||
+        recordStatus == ppp_recordstatus.Unresolved;
+
+      if (recordClosed) {
+
+          var fetchXml = [
+              "<fetch top='50'>",
+              "  <entity name='annotation'>",
+              "    <link-entity name='ppp_traveller' from='ppp_travellerid' to='objectid'>",
+              "      <filter>",
+              "        <condition attribute='ppp_travellerid' operator='eq' value='", travellerId, "'/>",
+              "      </filter>",
+              "    </link-entity>",
+              "  </entity>",
+              "</fetch>",
+          ].join("");
+          fetchXml = "?fetchXml=" + encodeURIComponent(fetchXml);
+
+          // Retrieve associated notes
+          Xrm.WebApi.retrieveMultipleRecords("annotation", fetchXml).then(function (result) {
+              // If no notes found, show alert message reminding Analyst to add a note
+              if (result.entities.length == 0) {
+                  Form.getAttribute("ppp_recordstatus").setValue(currentRecordStatus);
+                  let globalContext = Xrm.Utility.getGlobalContext();
+                  let alertStrings = {
+                      text:
+                          'Please add a Note to the Record before setting the Record Status to Closed or Unresolved',
+                      title: 'No Note Attached to Record',
+                  };
+                  if (globalContext.userSettings.languageId == 1036) {
+                      alertStrings.text = '(FR) Please add a Note to the Record before setting the Record Status to Closed or Unresolved';
+                      alertStrings.title = '(FR) No Note Attached to Record';
+                  }
+                  var alertOptions = { height: 200, width: 450 };
+                  Xrm.Navigation.openAlertDialog(alertStrings, alertOptions);
+               
+              } else {
+                  // Record has at least one note, so proceed with status change
+                  updateCurrentRecordStatus(eContext);
+                  Form.data.save();
+                  if (Form.data.isValid()) {
+                      toggleDisabledAllControls(
+                          eContext,
+                          recordClosed,
+                          keepLockedList,
+                          keepUnlockedList
+                      );
+                  }
+              }
+          })
+        // Record status is not being set to Closed or Unresolved, proceed with status change
+      } else {
+          updateCurrentRecordStatus(eContext);
+          if (Form.data.isValid()) {
+              toggleDisabledAllControls(
+                  eContext,
+                  recordClosed,
+                  keepLockedList,
+                  keepUnlockedList
+              );
+          }
+      }
+    
     }
-    if (Form.data.isValid()) {
-      toggleDisabledAllControls(
-        eContext,
-        recordClosed,
-        keepLockedList,
-        keepUnlockedList
-      );
+
+    export function updateCurrentRecordStatus(eContext: Xrm.ExecutionContext<any, any>) {
+        let formContext = <Form.ppp_traveller.Main.mainform>eContext.getFormContext();
+        let recordStatusValue = formContext.getAttribute("ppp_recordstatus").getValue();
+        if (recordStatusValue != null) {
+            currentRecordStatus = recordStatusValue;
+        }
     }
-  }
 
   export function toggleDisabledAllControls(
     eContext: Xrm.ExecutionContext<any, any>,
@@ -424,5 +467,5 @@ namespace TSIS.PPP {
         }
       }
     }
-  }
+    }
 }

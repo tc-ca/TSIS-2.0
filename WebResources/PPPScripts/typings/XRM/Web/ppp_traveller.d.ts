@@ -32,7 +32,6 @@ interface ppp_Traveller_Base extends WebEntity {
   ppp_lawenforcementagency?: ppp_nominatingagencyadditional | null;
   ppp_lawenforcementnotifieddetails?: string | null;
   ppp_matchfound?: ppp_matchfound | null;
-  ppp_matchfoundconfirmation?: boolean | null;
   ppp_matchfoundtime?: Date | null;
   ppp_middlename?: string | null;
   ppp_minuteswaiting?: number | null;
@@ -51,13 +50,11 @@ interface ppp_Traveller_Base extends WebEntity {
   ppp_questionsfortc?: string | null;
   ppp_recordstatus?: ppp_recordstatus | null;
   ppp_recourseletterprovided?: ppp_nominatingagencyadditional | null;
-  ppp_recourseletterreceived?: boolean | null;
   ppp_returnflightinfo?: string | null;
   ppp_returnticketdate?: Date | null;
   ppp_sataid?: string | null;
   ppp_seatrequestdetails?: string | null;
   ppp_seatrequestmade?: ppp_seatrequestmade | null;
-  ppp_showbpf?: boolean | null;
   ppp_ticketpurchasedate?: Date | null;
   ppp_ticketpurchasemethod?: ppp_ticketpurchasemethod | null;
   ppp_tickettype?: ppp_tickettype | null;
@@ -81,23 +78,7 @@ interface ppp_Traveller_Base extends WebEntity {
   versionnumber?: number | null;
 }
 interface ppp_Traveller_Relationships {
-  bpf_ppp_traveller_ppp_travellerbusinessflow?: ppp_travellerbusinessflow_Result[] | null;
-  ovs_ppp_Traveller_FlightConn_Facility?: ovs_Facility_Result[] | null;
-  ppp_AirCarrier?: ovs_AirCarrier_Result | null;
-  ppp_Citizenship?: tc_Country_Result | null;
-  ppp_FlightConnection1?: ovs_Facility_Result | null;
-  ppp_FlightConnection10?: ovs_Facility_Result | null;
-  ppp_FlightConnection2?: ovs_Facility_Result | null;
-  ppp_FlightConnection3?: ovs_Facility_Result | null;
-  ppp_FlightConnection4?: ovs_Facility_Result | null;
-  ppp_FlightConnection5?: ovs_Facility_Result | null;
-  ppp_FlightConnection6?: ovs_Facility_Result | null;
-  ppp_FlightConnection7?: ovs_Facility_Result | null;
-  ppp_FlightConnection8?: ovs_Facility_Result | null;
-  ppp_FlightConnection9?: ovs_Facility_Result | null;
-  ppp_FlightDestination?: ovs_Facility_Result | null;
-  ppp_FlightOrigin?: ovs_Facility_Result | null;
-  ppp_IDCountry?: tc_Country_Result | null;
+  ppp_Caller_ppp_Traveller?: ppp_Caller_Result[] | null;
 }
 interface ppp_Traveller extends ppp_Traveller_Base, ppp_Traveller_Relationships {
   ownerid_bind$systemusers?: string | null;
@@ -180,7 +161,6 @@ interface ppp_Traveller_Select {
   ppp_lawenforcementagency: WebAttribute<ppp_Traveller_Select, { ppp_lawenforcementagency: ppp_nominatingagencyadditional | null }, { ppp_lawenforcementagency_formatted?: string }>;
   ppp_lawenforcementnotifieddetails: WebAttribute<ppp_Traveller_Select, { ppp_lawenforcementnotifieddetails: string | null }, {  }>;
   ppp_matchfound: WebAttribute<ppp_Traveller_Select, { ppp_matchfound: ppp_matchfound | null }, { ppp_matchfound_formatted?: string }>;
-  ppp_matchfoundconfirmation: WebAttribute<ppp_Traveller_Select, { ppp_matchfoundconfirmation: boolean | null }, {  }>;
   ppp_matchfoundtime: WebAttribute<ppp_Traveller_Select, { ppp_matchfoundtime: Date | null }, { ppp_matchfoundtime_formatted?: string }>;
   ppp_middlename: WebAttribute<ppp_Traveller_Select, { ppp_middlename: string | null }, {  }>;
   ppp_minuteswaiting: WebAttribute<ppp_Traveller_Select, { ppp_minuteswaiting: number | null }, {  }>;
@@ -199,13 +179,11 @@ interface ppp_Traveller_Select {
   ppp_questionsfortc: WebAttribute<ppp_Traveller_Select, { ppp_questionsfortc: string | null }, {  }>;
   ppp_recordstatus: WebAttribute<ppp_Traveller_Select, { ppp_recordstatus: ppp_recordstatus | null }, { ppp_recordstatus_formatted?: string }>;
   ppp_recourseletterprovided: WebAttribute<ppp_Traveller_Select, { ppp_recourseletterprovided: ppp_nominatingagencyadditional | null }, { ppp_recourseletterprovided_formatted?: string }>;
-  ppp_recourseletterreceived: WebAttribute<ppp_Traveller_Select, { ppp_recourseletterreceived: boolean | null }, {  }>;
   ppp_returnflightinfo: WebAttribute<ppp_Traveller_Select, { ppp_returnflightinfo: string | null }, {  }>;
   ppp_returnticketdate: WebAttribute<ppp_Traveller_Select, { ppp_returnticketdate: Date | null }, { ppp_returnticketdate_formatted?: string }>;
   ppp_sataid: WebAttribute<ppp_Traveller_Select, { ppp_sataid: string | null }, {  }>;
   ppp_seatrequestdetails: WebAttribute<ppp_Traveller_Select, { ppp_seatrequestdetails: string | null }, {  }>;
   ppp_seatrequestmade: WebAttribute<ppp_Traveller_Select, { ppp_seatrequestmade: ppp_seatrequestmade | null }, { ppp_seatrequestmade_formatted?: string }>;
-  ppp_showbpf: WebAttribute<ppp_Traveller_Select, { ppp_showbpf: boolean | null }, {  }>;
   ppp_ticketpurchasedate: WebAttribute<ppp_Traveller_Select, { ppp_ticketpurchasedate: Date | null }, { ppp_ticketpurchasedate_formatted?: string }>;
   ppp_ticketpurchasemethod: WebAttribute<ppp_Traveller_Select, { ppp_ticketpurchasemethod: ppp_ticketpurchasemethod | null }, { ppp_ticketpurchasemethod_formatted?: string }>;
   ppp_tickettype: WebAttribute<ppp_Traveller_Select, { ppp_tickettype: ppp_tickettype | null }, { ppp_tickettype_formatted?: string }>;
@@ -285,7 +263,6 @@ interface ppp_Traveller_Filter {
   ppp_lawenforcementagency: ppp_nominatingagencyadditional;
   ppp_lawenforcementnotifieddetails: string;
   ppp_matchfound: ppp_matchfound;
-  ppp_matchfoundconfirmation: boolean;
   ppp_matchfoundtime: Date;
   ppp_middlename: string;
   ppp_minuteswaiting: number;
@@ -304,13 +281,11 @@ interface ppp_Traveller_Filter {
   ppp_questionsfortc: string;
   ppp_recordstatus: ppp_recordstatus;
   ppp_recourseletterprovided: ppp_nominatingagencyadditional;
-  ppp_recourseletterreceived: boolean;
   ppp_returnflightinfo: string;
   ppp_returnticketdate: Date;
   ppp_sataid: string;
   ppp_seatrequestdetails: string;
   ppp_seatrequestmade: ppp_seatrequestmade;
-  ppp_showbpf: boolean;
   ppp_ticketpurchasedate: Date;
   ppp_ticketpurchasemethod: ppp_ticketpurchasemethod;
   ppp_tickettype: ppp_tickettype;
@@ -334,23 +309,7 @@ interface ppp_Traveller_Filter {
   versionnumber: number;
 }
 interface ppp_Traveller_Expand {
-  bpf_ppp_traveller_ppp_travellerbusinessflow: WebExpand<ppp_Traveller_Expand, ppp_travellerbusinessflow_Select, ppp_travellerbusinessflow_Filter, { bpf_ppp_traveller_ppp_travellerbusinessflow: ppp_travellerbusinessflow_Result[] }>;
-  ovs_ppp_Traveller_FlightConn_Facility: WebExpand<ppp_Traveller_Expand, ovs_Facility_Select, ovs_Facility_Filter, { ovs_ppp_Traveller_FlightConn_Facility: ovs_Facility_Result[] }>;
-  ppp_AirCarrier: WebExpand<ppp_Traveller_Expand, ovs_AirCarrier_Select, ovs_AirCarrier_Filter, { ppp_AirCarrier: ovs_AirCarrier_Result }>;
-  ppp_Citizenship: WebExpand<ppp_Traveller_Expand, tc_Country_Select, tc_Country_Filter, { ppp_Citizenship: tc_Country_Result }>;
-  ppp_FlightConnection1: WebExpand<ppp_Traveller_Expand, ovs_Facility_Select, ovs_Facility_Filter, { ppp_FlightConnection1: ovs_Facility_Result }>;
-  ppp_FlightConnection10: WebExpand<ppp_Traveller_Expand, ovs_Facility_Select, ovs_Facility_Filter, { ppp_FlightConnection10: ovs_Facility_Result }>;
-  ppp_FlightConnection2: WebExpand<ppp_Traveller_Expand, ovs_Facility_Select, ovs_Facility_Filter, { ppp_FlightConnection2: ovs_Facility_Result }>;
-  ppp_FlightConnection3: WebExpand<ppp_Traveller_Expand, ovs_Facility_Select, ovs_Facility_Filter, { ppp_FlightConnection3: ovs_Facility_Result }>;
-  ppp_FlightConnection4: WebExpand<ppp_Traveller_Expand, ovs_Facility_Select, ovs_Facility_Filter, { ppp_FlightConnection4: ovs_Facility_Result }>;
-  ppp_FlightConnection5: WebExpand<ppp_Traveller_Expand, ovs_Facility_Select, ovs_Facility_Filter, { ppp_FlightConnection5: ovs_Facility_Result }>;
-  ppp_FlightConnection6: WebExpand<ppp_Traveller_Expand, ovs_Facility_Select, ovs_Facility_Filter, { ppp_FlightConnection6: ovs_Facility_Result }>;
-  ppp_FlightConnection7: WebExpand<ppp_Traveller_Expand, ovs_Facility_Select, ovs_Facility_Filter, { ppp_FlightConnection7: ovs_Facility_Result }>;
-  ppp_FlightConnection8: WebExpand<ppp_Traveller_Expand, ovs_Facility_Select, ovs_Facility_Filter, { ppp_FlightConnection8: ovs_Facility_Result }>;
-  ppp_FlightConnection9: WebExpand<ppp_Traveller_Expand, ovs_Facility_Select, ovs_Facility_Filter, { ppp_FlightConnection9: ovs_Facility_Result }>;
-  ppp_FlightDestination: WebExpand<ppp_Traveller_Expand, ovs_Facility_Select, ovs_Facility_Filter, { ppp_FlightDestination: ovs_Facility_Result }>;
-  ppp_FlightOrigin: WebExpand<ppp_Traveller_Expand, ovs_Facility_Select, ovs_Facility_Filter, { ppp_FlightOrigin: ovs_Facility_Result }>;
-  ppp_IDCountry: WebExpand<ppp_Traveller_Expand, tc_Country_Select, tc_Country_Filter, { ppp_IDCountry: tc_Country_Result }>;
+  ppp_Caller_ppp_Traveller: WebExpand<ppp_Traveller_Expand, ppp_Caller_Select, ppp_Caller_Filter, { ppp_Caller_ppp_Traveller: ppp_Caller_Result[] }>;
 }
 interface ppp_Traveller_FormattedResult {
   createdby_formatted?: string;
@@ -439,25 +398,9 @@ interface ppp_Traveller_Result extends ppp_Traveller_Base, ppp_Traveller_Relatio
   ppp_idcountry_guid: string | null;
 }
 interface ppp_Traveller_RelatedOne {
-  ppp_AirCarrier: WebMappingRetrieve<ovs_AirCarrier_Select,ovs_AirCarrier_Expand,ovs_AirCarrier_Filter,ovs_AirCarrier_Fixed,ovs_AirCarrier_Result,ovs_AirCarrier_FormattedResult>;
-  ppp_Citizenship: WebMappingRetrieve<tc_Country_Select,tc_Country_Expand,tc_Country_Filter,tc_Country_Fixed,tc_Country_Result,tc_Country_FormattedResult>;
-  ppp_FlightConnection1: WebMappingRetrieve<ovs_Facility_Select,ovs_Facility_Expand,ovs_Facility_Filter,ovs_Facility_Fixed,ovs_Facility_Result,ovs_Facility_FormattedResult>;
-  ppp_FlightConnection10: WebMappingRetrieve<ovs_Facility_Select,ovs_Facility_Expand,ovs_Facility_Filter,ovs_Facility_Fixed,ovs_Facility_Result,ovs_Facility_FormattedResult>;
-  ppp_FlightConnection2: WebMappingRetrieve<ovs_Facility_Select,ovs_Facility_Expand,ovs_Facility_Filter,ovs_Facility_Fixed,ovs_Facility_Result,ovs_Facility_FormattedResult>;
-  ppp_FlightConnection3: WebMappingRetrieve<ovs_Facility_Select,ovs_Facility_Expand,ovs_Facility_Filter,ovs_Facility_Fixed,ovs_Facility_Result,ovs_Facility_FormattedResult>;
-  ppp_FlightConnection4: WebMappingRetrieve<ovs_Facility_Select,ovs_Facility_Expand,ovs_Facility_Filter,ovs_Facility_Fixed,ovs_Facility_Result,ovs_Facility_FormattedResult>;
-  ppp_FlightConnection5: WebMappingRetrieve<ovs_Facility_Select,ovs_Facility_Expand,ovs_Facility_Filter,ovs_Facility_Fixed,ovs_Facility_Result,ovs_Facility_FormattedResult>;
-  ppp_FlightConnection6: WebMappingRetrieve<ovs_Facility_Select,ovs_Facility_Expand,ovs_Facility_Filter,ovs_Facility_Fixed,ovs_Facility_Result,ovs_Facility_FormattedResult>;
-  ppp_FlightConnection7: WebMappingRetrieve<ovs_Facility_Select,ovs_Facility_Expand,ovs_Facility_Filter,ovs_Facility_Fixed,ovs_Facility_Result,ovs_Facility_FormattedResult>;
-  ppp_FlightConnection8: WebMappingRetrieve<ovs_Facility_Select,ovs_Facility_Expand,ovs_Facility_Filter,ovs_Facility_Fixed,ovs_Facility_Result,ovs_Facility_FormattedResult>;
-  ppp_FlightConnection9: WebMappingRetrieve<ovs_Facility_Select,ovs_Facility_Expand,ovs_Facility_Filter,ovs_Facility_Fixed,ovs_Facility_Result,ovs_Facility_FormattedResult>;
-  ppp_FlightDestination: WebMappingRetrieve<ovs_Facility_Select,ovs_Facility_Expand,ovs_Facility_Filter,ovs_Facility_Fixed,ovs_Facility_Result,ovs_Facility_FormattedResult>;
-  ppp_FlightOrigin: WebMappingRetrieve<ovs_Facility_Select,ovs_Facility_Expand,ovs_Facility_Filter,ovs_Facility_Fixed,ovs_Facility_Result,ovs_Facility_FormattedResult>;
-  ppp_IDCountry: WebMappingRetrieve<tc_Country_Select,tc_Country_Expand,tc_Country_Filter,tc_Country_Fixed,tc_Country_Result,tc_Country_FormattedResult>;
 }
 interface ppp_Traveller_RelatedMany {
-  bpf_ppp_traveller_ppp_travellerbusinessflow: WebMappingRetrieve<ppp_travellerbusinessflow_Select,ppp_travellerbusinessflow_Expand,ppp_travellerbusinessflow_Filter,ppp_travellerbusinessflow_Fixed,ppp_travellerbusinessflow_Result,ppp_travellerbusinessflow_FormattedResult>;
-  ovs_ppp_Traveller_FlightConn_Facility: WebMappingRetrieve<ovs_Facility_Select,ovs_Facility_Expand,ovs_Facility_Filter,ovs_Facility_Fixed,ovs_Facility_Result,ovs_Facility_FormattedResult>;
+  ppp_Caller_ppp_Traveller: WebMappingRetrieve<ppp_Caller_Select,ppp_Caller_Expand,ppp_Caller_Filter,ppp_Caller_Fixed,ppp_Caller_Result,ppp_Caller_FormattedResult>;
 }
 interface WebEntitiesRetrieve {
   ppp_travellers: WebMappingRetrieve<ppp_Traveller_Select,ppp_Traveller_Expand,ppp_Traveller_Filter,ppp_Traveller_Fixed,ppp_Traveller_Result,ppp_Traveller_FormattedResult>;
