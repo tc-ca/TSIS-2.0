@@ -15,6 +15,7 @@ declare namespace Form.ppp_caller.QuickCreate {
       get(name: "ppp_callername"): Xrm.Attribute<string>;
       get(name: "ppp_calltime"): Xrm.DateAttribute;
       get(name: "ppp_name"): Xrm.Attribute<string>;
+      get(name: "ppp_traveller"): Xrm.LookupAttribute<"ppp_traveller">;
       get(name: string): undefined;
       get(): Xrm.Attribute<any>[];
       get(index: number): Xrm.Attribute<any>;
@@ -24,6 +25,7 @@ declare namespace Form.ppp_caller.QuickCreate {
       get(name: "ppp_callername"): Xrm.StringControl;
       get(name: "ppp_calltime"): Xrm.DateControl;
       get(name: "ppp_name"): Xrm.StringControl;
+      get(name: "ppp_traveller"): Xrm.LookupControl<"ppp_traveller">;
       get(name: string): undefined;
       get(): Xrm.BaseControl[];
       get(index: number): Xrm.BaseControl;
@@ -41,10 +43,12 @@ declare namespace Form.ppp_caller.QuickCreate {
     getAttribute(attributeName: "ppp_callername"): Xrm.Attribute<string>;
     getAttribute(attributeName: "ppp_calltime"): Xrm.DateAttribute;
     getAttribute(attributeName: "ppp_name"): Xrm.Attribute<string>;
+    getAttribute(attributeName: "ppp_traveller"): Xrm.LookupAttribute<"ppp_traveller">;
     getAttribute(attributeName: string): undefined;
     getControl(controlName: "ppp_callername"): Xrm.StringControl;
     getControl(controlName: "ppp_calltime"): Xrm.DateControl;
     getControl(controlName: "ppp_name"): Xrm.StringControl;
+    getControl(controlName: "ppp_traveller"): Xrm.LookupControl<"ppp_traveller">;
     getControl(controlName: string): undefined;
   }
 }
