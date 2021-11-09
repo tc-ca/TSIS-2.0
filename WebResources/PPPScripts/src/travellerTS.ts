@@ -160,7 +160,7 @@ namespace TSIS.PPP {
     hour = (<Xrm.Attribute<any>>hourAttr).getValue();
     minute = (<Xrm.Attribute<any>>minuteAttr).getValue();
 
-    if (dateValue && hour && minute) {
+    if (dateValue !== null && hour !== null && minute !== null) {
       var dateTime = dateValue;
       dateTime.setHours(hour);
       dateTime.setMinutes(minute);

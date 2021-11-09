@@ -22,7 +22,7 @@ namespace TSIS.PPP {
         let formContext = <Form.ppp_caller.QuickCreate.Callerquickcreateform>eContext.getFormContext();
 
         //If the name has already been made, return
-        if (formContext.getAttribute("ppp_name") != null) {
+        if (formContext.getAttribute("ppp_name").getValue() != null) {
             return;
         }
 
