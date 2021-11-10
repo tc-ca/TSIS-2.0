@@ -16,8 +16,6 @@ namespace TSIS.PPP {
     }
 
     //Populates the name field for a new Caller record
-    //Is called onChange of ppp_callername and ppp_calltime instead of onload of the form so that the form does not become dirty onLoad
-    //Prevents the Unsaved Changes confirmation popup from appearing when no manual changes have been made yet
     export function buildNameText(eContext: Xrm.ExecutionContext<any, any>) {
         let formContext = <Form.ppp_caller.QuickCreate.Callerquickcreateform>eContext.getFormContext();
 
@@ -40,5 +38,34 @@ namespace TSIS.PPP {
                 Xrm.Navigation.openAlertDialog(alertStrings, alertOptions).then(function () { });
             }
         );
+    }
+
+    export function setDateTimeFieldsToNow(eContext: Xrm.ExecutionContext<any, any>) {
+        let formContext = <Form.ppp_caller.QuickCreate.Callerquickcreateform>eContext.getFormContext();
+
+        let name = formContext.getAttribute("ppp_name");
+        //If a name has already been set, the caller record is not new, so the time fields should not be set.
+        if (name.getValue() != null) {
+            return
+        }
+
+        let callDateTime = formContext.getAttribute("ppp_calldatetime");
+        let callDate = formContext.getAttribute("ppp_calldate");
+        let callTimeHour = formContext.getAttribute("ppp_calltimehour");
+        let callTimeMinute = formContext.getAttribute("ppp_calltimeminute");
+
+        let today = new Date();
+        callDateTime.setValue(today);
+        callDate.setValue(today)
+        callTimeHour.setValue(today.getHours())
+        callTimeMinute.setValue(today.getMinutes())
+
+        /* Leaving this here if they want to swap to UTC converstions.
+         * 
+        callDateTime.setValue(new Date(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), today.getUTCHours(), today.getUTCMinutes()));
+        callDate.setValue(new Date(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate()));
+        callTimeHour.setValue(today.getUTCHours())
+        callTimeMinute.setValue(today.getUTCMinutes())
+        */
     }
 }
