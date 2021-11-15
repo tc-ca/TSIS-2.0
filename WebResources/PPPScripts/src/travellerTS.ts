@@ -263,8 +263,8 @@ namespace TSIS.PPP {
                       title: 'No Note Attached to Record',
                   };
                   if (globalContext.userSettings.languageId == 1036) {
-                      alertStrings.text = '(FR) Please add a Note to the Record before setting the Record Status to Closed or Unresolved';
-                      alertStrings.title = '(FR) No Note Attached to Record';
+                      alertStrings.text = `Veuillez ajouter une note au dossier avant de définir le statut du dossier sur Fermé ou Non résolu`;
+                      alertStrings.title = 'Aucune note jointe au dossier';
                   }
                   var alertOptions = { height: 200, width: 450 };
                   Xrm.Navigation.openAlertDialog(alertStrings, alertOptions);

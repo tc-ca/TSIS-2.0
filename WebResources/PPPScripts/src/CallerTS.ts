@@ -55,10 +55,10 @@ namespace TSIS.PPP {
         let callTimeMinute = formContext.getAttribute("ppp_calltimeminute");
 
         let today = new Date();
-        callDateTime.setValue(today);
-        callDate.setValue(today)
-        callTimeHour.setValue(today.getHours())
-        callTimeMinute.setValue(today.getMinutes())
+        callDateTime?.setValue(today);
+        callDate?.setValue(today)
+        callTimeHour?.setValue(today.getHours())
+        callTimeMinute?.setValue(today.getMinutes())
 
         /* Leaving this here if they want to swap to UTC converstions.
          * 
