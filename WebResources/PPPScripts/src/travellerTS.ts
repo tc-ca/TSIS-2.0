@@ -92,7 +92,8 @@ namespace TSIS.PPP {
     statusValue: ppp_recordstatus
   ) {
     Form = <Form.ppp_traveller.Main.mainform>eContext.getFormContext();
-    Form.getAttribute('ppp_recordstatus').setValue(statusValue);
+      Form.getAttribute('ppp_recordstatus').setValue(statusValue);
+      currentRecordStatus = statusValue;
   }
 
   //Changes status to In-Progress only if passenger is present and current status is Draft
