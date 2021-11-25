@@ -5,7 +5,6 @@ declare namespace Form.ppp_caller.Quick {
     interface Attributes extends Xrm.AttributeCollectionBase {
       get(name: "ownerid"): Xrm.LookupAttribute<"systemuser" | "team">;
       get(name: "ppp_callername"): Xrm.Attribute<string>;
-      get(name: "ppp_calltime"): Xrm.DateAttribute;
       get(name: "ppp_name"): Xrm.Attribute<string>;
       get(name: string): undefined;
       get(): Xrm.Attribute<any>[];
@@ -15,7 +14,6 @@ declare namespace Form.ppp_caller.Quick {
     interface Controls extends Xrm.ControlCollectionBase {
       get(name: "ownerid"): Xrm.LookupControl<"systemuser" | "team">;
       get(name: "ppp_callername"): Xrm.StringControl;
-      get(name: "ppp_calltime"): Xrm.DateControl;
       get(name: "ppp_name"): Xrm.StringControl;
       get(name: string): undefined;
       get(): Xrm.BaseControl[];
@@ -32,12 +30,10 @@ declare namespace Form.ppp_caller.Quick {
   interface Information extends Xrm.PageBase<Information.Attributes,Information.Tabs,Information.Controls> {
     getAttribute(attributeName: "ownerid"): Xrm.LookupAttribute<"systemuser" | "team">;
     getAttribute(attributeName: "ppp_callername"): Xrm.Attribute<string>;
-    getAttribute(attributeName: "ppp_calltime"): Xrm.DateAttribute;
     getAttribute(attributeName: "ppp_name"): Xrm.Attribute<string>;
     getAttribute(attributeName: string): undefined;
     getControl(controlName: "ownerid"): Xrm.LookupControl<"systemuser" | "team">;
     getControl(controlName: "ppp_callername"): Xrm.StringControl;
-    getControl(controlName: "ppp_calltime"): Xrm.DateControl;
     getControl(controlName: "ppp_name"): Xrm.StringControl;
     getControl(controlName: string): undefined;
   }
