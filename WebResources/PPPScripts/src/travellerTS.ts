@@ -225,78 +225,27 @@ namespace TSIS.PPP {
     );
   }
 
-  export function statusOnChange(
-    eContext: Xrm.ExecutionContext<any, any>,
-    keepLockedList: string[],
-    keepUnlockedList: string[]
-  ) {
-      Form = <Form.ppp_traveller.Main.mainform>eContext.getFormContext();
-      let travellerId = Form.data.entity.getId();
-      var recordStatus = Form.getAttribute('ppp_recordstatus').getValue();
-      var recordClosed =
-        recordStatus == ppp_recordstatus.Closed ||
-        recordStatus == ppp_recordstatus.Unresolved;
-
-      if (recordClosed) {
-
-          var fetchXml = [
-              "<fetch top='50'>",
-              "  <entity name='annotation'>",
-              "    <link-entity name='ppp_traveller' from='ppp_travellerid' to='objectid'>",
-              "      <filter>",
-              "        <condition attribute='ppp_travellerid' operator='eq' value='", travellerId, "'/>",
-              "      </filter>",
-              "    </link-entity>",
-              "  </entity>",
-              "</fetch>",
-          ].join("");
-          fetchXml = "?fetchXml=" + encodeURIComponent(fetchXml);
-
-          // Retrieve associated notes
-          Xrm.WebApi.retrieveMultipleRecords("annotation", fetchXml).then(function (result) {
-              // If no notes found, show alert message reminding Analyst to add a note
-              if (result.entities.length == 0) {
-                  Form.getAttribute("ppp_recordstatus").setValue(currentRecordStatus);
-                  let globalContext = Xrm.Utility.getGlobalContext();
-                  let alertStrings = {
-                      text:
-                          'Please add a Note to the Record before setting the Record Status to Closed or Unresolved',
-                      title: 'No Note Attached to Record',
-                  };
-                  if (globalContext.userSettings.languageId == 1036) {
-                      alertStrings.text = `Veuillez ajouter une note au dossier avant de définir le statut du dossier sur Fermé ou Non résolu`;
-                      alertStrings.title = 'Aucune note jointe au dossier';
-                  }
-                  var alertOptions = { height: 200, width: 450 };
-                  Xrm.Navigation.openAlertDialog(alertStrings, alertOptions);
-               
-              } else {
-                  // Record has at least one note, so proceed with status change
-                  updateCurrentRecordStatus(eContext);
-                  Form.data.save();
-                  if (Form.data.isValid()) {
-                      toggleDisabledAllControls(
-                          eContext,
-                          recordClosed,
-                          keepLockedList,
-                          keepUnlockedList
-                      );
-                  }
-              }
-          })
-        // Record status is not being set to Closed or Unresolved, proceed with status change
-      } else {
-          updateCurrentRecordStatus(eContext);
-          if (Form.data.isValid()) {
-              toggleDisabledAllControls(
-                  eContext,
-                  recordClosed,
-                  keepLockedList,
-                  keepUnlockedList
-              );
-          }
-      }
-    
+    export function statusOnChange(
+        eContext: Xrm.ExecutionContext<any, any>,
+        keepLockedList: string[],
+        keepUnlockedList: string[]
+    ) {
+        Form = <Form.ppp_traveller.Main.mainform>eContext.getFormContext();
+        var recordStatus = Form.getAttribute('ppp_recordstatus').getValue();
+        var recordClosed =
+            recordStatus == ppp_recordstatus.Closed ||
+            recordStatus == ppp_recordstatus.Unresolved;
+        if (recordClosed) {
+            Form.data.save();
+        }
+        if (Form.data.isValid()) {
+            toggleDisabledAllControls(
+                eContext,
+                recordClosed,
+                keepLockedList,
+                keepUnlockedList
+            );
+        }
     }
 
     export function updateCurrentRecordStatus(eContext: Xrm.ExecutionContext<any, any>) {
