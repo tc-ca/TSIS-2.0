@@ -9,6 +9,29 @@ interface WebEntity {
 interface WebEntity_Fixed {
   "@odata.etag": string;
 }
+interface ppp_AcquittalandCompliance_Base extends WebEntity {
+}
+interface ppp_AcquittalandCompliance_Fixed extends WebEntity_Fixed {
+  ppp_acquittalandcomplianceid: string;
+}
+interface ppp_AcquittalandCompliance extends ppp_AcquittalandCompliance_Base, ppp_AcquittalandCompliance_Relationships {
+}
+interface ppp_AcquittalandCompliance_Relationships {
+}
+interface ppp_AcquittalandCompliance_Result extends ppp_AcquittalandCompliance_Base, ppp_AcquittalandCompliance_Relationships {
+}
+interface ppp_AcquittalandCompliance_FormattedResult {
+}
+interface ppp_AcquittalandCompliance_Select {
+}
+interface ppp_AcquittalandCompliance_Expand {
+}
+interface ppp_AcquittalandCompliance_Filter {
+}
+interface ppp_AcquittalandCompliance_Create extends ppp_AcquittalandCompliance {
+}
+interface ppp_AcquittalandCompliance_Update extends ppp_AcquittalandCompliance {
+}
 interface ppp_Caller_Base extends WebEntity {
 }
 interface ppp_Caller_Fixed extends WebEntity_Fixed {

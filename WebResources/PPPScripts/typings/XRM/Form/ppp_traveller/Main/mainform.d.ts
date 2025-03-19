@@ -218,6 +218,7 @@ declare namespace Form.ppp_traveller.Main {
       get(name: "ppp_idsused"): Xrm.MultiSelectOptionSetControl<ppp_idsused>;
       get(name: "ppp_idsused1"): Xrm.MultiSelectOptionSetControl<ppp_idsused>;
       get(name: "ppp_ispresent"): Xrm.Control<Xrm.Attribute<any>>;
+      get(name: "ppp_ispresent1"): Xrm.Control<Xrm.Attribute<any>>;
       get(name: "ppp_ispresenttime"): Xrm.DateControl;
       get(name: "ppp_lastknownaddress"): Xrm.StringControl;
       get(name: "ppp_lastknownaddress1"): Xrm.StringControl;
@@ -230,6 +231,7 @@ declare namespace Form.ppp_traveller.Main {
       get(name: "ppp_middlename"): Xrm.StringControl;
       get(name: "ppp_middlename1"): Xrm.StringControl;
       get(name: "ppp_minuteswaiting"): Xrm.Control<Xrm.Attribute<any>>;
+      get(name: "ppp_minuteswaiting1"): Xrm.Control<Xrm.Attribute<any>>;
       get(name: "ppp_name"): Xrm.StringControl;
       get(name: "ppp_nameprovidedoptions"): Xrm.OptionSetControl<ppp_nameprovidedoptions>;
       get(name: "ppp_newrecordtime"): Xrm.DateControl;
@@ -429,6 +431,7 @@ declare namespace Form.ppp_traveller.Main {
     getControl(controlName: "ppp_idsused"): Xrm.MultiSelectOptionSetControl<ppp_idsused>;
     getControl(controlName: "ppp_idsused1"): Xrm.MultiSelectOptionSetControl<ppp_idsused>;
     getControl(controlName: "ppp_ispresent"): Xrm.Control<Xrm.Attribute<any>>;
+    getControl(controlName: "ppp_ispresent1"): Xrm.Control<Xrm.Attribute<any>>;
     getControl(controlName: "ppp_ispresenttime"): Xrm.DateControl;
     getControl(controlName: "ppp_lastknownaddress"): Xrm.StringControl;
     getControl(controlName: "ppp_lastknownaddress1"): Xrm.StringControl;
@@ -441,6 +444,7 @@ declare namespace Form.ppp_traveller.Main {
     getControl(controlName: "ppp_middlename"): Xrm.StringControl;
     getControl(controlName: "ppp_middlename1"): Xrm.StringControl;
     getControl(controlName: "ppp_minuteswaiting"): Xrm.Control<Xrm.Attribute<any>>;
+    getControl(controlName: "ppp_minuteswaiting1"): Xrm.Control<Xrm.Attribute<any>>;
     getControl(controlName: "ppp_name"): Xrm.StringControl;
     getControl(controlName: "ppp_nameprovidedoptions"): Xrm.OptionSetControl<ppp_nameprovidedoptions>;
     getControl(controlName: "ppp_newrecordtime"): Xrm.DateControl;
