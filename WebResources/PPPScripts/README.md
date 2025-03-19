@@ -21,7 +21,7 @@
 		<add key="mfaClientSecret" value="YourClientSecret" />
 		<add key="solutions" value="" />
 		<add key="out" value="../typings/XRM" />
-		<add key="entities" value="ppp_traveller, ppp_caller" />
+		<add key="entities" value="ppp_traveller, ppp_caller, ppp_acquittalandcompliance" />
 		<add key="web" value="" />
 		<add key="jsLib" value="../src/lib" />
 	</appSettings>

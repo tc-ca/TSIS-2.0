@@ -40,6 +40,8 @@ declare namespace Form.ppp_acquittalandcompliance.Main {
       get(name: "ppp_flightorigin"): Xrm.LookupAttribute<"ovs_facility">;
       get(name: "ppp_flightorigindate"): Xrm.DateAttribute;
       get(name: "ppp_flightoriginhour"): Xrm.Attribute<any>;
+      get(name: "ppp_flightoriginminute"): Xrm.NumberAttribute;
+      get(name: "ppp_flightorigintime"): Xrm.DateAttribute;
       get(name: "ppp_name"): Xrm.Attribute<string>;
       get(name: "ppp_numberofflightconnection"): Xrm.Attribute<any>;
       get(name: "ppp_recordtype"): Xrm.Attribute<any>;
@@ -66,6 +68,8 @@ declare namespace Form.ppp_acquittalandcompliance.Main {
       get(name: "ppp_flightorigin"): Xrm.LookupControl<"ovs_facility">;
       get(name: "ppp_flightorigindate"): Xrm.DateControl;
       get(name: "ppp_flightoriginhour"): Xrm.Control<Xrm.Attribute<any>>;
+      get(name: "ppp_flightoriginminute"): Xrm.NumberControl;
+      get(name: "ppp_flightorigintime"): Xrm.DateControl;
       get(name: "ppp_name"): Xrm.StringControl;
       get(name: "ppp_numberofflightconnection"): Xrm.Control<Xrm.Attribute<any>>;
       get(name: "ppp_recordtype"): Xrm.Control<Xrm.Attribute<any>>;
@@ -101,6 +105,8 @@ declare namespace Form.ppp_acquittalandcompliance.Main {
     getAttribute(attributeName: "ppp_flightorigin"): Xrm.LookupAttribute<"ovs_facility">;
     getAttribute(attributeName: "ppp_flightorigindate"): Xrm.DateAttribute;
     getAttribute(attributeName: "ppp_flightoriginhour"): Xrm.Attribute<any>;
+    getAttribute(attributeName: "ppp_flightoriginminute"): Xrm.NumberAttribute;
+    getAttribute(attributeName: "ppp_flightorigintime"): Xrm.DateAttribute;
     getAttribute(attributeName: "ppp_name"): Xrm.Attribute<string>;
     getAttribute(attributeName: "ppp_numberofflightconnection"): Xrm.Attribute<any>;
     getAttribute(attributeName: "ppp_recordtype"): Xrm.Attribute<any>;
@@ -122,6 +128,8 @@ declare namespace Form.ppp_acquittalandcompliance.Main {
     getControl(controlName: "ppp_flightorigin"): Xrm.LookupControl<"ovs_facility">;
     getControl(controlName: "ppp_flightorigindate"): Xrm.DateControl;
     getControl(controlName: "ppp_flightoriginhour"): Xrm.Control<Xrm.Attribute<any>>;
+    getControl(controlName: "ppp_flightoriginminute"): Xrm.NumberControl;
+    getControl(controlName: "ppp_flightorigintime"): Xrm.DateControl;
     getControl(controlName: "ppp_name"): Xrm.StringControl;
     getControl(controlName: "ppp_numberofflightconnection"): Xrm.Control<Xrm.Attribute<any>>;
     getControl(controlName: "ppp_recordtype"): Xrm.Control<Xrm.Attribute<any>>;
