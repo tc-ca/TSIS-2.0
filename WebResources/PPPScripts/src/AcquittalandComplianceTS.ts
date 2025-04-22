@@ -1,6 +1,13 @@
 ﻿namespace TSIS.PPP {
     var Form: Form.ppp_acquittalandcompliance.Main.Information;
 
+    export function SaveOnLoadAC(eContext: Xrm.ExecutionContext<any, any>) {
+        Form = <Form.ppp_acquittalandcompliance.Main.Information>eContext.getFormContext();
+        if (Form.ui.getFormType() === 1 && Form.getAttribute('ppp_name').getValue() == null) {
+            Form.data.save();
+        }
+    }
+
     export function setDateTimeAC(
         eContext: Xrm.ExecutionContext<any, any>,
         dateFieldName: string,
@@ -137,24 +144,24 @@
         if (connectionCount == null) connectionCount = 1;
 
         for (var i = 1; i <= maxConnections; i++) {
-            var connectionControl = Form.getControl('ppp_tsisdescription' + i);
+            var connectionControl = Form.getControl('ppp_tsisnumber' + i);
             var connectionControl2 = Form.getControl('ppp_noncompliancedescription' + i);
-            if (connectionControl == undefined) continue;
-            if (connectionControl2 == undefined) continue;
+            if (connectionControl == undefined || connectionControl2 == undefined) continue;
 
-            var connectionAttr = Form.getAttribute('ppp_tsisdescription' + i);
+            var connectionAttr = Form.getAttribute('ppp_tsisnumber' + i);
             var connectionAttr2 = Form.getAttribute('ppp_noncompliancedescription' + i);
-            if (connectionAttr == undefined) continue;
-            if (connectionAttr2 == undefined) continue;
+            if (connectionAttr == undefined || connectionAttr2 == undefined) continue;
 
             if (connectionCount >= i) {
                 (connectionControl as any).setVisible(true);
                 (connectionControl2 as any).setVisible(true);
+                (connectionAttr as any).setRequiredLevel('required');
             } else {
                 (connectionControl as any).setVisible(false);
                 (connectionControl2 as any).setVisible(false);
                 (connectionAttr as any).setValue(null);
                 (connectionAttr2 as any).setValue(null);
+                (connectionAttr as any).setRequiredLevel('none');
             }
         }
     }
@@ -173,23 +180,17 @@
             var connectionControl2 = Form.getControl('ppp_ruleid' + i);
             var connectionControl3 = Form.getControl('ppp_numberofpaxaffected' + i);
             var connectionControl4 = Form.getControl('ppp_passengernoncompliancedescription' + i);
-            if (connectionControl == undefined) continue;
-            if (connectionControl2 == undefined) continue;
-            if (connectionControl3 == undefined) continue;
-            if (connectionControl4 == undefined) continue;
+            if (connectionControl == undefined || connectionControl2 == undefined || connectionControl3 == undefined || connectionControl4 == undefined) continue;
 
             var connectionAttr = Form.getAttribute('ppp_typeofnoncompliance' + i);
             var connectionAttr2 = Form.getAttribute('ppp_ruleid' + i);
             var connectionAttr3 = Form.getAttribute('ppp_numberofpaxaffected' + i);
             var connectionAttr4 = Form.getAttribute('ppp_passengernoncompliancedescription' + i);
-            if (connectionAttr == undefined) continue;
-            if (connectionAttr2 == undefined) continue;
-            if (connectionAttr3 == undefined) continue;
-            if (connectionAttr4 == undefined) continue;
+            if (connectionAttr == undefined || connectionAttr2 == undefined || connectionAttr3 == undefined || connectionAttr4 == undefined) continue;
 
             if (connectionCount >= i) {
                 (connectionControl as any).setVisible(true);
-                (connectionControl2 as any).setVisible(true);
+                //(connectionControl2 as any).setVisible(true);
                 (connectionControl3 as any).setVisible(true);
                 (connectionControl4 as any).setVisible(true);
                 (connectionAttr as any).setRequiredLevel('required');
@@ -215,7 +216,7 @@
 
         // Define field lists
         const passengerFields = ["ppp_passengernumberofnoncompliance", "ppp_typeofnoncompliance1", "ppp_ruleid1", "ppp_numberofpaxaffected1", "ppp_passengernoncompliancedescription1", "ppp_typeofnoncompliance2", "ppp_ruleid2", "ppp_numberofpaxaffected2", "ppp_passengernoncompliancedescription2", "ppp_typeofnoncompliance3", "ppp_ruleid3", "ppp_numberofpaxaffected3", "ppp_passengernoncompliancedescription3", "ppp_typeofnoncompliance4", "ppp_ruleid4", "ppp_numberofpaxaffected4", "ppp_passengernoncompliancedescription4", "ppp_typeofnoncompliance5", "ppp_ruleid5", "ppp_numberofpaxaffected5", "ppp_passengernoncompliancedescription5", "ppp_typeofnoncompliance6", "ppp_ruleid6", "ppp_numberofpaxaffected6", "ppp_passengernoncompliancedescription6", "ppp_typeofnoncompliance7", "ppp_ruleid7", "ppp_numberofpaxaffected7", "ppp_passengernoncompliancedescription7", "ppp_typeofnoncompliance8", "ppp_ruleid8", "ppp_numberofpaxaffected8", "ppp_passengernoncompliancedescription8", "ppp_typeofnoncompliance9", "ppp_ruleid9", "ppp_numberofpaxaffected9", "ppp_passengernoncompliancedescription9", "ppp_typeofnoncompliance10", "ppp_ruleid10", "ppp_numberofpaxaffected10", "ppp_passengernoncompliancedescription10"];
-        const flightFields = ["ppp_numberofnoncompliance", "ppp_tsisdescription1", "ppp_noncompliancedescription1", "ppp_tsisdescription2", "ppp_noncompliancedescription2", "ppp_tsisdescription3", "ppp_noncompliancedescription3", "ppp_tsisdescription4", "ppp_noncompliancedescription4", "ppp_tsisdescription5", "ppp_noncompliancedescription5", "ppp_tsisdescription6", "ppp_noncompliancedescription6", "ppp_tsisdescription7", "ppp_noncompliancedescription7", "ppp_tsisdescription8", "ppp_noncompliancedescription8", "ppp_tsisdescription9", "ppp_noncompliancedescription9", "ppp_tsisdescription10", "ppp_noncompliancedescription10"];
+        const flightFields = ["ppp_numberofnoncompliance", "ppp_tsisnumber1", "ppp_noncompliancedescription1", "ppp_tsisnumber2", "ppp_noncompliancedescription2", "ppp_tsisnumber3", "ppp_noncompliancedescription3", "ppp_tsisnumber4", "ppp_noncompliancedescription4", "ppp_tsisnumber5", "ppp_noncompliancedescription5", "ppp_tsisnumber6", "ppp_noncompliancedescription6", "ppp_tsisnumber7", "ppp_noncompliancedescription7", "ppp_tsisnumber8", "ppp_noncompliancedescription8", "ppp_tsisnumber9", "ppp_noncompliancedescription9", "ppp_tsisnumber10", "ppp_noncompliancedescription10"];
         const typeOfNonCompliance = Form.getAttribute('ppp_typeofnoncompliance1');
 
         if (recordType === 927820000) {
@@ -247,9 +248,9 @@
         
     }
 
-    function clearAndMakeFieldsOptional(formContext: any, fieldsNames: string[]) {
+    function clearAndMakeFieldsOptional(eContext: any, fieldsNames: string[]) {
         fieldsNames.forEach(field => {
-            var attribute = formContext.getAttribute(field);
+            var attribute = eContext.getAttribute(field);
             if (attribute) {
                 attribute.setValue(null);
                 attribute.setRequiredLevel("none");
@@ -257,5 +258,17 @@
         });
     }
 
+    export function setRequiredFlightFieldsAC(eContext: Xrm.ExecutionContext<any, any>) {
+        Form = <Form.ppp_acquittalandcompliance.Main.Information>eContext.getFormContext();
+        const fieldsToRequire = ["ppp_recordtype", "ppp_aircarrier", "ppp_flightorigindate", "ppp_flightorigin", "ppp_flightdestination"];
+        const refNumber = Form.getAttribute("ppp_name").getValue();
+        const requirementLevel = refNumber ? "required" : "none";
 
+        fieldsToRequire.forEach(fieldName => {
+            const attribute = Form.getAttribute(fieldName);
+            if (attribute) {
+                (attribute as any).setRequiredLevel(requirementLevel);
+            }
+        });
+    }
 }
