@@ -190,7 +190,7 @@
 
             if (connectionCount >= i) {
                 (connectionControl as any).setVisible(true);
-                //(connectionControl2 as any).setVisible(true);
+                (connectionControl2 as any).setVisible(true);
                 (connectionControl3 as any).setVisible(true);
                 (connectionControl4 as any).setVisible(true);
                 (connectionAttr as any).setRequiredLevel('required');
