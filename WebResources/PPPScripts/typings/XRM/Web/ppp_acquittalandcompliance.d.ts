@@ -3,13 +3,16 @@ interface ppp_AcquittalandCompliance_Base extends WebEntity {
   importsequencenumber?: number | null;
   modifiedon?: Date | null;
   overriddencreatedon?: Date | null;
+  ppp_acquittalandcomplianceautonumber?: string | null;
   ppp_acquittalandcomplianceid?: string | null;
   ppp_eventdescription?: string | null;
+  ppp_flightnumber?: string | null;
   ppp_flightorigindate?: Date | null;
   ppp_flightoriginhour?: number | null;
   ppp_flightoriginminute?: number | null;
   ppp_flightorigintime?: Date | null;
   ppp_name?: string | null;
+  ppp_nameofinspector?: string | null;
   ppp_noncompliancedescription1?: string | null;
   ppp_noncompliancedescription10?: string | null;
   ppp_noncompliancedescription2?: string | null;
@@ -43,6 +46,7 @@ interface ppp_AcquittalandCompliance_Base extends WebEntity {
   ppp_passengernoncompliancedescription8?: string | null;
   ppp_passengernoncompliancedescription9?: string | null;
   ppp_passengernumberofnoncompliance?: number | null;
+  ppp_recordstatus?: ppp_acrecordstatus | null;
   ppp_recordtype?: ppp_recordtype | null;
   ppp_ruleid1?: ppp_ruleid | null;
   ppp_ruleid10?: ppp_ruleid | null;
@@ -54,16 +58,19 @@ interface ppp_AcquittalandCompliance_Base extends WebEntity {
   ppp_ruleid7?: ppp_ruleid | null;
   ppp_ruleid8?: ppp_ruleid | null;
   ppp_ruleid9?: ppp_ruleid | null;
-  ppp_tsisdescription1?: string | null;
-  ppp_tsisdescription10?: string | null;
-  ppp_tsisdescription2?: string | null;
-  ppp_tsisdescription3?: string | null;
-  ppp_tsisdescription4?: string | null;
-  ppp_tsisdescription5?: string | null;
-  ppp_tsisdescription6?: string | null;
-  ppp_tsisdescription7?: string | null;
-  ppp_tsisdescription8?: string | null;
-  ppp_tsisdescription9?: string | null;
+  ppp_satareference1?: string | null;
+  ppp_satrreference?: string | null;
+  ppp_sharepointfolderlocation?: string | null;
+  ppp_tsisnumber1?: ppp_tsisnumber | null;
+  ppp_tsisnumber10?: ppp_tsisnumber | null;
+  ppp_tsisnumber2?: ppp_tsisnumber | null;
+  ppp_tsisnumber3?: ppp_tsisnumber | null;
+  ppp_tsisnumber4?: ppp_tsisnumber | null;
+  ppp_tsisnumber5?: ppp_tsisnumber | null;
+  ppp_tsisnumber6?: ppp_tsisnumber | null;
+  ppp_tsisnumber7?: ppp_tsisnumber | null;
+  ppp_tsisnumber8?: ppp_tsisnumber | null;
+  ppp_tsisnumber9?: ppp_tsisnumber | null;
   ppp_typeofnoncompliance1?: ppp_typeofnoncompliance | null;
   ppp_typeofnoncompliance10?: ppp_typeofnoncompliance | null;
   ppp_typeofnoncompliance2?: ppp_typeofnoncompliance | null;
@@ -81,7 +88,6 @@ interface ppp_AcquittalandCompliance_Base extends WebEntity {
   versionnumber?: number | null;
 }
 interface ppp_AcquittalandCompliance_Relationships {
-  ppp_SATAReference?: ppp_Traveller_Result | null;
 }
 interface ppp_AcquittalandCompliance extends ppp_AcquittalandCompliance_Base, ppp_AcquittalandCompliance_Relationships {
   ownerid_bind$systemusers?: string | null;
@@ -99,8 +105,6 @@ interface ppp_AcquittalandCompliance extends ppp_AcquittalandCompliance_Base, pp
   ppp_FlightConnection9_bind$ovs_facilities?: string | null;
   ppp_FlightDestination_bind$ovs_facilities?: string | null;
   ppp_FlightOrigin_bind$ovs_facilities?: string | null;
-  ppp_InspectorName_bind$ts_tripinspectors?: string | null;
-  ppp_SATAReference_bind$ppp_travellers?: string | null;
 }
 interface ppp_AcquittalandCompliance_Create extends ppp_AcquittalandCompliance {
 }
@@ -119,6 +123,7 @@ interface ppp_AcquittalandCompliance_Select {
   owningbusinessunit_guid: WebAttribute<ppp_AcquittalandCompliance_Select, { owningbusinessunit_guid: string | null }, { owningbusinessunit_formatted?: string }>;
   owningteam_guid: WebAttribute<ppp_AcquittalandCompliance_Select, { owningteam_guid: string | null }, { owningteam_formatted?: string }>;
   owninguser_guid: WebAttribute<ppp_AcquittalandCompliance_Select, { owninguser_guid: string | null }, { owninguser_formatted?: string }>;
+  ppp_acquittalandcomplianceautonumber: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_acquittalandcomplianceautonumber: string | null }, {  }>;
   ppp_acquittalandcomplianceid: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_acquittalandcomplianceid: string | null }, {  }>;
   ppp_aircarrier_guid: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_aircarrier_guid: string | null }, { ppp_aircarrier_formatted?: string }>;
   ppp_eventdescription: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_eventdescription: string | null }, {  }>;
@@ -133,13 +138,14 @@ interface ppp_AcquittalandCompliance_Select {
   ppp_flightconnection8_guid: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_flightconnection8_guid: string | null }, { ppp_flightconnection8_formatted?: string }>;
   ppp_flightconnection9_guid: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_flightconnection9_guid: string | null }, { ppp_flightconnection9_formatted?: string }>;
   ppp_flightdestination_guid: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_flightdestination_guid: string | null }, { ppp_flightdestination_formatted?: string }>;
+  ppp_flightnumber: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_flightnumber: string | null }, {  }>;
   ppp_flightorigin_guid: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_flightorigin_guid: string | null }, { ppp_flightorigin_formatted?: string }>;
   ppp_flightorigindate: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_flightorigindate: Date | null }, { ppp_flightorigindate_formatted?: string }>;
   ppp_flightoriginhour: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_flightoriginhour: number | null }, {  }>;
   ppp_flightoriginminute: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_flightoriginminute: number | null }, {  }>;
   ppp_flightorigintime: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_flightorigintime: Date | null }, { ppp_flightorigintime_formatted?: string }>;
-  ppp_inspectorname_guid: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_inspectorname_guid: string | null }, { ppp_inspectorname_formatted?: string }>;
   ppp_name: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_name: string | null }, {  }>;
+  ppp_nameofinspector: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_nameofinspector: string | null }, {  }>;
   ppp_noncompliancedescription1: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_noncompliancedescription1: string | null }, {  }>;
   ppp_noncompliancedescription10: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_noncompliancedescription10: string | null }, {  }>;
   ppp_noncompliancedescription2: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_noncompliancedescription2: string | null }, {  }>;
@@ -173,6 +179,7 @@ interface ppp_AcquittalandCompliance_Select {
   ppp_passengernoncompliancedescription8: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_passengernoncompliancedescription8: string | null }, {  }>;
   ppp_passengernoncompliancedescription9: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_passengernoncompliancedescription9: string | null }, {  }>;
   ppp_passengernumberofnoncompliance: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_passengernumberofnoncompliance: number | null }, {  }>;
+  ppp_recordstatus: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_recordstatus: ppp_acrecordstatus | null }, { ppp_recordstatus_formatted?: string }>;
   ppp_recordtype: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_recordtype: ppp_recordtype | null }, { ppp_recordtype_formatted?: string }>;
   ppp_ruleid1: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_ruleid1: ppp_ruleid | null }, { ppp_ruleid1_formatted?: string }>;
   ppp_ruleid10: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_ruleid10: ppp_ruleid | null }, { ppp_ruleid10_formatted?: string }>;
@@ -184,17 +191,19 @@ interface ppp_AcquittalandCompliance_Select {
   ppp_ruleid7: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_ruleid7: ppp_ruleid | null }, { ppp_ruleid7_formatted?: string }>;
   ppp_ruleid8: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_ruleid8: ppp_ruleid | null }, { ppp_ruleid8_formatted?: string }>;
   ppp_ruleid9: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_ruleid9: ppp_ruleid | null }, { ppp_ruleid9_formatted?: string }>;
-  ppp_satareference_guid: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_satareference_guid: string | null }, { ppp_satareference_formatted?: string }>;
-  ppp_tsisdescription1: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_tsisdescription1: string | null }, {  }>;
-  ppp_tsisdescription10: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_tsisdescription10: string | null }, {  }>;
-  ppp_tsisdescription2: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_tsisdescription2: string | null }, {  }>;
-  ppp_tsisdescription3: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_tsisdescription3: string | null }, {  }>;
-  ppp_tsisdescription4: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_tsisdescription4: string | null }, {  }>;
-  ppp_tsisdescription5: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_tsisdescription5: string | null }, {  }>;
-  ppp_tsisdescription6: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_tsisdescription6: string | null }, {  }>;
-  ppp_tsisdescription7: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_tsisdescription7: string | null }, {  }>;
-  ppp_tsisdescription8: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_tsisdescription8: string | null }, {  }>;
-  ppp_tsisdescription9: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_tsisdescription9: string | null }, {  }>;
+  ppp_satareference1: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_satareference1: string | null }, {  }>;
+  ppp_satrreference: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_satrreference: string | null }, {  }>;
+  ppp_sharepointfolderlocation: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_sharepointfolderlocation: string | null }, {  }>;
+  ppp_tsisnumber1: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_tsisnumber1: ppp_tsisnumber | null }, { ppp_tsisnumber1_formatted?: string }>;
+  ppp_tsisnumber10: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_tsisnumber10: ppp_tsisnumber | null }, { ppp_tsisnumber10_formatted?: string }>;
+  ppp_tsisnumber2: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_tsisnumber2: ppp_tsisnumber | null }, { ppp_tsisnumber2_formatted?: string }>;
+  ppp_tsisnumber3: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_tsisnumber3: ppp_tsisnumber | null }, { ppp_tsisnumber3_formatted?: string }>;
+  ppp_tsisnumber4: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_tsisnumber4: ppp_tsisnumber | null }, { ppp_tsisnumber4_formatted?: string }>;
+  ppp_tsisnumber5: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_tsisnumber5: ppp_tsisnumber | null }, { ppp_tsisnumber5_formatted?: string }>;
+  ppp_tsisnumber6: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_tsisnumber6: ppp_tsisnumber | null }, { ppp_tsisnumber6_formatted?: string }>;
+  ppp_tsisnumber7: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_tsisnumber7: ppp_tsisnumber | null }, { ppp_tsisnumber7_formatted?: string }>;
+  ppp_tsisnumber8: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_tsisnumber8: ppp_tsisnumber | null }, { ppp_tsisnumber8_formatted?: string }>;
+  ppp_tsisnumber9: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_tsisnumber9: ppp_tsisnumber | null }, { ppp_tsisnumber9_formatted?: string }>;
   ppp_typeofnoncompliance1: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_typeofnoncompliance1: ppp_typeofnoncompliance | null }, { ppp_typeofnoncompliance1_formatted?: string }>;
   ppp_typeofnoncompliance10: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_typeofnoncompliance10: ppp_typeofnoncompliance | null }, { ppp_typeofnoncompliance10_formatted?: string }>;
   ppp_typeofnoncompliance2: WebAttribute<ppp_AcquittalandCompliance_Select, { ppp_typeofnoncompliance2: ppp_typeofnoncompliance | null }, { ppp_typeofnoncompliance2_formatted?: string }>;
@@ -224,6 +233,7 @@ interface ppp_AcquittalandCompliance_Filter {
   owningbusinessunit_guid: XQW.Guid;
   owningteam_guid: XQW.Guid;
   owninguser_guid: XQW.Guid;
+  ppp_acquittalandcomplianceautonumber: string;
   ppp_acquittalandcomplianceid: XQW.Guid;
   ppp_aircarrier_guid: XQW.Guid;
   ppp_eventdescription: string;
@@ -238,13 +248,14 @@ interface ppp_AcquittalandCompliance_Filter {
   ppp_flightconnection8_guid: XQW.Guid;
   ppp_flightconnection9_guid: XQW.Guid;
   ppp_flightdestination_guid: XQW.Guid;
+  ppp_flightnumber: string;
   ppp_flightorigin_guid: XQW.Guid;
   ppp_flightorigindate: Date;
   ppp_flightoriginhour: number;
   ppp_flightoriginminute: number;
   ppp_flightorigintime: Date;
-  ppp_inspectorname_guid: XQW.Guid;
   ppp_name: string;
+  ppp_nameofinspector: string;
   ppp_noncompliancedescription1: string;
   ppp_noncompliancedescription10: string;
   ppp_noncompliancedescription2: string;
@@ -278,6 +289,7 @@ interface ppp_AcquittalandCompliance_Filter {
   ppp_passengernoncompliancedescription8: string;
   ppp_passengernoncompliancedescription9: string;
   ppp_passengernumberofnoncompliance: number;
+  ppp_recordstatus: ppp_acrecordstatus;
   ppp_recordtype: ppp_recordtype;
   ppp_ruleid1: ppp_ruleid;
   ppp_ruleid10: ppp_ruleid;
@@ -289,17 +301,19 @@ interface ppp_AcquittalandCompliance_Filter {
   ppp_ruleid7: ppp_ruleid;
   ppp_ruleid8: ppp_ruleid;
   ppp_ruleid9: ppp_ruleid;
-  ppp_satareference_guid: XQW.Guid;
-  ppp_tsisdescription1: string;
-  ppp_tsisdescription10: string;
-  ppp_tsisdescription2: string;
-  ppp_tsisdescription3: string;
-  ppp_tsisdescription4: string;
-  ppp_tsisdescription5: string;
-  ppp_tsisdescription6: string;
-  ppp_tsisdescription7: string;
-  ppp_tsisdescription8: string;
-  ppp_tsisdescription9: string;
+  ppp_satareference1: string;
+  ppp_satrreference: string;
+  ppp_sharepointfolderlocation: string;
+  ppp_tsisnumber1: ppp_tsisnumber;
+  ppp_tsisnumber10: ppp_tsisnumber;
+  ppp_tsisnumber2: ppp_tsisnumber;
+  ppp_tsisnumber3: ppp_tsisnumber;
+  ppp_tsisnumber4: ppp_tsisnumber;
+  ppp_tsisnumber5: ppp_tsisnumber;
+  ppp_tsisnumber6: ppp_tsisnumber;
+  ppp_tsisnumber7: ppp_tsisnumber;
+  ppp_tsisnumber8: ppp_tsisnumber;
+  ppp_tsisnumber9: ppp_tsisnumber;
   ppp_typeofnoncompliance1: ppp_typeofnoncompliance;
   ppp_typeofnoncompliance10: ppp_typeofnoncompliance;
   ppp_typeofnoncompliance2: ppp_typeofnoncompliance;
@@ -317,7 +331,6 @@ interface ppp_AcquittalandCompliance_Filter {
   versionnumber: number;
 }
 interface ppp_AcquittalandCompliance_Expand {
-  ppp_SATAReference: WebExpand<ppp_AcquittalandCompliance_Expand, ppp_Traveller_Select, ppp_Traveller_Filter, { ppp_SATAReference: ppp_Traveller_Result }>;
 }
 interface ppp_AcquittalandCompliance_FormattedResult {
   createdby_formatted?: string;
@@ -346,7 +359,7 @@ interface ppp_AcquittalandCompliance_FormattedResult {
   ppp_flightorigin_formatted?: string;
   ppp_flightorigindate_formatted?: string;
   ppp_flightorigintime_formatted?: string;
-  ppp_inspectorname_formatted?: string;
+  ppp_recordstatus_formatted?: string;
   ppp_recordtype_formatted?: string;
   ppp_ruleid10_formatted?: string;
   ppp_ruleid1_formatted?: string;
@@ -358,7 +371,16 @@ interface ppp_AcquittalandCompliance_FormattedResult {
   ppp_ruleid7_formatted?: string;
   ppp_ruleid8_formatted?: string;
   ppp_ruleid9_formatted?: string;
-  ppp_satareference_formatted?: string;
+  ppp_tsisnumber10_formatted?: string;
+  ppp_tsisnumber1_formatted?: string;
+  ppp_tsisnumber2_formatted?: string;
+  ppp_tsisnumber3_formatted?: string;
+  ppp_tsisnumber4_formatted?: string;
+  ppp_tsisnumber5_formatted?: string;
+  ppp_tsisnumber6_formatted?: string;
+  ppp_tsisnumber7_formatted?: string;
+  ppp_tsisnumber8_formatted?: string;
+  ppp_tsisnumber9_formatted?: string;
   ppp_typeofnoncompliance10_formatted?: string;
   ppp_typeofnoncompliance1_formatted?: string;
   ppp_typeofnoncompliance2_formatted?: string;
@@ -395,11 +417,8 @@ interface ppp_AcquittalandCompliance_Result extends ppp_AcquittalandCompliance_B
   ppp_flightconnection9_guid: string | null;
   ppp_flightdestination_guid: string | null;
   ppp_flightorigin_guid: string | null;
-  ppp_inspectorname_guid: string | null;
-  ppp_satareference_guid: string | null;
 }
 interface ppp_AcquittalandCompliance_RelatedOne {
-  ppp_SATAReference: WebMappingRetrieve<ppp_Traveller_Select,ppp_Traveller_Expand,ppp_Traveller_Filter,ppp_Traveller_Fixed,ppp_Traveller_Result,ppp_Traveller_FormattedResult>;
 }
 interface ppp_AcquittalandCompliance_RelatedMany {
 }

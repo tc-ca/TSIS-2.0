@@ -1,3 +1,14 @@
 declare const enum ppp_ruleid {
-  test = 927820000,
+  NAM01Thepassengersfirstorlastnameismissing = 927820000,
+  NAM02Thepassengerssurnamegivennameormiddlenamecontainsanumber = 927820001,
+  NAM03Thepassengerssurnamegivennameormiddlenamecontainsspecialcharacters = 927820002,
+  NAM04Thepassengerhasaoneletterfirstorlastname = 927820003,
+  DOB01ThepassengersDOBismissing = 927820004,
+  DOB02ThepassengersDOBofbirthisinthefuture = 927820005,
+  DOB03ADOBappearsmorethan5timesconfigurableonthesameflightwithdifferentpassengerrecords = 927820006,
+  NAT02Thepassengersnationalitycitizenshipismissingonaninternationalflight = 927820007,
+  DOC01Thepassengersdocumentnumbercontainsatleast6sequentialnumbersexCAN123456 = 927820008,
+  DOC02Thepassengersdocumentnumbercontainsonlytwouniquecharactersex1011100012222UUUU = 927820009,
+  DOC04Thepassengersdocumentnumbercontainsastringof4repeatingcharactersexCAN812222 = 927820010,
+  UPR01ThepassengersUPRismissing = 927820011,
 }

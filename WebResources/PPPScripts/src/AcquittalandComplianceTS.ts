@@ -271,4 +271,80 @@
             }
         });
     }
+
+    export function ReadOnlyOnClosedAC(
+        eContext: Xrm.ExecutionContext<any, any>,
+        keepLockedList: string[],
+        keepUnlockedList: string[]
+    ) {
+        Form = <Form.ppp_acquittalandcompliance.Main.Information>eContext.getFormContext();
+        var recordStatus = Form.getAttribute('ppp_recordstatus').getValue();
+        var recordClosed =
+            recordStatus == ppp_acrecordstatus.Closed ||
+            recordStatus == ppp_acrecordstatus.Monitor;
+        toggleDisabledAllControlsAC(
+            eContext,
+            recordClosed,
+            keepLockedList,
+            keepUnlockedList
+        );
+    }
+
+    export function statusOnChangeAC(
+        eContext: Xrm.ExecutionContext<any, any>,
+        keepLockedList: string[],
+        keepUnlockedList: string[]
+    ) {
+        Form = <Form.ppp_acquittalandcompliance.Main.Information>eContext.getFormContext();
+        var recordStatus = Form.getAttribute('ppp_recordstatus').getValue();
+        var recordClosed =
+            recordStatus == ppp_acrecordstatus.Closed ||
+            recordStatus == ppp_acrecordstatus.Monitor;
+        if (recordClosed) {
+            Form.data.save();
+        }
+        if (Form.data.isValid()) {
+            toggleDisabledAllControlsAC(
+                eContext,
+                recordClosed,
+                keepLockedList,
+                keepUnlockedList
+            );
+        }
+    }
+
+    export function toggleDisabledAllControlsAC(
+        eContext: Xrm.ExecutionContext<any, any>,
+        disable: boolean,
+        keepLockedList: string[],
+        keepUnlockedList: string[]
+    ) {
+        Form = <Form.ppp_acquittalandcompliance.Main.Information>eContext.getFormContext();
+
+        //Toggle everything to match record closed status
+        Form.ui.controls.forEach(function (control) {
+            if (control != undefined) {
+                (<Xrm.Control<Xrm.Attribute<any>>>control).setDisabled(disable);
+            }
+        });
+        //Lock everything in KeepLockedList
+        if (keepLockedList) {
+            keepLockedList.forEach(function (attributeName) {
+                var control = Form.getControl(attributeName);
+                if (control != undefined) {
+                    (<Xrm.Control<Xrm.Attribute<any>>>control).setDisabled(true);
+                }
+            });
+        }
+
+        //Unlock everything in KeepUnlockedList
+        if (keepUnlockedList) {
+            keepUnlockedList.forEach(function (attributeName) {
+                var control = Form.getControl(attributeName);
+                if (control) {
+                    (<Xrm.Control<Xrm.Attribute<any>>>control).setDisabled(false);
+                }
+            });
+        }
+    }
 }
