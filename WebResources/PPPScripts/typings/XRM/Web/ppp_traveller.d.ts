@@ -79,7 +79,6 @@ interface ppp_Traveller_Base extends WebEntity {
 }
 interface ppp_Traveller_Relationships {
   ppp_Caller_ppp_Traveller?: ppp_Caller_Result[] | null;
-  ppp_acquittalandcompliance_SATAReference_ppp_traveller?: ppp_AcquittalandCompliance_Result[] | null;
 }
 interface ppp_Traveller extends ppp_Traveller_Base, ppp_Traveller_Relationships {
   ownerid_bind$systemusers?: string | null;
@@ -311,7 +310,6 @@ interface ppp_Traveller_Filter {
 }
 interface ppp_Traveller_Expand {
   ppp_Caller_ppp_Traveller: WebExpand<ppp_Traveller_Expand, ppp_Caller_Select, ppp_Caller_Filter, { ppp_Caller_ppp_Traveller: ppp_Caller_Result[] }>;
-  ppp_acquittalandcompliance_SATAReference_ppp_traveller: WebExpand<ppp_Traveller_Expand, ppp_AcquittalandCompliance_Select, ppp_AcquittalandCompliance_Filter, { ppp_acquittalandcompliance_SATAReference_ppp_traveller: ppp_AcquittalandCompliance_Result[] }>;
 }
 interface ppp_Traveller_FormattedResult {
   createdby_formatted?: string;
@@ -403,7 +401,6 @@ interface ppp_Traveller_RelatedOne {
 }
 interface ppp_Traveller_RelatedMany {
   ppp_Caller_ppp_Traveller: WebMappingRetrieve<ppp_Caller_Select,ppp_Caller_Expand,ppp_Caller_Filter,ppp_Caller_Fixed,ppp_Caller_Result,ppp_Caller_FormattedResult>;
-  ppp_acquittalandcompliance_SATAReference_ppp_traveller: WebMappingRetrieve<ppp_AcquittalandCompliance_Select,ppp_AcquittalandCompliance_Expand,ppp_AcquittalandCompliance_Filter,ppp_AcquittalandCompliance_Fixed,ppp_AcquittalandCompliance_Result,ppp_AcquittalandCompliance_FormattedResult>;
 }
 interface WebEntitiesRetrieve {
   ppp_travellers: WebMappingRetrieve<ppp_Traveller_Select,ppp_Traveller_Expand,ppp_Traveller_Filter,ppp_Traveller_Fixed,ppp_Traveller_Result,ppp_Traveller_FormattedResult>;
